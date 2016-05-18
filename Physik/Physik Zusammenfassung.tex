@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{stix}
 
 \setlength{\parindent}{0pt}
 \graphicspath{ {images/} }
@@ -425,7 +426,7 @@ Ein thermodynamischer Prozess ist reversibel, wenn am Ende des Prozesses, der re
 Die \textbf{freie Expansion eines Gases ist irreversibel}. Die Kompression l{\"a}sst sich nicht ausf{\"u}hren, ohne das Universum zu {\"a}ndern. Es ist zwar m{\"o}glich, dass die Molek{\"u}le des Gases zuf{\"a}lligerweise nach einer gewissen Zeit am Anfangsort sind, die Chancen sind jedoch extrem klein. \newline
 Die \textbf{isotherme Expansion ist jedoch reversibel}. Die zugef{\"u}hrte W{\"a}rme wird bei der Kompression der Umgebung wieder abgegeben $\Rightarrow$ das Gas und die Umgebung befinden sich wieder in ihrem urspr{\"u}nglichen Zustand.
 
-\subsection{Elektromagnetismus}
+\section{Elektromagnetismus}
 
 Jedes Elementarteilchen hat eine bestimmte Ladung:
 \begin{equation*}
@@ -494,6 +495,8 @@ Wenn sich die Ladungen n{\"a}hern, kann die elektrische potentielle Energie abne
 
 \subsubsection{Elektrische Potential und Spannung}
 
+\paragraph{Spannung:} Die Kraft, die die Elektronen von der einen Ladung zur anderen drückt.
+
 Das \textbf{elektrische Potential $V$} ist eine Zahl in jedem Punkt des Raums und entspricht der potentiellen Energie f{\"u}r eine Einheitsladung:
 \begin{equation*}
 	V(r) = \frac{E_{pot}^e(r)}{q} \qquad\text{mit Einheiten}\qquad V = \frac{J}{C}
@@ -512,7 +515,7 @@ Die \textbf{elektrische Spannung} ist gleich dem Potentialunterschied zwischen z
 
 \subsection{Elektrische Ladung im elektrischen und magnetischen Feld}
 
-Eine bewegte Punktladung $Q$ übt eine magnetische Kraft auf eine zweite bewegte Ladung $q$ aus. Das magnetische Feld wird von der bewegten Ladung $Q$ erzeugt.
+Eine bewegte Punktladung $Q$ {\"u}bt eine magnetische Kraft auf eine zweite bewegte Ladung $q$ aus. Das magnetische Feld wird von der bewegten Ladung $Q$ erzeugt.
 
 \subsubsection{Lorentz-Kraft}
 
@@ -531,16 +534,16 @@ Der magnetische Term $F_B$ der Lorentz-Kraft
 
 \subsubsection{Bewegung im elektrischen Feld}
 
-Das \textbf{Elektronenvolt (eV)} ist gleich der gesamten Energiezunahme, die ein Teilchen mit der ElementarLadung $e$ erfährt, wenn es durch einen Potentialunterschied von 1 Volt beschleunigt wird. \newline
+Das \textbf{Elektronenvolt (eV)} ist gleich der gesamten Energiezunahme, die ein Teilchen mit der ElementarLadung $e$ erf{\"a}hrt, wenn es durch einen Potentialunterschied von 1 Volt beschleunigt wird. \newline
 
-Unter der Wirkung der elektrischen Kraft erfährt ein Teilchen der Ladung $q$ und Masse $m$ die Beschleunigung (für nichtrelativistische Geschwindigkeiten)
+Unter der Wirkung der elektrischen Kraft erf{\"a}hrt ein Teilchen der Ladung $q$ und Masse $m$ die Beschleunigung (f{\"u}r nichtrelativistische Geschwindigkeiten)
 \begin{equation*}
 	F = qE = \frac{dp}{dt} = ma \Rightarrow q = \frac{q}{m}E
 \end{equation*}
 
 \subsubsection{Bewegung im magnetischen Feld}
 
-Da die Wirkung des Magnetfeldes immer senkrecht zur Bewegungsrichtung ist, ändert sich bei einem Teilchen nur die Richtung, nicht jedoch den Betrag der Geschwindigkeit. Daher ist die an einem Teilchen von der magnetischen Kraft verrichtete Arbeit immer null. \newline
+Da die Wirkung des Magnetfeldes immer senkrecht zur Bewegungsrichtung ist, {\"a}ndert sich bei einem Teilchen nur die Richtung, nicht jedoch den Betrag der Geschwindigkeit. Daher ist die an einem Teilchen von der magnetischen Kraft verrichtete Arbeit immer null. \newline
 
 Das magnetische Feld leistet keine Arbeit an einem Teilchen und hat keinen Einfluss auf dessen kinetische Energie. \newline
 
@@ -558,22 +561,131 @@ Bewegt sich jedoch ein Teilchen genau senkrecht zum Feld bewegt, so beschreibt d
 
 \subsection{Der elektrische Strom}
 
-Wenn der \textbf{Ladungsfluss nicht konstant} ist, so ist die momentane \textbf{elektrische Stromstärke $I$} gleich
+\paragraph{Strom:} Anzahl Elektronen pro Zeiteinheit
+
+Wenn der \textbf{Ladungsfluss nicht konstant} ist, so ist die momentane \textbf{elektrische Stromst{\"a}rke $I$} gleich
 \begin{equation*}
 	I(t) = \frac{dQ}{dt} \qquad\text{mit Einheiten}\qquad A = \frac{C}{s}
 \end{equation*}
 
 Die positive Stromrichtung folgt der Flussrichtung der positiven Ladung (historische Konvention).
 
-Ist der \textbf{Ladungsfluss konstant}, so ist die Stromstärke gleich
+Ist der \textbf{Ladungsfluss konstant}, so ist die Stromst{\"a}rke gleich
 \begin{equation*}
-	I = -enAv_D \qquad\text{mit Einheiten}\qquad C\cdot\frac{1}{m^3}\cdot m^2\cdot\frac{m}{s}
+	I = -enAv_D \qquad\text{mit Einheiten}\qquad A = C\cdot\frac{1}{m^3}\cdot m^2\cdot\frac{m}{s}
 \end{equation*}
 wobei $v_D$ die Driftgeschwindigkeit bezeichnet. Sie ist viel kleiner als die Geschwindigkeit freier Elektronen, da die Elektronen im Leiter oft mit Ionen kollidieren.
 
-Die \textbf{Stromdichte $j$} wird als die Stromstärke pro Fläche definiert:
+Die \textbf{Stromdichte $j$} wird als die Stromst{\"a}rke pro Fl{\"a}che definiert:
 \begin{equation*}
 	j = \frac{I}{A} \qquad\text{mit Einheiten}\qquad \frac{A}{m^2}
 \end{equation*}
+
+Die \textbf{Driftgeschwindigkeit} ist die Geschwindigkeit, die ein Elektron zwischen zwei Ionenst{\"o}ssen erreichen wird.
+\begin{equation*}
+	v_D = a\tau = -\mu E \qquad\text{mit Einheiten}\qquad \frac{m}{s} = \frac{m}{s^2}s
+\end{equation*}
+wobei $\mu = \frac{e\tau}{m}$ die Beweglichkeit der Elektronen und $v_D$ die Driftgeschwindigkeit ist. Sie ist proportional zum elektrischen Feld. Die Richtung der Elektronenbewegung ist zur Richtung des Feldes parallel, zeigt jedoch in die entgegengesetzte Richtung.
+
+\subsection{Das Ohmsche Gesetz}
+
+\begin{equation*}
+	U_{AB} = RI = (\frac{L}{\sigma A})I \qquad\text{mit Einheiten}\qquad V = (\frac{m}{\frac{A}{V \cdot m}\cdot m^2})A = \Omega \cdot A
+\end{equation*}
+wobei $L$ die gesamte L{\"a}nge, $R$ der Widerstand und $\sigma$ die Leitf{\"a}higkeit des Leiters ist und $U_{AB}$ die Spannung von A nach B. Die Einheit der Leitf{\"a}higkeit ist $\frac{A}{V\cdot m}$.
+\subsection{Kraft auf einem elektrischen Strom}
+
+Die Gesamtkraft, die ein Magnetfeld auf einen Leiter der Querschnittsfl{\"a}che A mit L{\"a}nge L aus{\"u}bt ist:
+\begin{equation*}
+	F = ALn(-e)v_D \times B = LI \times B
+\end{equation*}
+
+Bei \textbf{zwei parallelen Leitern} erfahren die Leiter eine seitlich wirkende Kraft des anderen Leiters:
+
+\begin{equation*}
+	F \approx \frac{LI_1I_2}{r} \qquad\text{mit der vektoriellen Beziehung}\qquad F = LI \times B
+\end{equation*}
+Fliesst der Strom bei beiden Leitern in die selbe Richtung, so ziehen sich die Leiter gegenseitig an.
+
+\subsection{Elektrische Kapazität und Kondensatoren}
+
+In einem \textbf{Kondensator} wird Energie in einem elektrischen Feld in Form von potenzieller Energie gespeichert. 
+\begin{equation*}
+	Q = CV \qquad\text{mit Einheiten}\qquad C = FV = \frac{C}{V}V
+\end{equation*}
+wobei $C$ die Kapazität des Kondensators in Farad ist. Die Ladung $Q$ (Betrag der Ladung einer Platte) und die Potenzialdifferenz $V$ sind zueinander proportional. \newline
+
+Die geleistete Arbeit zur Aufladung des Kondensators kann man als Energie wieder entnehmen:
+\begin{equation*}
+	E = \frac{Q^2}{2C} = \frac{1}{2}CV^2
+\end{equation*}
+
+\subsection{Theorem von Gauss}
+
+Die Divergenz des Feldes in jedem Punkt ist gleich dem Fluss, der das den Punkt umgebende Volumenelement $dxdydz$ verlässt, dividiert durch dieses Volumen.
+\begin{equation*}
+	d\Phi_{tot}(x,y,z) = {\nabla\cdot F(x,y,z)}dxdydz
+\end{equation*}
+
+Der gesamte Fluss $\Phi_{tot}$, der aus einem Volumen $V$ austritt, ist gleich
+\begin{equation*}
+	\Phi_{tot} = \oiint_{A=\partial V}F \cdot dA = \iiint _V(\nabla\cdot F)dV
+\end{equation*}
+wobei der erste Term dem \textbf{Flächenintegral} und der zweite dem \textbf{Volumenintegral} entspricht. $A$ ist die Oberfläche, die das Volumen $V$ einschliesst.
+
+\subsection{Theorem von Stokes}
+
+Dieses Theorem setzt das Linienintegral über die geschlossene Kurve $C$ mit dem Flächenintegral über die Fläche $A$ in Beziehung: \newline
+Das Linienintegral eines Feldes $F$ über eine geschlossene Kurve $C$ ist gleich dem Flächenintegral der Rotation des Feldes über die Fläche $A$, wobei $A$ von $C$ umrandet wird.
+
+\begin{equation*}
+	\oint _C F \cdot dr = \iint _A (\nabla \times F) \cdot dA
+\end{equation*}
+
+wobei $C$ die geschlossene Kurve ist, die die Fläche $A$ einschliesst.
+
+\subsection{Ladungs- und Stromdichte}
+
+\subsubsection{Ladungsdichte}
+
+Die \textbf{Raumladungsdichte} ist wie folgt definiert:
+\begin{equation*}
+	\rho(r) = \frac{dq}{dV}
+\end{equation*}
+wobei $dq$ die infinitesimale Ladung im Volumenelement $dV$ ist. \newline
+
+Die gesamte Ladung eines Körpers ist somit gleich
+\begin{equation*}
+	Q = \int dq = \iiint _V \rho(r) dV = \iiint _V \rho (x,y,z) dx dy dz
+\end{equation*}
+
+\subsubsection{Vektorielle Stromdichte}
+
+Der Strom, der durch die Fläche $A$ fliesst, ist gleich
+\begin{equation*}
+	I = \iint _A j(r) \cdot dA
+\end{equation*}
+
+Die \textbf{Kontinuitätsgleichung} sagt voraus, dass wenn sich die elektrische Ladung in einem Punkt $r$ ändert, muss in diesem Punkt ein elektrischer Strom fliessen:
+\begin{equation*}
+	\frac{\partial\rho (r)}{\partial t} + \nabla\cdot j(r) = 0
+\end{equation*}
+
+\subsection{Maxwellgleichungen}
+\begin{equation*}
+\begin{split}
+	\varepsilon _0 (\nabla\cdot E) & = \rho \\
+	(\nabla\cdot B) & = 0 \\
+	\nabla\times E & = -\frac{\partial B}{\partial t} \\
+	\nabla\times B & = \mu _0 j + \varepsilon _0 \mu _0 \frac{\partial E}{\partial t}	
+\end{split}
+\end{equation*}
+wobei 
+\begin{enumerate}
+	\item [$E(x,y,z,t)$] das elektrische Vektorfeld
+	\item [$B(x,y,z,t)$] das magnetische Vektorfeld
+	\item [$\rho(x,y,z,t)$] die Ladungsdichte
+	\item [$j(x,y,z,t)$] die Stromdichte
+\end{enumerate}
 
 \end{document}
