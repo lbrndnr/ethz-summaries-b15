@@ -1,0 +1,88 @@
+\documentclass[7pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[landscape]{geometry}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={285mm,185mm},
+ left=10mm,
+ top=10mm,
+ }
+
+\setlength\columnseprule{0.5pt}
+\setlength{\parindent}{0pt}
+\graphicspath{ {images/} }
+
+
+\begin{document}
+\begin{multicols}{3}
+	
+\section{Quantenmechanik}
+
+\paragraph{Balmer-Rydberg-Formel}
+
+Für ein festes $m$ (z.B. $m = 2$) liefert die Formel eine Serie von Linien mit Wellenlängen, die sich nähern, wenn die Zahl $n$ zunimmt.
+
+\begin{equation*}
+	\frac{1}{\lambda} = R(\frac{1}{m^2}-\frac{1}{n^2})
+\end{equation*}
+wobei $m$ und $n$ positive ganze Zahlen sind. \newline
+
+\paragraph{Frequenz einer Wellenlänge}
+
+\begin{equation*}
+	v = \frac{c}{\lambda} = Rc(\frac{1}{m^2} - \frac{1}{n^2})
+\end{equation*}
+
+\paragraph{Energie eines Atoms}
+
+\begin{equation*}
+	E = E_{kin} + E_{pot} = \frac{1}{2}m_e v_e^2 - \frac{1}{4\pi\varepsilon _0}\frac{e^2}{r}
+\end{equation*}
+Diese Gleichung entspricht der klassischen Mechanik (wenn sich das Elektron mit Radius $r$ um das Proton bewegt). \newline
+
+Geht ein Atom von der Energie $E_n$ in die niedrigere Energie $E_m$ über, so ist die Frequenz $v$ des emittierten Lichts gleich
+\begin{equation*}
+	v = \frac{1}{h}(E_n - E_m)
+\end{equation*}
+
+\begin{equation*}
+	E_n = -\frac{hcR}{n^2}
+\end{equation*}
+
+\paragraph{Elektron}
+
+Der \textbf{Drehimpuls} ist ein ganzzahliges Vielfaches von $\hbar$ und somit auf bestimmte Werte beschränkt.
+\begin{equation*}
+	L = rp = rm_e v = \frac{nh}{2\pi} = n\hbar
+\end{equation*}
+
+Die max. kin. Energie, die ein Elektron nach dem Verlassen einer mit Licht bestrahlten Metalloberfläche haben kann, ist gleich
+\begin{equation*}
+	E_k = hv - A
+\end{equation*}
+wobei $A$ die Austrittsarbeit ist.
+
+Die Energie eines einzelnen Elektrons ist gleich
+\begin{equation*}
+	E = hv = \frac{h\omega}{2\pi} \equiv \hbar\omega
+\end{equation*}
+
+Der Impuls eines einzelnen Elektrons ist gleich
+\begin{equation*}
+	p = \frac{h}{\lambda} = \frac{hk}{2\pi} \equiv \hbar k
+\end{equation*}
+
+\paragraph{Photon}
+
+Die Energie eines einzelnen Photons ist gleich
+\begin{equation*}
+	E = hv = \frac{hc}{\lambda}
+\end{equation*}
+
+\end{multicols}
+\end{document}
