@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  22 MAY 2016 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  23 MAY 2016 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -228,20 +228,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[15] [16] (/Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.aux) ) 
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[18] [19] (/Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.aux) ) 
 Here is how much of TeX's memory you used:
  1648 strings out of 493089
  23769 string characters out of 6134842
- 86775 words of memory out of 5000000
+ 92775 words of memory out of 5000000
  5144 multiletter control sequences out of 15000+600000
  5771 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,23p,694b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,5n,23p,1093b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.pdf (16 pages, 949898 bytes).
+Output written on /Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.pdf (19 pages, 958041 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

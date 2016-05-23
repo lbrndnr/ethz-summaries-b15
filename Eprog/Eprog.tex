@@ -191,6 +191,31 @@ When a class B inherits from a class A, you can redefine a feature that was alre
 With polymorphism we have an object T that may be either it's static type A or it's dynamic type B. Both A and B have a feature T.r where r has been redefined in B. The effect of the call T.r will depend on the dynamic type of T.(Vs dynamic binding which will call the static type feature (c++)).\\Static typing will guarantee that there is \hl{at least one} version of the feature that will be able to be called.\\Dynamic binding guarantees that every call will use the \hl{most appropriate version} of the feature.
 \subsubsection{Single choice principle}
 If a system supports several variants of a notion, knowledge of the set of variants should be limited to one module(principle behind dynamic binding).
+\section{Design by contract}
+\subsection{Preconditions}
+Expresses what a supplier routine requires to function properly when invoked by the client. The responsibility for a correct invocation lies on the client.\\They are boolean expressions checked every time the routine is invoked.
+\subsubsection{Structure}
+function()\\\tab require\\\tab\tab precondition\\\tab do\\\tab\tab ...\\\tab ensure\\\tab end\\\\A precondition is generally preceded by a text label to make it more readable, example of a precondition: value\_positive: a > 0 (do not need to write this during the exam waste of time).\\Precondition can be linked together using and, or, not, = implies. Writing two expressions on two consecutive lines is considered as an implicit and. You can also invoke separate boolean expressions that are too complicated or too long to put in the precondition.\\If a client invokes a routine and doesn't satisfy the precondition, an exception will be invoked, the line and the label of the precondition will come in handy.
+\subsubsection{Design by contract vs defensive programming}
+Design by contract assumes that one should trust clients to invoke a routine correctly. The checks for correct routine invocation are encoded in the supplier using preconditions. The checks can be disabled at runtime if we are sure of the code. Preconditions are intended for scenarios that should never happen(a fail points to an error in the code). Preconditions should be as strong as possible, so that if they do not fail, the program should run as expected.
+\subsection{Postconditions}
+Expresses what a supplier routine guarantees if invoked properly by the client. Responsibility for a correct result lies on the supplier. Can be disabled if sure that the code is correct.\\They are boolean expressions checked after the execution of the body.\\Postconditions are located after the ensure in the routine. They are the same thing as preconditions otherwise.
+\subsubsection{Old keyword}
+Old is used to see how a value has changed after the routine body execution. For example: value\_added: value = old value + a\\\\In postconditions we specify what has changed during the execution and how it has changed.
+\subsection{Class invariants}
+Class invariants express properties that all objects of the class must satisfy.\\They are boolean expressions checked every time a supplier's status is observable by clients, \hl{as soon as an object is created}, \hl{before and after a feature is available to clients}.
+\subsubsection{Structure}
+class classname\\invariant\\\tab boolean expressions\\\\
+they are written the same as preconditions.\\Class invariant are aloud to be broken in these two scenarios: \hl{before the invocation of a creation feature} and \hl{in the body of any routine}. The invariant has to always hold when it matter: \hl{when the values of the object are available to clients via queries}
+\subsection{Contracts and inheritance}
+This section explains what happens to contracts in inheritance, polymorphism and dynamic binding.
+\subsubsection{All you need to know}
+We take the point of view of a client C accessing a feature f of class A and redefined in classB that inherits form A.\\The \hl{precondition in the redefined f can only stay the same or be weakened}\\\hl{the postcondition in the redefined f can only stay the same or be strengthened}\\\hl{the class invariant in the descendant class can only stay the same or be strengthened}.\\\\If i want to redefine a precondition of a redefined function f then I have to write:\\f\\\tab require \hl{else} precondition\\\\This new precondition has to be weaker than the old one.\\The similar goes for postcondition but, fi you want to change the postcondition you have to write:\\ ensure \hl{then} postcondition\\\\This postcondition has to be stronger than the old one.\\For invariants, it is similar for the postconditions and you just write new class invariants when writing the class and \hl{the new invariant will be added to those of the parent class}, they also have to be stronger. If you are happy with any of the old post, pre or invariant just dont write require, ensure or invariant.
+\subsection{Putting it all together}
+For performance, you can enable or disable(also partially) contracts at runtime(disable after program tested).\\Desing by contract allows tests to be generated automatically.\\Contracts should never be used to validate user input(or external sources).\\ Too weak == sound == incomplete, too strong == unsound == complete.
+ 
+
+
 
 
 
