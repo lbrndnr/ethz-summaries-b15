@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\back[1][-3cm]{\hspace*{#1}}
+\usepackage{graphicx}
+\usepackage{soul}
+\graphicspath{ {./eprog/} }
+\begin{document}
+\title{introduction to programming}
+\section{objects and classes}
+\subsection{object}
+Is a software machine that allows other elements to access (query) and modify (command) a collection of data. F.e an object can represent a city or a button.
+\\\\Each object belongs to a class that defines the features or operations one can call on this class. It allows other software to access data on modify data on this object (read/write).
+\\ An object is an instance of a class.
+\\ Objects only exist during the runtime of a program.
+\subsubsection{object oriented programming}
+In object oriented programming you model objects of the real world into physical/abstract or software object.
+\subsection{class}
+A class is a sort of category for an object. All objects of a class share the same properties (a class is like a category of things, type).
+\\ A program is a model.
+\\ A class is the generating class of an object.
+\\ Classes only exist in the software text.
+\subsection{architecture}
+Architecture is the design of a program into it's classes and the relations between them.
+\subsection{implementation}
+Writing the instructions (algorithms) and data structures of the classes.
+\section{interfaces and information hiding}
+\subsection{clients and suppliers}
+A client of a software mechanism is any sort of system that uses it. f.e person or other software(electronic system).
+\\ The software mechanism is the supplier to the system. f.e. class or group of classes.
+\\ Arrow always goes from client to suppliers.
+\subsection{interface}
+An interface is the description of the techniques enabling clients to use it.\\
+A program interface is an interface where the client is other software. API: Abstract Program Interface. 
+\subsection{API's}
+Objects are characterised by the operations clients may apply on them.
+\paragraph{queries}
+Operations that return the state or information of an object.
+\paragraph{commands}
+Operations that change the state of an object.
+\\\\ The interface is how we (the client) are going to see the object.
+Most of the time we do not wan't to see the implementation behind an object and we only wan't to see the interface = Information hiding.
+\paragraph{information hiding}
+The designer of the class must decide which properties are accessible to the clients and which are internal(only for the purposes of the class itself (public and secret)).
+\section{Commands and queries, uniform access principal}
+\subsection{Features: commands and queries}
+Every feature call, will always be called on a object (your\_object.your\_feature). A feature is an operation available on a certain class of objects. Their are three kinds of features:
+	\\Commands\\Queries\\Creation procedures
+	\paragraph{Queries} calling a query should not change the answer the program gives back! The goal of a query is to obtain information about the object without modifying it.
+	\paragraph{Commands} change the properties of one or multiple objects.
+\subsection{Routines, procedures, functions, attributes, and the Uniform Access Principle}
+\subsubsection{Routine (=method )}
+Removing details specifics and capturing the essence of the information.\\ In programming there are two sorts of abstractions: \\Data abstraction, done with a class.\\Computational abstraction (algorithms) done with routines.\\Example of a routine in Eiffel:\\r(arg: type)\\require\\\tab preconditions...\\do\\\tab instructions...\\ensure\\\tab  postconditions...\\end
+\subsubsection{Uses of routines}There are two different uses for Routines:\paragraph{bottom-up:} Encapsulating a computation for reuse.\paragraph{Top-down:} Calling a routine before having written it. Allows to write the bigger code at the beginning and go to the little details later.
+\subsubsection{Kinds of routines}
+Their are two kinds of routines:\paragraph{Procedure:} doesn't return a result.\paragraph{Function:} returns a result(f(arg: type):result type).\\
+\back\includegraphics[scale = 0.5]{feature}
+\subsubsection{Attributes}
+Each class has an attribute field where there is every object of this class in the program.
+\subsubsection{The uniform access principal}
+Features should be accessible to the client in the same way wether implemented by storage or by computation(it does not matter if what you are looking for already exists in the memory or if you have to compute it from some other pieces of memory(in the image function and attribute are therefore equal)). 
+\section{Object creation}
+\subsection{basics}
+\subsubsection{Identifier}
+An identifier is a name chosen to describe certain elements of the program such a class, feature or object.\\ An identifier that denotes a value at runtime is called an \hl{entity}.\\ If the value of an entity can change during runtime it is called a \hl{variable}.\\ An entity detonating an object is \hl{attached} to this object. 
+\subsubsection{Object creation}
+First you create an object in memory and then attach an entity to it. First you have to declare the entity with a certain type (leg1: LEG). Then you create leg1(create leg1). Leg1 will then be created during runtime and initialised with the default values.\\ If you want to create an object with other than the default values, you can create \hl{creation procedures} for the class.\\\\class point create\\\tab default\_create, make\_cartesian, make\_polar\\feature\\\tab...\\end\\\\ You then have to declare these creation procedures in the feature. Then you can declare the object as(create point.make\_polar(r,t)) (create point == create point.default\_create).
+\subsection{Void references}
+\subsubsection{Initial state of an object}
+Initially, before the creation of an object, it's reference is void. During execution a reference is either \hl{void} or \hl{attached}(to find out you can write x=void or x/=void).
+\subsubsection{Utility of void references}
+For example in a linked list, to know where the list ends the next next reference of the last element of the list is void.\\ Void references do cause trouble however \hl{(you cannot call a feature on a reference wich is void)}. Eiffel is void safe, therefore the code will not compile if the code might cause a void call.
+\subsection{Object creation and the system root}
+\subsubsection{How it all starts}
+Executing a system is the creation of a \hl{root object}, this is an instance of the \hl{root class}, using a special creation procedure of this class called a \hl{root procedure}. In every program you have to choose a root class and a root procedure(main class in java).
+\subsubsection{Current object}
+Is the latest object on which an operation was started. There is always a current object during execution, initially it is the root object(this in java). When you call x.f(a), x becomes the new current object, after it has finished executing the current object before it was x becomes the current object again.
+
+\section{References, Assignment, and Object Structure}
+\subsection{Objects, values and references}
+\subsubsection{Object structure}
+An object is made out of fields, each field has a value which is either a \hl{basic value} or a \hl{reference}.
+\subsubsection{Types} There are also two kinds of types, \hl{reference} where the entity has a reference to it's type, or \hl{expanded} where the entity is it's type (an expanded type can not be void since it corresponds to an object). Many objects can have a reference to the same type, but expanded type cannot share.\\ In order to get expanded objects, the classes have to be declared as expanded:\\\\ expanded class E\_STATION\\\\All classes such as integer, boolean, character etc.. are all expanded classes.
+\subsubsection{Initialisation}
+Their are automatic initialisation rules:\\\tab 0 for numbers\\\tab null for characters\\\tab false for booleans\\\tab void for reference\\
+\subsubsection{Strings}
+Strings are actually and object in eiffel and java. Therefore the field containing a String in an object will be a reference field.
+\subsection{Kinds of feature calls and the client relation}
+\subsubsection{Attributes}
+The fields of a class reflect it's attributes.\\ To set a field: x:=new\_x(= in java (instruction))(= is equal to == in java(expression)). The value of the field is then changed or the reference.
+\subsubsection{Feature calls}
+There are two types of feature calls: \hl{qualified} and \hl{unqualified}.
+\paragraph{Unqualified call} when the feature is being called on the current object (set(new\_x, new\_y) or Current.set(new\_x, new\_y)).
+\paragraph{Qualified call} the feature is being called to a different object and this object becomes the new current object (position.set(new\_x, new\_y)).
+\subsubsection{The client relation}
+If a class has a field that is a reference to another class and features calls on this field with feature from the other class. The first class is a client of the second.
+\subsection{Assignment}
+\subsubsection{Entities}
+An entity is a name in the program that denotes run-time values.\\ Some entities are \hl{constant} and others are \hl{variables}: attributes or local variables.\\ changing a variable value: target:=source\\ The target may be an attribute, a result of a function or a local variable. A source a call to a query or an arithmetic expression.
+\subsubsection{Unreachable objects}
+When a field in the memory has no reference to it.\\There are two approaches to this problem: Manual(c++,Pascal) the programmer has to take of this, Automatic garbage collection (eiffel, java).
+\subsubsection{Assignments}
+Two types of assignments: reference(replaces the reference with another one (or void)) and expanded(copies the value).
+\subsubsection{Local variables}
+Local variables are entities that only exist inside a routine. Declaration:\\\\require\\\tab ...\\local\\\tab x: Real\\do\\\tab ...\\ensure\\\tab ...\\end\\\\ In this case x is a local variable.
+\section{Logic}
+\subsection{Boolean logic}
+\subsubsection{boolean expressions}
+In a boolean expression there are: boolean variable (denoting boolean values) and boolean operators (not, or, and, =, implies).\\Truth assignment for a set of variables is a choice of true or false for every variable.
+\subsubsection{Tautologies}
+A tautology is a boolean expression that has true for every possible truth assignment.
+\subsubsection{Contradiction}
+A contradiction is the opposite of Tautology.
+\subsubsection{Satisfiable}
+An expression is satisfiable if for one truth assignment it is true.
+\subsubsection{De Morgan's laws}
+You can use these laws to simplify boolean expressions.\\ and and or are associative: a and (b and c) = (a and b) and c. The same for or.
+\subsubsection{Implies}
+Implies is only false if a implies b if a is true and b is false.\\a implies b = not b implies not a.
+\subsubsection{semi-strict operators and quantifiers}
+\subsubsection{semi-strict boolean operators}
+If you divide by x you get an undefined result if x = 0. Therefore you want to check if x = 0 before you do the division and so you need a \hl{non-commutative} version of and and or: \hl{semi-strict boolean operator}.
+\\\hl{and then} = semi-strict version of and.\\\hl{or else} = semi-strict version of or.\\semi-strict boolean operators allow you to use an order in boolean expressions.\\
+a implies b =  not a or else b (implies is always semi-strict).
+\subsubsection{Universal quantifiers}
+Universal quantifiers are \hl{there exists} and \hl{for all}.\\On a empty set: there exists is always false and for all is always true.
+\section{Control Structures}
+\subsection{Basics and compounds}
+\subsubsection{Algorithms}
+An algorithm is a process to be carried out by a computer.\\ The difference between an algorithm and a program is that an algorithm is more abstract independent of a platform and a programming language. A program normally contains multiple algorithms. Programs are the combination of data structures and algorithms.
+\subsubsection{Control structures}
+\paragraph{Definition:}
+ program construct that describes the scheduling of basic actions.\\\\There are three fundamental control structures: \\\tab sequence\\\tab conditional\\\tab loop\\they are the control structures of structured programming.
+\paragraph{Sequence}
+to achieve c form a, I first achieve b from a, and then c from b.
+\paragraph{Conditional}
+Solve the problem separately on two or more subsets of the input set.
+\paragraph{Loop}
+solve the problem on successive approximations of its input set.
+\subsubsection{Correctness of a compound}
+Are done with post and pre condition.\\The postcondition an instruction must imply the precondition of the next instruction.
+\subsection{Conditionals}
+\subsubsection{Structure}
+if\\\tab condition\\then (or if condition then)\\\tab instructions\\else (elseif) \\\tab other instructions\\end
+\\You can combine conditional instructions in other ones: \hl{nesting} but it is better to just use elseif.
+\subsubsection{Multi-branch statement(case)}
+\hl{Structure:}\\\\
+inspect expr(character or integer)\\\tab when value1 then\\\tab\tab instruction1\\\tab when value2,value3 then\\\tab\tab instruction2\\\tab when value3..value5(anything between value4 and value5) then\\\tab\tab instruction3 \\\tab else\\\tab\tab other\_instruction\\end\\\\
+The inspect table stops as soon it reaches one that is true.\\ You have to write the else on the end of multi-branch or it will cause an exception if it goes to the end.
+\subsection{Loops}
+\subsubsection{Structure}
+from\\\tab initialisation\\invariant\\\tab invariant expression\\variant\\\tab variant expression \\until\\\tab exit condition\\loop\\\tab body\\ensure\\end\\\\
+The loop will keep on going until the exit condition becomes true. invariant and variant are optional.
+\subsubsection{Operations on a list}
+When we have a list there is a cursor which gives us the current position in the list.
+\paragraph{Commands}on lists\\
+\tab start\\\tab back\\\tab forth\\\tab count\\\tab before\\\tab after\\ start = position 1, before = position 0 and after = position count + 1.\\ there for in a loop you can write:\\from \\\tab line.start\\until \\\tab line.after\\loop\\\tab line.forth\\end\\
+\subsubsection{Across loops}
+An across loop is a more compact way to write a loop that traverses a structure:\\across structure as c loop\\\tab do something with c.item\\end\\
+\subsubsection{Other loop types}
+these are not available in eiffel\\
+while condition(while this is true (inverse to normal loop)) do\\\tab body\\end\\\\
+repeat\\\tab body\\until \\\tab condition\\end\\\\
+for i:a..b (i form a to b) do\\\tab body\\end 
+\subsection{Loop invariants and variants}
+\subsubsection{Invariants}
+The invariant helps to check that if the loop terminates it fulfils it's goal and is a \hl{boolean expression}. The variant helps to check that the loop will terminate. The loop body will always be very tightly tied to the invariant.\\The invariant can be seen as the set in which the loop operates and the loop can never exit this set. Therefore the body must preserve the invariant.\\The conjunction of the invariant and the exit condition gives us the effect of the loop.
+\subsubsection{Variants}
+Invariants are used to ensure that loops will terminate and is an \hl{integer expression}.\\The integer expression must be:\\\tab non negative after initialisation\\\tab decrease while remaining non negative for every iteration of the body\\\tab executed with exit condition not satisfied.\\For example in a loop that traverse a list the invariant would be:\\\tab list.count - list.index + 1\\The \hl{Entscheidungsproblem}: the fact that no compiler will be able to tell if a loop will terminate(Alan Turing).
+\section{Single inheritance}
+\subsection{Single inheritance}
+\subsubsection{Classes}
+Classes can be viewed in two different ways, as a \hl{module}(groups a set of services), or as a type. As a module it has a set of features and as a type it has a series of runtime instances.
+\subsubsection{Inheritance basics}
+Describing a new class as a extension or specialisation of an existing class(or several with multiple inheritance).\\If B inherits from A,:\\ as modules :\hl{all features of A are available in B}.\\ As types: \hl{whenever a type A is needed a type B will also be acceptable}.\\In this case B is a \hl{heir} of A and A is a \hl{parent} of B.\\The \hl{descendants} of A are A and the descendants of A's heirs.
+\subsubsection{Declaring a heir class}
+class\\\tab class name\\inherit\\\tab this class's parent\\feature\\end 
+\subsubsection{Features}
+An \hl{immediate feature} is a feature declared in a class itself or it can be a \hl{declared feature}.
+\subsection{Polymorphism}
+Related to the type view of inheritance(polymorphic = multiple types).
+\subsubsection{Polymorphic assignement}
+If you have a reference object initialised as an object of type T where, A and B inherit from T. You can change the reference of T to either A or B(however you cannot call a feature defined in A or B on T even after you have changed it's type because of the compiler).\\For example if you have a class transport, a class taxi and a class car. If T is of type transport, you can then change T to be of type car or taxi, according to the choice of the client for example.\\\hl{The type of source has to be the descendant of the type of the target} when target := source.
+\subsubsection{Static and Dynamic types}
+The static type of an entity is the type used in it's declaration.\\The dynamic type of an entity is the type of the object that this entity is attached to, during runtime.\\An entity can only have one static type but can have multiple dynamic types.\\The dynamic type will always conform(is a descendant of) it's static type. A expanded type conforms only to itself.
+\subsubsection{Static typing}
+When a language is static typed the compiler checks that there will be no type faults. If you call x.f, x will always have a feature f.
+\subsection{Dynamic binding}
+\subsubsection{Redefinition}
+When a class B inherits from a class A, you can redefine a feature that was already declared in the class A to function differently in B.\\class B inherit A\\\tab redefine\\\tab\tab feature\\\tab end\\create\\feature\\invariant\\end\\\\You can not have two features with the same name in A and B.
+\subsubsection{Dynamic binding}
+With polymorphism we have an object T that may be either it's static type A or it's dynamic type B. Both A and B have a feature T.r where r has been redefined in B. The effect of the call T.r will depend on the dynamic type of T.(Vs dynamic binding which will call the static type feature (c++)).\\Static typing will guarantee that there is \hl{at least one} version of the feature that will be able to be called.\\Dynamic binding guarantees that every call will use the \hl{most appropriate version} of the feature.
+\subsubsection{Single choice principle}
+If a system supports several variants of a notion, knowledge of the set of variants should be limited to one module(principle behind dynamic binding).
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
