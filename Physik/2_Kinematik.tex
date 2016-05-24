@@ -20,7 +20,6 @@
 
 \begin{document}
 \begin{multicols}{3}
-	
 
 \section{Kinematik}
 
@@ -82,15 +81,14 @@ Schlussendlich folgt daraus:
 $x(t)$ ist die Stammfunktion von $v(t)$ \\
 $x_0$ entspricht dem Startpunkt \\
 $v_0$ entspricht der Startgeschwindigkeit\newline
-\newline
-\newline
-Falls die Bewegung gleichf{\"o}rmig und geradlinig \\
-($v(t) = konst. \Rightarrow a(t) = 0$) gilt:\newline
+
+\paragraph{Bewegung gleichf{\"o}rmig und geradlinig}\mbox{} \\
+$v(t) = konst. \Rightarrow a(t) = 0$ gilt:\newline
 \begin{equation*}
 	x(t) = x_0 + v_0(t - t_0)
 \end{equation*}
-\newline
-Falls die Bewegung gleichf{\"o}rmig beschleunigt und geradlinig ($a(t) = a_0 = konst.$) gilt: \newline
+\paragraph{Bewegung gleichf{\"o}rmig beschleunigt und geradlinig}\mbox{} 
+$a(t) = a_0 = konst.$ gilt: \newline
 \begin{equation*}
 \begin{split}
 		v(t)& = v_0 + a_0(t - t_0)\\
@@ -98,7 +96,6 @@ Falls die Bewegung gleichf{\"o}rmig beschleunigt und geradlinig ($a(t) = a_0 = k
 \end{split}
 \end{equation*}
 \newline
-
 Spezialfall: $x_0 = v_0 = t_0 = 0$ \newline
 \begin{equation*}
 \begin{split}
@@ -152,8 +149,34 @@ $V(t) = V_r + V_{\varphi}$
 $\>\>\>\>$ mit 
 $V_{\varphi} = r\frac{d{\varphi}}{dt}e_{\varphi} = r{\omega}e_{\varphi}$
 
+\paragraph{Beschleunigung:}
+\begin{equation*}
+a(t) = a_x(t)e_x + a_y(t)e_y = \frac{dv_x}{dt}e_x + \frac{dv_y}{dt}e_y = \frac{d^2x}{dt^2}e_x + \frac{d^2y}{dt^2}e_y
+\end{equation*}\newline
+In Polarkoordinaten:
+\begin{equation*}
+a(t) = \underbrace{\frac{d^2r}{dt^2}e_x - r\left(\frac{d\varphi}{dt}e_y\right)^2}_{\substack{1}}e_r + \left(\underbrace{2 \frac{dr}{dt}\frac{d\varphi}{dt}+r\frac{d^2\varphi}{dt^2}}_{\substack{2}}\right)e_\varphi
+\end{equation*}
 
+1 = radiale Beschleunigung \newline
+2 = Winkelbeschleunigung
+\newline
 
+\subsection{Zerlegung/Integration der Bewegung (mehrdimensional)}
+Aus den Bewegungsgleichungen sieht man, dass die zueinander senkrecht stehenden x- und y-Bewegungen voneinander unabh{\"a}nig sind.
+\newline
+$=>$ Bei 3 Dimensionen kann diese Betrachtung einfach erweitert werden
+
+\begin{equation*}
+	v(t) = v_0 + a_0(t)
+\end{equation*}
+\begin{equation*}
+r(t) = r_0 + V_0t \frac{1}{2}a_0t^2 
+\end{equation*}
+\begin{equation*}
+	= \left(x_0 + v_{0x} + \frac{1}{2}a_{0x}t'2\right)e_x + \left(y_0 + v_{0y} + \frac{1}{2}a_{0y}t'2\right)e_y
+\end{equation*}
+\newline
 
 \subsection{Bahnkurve beim Ballwurf}
 
@@ -161,11 +184,19 @@ Zur Zeit $t_{max}$ erreicht die Kugel den h{\"o}chsten Punkt ihrer Bahnkurve. In
 \begin{equation*}
 	t_{max} = \frac{v_{0y}}{g}
 \end{equation*}
+\columnbreak
+\newline
 
 Die maximale H{\"o}he der Kugel ist:
 \begin{equation*}
 	y_{max} = y_0 + \frac{{v_{0y}}^2}{2g}
 \end{equation*}
+
+
+
+\subsection{Schuss auf fallende Platte}
+Eventuell noch mit Beispiel ergänzen
+
 
 \subsection{Gleichf{\"o}rmige Kreisbewegung}
 
@@ -178,6 +209,21 @@ mit Winkelgeschwindigkeit $\omega$ und Periode $T$:
 	\varphi(T) = 2 \pi \Rightarrow T = \frac{2 \pi}{\omega}
 \end{equation*}
 
+Strecke:\newline
+\begin{equation*}
+	s(t) = r\varphi(t) = r \omega t 
+\end{equation*}
+
+\paragraph{Vektorielle Darstellung}
+\begin{equation*}
+	r(t) = r \cos(\varphi(t))e_x + r \sin(\varphi(t))e_y
+\end{equation*}
+Da Bewegung gleichf{\"o}rmig ($\omega$ = konstant) folgt:
+\begin{equation*}
+	r(t) = r \cos(\omega t)e_x + r \sin(\omega t)e_y
+\end{equation*}
+
+
 \subsubsection{Geschwindigkeitsvektor}
 Betrag: $|\vec{v}| = r \omega = konst.$ \newline
 Die Richtung der Geschwindigkeit ist senkrecht zum Ortsvektor.
@@ -185,10 +231,10 @@ Die Richtung der Geschwindigkeit ist senkrecht zum Ortsvektor.
 \subsubsection{Beschleunigungsvektor = Zentripetalbeschleunigung}
 Zeigt in Richtung Zentrum des Kreises mit Betrag: $\vec{a} = r \omega ^2 = \frac{v^2}{r}$
 
-
 \begin{center}
 	\includegraphics[width=200pt]{images/beschleunigung_radial}
 \end{center}
+
 
 
 \end{multicols}
