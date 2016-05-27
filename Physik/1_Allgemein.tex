@@ -18,7 +18,7 @@
 \graphicspath{ {images/} }
 
 \begin{document}
-\begin{multicols}{3}
+\begin{multicols*}{3}
 
 \section{Allgemeines}
 
@@ -33,17 +33,15 @@
 
 \subsection{Winkel}
 
-\begin{equation}
+\begin{equation*}
 	2\pi rad = 360°
-\end{equation}
-\begin{equation}
-	1 \space rad = \frac{180}{\pi} \approx 57.296°
-\end{equation}
+\end{equation*}
+\begin{equation*}
+	1 \space rad = \frac{170}{\pi} \approx 57.296°
+\end{equation*}
 \textbf {Umrechnen:}
 \newline Radiant $\rightarrow$ Grad: Winkel*180°/$\pi$ 
 \newline Grad $\rightarrow$ Radiant: Winkel*$\pi$/180°
-
-
 
 \subsection{Raum und Zeit}
 
@@ -51,9 +49,9 @@
 \newline \textbf{Zeit} = Dauer bestimmter, reproduzierbarer Prozesse
 \paragraph{Beispielgr{\"o}ssen}
 \mbox{}\\ 
-\begin{equation}
+\begin{equation*}
 	1  \text{ pc} = 3,0857*10^{16} m = 206'247 \text{ A.U.}
-\end{equation} 
+\end{equation*} 
 wobei pc = Parsec und A.U. = Astronomical Unit = mittlerer Abstand zwischen Erde und Sonne
 \newline
 \newline Gr{\"o}sse des sichtbaren Universums $\approx 10^{10}$ pc 	
@@ -74,9 +72,9 @@ Weil kein "absoluter" Punkt im Raum existiert, muss ein Punkt \textbf{P} im Raum
 \paragraph{Die kartesischen Koordinaten}
 
 \mbox{}\\ Im kartesischen Koordinatensystem definiert man 3 zueinander senkrechte Richtungen x (vorne-hinten), y (links-rechts), z (oben-unten). Der Punkt P wird bezügl. des Ursprungs mit drei kartesischen Koordinaten lokalisiert:
-\begin{equation}
+\begin{equation*}
 	\textbf{OP} = (x,y,z) = (OA, OB, OC)
-\end{equation}
+\end{equation*}
 wobei A = Projektion von P auf die x-Achse
 \newline B = Projektion von P auf die y-Achse
 \newline C = Projektion von P auf die z-Achse
@@ -90,7 +88,7 @@ Im Kugelkoordinatensystem wird ein Punkt \textbf{P} im Raum durch 3 Koordinaten 
 \newline $\vartheta$ = Winkel zwischen \textbf{OP} und z-Achse; 0 $\leq \vartheta \leq \pi$
 \newline $\varphi$ = Winkel zwischen \textbf{OP'} und x-Achse; 0 $\leq \varphi \leq$ 2$\pi$
 \begin{center}
-	\includegraphics[width=200pt]{images/übergang_koordinatensysteme}
+	\includegraphics[width=180pt]{images/übergang_koordinatensysteme}
 \end{center}
 Wenn $\vartheta$ = $\frac{\pi}{2}$, dann liegt P auf der x-y-Ebene, man wird dann die zweidimensionalen \textbf{Polarkoordinaten} (r, $\varphi$) verwenden.
 
@@ -120,9 +118,9 @@ $\begin{pmatrix}
 \paragraph{Zylinderkoordinaten}
 
 \mbox{}\\ Zylindrische Koordinaten sind Polarkoordinaten mit einer dritten, senkrechten, Koordinaten ergänzt. 
-\begin{equation}
+\begin{equation*}
 	\textbf{OP} = (\rho, \varphi, z)
-\end{equation}
+\end{equation*}
 
 von Zylinder- zu kartesischen Koordinaten:
 \newline 
@@ -149,33 +147,34 @@ $\begin{pmatrix}
 \subsection{Vektoren}
 
 \mbox{}
-\textbf{Skalarprodukt:} \begin{equation}
+\textbf{Skalarprodukt:} 
+\begin{equation*}
 	a \cdot b = |a||b| cos\varphi
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	a \cdot b = a_{x} b_{x} + a_{y} b_{y} + a_{z} b_{z}	
-\end{equation}
+\end{equation*}
 
 wobei  $\varphi$ der Winkel zwischen den beiden Vektoren a und b ist. Wenn das Skalarprodukt verschwindet, ist a oder b = 0 oder die beiden Vektoren stehen senkrecht aufeinander.
 \newline
 \newline \textbf{Cosinussatz:}
-\begin{equation}
+\begin{equation*}
 	|c^|{2} = |a|^{2} + |b|^{2} + 2|a||b|cos\varphi
-\end{equation}
+\end{equation*}
 \textbf{Vektorprodukt:}
-\begin{equation}
+\begin{equation*}
 	c = a \times b = -b \times a
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	a \times b = (a_{y}b_{z} - a_{z}b_{y})e_{x} +  (a_{z}b_{x} - a_{x}b_{z})e_{y}	 +  (a_{x}b_{y} - a_{y}b_{x})e_{z}	
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	c = ab sin \varphi
-\end{equation}
+\end{equation*}
 wobei der Betrag des Vektors \textbf{c} gleich der Fläche des Parallelogramms ist, welche \textbf{a} und \textbf{b} aufspannen. \textbf{c} steht senkrecht auf \textbf{a} und \textbf{b}. Wenn die Vektoren parallel sind, ist das Vektorprodukt gleich 0. 
 
 
 \
 	
-\end{multicols}
+\end{multicols*}
 \end{document}
