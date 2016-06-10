@@ -211,8 +211,8 @@ Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=200pt]{images/hasse}
-	\caption{Hasse Diagram of the Poset $(\{1,2,3,,5,6,9\};|)$}
+	\includegraphics[width=400pt]{images/hasse}
+	\caption{Hasse Diagram of the Poset $(\{2,3,4,5,6,7,8,9\};|)$ and $(\{1,2,3,4,6,8,12, 24\};|)$}
 \end{figure*}
 
 \subsection{Function}
@@ -268,6 +268,15 @@ The \textbf{union of a countable list} of countable sets is countable (can be co
 
 \section{Graph Theory}
 
+\subsection{Special Graphs}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4.5cm, noitemsep]
+	\item[complete graph $K_n$] $n$ vertices, $(n-1)$-regular (any two vertex pair is directly connected)
+	\item[tree:] \emph{undirected, connected} graph with no cycles and $n-1$ edges.
+	\item[hypercube $Q_d$:] \emph{$d$-regular} with $2^d$ vertices and $2^{d-1}d$ edges
+	\item[$(m,n)$-mesh:] $mn$ vertices
+\end{description}
+
 \subsection{Traversals}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=4.5cm, noitemsep]
@@ -279,17 +288,14 @@ The \textbf{union of a countable list} of countable sets is countable (can be co
 
 \subsection{Planar Graphs}
 
-A \textbf{tree} is an \emph{undirected, connected} graph with no cycles and $n-1$ edges. \\
-
 For \emph{connected, planar} graphs, the following equations hold:
-\begin{equation*}
-\begin{split}
-	\textbf{number of regions} \ r &  = |E| - |V| + 2 \\
-	\textbf{sum of the degrees of the regions} & = \Sigma_{v \in V}deg(v) = 2|E| \\
-	\text{if} \ |V| \geq 3 & \Rightarrow |E| \leq 3|V| - 6 \\
-	\text{if} \ |V| \geq 3 \text{ and bipartite} & \Rightarrow |E| \leq 2|V| - 4
-\end{split}
-\end{equation*}
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4.5cm, noitemsep]
+	\item $r  = |E| - |V| + 2$ (number of regions)
+	\item $\Sigma_{v \in V}deg(v) = 2|E|$ (sum of the degrees of the regions)
+	\item if $|V| \geq 3 \Rightarrow |E| \leq 3|V| - 6$
+	\item if $|V| \geq 3$ and bipartite $\Rightarrow |E| \leq 2|V| - 4$
+	\item $K_n$ is planar if and only if $n \leq 4$i
+\end{description}
 
 Rules to prove \textbf{non-planarity}
 \begin{itemize}[noitemsep]
@@ -507,7 +513,7 @@ The smallest subgroup of a group $G$ containing the element $g \in G$ is the \te
 \end{equation*}
 where the resulting group is called \textbf{cyclic}.\\
 
-\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order $|H|$ divides $|G|$.
+\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order i.e. $|H|$ divides $|G|$.
 
 \subsubsection{Cyclic Group}
 
