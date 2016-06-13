@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  10 JUN 2016 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  10 JUN 2016 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -328,69 +328,69 @@ File: images/hasse.png Graphic file (type png)
 Package pdftex.def Info: images/hasse.png used on input line 214.
 (pdftex.def)             Requested size: 400.0pt x 155.51418pt.
  [3] [4 <./images/hasse.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 302.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 303.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 303.
  [5] [6] <images/diffie-hellmann-1.png, id=38, 492.33937pt x 293.59688pt>
 File: images/diffie-hellmann-1.png Graphic file (type png)
  <use images/diffie-hellmann-1.png>
-Package pdftex.def Info: images/diffie-hellmann-1.png used on input line 409.
+Package pdftex.def Info: images/diffie-hellmann-1.png used on input line 411.
 (pdftex.def)             Requested size: 400.0pt x 238.54237pt.
  <images/diffie-hellmann-2.png, id=39, 352.81813pt x 231.36438pt>
 File: images/diffie-hellmann-2.png Graphic file (type png)
  <use images/diffie-hellmann-2.png>
-Package pdftex.def Info: images/diffie-hellmann-2.png used on input line 410.
+Package pdftex.def Info: images/diffie-hellmann-2.png used on input line 412.
 (pdftex.def)             Requested size: 400.0pt x 262.30714pt.
  [7] <images/rsa.png, id=44, 431.6125pt x 253.94875pt>
 File: images/rsa.png Graphic file (type png)
  <use images/rsa.png>
-Package pdftex.def Info: images/rsa.png used on input line 425.
+Package pdftex.def Info: images/rsa.png used on input line 427.
 (pdftex.def)             Requested size: 400.0pt x 235.35614pt.
  [8 <./images/diffie-hellmann-1.png> <./images/diffie-hellmann-2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 453--453
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 []|$\OMS/cmsy/m/n/10.95 h\U/msb/m/n/10.95 Z\OT1/cmr/m/n/10.95 ; +\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 i$\OT1/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--453
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 \OMS/cmsy/m/n/10.95 h\U/msb/m/n/10.95 Q \OMS/cmsy/m/n/10.95 ^^@ f\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ; \OMS/cmsy/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ;[] ; \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 i$\OT1/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--456
+Underfull \hbox (badness 10000) in paragraph at lines 458--458
 []|$\U/msb/m/n/10.95 Z\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 Q\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 R\OML/cmm/m/it/10.95 ; \U/msb/m/n/10.95 C$ \OT1/cmr/m/n/10.95 (com-mu-ta-
  []
 
 
-Overfull \hbox (54.26875pt too wide) in paragraph at lines 447--464
+Overfull \hbox (54.26875pt too wide) in paragraph at lines 449--466
  [][] 
  []
 
 [9 <./images/rsa.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 513--515
+Underfull \hbox (badness 10000) in paragraph at lines 515--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--553
+Underfull \hbox (badness 10000) in paragraph at lines 553--556
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
@@ -404,7 +404,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  38i,20n,38p,298b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/Laurin/Documents/ETH/2016/Summaries/Diskrete Mathematik/.texpadtmp/Diskrete Mathematik.pdf" (14 pages, 439523 bytes).
+Output written on "/Users/Laurin/Documents/ETH/2016/Summaries/Diskrete Mathematik/.texpadtmp/Diskrete Mathematik.pdf" (14 pages, 440486 bytes).
 PDF statistics:
  115 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

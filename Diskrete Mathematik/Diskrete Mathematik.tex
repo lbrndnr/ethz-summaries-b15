@@ -197,7 +197,7 @@ $a\ \theta\ b \Rightarrow [a] = [b]$\\
 $a\ \cancel{\theta}\ b \Rightarrow [a] \cap [b] = \emptyset$
 
 \subsection{Partial Order}
-\textbf{Example:} $\leq$ and $\geq$ on $\mathbb{Z}, \mathbb{Q}$ or $\mathbb{R}$\\ 
+\textbf{Example:} $\leq$ and $\geq$ on $\mathbb{Z}, \mathbb{Q}$ or $\mathbb{R}$, $=$ on $\mathbb{N}$\\ 
 A relation that is reflexive, antisymmetric, and transitive. \\
 
 Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
@@ -270,11 +270,12 @@ The \textbf{union of a countable list} of countable sets is countable (can be co
 
 \subsection{Special Graphs}
 
-\begin{description}[labelindent=16pt,style=multiline,leftmargin=4.5cm, noitemsep]
-	\item[complete graph $K_n$] $n$ vertices, $(n-1)$-regular (any two vertex pair is directly connected)
-	\item[tree:] \emph{undirected, connected} graph with no cycles and $n-1$ edges.
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
+	\item[complete graph $K_n$] $n$ vertices, $\frac{n(n-1)}{2}$ edges, $(n-1)$-regular (any two vertex pair is directly connected)
+	\item[compete bipartite graph $K_{m,n}$] $m+n$ vertices, $mn$ edges, with two vertex subsets $|V_b| = m$ and $|V_w| = n$
+	\item[tree:] undirected, connected graph with no cycles and $n-1$ edges.
 	\item[hypercube $Q_d$:] \emph{$d$-regular} with $2^d$ vertices and $2^{d-1}d$ edges
-	\item[$(m,n)$-mesh:] $mn$ vertices
+	\item[mesh $M_{m,n}$:] $mn$ vertices
 \end{description}
 
 \subsection{Traversals}
@@ -388,7 +389,8 @@ It follows:
 \begin{equation*}
 \begin{split}
 	R_m(a + b) & = R_m(R_m(a) + R_m(b)) \\
-	R_m(ab) & = R_m(R_m(a) \cdot R_m(b))
+	R_m(ab) & = R_m(R_m(a) \cdot R_m(b)) \\
+	R_m(a^{bc}) & = R_m(R_m(a^b)^c)
 \end{split}
 \end{equation*}
 
@@ -538,8 +540,9 @@ $\langle \mathbb{Z}_m^*; \odot, ^{-1}, 1\rangle$ is a group with the set
 
 The \textbf{Euler function} is defined as follows:
 \begin{equation*}
-	\varphi(m) = |\mathbb{Z}_m^*|
+	\varphi(m) = |\mathbb{Z}_m^*| = (p-1)(q-1)\ \text{with}\ n = pq
 \end{equation*}
+where $p$ and $q$ are prime.
 
 \emph{Hint:} If $p$ is a prime, then $\mathbb{Z}_p^* = \{1,...,p-1\} = \mathbb{Z}_p - \{0\}$
 
