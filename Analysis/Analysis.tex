@@ -22,8 +22,8 @@
 
 \section{Mengen}
 
-\begin{description}[labelindent=16pt,style=multiline,leftmargin=5.5cm, noitemsep]
-	\item[Obere Schranke:] $\exists b \in \mathbb{R}\ \forall a\in A:\ a \leq b$
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
+	\item[Obere/Untere Schranke:] $\exists b \in \mathbb{R}\ \forall a\in A:\ a \leq b$, $\exists c \in \mathbb{R}\ \forall a\in A:\ a \geq c$
 	\item[Supremum:] kleinste obere Schranke $\sup A$
 	\item[Infimum:] gr{\"o}sste untere Schranke $\inf A$
 	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
@@ -48,7 +48,7 @@
 	y & = r\sin(\varphi) \\
 	zw & = (re^{i\varphi})\cdot(se^{i\psi}) = rse^{i(\varphi + \psi)} \\
 	\sqrt[q]{z} & = \sqrt[q]{s}e^{i\phi}\text{, wobei }\phi = \frac{\varphi}{q} \mod \frac{2\pi}{q} \\
-	e^{i\frac{\pi}{2}} & = i,\ e^{i\pi} = 1, \ e^{-i\pi} = -1
+	e^{i(\frac{\pi}{2} + 2\pi k)} & = i,\ e^{i\pi} = 1, \ e^{-i\pi} = -1
 \end{split}
 \end{equation*}
 \end{minipage}
@@ -57,10 +57,12 @@
 
 \begin{equation*}
 \begin{split}
-	\overline{z} = x - iy\\
+	\overline{z} & = x - iy\\
+	z^{-1} & = \frac{\overline{z}}{|z|^2} \\
 	(a,b) \cdot (c, d) & = (ac-bd, ad+bc) \\
 	i & = \sqrt{-1}\\
 	i^2 & = -1 \\
+	|z|^2 & = z\overline{z} \\
 	|zw|^2 & = (zw) \cdot \overline{(zw)} = |z|^2|w|^2
 \end{split}
 \end{equation*}
@@ -69,8 +71,8 @@
 
 \begin{equation*}
 \begin{split}
-	\sin(0) = 0,\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0\\
-	\cos(0) = 1,\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1\\
+	\sin(0) = 0,\ \sin(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0,\ \sin(\frac{3\pi}{4}) = \frac{\sqrt{2}}{2}\\
+	\cos(0) = 1,\ \cos(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1,\ \cos(\frac{3\pi}{4}) = -\frac{\sqrt{2}}{2}\\
 \end{split}
 \end{equation*}
 
