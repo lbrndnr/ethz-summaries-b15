@@ -20,7 +20,29 @@
 
 \begin{document}
 
+\section{Trigonometrie}
+
+\begin{equation*}
+\begin{split}
+	\sin(0) = 0,\ \sin(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0,\ \sin(\frac{3\pi}{4}) = \frac{\sqrt{2}}{2}\\
+	\cos(0) = 1,\ \cos(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1,\ \cos(\frac{3\pi}{4}) = -\frac{\sqrt{2}}{2}\\
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	\tan(x) & = \frac{\sin(x)}{\cos(x)} \\
+	\sin(2x) & = 2\sin(x)\cos(x) \\
+	\sin(\alpha + \beta) & = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
+	\cos(\alpha + \beta) & = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta) \\
+	\cos^2(x) & = \frac{1 + \cos(2x)}{2} \\
+	\sin^2(x) + \cos^2(x) & = 1
+\end{split}
+\end{equation*}
+
 \section{Mengen}
+
+\subsection{Definitionen}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
 	\item[Obere/Untere Schranke:] $\exists b \in \mathbb{R}\ \forall a\in A:\ a \leq b$, $\exists c \in \mathbb{R}\ \forall a\in A:\ a \geq c$
@@ -28,6 +50,16 @@
 	\item[Infimum:] gr{\"o}sste untere Schranke $\inf A$
 	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
 \end{description}
+
+\subsection{Identitäten}
+
+\begin{equation*}
+\begin{split}
+	A + B & := \{a + b | a \in A, b \in B\} \\
+	\sup(A+B) = \sup A + \sup B,\ & \inf(A+B) = \inf A + \inf B \\
+	\sup(A \cup B) = \max\{\sup A, \sup B\},\ & \inf(A \cup B) = \min\{\inf A, \inf B\}
+\end{split}
+\end{equation*}
 
 \section{Komplexe Zahlen}
 
@@ -67,26 +99,6 @@
 \end{split}
 \end{equation*}
 
-\section{Trigonometrie}
-
-\begin{equation*}
-\begin{split}
-	\sin(0) = 0,\ \sin(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0,\ \sin(\frac{3\pi}{4}) = \frac{\sqrt{2}}{2}\\
-	\cos(0) = 1,\ \cos(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1,\ \cos(\frac{3\pi}{4}) = -\frac{\sqrt{2}}{2}\\
-\end{split}
-\end{equation*}
-
-\begin{equation*}
-\begin{split}
-	\tan(x) & = \frac{\sin(x)}{\cos(x)} \\
-	\sin(2x) & = 2\sin(x)\cos(x) \\
-	\sin(\alpha + \beta) & = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
-	\cos(\alpha + \beta) & = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta) \\
-	\cos^2(x) & = \frac{1 + \cos(2x)}{2} \\
-	\sin^2(x) + \cos^2(x) & = 1
-\end{split}
-\end{equation*}
-
 \section{Grenzwert}
 
 \subsection{Dominanz}
@@ -116,30 +128,122 @@
 
 \subsection{$e^{\log(x)}$-Trick}
 
-\subsubsection*{Anforderung}
-
-Term der Form $f(x)^{g(x)}$ mit Grenzwert "$0^0$", "$\infty^0$" oder "$1^\infty$" f{\"u}r $x \to 0$
-
-\subsubsection*{Vorgehen}
+\paragraph{Anforderung:}Term der Form $f(x)^{g(x)}$ mit Grenzwert "$0^0$", "$\infty^0$" oder "$1^\infty$" f{\"u}r $x \to 0$
 
 \begin{equation*}
-	\lim_{x\to a}f(x)^{g(x)} = \lim_{x\to a}e^{g(x) \cdot \log(f(x))}
+	\textbf{Grundsatz:}\quad\lim_{x\to a}f(x)^{g(x)} = \lim_{x\to a}e^{g(x) \cdot \log(f(x))}
 \end{equation*}
 
 \subsection{Satz von Bernoulli-de l'H{\^o}pital}
 
-\subsubsection*{Anforderung}
-
-Term der Form $\frac{f(x)}{g(x)}$ mit Grenzwert entweder "$\frac{0}{0}$" oder "$\frac{\infty}{\infty}$" mit $g'(x) \neq 0$. \\
+\paragraph{Anforderung:}Term der Form $\frac{f(x)}{g(x)}$ mit Grenzwert entweder "$\frac{0}{0}$" oder "$\frac{\infty}{\infty}$" mit $g'(x) \neq 0$. \\
 Falls die Grenzwerte $0 \neq \infty$ verschieden sind, kann man umformen: $\frac{f(x)}{\frac{1}{g(x)}}$.
 
-\subsubsection*{Vorgehen}
-
 \begin{equation*}
-	\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g(x)}
+	\textbf{Grundsatz:}\quad\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g(x)}
 \end{equation*}
 
-\section{Folgen und Reihen}
+\section{Reihen}
+
+\subsection{Konvergenzkriterien}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{4cm}|p{5cm}|}
+\hline
+                                             & \textbf{Eignung}    & \textbf{Bemerkung}                        \\ \hline
+\textbf{Limes des allgemeinen Glieds}        &                     & zeigt nur Divergenz                       \\ \hline
+\textbf{Majoranten- und Minorantenkriterium} &                     & ersten Glieder spielen keine Rolle        \\ \hline
+\textbf{Quotientenkriterium}                 & $a_n$ mit Faktoren wie $n!$, $a^n$, oder Polynome & gleiche Folgerung wie Wurzelkriterium     \\ \hline
+\textbf{Wurzelkriterium}                     & $a_n = (b_n)^n$     & gleiche Folgerung wie Quotientenkriterium \\ \hline
+\textbf{Leibnitz-Kriterium}                  & alternierende Reihe &                                           \\ \hline
+\textbf{Absolute Konvergenz}                 & $\sin$, $\cos$	   &                                           \\ \hline
+\end{tabular}
+\end{table}
+\subsubsection*{Limes des allgemeinen Glieds}
+
+\paragraph{Bemerkung:} Mit dieser Methode lässt sich nur die Divergenz beweisen, nicht jedoch die Konvergenz.
+
+\begin{enumerate}
+	\item $\sum_n a_n$ gegeben
+	\item Grenzwert $\lim_{n\mapsto\infty} a_n$ berechnen
+	\begin{itemize}
+		\item falls Grenzwert $\neq 0 \Rightarrow$ \textbf{divergent} 
+		\item falls Grenzwert $= 0 \Rightarrow$ keine Aussage 
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Majoranten- und Minorantenkriterium}
+
+Es seien $a_n$, $b_n > 0$ mit $a_n \geq b_n\ \forall n$ ab einem gewissen $n_0$. Dann gilt: 
+\begin{equation*}
+\begin{split}
+	\sum_n a_n \text{ konvergent} & \Rightarrow \sum_n b_n \textbf{ konvergent}\quad \text{(Majorantenkriterium)} \\
+	\sum_n b_n \text{ divergent} & \Rightarrow \sum_n a_n \textbf{ divergent}\quad \text{(Minorantenkriterium)} \\
+\end{split}
+\end{equation*}
+
+\subsubsection*{Vergleichskriterium}
+
+\begin{enumerate}
+	\item $\sum_n a_n$ und $\sum_n b_n$ gegeben mit $a_n,b_n > 0$
+	\item Grenzwert $\lim_{n\mapsto\infty} \frac{a_n}{b_n}$ berechnen
+	\begin{itemize}
+		\item falls Grenzwert $= 0$:
+		\begin{itemize}
+			\item $\sum_n a_n$ divergent $\Rightarrow \sum_n b_n$ \textbf{divergent}
+			\item $\sum_n b_n$ konvergent $\Rightarrow \sum_n a_n$ \textbf{konvergent}
+		\end{itemize} 
+		\item falls Grenzwert $= \infty$:
+		\begin{itemize}
+			\item $\sum_n a_n$ konvergent $\Rightarrow \sum_n b_n$ \textbf{konvergent}
+			\item $\sum_n b_n$ divergent $\Rightarrow \sum_n a_n$ \textbf{divergent}
+		\end{itemize} 
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Quotientenkriterium}
+
+\begin{enumerate}
+	\item $\sum_n a_n$ mit $a_n \neq 0$ gegeben
+	\item Grenzwert $\lim_{n\mapsto\infty}|\frac{a_{n+1}}{a_n}|$ berechnen
+	\begin{itemize}
+		\item falls Grenzwert $> 1 \Rightarrow$ \textbf{divergent}
+		\item falls Grenzwert $< 1 \Rightarrow$ \textbf{konvergent}
+		\item falls Grenzwert $= 1 \Rightarrow$ keine Aussage
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Wurzelkriterium}
+
+\begin{enumerate}
+	\item $\sum_n a_n$ mit $a_n \neq 0$ gegeben
+	\item Grenzwert $\lim_{n\mapsto\infty}\sqrt[n]{|a_n|}$ berechnen
+	\begin{itemize}
+		\item falls Grenzwert $> 1 \Rightarrow$ \textbf{divergent}
+		\item falls Grenzwert $< 1 \Rightarrow$ \textbf{konvergent}
+		\item falls Grenzwert $= 1 \Rightarrow$ keine Aussage
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Leibniz-Kriterium}
+
+\begin{enumerate}
+	\item $\sum_n (-1)^n a_n$ gegeben
+	\item \textbf{konvergent}, falls:
+	\begin{enumerate}
+		\item $a_n \geq 0$
+		\item $\lim_{n\mapsto\infty} a_n = 0$
+		\item $a_n$ monoton fallend
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection*{Absolute Konvergenz}
+
+\begin{enumerate}
+	\item $\sum_n (-1)^n a_n$ gegeben
+	\item \textbf{konvergent}, falls $\sum_n |a_n|$ konvergent
+\end{enumerate}
 
 \section{Differenzialrechnung}
 
