@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  22 MAY 2016 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  6 JUN 2016 18:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -228,20 +228,147 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[15] [16] (/Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.aux) ) 
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+[19]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 222.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 222.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 222.
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+[20] [21] <array.png, id=76, 440.64626pt x 269.005pt>
+File: array.png Graphic file (type png)
+ <use array.png>
+Package pdftex.def Info: array.png used on input line 245.
+(pdftex.def)             Requested size: 440.64517pt x 269.00433pt.
+ [22] <list.png, id=80, 441.65pt x 300.12125pt>
+File: list.png Graphic file (type png)
+ <use list.png>
+Package pdftex.def Info: list.png used on input line 248.
+(pdftex.def)             Requested size: 441.64891pt x 300.12051pt.
+ <linked.png, id=81, 438.63875pt x 291.0875pt>
+File: linked.png Graphic file (type png)
+ <use linked.png>
+Package pdftex.def Info: linked.png used on input line 250.
+(pdftex.def)             Requested size: 438.63766pt x 291.08678pt.
+ [23 <./array.png>] [24 <./list.png>] <stack.png, id=90, 434.62375pt x 153.57375pt>
+File: stack.png Graphic file (type png)
+ <use stack.png>
+Package pdftex.def Info: stack.png used on input line 253.
+(pdftex.def)             Requested size: 434.62268pt x 153.57336pt.
+ <queue.png, id=91, 437.635pt x 147.55125pt>
+File: queue.png Graphic file (type png)
+ <use queue.png>
+Package pdftex.def Info: queue.png used on input line 256.
+(pdftex.def)             Requested size: 437.63393pt x 147.55087pt.
+ [25 <./linked.png> <./stack.png>] <table.png, id=98, 436.63126pt x 302.12875pt>
+File: table.png Graphic file (type png)
+ <use table.png>
+Package pdftex.def Info: table.png used on input line 261.
+(pdftex.def)             Requested size: 436.63019pt x 302.128pt.
+ [26 <./queue.png>] [27 <./table.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+[28] [29]
+Overfull \hbox (2.7192pt too wide) in paragraph at lines 286--287
+\OT1/cmr/m/n/10.95 The user drives the pro-gram with dif-fer-ent event op-tions he can trig-ger(mouse
+ []
+
+<model.png, id=113, 436.63126pt x 179.67125pt>
+File: model.png Graphic file (type png)
+ <use model.png>
+Package pdftex.def Info: model.png used on input line 288.
+(pdftex.def)             Requested size: 436.63019pt x 179.67079pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
+
+ []
+
+[30 <./model.png>] <pub.png, id=118, 563.10374pt x 336.25626pt>
+File: pub.png Graphic file (type png)
+ <use pub.png>
+Package pdftex.def Info: pub.png used on input line 292.
+(pdftex.def)             Requested size: 563.10237pt x 336.25543pt.
+
+Overfull \hbox (117.74411pt too wide) in paragraph at lines 292--294
+| [] 
+ []
+
+[31 <./pub.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+[32] (/Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.aux) ) 
 Here is how much of TeX's memory you used:
- 1648 strings out of 493089
- 23769 string characters out of 6134842
- 86775 words of memory out of 5000000
- 5144 multiletter control sequences out of 15000+600000
- 5771 words of font info for 21 fonts, out of 8000000 for 9000
+ 1702 strings out of 493089
+ 24449 string characters out of 6134842
+ 92775 words of memory out of 5000000
+ 5187 multiletter control sequences out of 15000+600000
+ 8210 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,23p,694b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on /Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.pdf (16 pages, 949898 bytes).
+ 38i,5n,23p,1093b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /Users/jakubkotal/Documents/summaries/Eprog/.texpadtmp/Eprog.pdf (32 pages, 2589819 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
