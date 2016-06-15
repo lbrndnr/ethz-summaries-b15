@@ -213,7 +213,107 @@ This section explains what happens to contracts in inheritance, polymorphism and
 We take the point of view of a client C accessing a feature f of class A and redefined in classB that inherits form A.\\The \hl{precondition in the redefined f can only stay the same or be weakened}\\\hl{the postcondition in the redefined f can only stay the same or be strengthened}\\\hl{the class invariant in the descendant class can only stay the same or be strengthened}.\\\\If i want to redefine a precondition of a redefined function f then I have to write:\\f\\\tab require \hl{else} precondition\\\\This new precondition has to be weaker than the old one.\\The similar goes for postcondition but, fi you want to change the postcondition you have to write:\\ ensure \hl{then} postcondition\\\\This postcondition has to be stronger than the old one.\\For invariants, it is similar for the postconditions and you just write new class invariants when writing the class and \hl{the new invariant will be added to those of the parent class}, they also have to be stronger. If you are happy with any of the old post, pre or invariant just dont write require, ensure or invariant.
 \subsection{Putting it all together}
 For performance, you can enable or disable(also partially) contracts at runtime(disable after program tested).\\Desing by contract allows tests to be generated automatically.\\Contracts should never be used to validate user input(or external sources).\\ Too weak == sound == incomplete, too strong == unsound == complete.
- 
+\section{Genericity}
+\subsubsection{The problem}
+Genericity is a way to reuse code that we have already written.\\It let's us make for example a list of objects without knowing the type of that object and let the list work for any type of Object. Essentially you write the list as if you were writing a list of people for example, but instead of giving the type people you give the type \hl{ANY}. However writing the list in this way we then have a list that contains multiple types of objects, and by inserting an object into this list you loose the information of the object type.
+\subsubsection{The solution}
+We add a parameter to the class:\\class LIST [G]\\\\feature\\\tab extend(x: G)\\\tab\tab do...end\\\tab item(i: INTEGER): G\\\tab\tab do...end\\\\To declare the list you just have to mention what type the list will be : \hl{cities: LIST[CITY]}
+\subsubsection{Constrained genericity}
+If we want to put constraints on what type of object can go into our lists for example. If we want to implement a sorted list for example, the object that go into the list have to be comparable. Therefore we will only take objects that inherit form the class COMPARABLE:\\class SORTED\_LIST\\\tab G $\rightarrow$ COMPARABLE (in brackets)
+\section{Selective Exports and Deferred Classes}
+\subsection{Selective exports}
+What can classes do with the attributes of other classes.\\On principal the attributes of a class are read only. In order to allow other classes to change the attributes of another class, \hl{there is no other way than threw a procedure of the first class (getter functions)} (all variables are private but can be seen).\\In Eiffel attributes are seen as queries for outside classes.\\ It is possible to create a getter procedure directly at the creation of an query in eiffel:\\ temperature: REAL assign set\_temperature\\After such declaration the command \hl{x.temperature = 21.5 is allowed as an abbreviation for x.set\_temperature(21.5)};
+\subsubsection{Information hiding and selective export}
+It is possible to choose what classes will be able to access certain features of a class, to do this:\\class\\\tab A\\feature\\\tab f...\\\tab g...\\feature{NONE}\\\tab h,i...\\feature {A,B,D}\\\tab j,k,l...\\end\\\\ \hl{When you declare feature{NONE} even the class itself where these feature will be declared won't be able to access them. Neither if you don't call this class in the brackets.}
+\subsection{Deferred classes}
+They allow us the express abstract concepts independently of implementation. \hl{Effective != non-deferred}. \\\hl{Deferred is a class or a feature that is not completely implemented.} 
+\subsubsection{Deferred features}
+Example of a deferred feature in list:\\forth\\\tab require\\\tab\tab not after\\\tab deferred\\\tab ensure\\\tab\tab index = old index + 1\\\tab end\\Here we don't specify the implementation because it will be different for every kind of linked lists. Most often when you write deferred features you write their pre and postconditions and don't specify there implementation.
+\subsubsection{Deferred classes}
+A class is deferred if it has at least one deferred feature. The class is declared as \hl{deferred class}, \hl{such a class cannot be instantiated.} A deferred class has a \hl{star} after the name in a schema. High level classes are often deferred.
+\section{Recursion}
+A data structure is recursive if it is built from smaller pieces of the same data structure.
+\subsection{Routines}
+A routine has direct recursion if it calls itself and is indirect recursive if it calls another routine which then calls the first routine(the number of levels is not important).
+\subsection{Data structure}
+A binary tree is recursive because every subtree is also a subtree.
+\section{Data structures}
+\subsection{containers}
+A container is something that can hold other objects. All containers can \hl{insert an item}, \hl{access an item} and \hl{remove an item.} Some containers have key or indexes to find the items more efficiently. Every container data structure is more efficient at some kind of operation.
+\subsubsection{Arrays}
+Each item has an identifier index.\\
+\back\includegraphics[scale = 1]{array}
+\subsubsection{Lists}
+A list is a container storing items, identified by an integer index, where items can be inserted or removed at any position. There are two type of lists: \hl{array based} and linked. Array based are similar to array but if you remove a value in the middle then all the elements after it have to be moved 1 space forward, the same if you insert in the middle.\\
+\back\includegraphics{list}\\
+Linked lists have a reference to the next item in the linked list. The reference of the last item is void.\\
+\back\includegraphics{linked}
+\subsection{Stacks}
+In a stack you can only access or remove the item on the top of the stack: \hl{LIFO.}\\
+\back\includegraphics{stack}
+\subsubsection{Queues}
+Like stacks but you can only access or remove the bottom of the queue: \hl{FIFO\\}. There are also two types of queues: array based(ring buffer) and linked list.\\In the array based you use a ring buffer, and the position of the items loop over the array, the tail and front are somewhere in the array but don't have to be at the top or end. The linked list version is like a normal linked list but you have an extra cursor that points to the tail of the list.\\
+\back\includegraphics{queue}
+\subsection{Tables}
+Like arrays but the indexing is not done with integers but with other stuff like strings.
+\subsubsection{Hash tables}
+Map all possible keys into an integer interval 1..n and then store the items in an array. Problem with this is that it causes collisions. Solutions: open hashing(if there is a collision you create a linked list in this position in the array). Another solution is closed hashing where if a position is already occupied you try another position for example position + 1.\\
+\back\includegraphics{table}
+\section{Multiple inheritance}
+\subsection{basics}
+A class that inherits from multiple other classes.\\\hl{You can compare the value of two objects with object1 ~ object2, if you write object1 = object2 the answer is if there reference is the same.}\\Example of multiple inheritance:\\class arrayed\_list [G] inherit\\\tab list[G]\\\tab array[G]. There are two ways to get this result. The first one that we have seen, we consider that an arrayed\_list \hl{is} an array and in the second we consider that an array\_list \hl{has} an array:\\class arrayed\_list [G] inherit\\\tab list[G]\\feature\\\tab rep: ARRAY[G]\\the attribute rep represents a field in the list that is an array.
+\subsection{Non conforming inheritance}
+You can have several inherit clauses in the class and you can have an \hl{inherit {NONE}}. This is non conforming inheritance which makes polymorphism impossible. Is marked in the visualisation of classes with an arrow that has a line threw it.\\ If a class inherits from List and inherit{NONE} from Array, \hl{then you will be able to have a list of array but not an array of lists.}
+\subsection{Name clashes}
+What happens when a class inherits from two other classes that have features with the same names. The solution is pretty simple you just have to \hl{rename} one of the two features in the new class. This is done with the command: \hl{rename f as A\_f}.\\All name clashes must be removed, \hl{unless} the feature in the two other classes is actually an inherited feature that they both inherit from the same class (repeated inheritance), or at most one of the features is effective and all of the others are \hl{deferred}.\\If the feature is deferred in only one of the two classes then it will be implemented with the expanded feature of the other class.
+\subsubsection{Renaming and redefining a class}
+class A inherit\\\tab B\\\tab\tab rename f as g redefine g end\\\\You can also use renaming to adapt a name in the new class if the name is ideal anymore, even if there is no name clash.
+\subsection{Feature merging and undefinition}
+Reminder star = deferred and + = effective and ++ = redefined . 
+\subsubsection{Feature merging}
+a class D inherits form A, B and C. You want to merge the features that are deferred from A and B with an effective feature form C. To do this you can use \hl{renaming}. You just rename all  the features so that they have the same name and the deferred ones will take the implementation of the effective one:\\class\\\tab D\\inherit\\\tab A\\\tab\tab rename\\\tab\tab\tab g as f\\\tab\tab end\\\tab B\\\tab\tab rename...\\\\
+\subsubsection{Undefine}
+If you want to forget a feature from a class you can \hl{undefine it.}\\inherit\\\tab S\\\tab\tab undefine v end\\Undefiniton might only work if there is a name clash(seems stupid but is defined this way in the videos), so if you want to undefine a feature you first have to rename it to a name of an existing effective feature of another class and then undefine it.
+\subsection{Repeated inheritance}
+Repeated inheritance is when a class inherits from two other classes, who themselves inherit from the same class(diamond structure). A class is a descendant from another class threw more than one path.
+\subsubsection{Select}
+Assume we have B and C that inherit from A and D that inherits from B and C(diamond structure A on the top and D on the bottom). \hl{If the class B redefines features from A and C does not.} Which features do we use in D, the redefined ones or not?\\You have to use the \hl{select clause:}\\inherit\\\tab B\\\tab\tab select\\\tab\tab\tab f\\\tab\tab end\\\tab C\\\tab\tab rename...\\
+If the repeated inheritance occurs you have to use the select clause.
+\section{16. Functional Programming: Agents}
+\subsection{The Model View Controller pattern}
+We will extend our control structures(decides what part of the program runs when) with a more flexible mechanism where control is decentralised. Using \hl{agents.}
+\subsubsection{Event driven programming}
+The user drives the program with different event options he can trigger(mouse keyboard etc...). Vs program driven control.
+\subsubsection{Model-view controller}
+\back\includegraphics{model}
+\subsection{The observer pattern}
+A design pattern is an architectural scheme, a certain organisation of classes and features, that provides applications with standardised solution to a common problem.\\
+\subsubsection{Publisher subscriber, observer pattern}
+\back\includegraphics{pub}\\
+The subscriber gets attached to the publisher an when the publisher publishes something new the subscriber is updated. Each publisher has a list of all the subscribers it has. A subscriber can subscribe itself to a publisher.\\Each subscriber has \hl{one} update operation and most of the time they are only subscribed to one publisher. Arguments(location of mouse etc...) can be passed to the update procedure.
+\subsection{Beyond the observer pattern}
+Since the publisher subscriber pattern is not reusable we will work on a new better one.
+\subsubsection{The eiffel approach: the Event library}
+In eiffel there is an event library. This class has only one type the \hl{event.} The \hl{context} is an object representing a user interface element, on which an event can take place. An event on a context makes an \hl{action} (a routine).\\While we program, we subscribe certain event type to certain action in a context.\\To declare an event:\\
+click:EVENT\_TYPE[TUPLE[INTEGER,INTEGER]]\\create the event type:\\create click\\to trigger one occurence of the event:\\click.publish([x\_coordinate,y\_coordinate])\\on the subscriber side:\\click.subscribe (agent find\_station)\\A lot easier and reusable than the observer pattern. Another example:\\paris\_map.click.subscribe(agent find\_station)
+\subsection{Tuples and agents}
+\subsection{Tuples}
+Tuples can be of many types for ex: Tuple[A,B,C] is a sequence of a least three values, first of type A, second B and third C. Like arrays but with multiple types. Is kind of like a class but with only fields(attributes). ex: TUPLE[author: STRING; year: INTEGER; title: STRING](the labels are optional). to access the fields t.year.
+\subsection{Agents}
+You can call the associated routine on an agent a through the feature call, whose argument is a single tuple: a.call([x\_pos, y\_pos]).\\
+If a is associated with a function you call: a.item([..., ...]) this gives the result of applying the function.\\
+for simplification you can omit these brackets []. You can also omit the .call and .item $\Rightarrow$ a(x,y,z), u := a(x,y,z) 
+\subsubsection{Closed and open arguments}
+u:= agent a0.f(a1,a2,a3)\\
+z := agent a0.f(?,?,a3)\\
+if all arguments are open you don't have to write the question marks.\\
+u has all closed arguments(predefined) and we can call it with u.call   . Z has some open arguments, the ? which can defined while called z.cal(a1,a2)   .
+\subsubsection{Declaring an agent}
+p: PROCEDURE[C, TUPLE]\\
+q: PROCEDURE[TUPLE[X,Y,Z], RES]\\
+p has no open arguments, q has 3 open arguments and returns a result of type RES. C is type of target can be omitted $\Rightarrow$ TYPE ANY.
+
+
 
 
 

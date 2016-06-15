@@ -1,0 +1,610 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  8 JUN 2016 16:04
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"lin alg.tex"
+(./lin alg.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks15
+\SOUL@lasttoken=\toks16
+\SOUL@cmds=\toks17
+\SOUL@buffer=\toks18
+\SOUL@token=\toks19
+\SOUL@spaceskip=\skip43
+\SOUL@ttwidth=\dimen105
+\SOUL@uldp=\dimen106
+\SOUL@ulht=\dimen107
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/jakubkotal/Documents/summaries/lin/.texpadtmp/lin alg.aux)
+\openout1 = `"lin alg.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen108
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen109
+\MPnumerator=\count92
+\makeMPintoPDFobject=\count93
+\everyMPtoPDFconversion=\toks22
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+
+Overfull \hbox (2.12598pt too wide) in paragraph at lines 26--27
+\OT1/cmr/m/n/10.95 Eine quadratis-che lin-eare Gle-ichungssys-tem wo ein-deutige Lsun-gen berechen-
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no § in font cmr10!
+<images/gauss.png, id=1, 572.1375pt x 303.1325pt>
+File: images/gauss.png Graphic file (type png)
+ <use images/gauss.png>
+Package pdftex.def Info: images/gauss.png used on input line 39.
+(pdftex.def)             Requested size: 572.1361pt x 303.13176pt.
+
+Overfull \hbox (126.77783pt too wide) in paragraph at lines 39--41
+| [] 
+ []
+
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+<images/matrizen.png, id=15, 538.01pt x 387.4475pt>
+File: images/matrizen.png Graphic file (type png)
+ <use images/matrizen.png>
+Package pdftex.def Info: images/matrizen.png used on input line 47.
+(pdftex.def)             Requested size: 538.00868pt x 387.44655pt.
+
+Overfull \hbox (92.65042pt too wide) in paragraph at lines 46--51
+| [] 
+ []
+
+[2 <./images/gauss.png>] [3 <./images/matrizen.png>] <images/skalarprodukt.png, id=26, 541.02126pt x 446.66875pt>
+File: images/skalarprodukt.png Graphic file (type png)
+ <use images/skalarprodukt.png>
+Package pdftex.def Info: images/skalarprodukt.png used on input line 66.
+(pdftex.def)             Requested size: 541.01993pt x 446.66765pt.
+ <images/skal.png, id=27, 544.0325pt x 262.9825pt>
+File: images/skal.png Graphic file (type png)
+ <use images/skal.png>
+Package pdftex.def Info: images/skal.png used on input line 67.
+(pdftex.def)             Requested size: 544.03117pt x 262.98184pt.
+
+Overfull \hbox (95.66167pt too wide) in paragraph at lines 65--68
+| [] 
+ []
+
+
+Overfull \hbox (98.67291pt too wide) in paragraph at lines 65--68
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
+
+ []
+
+[4]
+Overfull \vbox (169.24925pt too high) has occurred while \output is active []
+
+ [5 <./images/skalarprodukt.png> <./images/skal.png>]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [6]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+ [7]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ó in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ <images/updating.png, id=46, 538.01pt x 381.425pt>
+File: images/updating.png Graphic file (type png)
+ <use images/updating.png>
+Package pdftex.def Info: images/updating.png used on input line 176.
+(pdftex.def)             Requested size: 538.00868pt x 381.42406pt.
+
+Overfull \hbox (92.65042pt too wide) in paragraph at lines 175--177
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+
+ []
+
+[8] [9 <./images/updating.png>]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ó in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ <images/verktorraum.png, id=54, 555.07375pt x 357.335pt>
+File: images/verktorraum.png Graphic file (type png)
+ <use images/verktorraum.png>
+Package pdftex.def Info: images/verktorraum.png used on input line 198.
+(pdftex.def)             Requested size: 555.07237pt x 357.33412pt.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+
+Overfull \hbox (109.71411pt too wide) in paragraph at lines 197--200
+| [] 
+ []
+
+[10]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no í in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ <images/feld.png, id=58, 563.10374pt x 475.7775pt>
+File: images/feld.png Graphic file (type png)
+ <use images/feld.png>
+Package pdftex.def Info: images/feld.png used on input line 219.
+(pdftex.def)             Requested size: 563.10237pt x 475.77632pt.
+
+Overfull \hbox (117.74411pt too wide) in paragraph at lines 218--220
+| [] 
+ []
+
+[11 <./images/verktorraum.png>]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+
+Overfull \hbox (6.33878pt too wide) in paragraph at lines 221--222
+\OT1/cmr/m/n/10.95 space], falls sie bezu glich Ad-di-tion und ska- larer Mul-ti-p-lika-tion abgeschlossen
+ []
+
+[12 <./images/feld.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 228.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 228.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ≤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ [13]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no í in font cmr10!
+ <images/linear.png, id=71, 550.055pt x 119.44624pt>
+File: images/linear.png Graphic file (type png)
+ <use images/linear.png>
+Package pdftex.def Info: images/linear.png used on input line 245.
+(pdftex.def)             Requested size: 550.05365pt x 119.44594pt.
+
+Overfull \hbox (104.69539pt too wide) in paragraph at lines 244--247
+| [] 
+ []
+
+<images/diagram.png, id=72, 553.06625pt x 285.065pt>
+File: images/diagram.png Graphic file (type png)
+ <use images/diagram.png>
+Package pdftex.def Info: images/diagram.png used on input line 251.
+(pdftex.def)             Requested size: 553.0649pt x 285.0643pt.
+
+Overfull \hbox (254.527pt too wide) in paragraph at lines 251--252
+ \OT1/cmr/bx/n/10.95 kom-mu-ta-tive Di-a-gramm:[] | [] 
+ []
+
+[14 <./images/linear.png>]
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ∞ in font cmr10!
+ <images/rang.png, id=77, 563.10374pt x 209.78375pt>
+File: images/rang.png Graphic file (type png)
+ <use images/rang.png>
+Package pdftex.def Info: images/rang.png used on input line 270.
+(pdftex.def)             Requested size: 563.10237pt x 209.78322pt.
+
+Overfull \hbox (117.74411pt too wide) in paragraph at lines 269--271
+| [] 
+ []
+
+[15 <./images/diagram.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ <images/iso.png, id=82, 562.1pt x 174.6525pt>
+File: images/iso.png Graphic file (type png)
+ <use images/iso.png>
+Package pdftex.def Info: images/iso.png used on input line 274.
+(pdftex.def)             Requested size: 562.09863pt x 174.65207pt.
+
+Overfull \hbox (116.74037pt too wide) in paragraph at lines 272--275
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
+
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+<images/mat.png, id=83, 565.11125pt x 105.39375pt>
+File: images/mat.png Graphic file (type png)
+ <use images/mat.png>
+Package pdftex.def Info: images/mat.png used on input line 279.
+(pdftex.def)             Requested size: 565.10986pt x 105.39348pt.
+
+Overfull \hbox (119.7516pt too wide) in paragraph at lines 276--281
+| [] 
+ []
+
+[16 <./images/rang.png> <./images/iso.png>] [17 <./images/mat.png>]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+
+Overfull \hbox (3.45378pt too wide) in paragraph at lines 312--315
+\OT1/cmr/m/n/10.95 Die lo-sungs-menge $\OML/cmm/m/it/10.95 `[]$ \OT1/cmr/m/n/10.95 des affinen Teil-raum Ax=b, ist gle-ich $\OML/cmm/m/it/10.95 `[]$ \OT1/cmr/m/n/10.95 den lo-sungsraum
+ []
+
+<images/1.png, id=93, 560.0925pt x 130.4875pt>
+File: images/1.png Graphic file (type png)
+ <use images/1.png>
+Package pdftex.def Info: images/1.png used on input line 319.
+(pdftex.def)             Requested size: 560.09113pt x 130.48717pt.
+ <images/2.png, id=94, 576.1525pt x 489.83pt>
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 320.
+(pdftex.def)             Requested size: 576.15108pt x 489.8288pt.
+
+Overfull \hbox (114.73286pt too wide) in paragraph at lines 319--321
+| [] 
+ []
+
+
+Overfull \hbox (130.79282pt too wide) in paragraph at lines 319--321
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
+
+ []
+
+[18]
+Overfull \vbox (101.32089pt too high) has occurred while \output is active []
+
+ [19 <./images/1.png> <./images/2.png>]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+
+Overfull \hbox (1.25908pt too wide) in paragraph at lines 335--338
+\OT1/cmr/m/n/10.95 falls $\U/msb/m/n/10.95 E \OT1/cmr/m/n/10.95 = \U/msb/m/n/10.95 R$ \OT1/cmr/m/n/10.95 Eu-k-lidis-cher Vek-tor-raum oder or-thog-o-naler Vek-tor-raum, falls$\U/msb/m/n/10.95 E \OT1/cmr/m/n/10.95 =
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+<images/parsevelsche.png, id=104, 563.10374pt x 338.26375pt>
+File: images/parsevelsche.png Graphic file (type png)
+ <use images/parsevelsche.png>
+Package pdftex.def Info: images/parsevelsche.png used on input line 349.
+(pdftex.def)             Requested size: 563.10237pt x 338.26291pt.
+
+Overfull \hbox (117.74411pt too wide) in paragraph at lines 348--350
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+[20] [21 <./images/parsevelsche.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ <images/komplexe.png, id=113, 570.13pt x 328.22626pt>
+File: images/komplexe.png Graphic file (type png)
+ <use images/komplexe.png>
+Package pdftex.def Info: images/komplexe.png used on input line 379.
+(pdftex.def)             Requested size: 570.12862pt x 328.22545pt.
+
+Overfull \hbox (124.77036pt too wide) in paragraph at lines 378--380
+| [] 
+ []
+
+[22]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+ <images/wechsel.png, id=117, 566.115pt x 293.095pt>
+File: images/wechsel.png Graphic file (type png)
+ <use images/wechsel.png>
+Package pdftex.def Info: images/wechsel.png used on input line 386.
+(pdftex.def)             Requested size: 566.11362pt x 293.09427pt.
+
+Overfull \hbox (120.75536pt too wide) in paragraph at lines 384--387
+| [] 
+ []
+
+[23 <./images/komplexe.png>]
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+ <images/unitar.png, id=122, 568.1225pt x 472.76625pt>
+File: images/unitar.png Graphic file (type png)
+ <use images/unitar.png>
+Package pdftex.def Info: images/unitar.png used on input line 392.
+(pdftex.def)             Requested size: 568.1211pt x 472.76509pt.
+
+Overfull \hbox (122.76283pt too wide) in paragraph at lines 391--395
+| [] 
+ []
+
+[24 <./images/wechsel.png>]
+Overfull \hbox (4.27084pt too wide) in paragraph at lines 395--395
+[]\OT1/cmr/bx/n/12 Normen von lin-earen Ab-bil-dun-gen (Op-er-a-toren) und Ma-
+ []
+
+[25 <./images/unitar.png>]
+Missing character: There is no ‚ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no ì in font cmbx12!
+ [26]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ‚ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no ì in font cmbx12!
+Missing character: There is no ‚ in font cmbx12!
+Missing character: There is no Ä in font cmbx12!
+Missing character: There is no ì in font cmbx12!
+ <images/gram.png, id=135, 561.09625pt x 359.3425pt>
+File: images/gram.png Graphic file (type png)
+ <use images/gram.png>
+Package pdftex.def Info: images/gram.png used on input line 461.
+(pdftex.def)             Requested size: 561.09488pt x 359.34161pt.
+
+Overfull \hbox (115.73662pt too wide) in paragraph at lines 460--462
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+
+ []
+
+[27] [28 <./images/gram.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no £ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [29]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no à in font cmbx12!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ [30] [31] (/Users/jakubkotal/Documents/summaries/lin/.texpadtmp/lin alg.aux) ) 
+Here is how much of TeX's memory you used:
+ 2066 strings out of 493089
+ 29333 string characters out of 6134842
+ 85291 words of memory out of 5000000
+ 5515 multiletter control sequences out of 15000+600000
+ 10119 words of font info for 38 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,5n,26p,467b,176s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/jakubkotal/Documents/summaries/lin/.texpadtmp/lin alg.pdf" (31 pages, 3157608 bytes).
+PDF statistics:
+ 196 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+
