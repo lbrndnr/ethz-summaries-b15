@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage[labelformat=empty]{caption}
+
+\geometry{
+	a4paper,
+ 	left=20mm,
+ 	top=20mm,
+}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section{Mengen}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5.5cm, noitemsep]
+	\item[Obere Schranke:] $\exists b \in \mathbb{R}\ \forall a\in A:\ a \leq b$
+	\item[Supremum:] kleinste obere Schranke $\sup A$
+	\item[Infimum:] gr{\"o}sste untere Schranke $\inf A$
+	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
+\end{description}
+
+\section{Komplexe Zahlen}
+
+\begin{equation*}
+	(a,b) \cdot (b,c) = (ac-bd, ad+bc)
+\end{equation*}
+
+\section{Trigonometrie}
+
+\begin{equation*}
+\begin{split}
+	\sin(0) = 0,\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0\\
+	\cos(0) = 1,\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1\\
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	\tan(x) & = \frac{\sin(x)}{\cos(x)} \\
+	\sin(2x) & = 2\sin(x)\cos(x) \\
+	\sin(\alpha + \beta) & = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
+	\cos(\alpha + \beta) & = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta) \\
+	\cos^2(x) & = \frac{1 + \cos(2x)}{2} \\
+	\sin^2(x) + \cos^2(x) & = 1
+\end{split}
+\end{equation*}
+
+\section{Grenzwert}
+
+\subsection{Dominanz}
+
+\begin{equation*}
+\begin{split}
+	\text{Für}\ x \to +\infty:\quad & ... < \log(\log(x)) < \log(x) < x^\alpha < \alpha^x < x! < x^x \\
+	\text{Für}\ x \to 0:\quad & ... < \log(\log(x)) < \log(x) < (\frac{1}{x})^\alpha \\
+\end{split}
+\end{equation*}
+
+\subsection{Tipps}
+
+\begin{equation*}
+\begin{split}
+	\lim_{x \to a} \frac{\sin \odot}{\odot} & = 1\ \text{mit}\ \odot \xrightarrow{\: x \to a \: } 0 \\ 
+	\lim_{x \to a} (1 + \frac{1}{\odot})^\odot & = e\ \text{mit}\ \odot \xrightarrow{\: x \to a \: } \infty \\ 
+	\lim_{x \to a} (1 + \odot)^\frac{1}{\odot} & = e\ \text{mit}\ \odot \xrightarrow{\: x \to a \: } 0 \\ 
+\end{split}
+\end{equation*}
+
+\subsection{Wurzeltrick}
+
+\begin{equation*}
+	\lim_{x\to\infty} \sqrt{\alpha}+\beta = \lim_{x\to\infty}(\sqrt{\alpha}+\beta)\frac{\sqrt{\alpha}-\beta}{\sqrt{\alpha}-\beta}
+\end{equation*}
+
+\subsection{$e^{\log(x)}$-Trick}
+
+\subsubsection*{Anforderung}
+
+Term der Form $f(x)^{g(x)}$ mit Grenzwert "$0^0$", "$\infty^0$" oder "$1^\infty$" für $x \to 0$
+
+\subsubsection*{Vorgehen}
+
+\begin{equation*}
+	\lim_{x\to a}f(x)^{g(x)} = \lim_{x\to a}e^{g(x) \cdot \log(f(x))}
+\end{equation*}
+
+\subsection{Satz von Bernoulli-de l'H{\^o}pital}
+
+\subsubsection*{Anforderung}
+
+Term der Form $\frac{f(x)}{g(x)}$ mit Grenzwert entweder "$\frac{0}{0}$" oder "$\frac{\infty}{\infty}$" mit $g'(x) \neq 0$. \\
+Falls die Grenzwerte $0 \neq \infty$ verschieden sind, kann man umformen: $\frac{f(x)}{\frac{1}{g(x)}}$.
+
+\subsubsection*{Vorgehen}
+
+\begin{equation*}
+	\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g(x)}
+\end{equation*}
+
+\section{Folgen und Reihen}
+
+\section{Differenzialrechnung}
+
+Eine stetige Funktion ist differenzierbar, falls der Grenzwert $f'(x_0)$ existiert:
+
+\begin{equation*}
+	f'(x_0) := \lim_{x\to x_0}\frac{f(x) - f(x_0)}{x-x_0}
+\end{equation*}
+
+\section{Integration}
+
+\subsection{Elementare Integrale}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+$f(x)$ & $F(x)$ \\ \hline
+$x^\alpha$ & $\frac{x^{\alpha+1}}{\alpha+1} + C$ \\ \hline
+$\frac{1}{x}$ & $\log (x) + C$ \\ \hline
+$\frac{1}{x^2}$ & $\frac{1}{x} + C$ \\ \hline
+$\sin(x)$ & $-\cos(x) + C$ \\ \hline
+$\cos(x)$ & $\sin(x) + C$ \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Regeln}
+
+\begin{equation*}
+\begin{split}
+	\textbf{Direkter Integral}\quad & \int f(g(x))g'(x)\ dx = F(g(x)) \\
+	\textbf{Partielle Integration}\quad & \int f' \cdot g\ dx = f \cdot g - \int f \cdot g'\ dx \\
+	\textbf{mit Polynomen}\quad & \int\frac{p(x)}{q(x)}\ dx \Rightarrow\ \text{Partialbruchzerlegung} \\
+	\textbf{Substitution}\quad & \int_a^b f(\varphi(t))\varphi'(t)\ dt = \int_{\varphi(a)}^{\varphi(b)} f(x)\ dx\ \text{mit}\ x = \varphi(t)
+\end{split}
+\end{equation*}
+
+\subsection{Tipps}
+
+\begin{equation*}
+\begin{split}
+	\int\tan x\ dx & = \int\frac{\sin x}{\cos x}\ dx = -\log|\cos(x)| \\
+	\int \frac{1}{x - \alpha} & = \log(x-\alpha) \\
+\end{split}
+\end{equation*}
+
+\section{Differentialgleichungen}
+
+\subsection{Trennung der Variable}
+
+\subsubsection*{Anforderung}
+
+Ist 1. Ordnung mit der Form $y' = \frac{dy}{dx} = h(x) \cdot g(y)$
+
+\subsubsection*{Vorgehen}
+
+\begin{equation*}
+\begin{split}
+	& y' + x \tan y = 0,\ y(0) = \frac{\pi}{2} \\
+	\text{Umformen}\quad & \frac{dy}{dx} = -x \tan y \\
+	\textbf{Konstante L{\"o}sungen}\quad & y(x) \equiv 0\ \text{erf{\"u}llt jedoch $y(0) \equiv \frac{\pi}{2}$ nicht} \\
+	\text{Trennung}\quad & \frac{dy}{\tan y} = -x dx \\
+	\text{Integrieren}\quad & \int\frac{\cos y}{\sin y}dy = - \int xdx \Rightarrow \log|\sin y| = -\frac{x^2}{2} + C \\
+	& \Rightarrow |\sin y| = e^Ce^{\frac{-x^2}{2}} \Rightarrow \sin y = \pm e^Ce^{\frac{-x^2}{2}} = Ce^{\frac{-x^2}{2}} \\
+	\text{Anfangsbedingung gebrauchen}\quad & \sin y(0) = \sin (\frac{\pi}{2}) = 1 \Rightarrow C = 1 \\
+	\textbf{L{\"o}sung}\quad & y(x) = \arcsin (e^{\frac{-x^2}{2}})
+\end{split}
+\end{equation*}
+
+\subsection{Variation der Konstanten}
+
+\begin{equation*}
+	y(x) = y_\text{Homo}(x) + y_p(x)
+\end{equation*}
+
+\subsubsection*{Anforderung}
+
+Inhomogenes Problem 1. Ordnung mit der Form $y' = \frac{dy}{dx} = h(x)y + b(x)$
+
+\subsubsection*{Vorgehen}
+
+\begin{equation*}
+\begin{split}
+	& y' - y = 1,\ y(0) = 0 \\
+	\text{Homogener Ansatz}\quad & y' = y \\
+	\textbf{Konstante L{\"o}sungen}\quad & y(x) \equiv 0 \\
+	\text{Trennung}\quad & \frac{dy}{y} = dx \Rightarrow \int\frac{dy}{y} = \int dx \Rightarrow \log|y| = x \\
+	\textbf{Homogene L{\"o}sung}\quad & y_\text{Homo}(x) = Ae^x,\ A = e^C \in \mathbb{R} \\
+	\text{Partikul{\"a}rer Ansatz}\quad & y_p(x) = A(x)e^x \\
+	\text{Einsetzen}\quad & A'e^x + Ae^x - Ae^x = 1 \Rightarrow A' = e^{-x} \Rightarrow A(x) = \int e^{-x}\ dx = -e^{-x} \\
+	\textbf{Partikul{\"a}re L{\"o}sung}\quad & y_p(x) = -1 \\
+	\textbf{L{\"o}sung}\quad & y(x) = Ae^x - 1\ \text{mit Anfangsbedingung}\ A = 1 \\
+	& \Rightarrow y(x) = e^x - 1
+\end{split}
+\end{equation*}
+
+\end{document}
