@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage[labelformat=empty]{caption}
+
+\geometry{
+	a4paper,
+ 	left=20mm,
+ 	top=20mm,
+}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section{Syntax}
+
+\begin{description}
+	\item[create\{IPLAYER\} player] creates an instance of IPLAYER and assigns it to player
+	\item[player := create\{IPLAYER\}] same as create\{IPLAYER\} player
+	\item[iplayer.play\_mp3(create\{MP3\_FILE\}.make)] initializes and passes an MP3-File to the feature
+	\item[check not player.is\_playing end] Work just like pre-/postconditions, just that they're right in the body (assertion)
+	\item[NATURAL] from 0 up
+	\item[modulo] \textbackslash\textbackslash
+	\item[integer division] 5 // 2 = 2
+	\item[v ?= e] downcast, needs runtime checking
+	\item[h@k] dictionary access (stands for h.at(k))
+	\item[attached a\_node] synonym to a\_node /= Void
+	\item[str $\sim$ str] same as str.is\_equal(str), just void-safe
+\end{description}
+
+\section{Semantics}
+
+\begin{description}
+	\item[Qualified call] explicitly lists the target object, e.g. $x.f(args)$
+	\item[Feature export]
+	\begin{itemize}
+		\item Information hiding only applies to qualified calls. 
+		\item Features exported to $NONE$ (a class inheriting from all classes) can not be accessed by clients. It may only be accessed within the defining class itself or its descendants.
+		\item Creation procedures exported to $NONE$ may only be used as creation procedures by clients.
+	\end{itemize}
+\end{description}
+
+\section{Containers}
+
+\begin{description}
+	\item[Hash Tables]
+	\begin{itemize}
+		\item Open Hashing: Every entry has a Linked List, collided keys are therefore just stored in the same list.
+		\item Closed Hashing: In case of a collision, look for open spots somewhere around the index, where the collision took place (that's what Hash Tables in Eiffel use)
+	\end{itemize}
+ 	\item[Tuples] Tuple [A,B,C] conforms to [A,B] and [A]
+\end{description}
+
+\section{Design by Contracts}
+
+\begin{description}
+	\item[Class invariant] Must be satisfied after creation and after the execution of any feature by any client (so affects \textbf{qualified} calls only, \textbf{unqualified} calls and calls to \textbf{non-exported} features may break the invariant) \\
+		If inherited, may only be stronger or equally strong
+	\item[Precondition] If inherited, may only be weaker or equally strong
+	\item[Postcondition] If inherited, may only be stronger or equally strong
+	\item[Loop Invariant] Boolean expression to determine whether the loop achieves its purpose. Needs to be $TRUE$ after initialization of the loop and preserved by the loop body (so has to be true after the last step as well).
+	\item[Loop Variant] Integer expression to determine whether the loop will terminate. Has to be non-negative after initialization of the loop and decreased by at least one, while remaining non-negative, by any execution of the loop body.
+\end{description}
+
+\section{Agents}
+
+\begin{description}
+	\item[LIST]
+	\begin{itemize}
+		\item do\_all(action: PROCEDURE) \\ apply action to every item
+		\item do\_if(action: PROCEDURE, test: FUNCTION) \\ apply action to every item that satisfies test
+		\item there\_exists(test: FUNCTION): BOOLEAN \\ is test true for at least one element
+		\item for\_all(test: FUNCTION) \\ is test true for all elements
+	\end{itemize}
+\end{description}
+
+
+\end{document}
