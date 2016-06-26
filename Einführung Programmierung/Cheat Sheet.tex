@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{cancel}
 \usepackage{graphicx}
+\usepackage{textcomp}
 \usepackage[labelformat=empty]{caption}
 
 \geometry{
@@ -47,6 +48,33 @@
 		\item Creation procedures exported to $NONE$ may only be used as creation procedures by clients.
 	\end{itemize}
 \end{description}
+
+
+\section{Reference types vs. expanded types}
+\begin{description}
+	\item[Reference types]
+	contain the address (reference, or location of the object) \\
+	$\Rightarrow$ they don't exist when we declare them (they are initally void)
+	\begin{center}
+	\includegraphics[width=250pt]{reference_type.png}
+	\end{center}
+	
+	\item[Expanded types]
+	points directly to the object \\
+	$\Rightarrow$ they exist by just declaring them (they are never void) \\
+	\begin{center}
+	\includegraphics[width=250pt]{expanded_type.png}
+	\end{center}
+	
+	\item[Object comparison] \mbox{} \\
+	s1: STRING = "Teddy" \\
+	s2: STRING = "Teddy" \\
+	.. \\
+	s1 = s2 (comparison) $\rightarrow$ FALSE: reference comparison on different objects\\
+	s1 $\backsim s2$ (comparison) $\rightarrow$ TRUE: compares the content of two objects\\
+	
+\end{description}
+
 
 \section{Containers}
 
