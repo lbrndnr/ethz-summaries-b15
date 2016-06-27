@@ -1,0 +1,13 @@
+Wenn das kompilieren der Zusammenfassung wegen zu wenig Speicher abbricht,
+muss die Speichereinstellung von Hand geändert werden.
+Bei MikTex unter Windows geht das so:
+
+1. Open a command line window.
+2. At the DOS prompt, enter
+initexmf --edit-config-file=latex
+3. Type
+main_memory=10000000
+into the editor window that opens, save the file and quit the editor.
+4. To rebuild the format, enter
+initexmf --dump=latex
+5. Repeat steps 2-4 with config file `pdflatex'

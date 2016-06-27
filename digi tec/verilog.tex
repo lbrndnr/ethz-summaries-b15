@@ -1,0 +1,111 @@
+\newpage
+\section{Verilog}
+	\lstset{language=Verilog}
+	\lstset{basicstyle=\ttfamily\mdseries}
+	\begin{multicols}{2}
+	
+	\subsection{Operatoren}
+		\begin{tabular}{ll}
+		\lstinline!+!, \lstinline!-!, \lstinline!*! & Arithmetic operators \\
+		\lstinline*/ * &  Integer division (fractional part truncated) \\
+		\lstinline*%* &  Modulo (takes sign of the first operand) \\
+		\lstinline!**! &  Exponent \\
+		\lstinline*-* & Negation (2's complement) \\
+		\\
+		\lstinline*~* & Bitwise NOT (1's complement) \\
+		\lstinline*&* & Bitwise AND \\
+		\lstinline*|* & Bitwise OR \\
+		\lstinline*^* & Bitwise XOR \\
+		\lstinline*^~*, \lstinline*~^* & Bitwise XNOR \\ 
+		\\
+		\lstinline*<<*, \lstinline*>>* & Logical shift (padding with 0) \\
+		\lstinline*<<<*, \lstinline*>>>* & Arithmetic shift (padding with leftmost \\
+		& bit when shifting right) \\ 
+		\lstinline*?:* & Conditional \\
+		\lstinline*{ a, b }* & Concatenation \\
+		\lstinline*{ num { a }}* & Replication \\
+		\end{tabular} 
+	
+	\subsection{Vergleiche}
+		\begin{tabular}{ll}
+		\lstinline*>*, \lstinline*<*, \lstinline*>=*, \lstinline*<=* & 	Relational operators (\lstinline*0*, \lstinline*1* or \lstinline*x*) \\
+		\lstinline*==*, \lstinline*==* & Logical equality (\lstinline*0*, \lstinline*1* or \lstinline*x*) \\
+		\lstinline*===*, \lstinline*!==* & Case equality (\lstinline*0* or \lstinline*1*) \\
+		\end{tabular}
+	
+	
+	\subsection{Konstanten}
+		Angabe mit [\textless width in bits\textgreater]'\textless base\textgreater\textless number\textgreater \\
+		\begin{tabular}{ll}
+		\lstinline*'b* &(binär, 2) \\
+		\lstinline*'o* &(oktal, 8) \\
+		\lstinline*'d* &(dezimal, 10) \\
+		\lstinline*'h* &(hexadezimal, 16)
+		\end{tabular} \\
+		z.B. \lstinline*-4'd3* (\lstinline*1101*), \lstinline*4'b11* (\lstinline*0011*), \lstinline*'h08FF* (16 bit hex)
+		
+	
+	
+	\subsection{Module}
+	\lstset{basicstyle=\ttfamily\scriptsize\mdseries}
+	In Verilog bestehen die Modelle aus Modulen, wobei jedes Modul ein Interface besitzt, welches die Inputs und Outputs definiert.
+	Ein Modul kann dann instanziert werden, wobei ihm ein eindeutiger Name zugewiesen wird.
+		\begin{lstlisting}[language=Verilog]
+// modul definieren
+module abc(input a,b, input [3:0] data, output out);
+	wire x;
+	assign x = (!a || b) ^ a;
+	assign out = x ;
+endmodule
+
+// module instanzieren
+module main(..)
+	abc A1(a,x,data,myvar);
+endmodule
+		\end{lstlisting}
+	
+	\vfill
+	
+	\subsection{always}
+	\lstset{basicstyle=\ttfamily\normalsize\mdseries}
+	Mit \lstinline+always+ lassen sich Endlosschleifen ausdrücken. Zusätzlich
+	kann die Ausführung auf positive/negative Flanken einer bestimmten Variable
+	eingeschränkt werden.
+	\lstset{basicstyle=\ttfamily\scriptsize\mdseries}
+		\begin{lstlisting}[language=Verilog]
+always @([posedge | negedge] var) begin .. end
+		\end{lstlisting}
+	
+		
+	\subsection*{Zeitauflösung/Delays}
+	\lstset{basicstyle=\ttfamily\normalsize\mdseries}
+	\begin{tabular}{lp{7.3cm}}
+		\lstinline+'timescale <Zeiteinheit>/<Aufloesung>+ &
+	\end{tabular}
+	Wird im Header eines Moduls angegeben. z.B. \lstinline+1ns/100ps+ bedeutet dass der Delay-Operator \lstinline+#1+ für 1ns verzögert und die Simulation in 100ps Zeitschritten läuft. 
+			
+	\subsection*{Zuweisungsoperatoren}
+	\lstset{basicstyle=\ttfamily\normalsize\mdseries}
+	\begin{tabular}{lp{6.5cm}}
+		\lstinline+a = b+   &   \emph{blocking assignment}: Der Wert der Zielvariable wird sofort aktualisiert. \\
+		\lstinline+a <= b+   &   \emph{non-blocking assignment}: Die rechte Seite wird	
+	sofort ausgewertet, die Zuweisung erfolgt jedoch erst im nächsten Zeitschritt (nicht Flanke/Takt!), was eine parallele
+	Ausführung solcher Befehle ermöglicht. Die NBA's bewirken keine Verzögerung im Timingdiagramm (ausser wenn die Auflösung
+	gleich der Zeiteinheit ist, was nicht sehr sinnvoll ist). \\
+		\lstinline+assign a = b+ & \emph{continuous assignment}: Weist der Zielvariable sofort den Wert des Ausdrucks zu, wenn immer dieser ändert. Ausserhalb von always und initial Blöcken!
+	\end{tabular}
+	
+	
+	\subsection*{Weitere Konstrukte}
+	\lstset{basicstyle=\ttfamily\normalsize\mdseries}
+	\begin{tabular}{lp{5cm}}
+		\lstinline+reg a,b;+   &   Lokale 1-Bit Variablen (Register) \\
+		\lstinline+reg [3:0] d;+   &   Lokale 4-Bit Variablen \\
+		\lstinline+wire a+   &   Draht, verbindet z.B. Ein-/Ausgänge von Modulen \\
+		\lstinline+assign #3 a = b & c+   &   Zuweisung (Delay: 3 Einheiten) \\
+	\end{tabular}
+	
+	
+	\end{multicols}
+	
+	

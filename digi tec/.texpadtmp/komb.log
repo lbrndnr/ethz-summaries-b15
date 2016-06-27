@@ -1,0 +1,592 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2016.5.11)  15 JUN 2016 09:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/jakubkotal/Documents/summaries/digi tec/komb.tex"
+(/Users/jakubkotal/Documents/summaries/digi tec/komb.tex
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:1: Undefined control sequence.
+l.1 \section
+            {Kombinatorische Schaltungen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:3: Undefined control sequence.
+l.3 	\begin
+           {multicols}{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:4: Undefined control sequence.
+l.4 	\subsection
+                {Gatter}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:5: Undefined control sequence.
+l.5 		\renewcommand
+                   {\arraystretch}{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:5: Undefined control sequence.
+l.5 		\renewcommand{\arraystretch
+                                 }{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:6: Undefined control sequence.
+l.6 		\begin
+            {tabular}{r  || c c c c}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:7: Misplaced alignment tab character &.
+l.7 			               &
+                          Logik      &   Algebra                 &   Schaltb...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:7: Misplaced alignment tab character &.
+l.7 			               &   Logik      &
+                                         Algebra                 &   Schaltb...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:7: Misplaced alignment tab character &.
+l.7 ...   Logik      &   Algebra                 &
+                                                     Schaltbild  & Verilog  ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:7: Misplaced alignment tab character &.
+l.7 ...  Algebra                 &   Schaltbild  &
+                                                   Verilog   \\ \hline\hline
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ \hline \hline OR & $x \lor y$ & $x + y$ & \includegraphics [height =\ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:25: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.25 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:26: Undefined control sequence.
+l.26 	\subsection
+                 {Wahrheitstabellen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:27: Undefined control sequence.
+l.27 		\renewcommand
+                    {\arraystretch}{1.2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:27: Undefined control sequence.
+l.27 		\renewcommand{\arraystretch
+                                  }{1.2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:28: Undefined control sequence.
+l.28 		\begin
+             {tabular}{c|c||c|c|c|c|c|c}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 			$a$ 	&
+               $b$ & $\lnot a$ 	& $a\land b$& $a\lor b$	& $a\rightarrow b$ 	...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 			$a$ 	& $b$ &
+                     $\lnot a$ 	& $a\land b$& $a\lor b$	& $a\rightarrow b$ 	...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 			$a$ 	& $b$ & $\lnot a$ 	&
+                                  $a\land b$& $a\lor b$	& $a\rightarrow b$ 	...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 			$a$ 	& $b$ & $\lnot a$ 	& $a\land b$&
+                                              $a\lor b$	& $a\rightarrow b$ 	...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 ...$b$ & $\lnot a$ 	& $a\land b$& $a\lor b$	&
+                                                   $a\rightarrow b$ 	&$a \le...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 ...a\land b$& $a\lor b$	& $a\rightarrow b$ 	&
+                                                  $a \leftrightarrow b $& $a...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:30: Misplaced alignment tab character &.
+l.30 ...$a\rightarrow b$ 	&$a \leftrightarrow b $&
+                                                   $a \oplus b $\\ \hline \h...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ \hline \hline 1 & 1 & 0 & 1 & 1 & 1 & 1 & 0 \\ \hline 1 & 0 & 0 & 0 \ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:36: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.36 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:37: Undefined control sequence.
+l.37 	\subsection
+                 {Normalformen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:38: Undefined control sequence.
+l.38 		\begin
+             {itemize}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:39: Undefined control sequence.
+<argument> \textbf 
+                   \enspace 
+\llap #1->\hbox to\z@ {\hss #1
+                              }
+\textindent #1->\indent \llap {#1\enspace }
+                                           \ignorespaces 
+l.39 			\item \textbf
+                     {DNF}: Disjunktive Normalform. In der Wahrheitstabelle ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ∂ in font cmr10!
+Runaway argument?
+ ($0 \to \lnot x, 1 \to x$) \begin {itemize} \item \textbf {Literal}:\ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:47: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.47 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:49: Undefined control sequence.
+l.49 	\subsection
+                 {Umformungen}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:50: Undefined control sequence.
+l.50 	\begin
+            {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:51: Undefined control sequence.
+l.51 	\begin
+            {tabular}{l@{\;=\;}l@{\quad=\;}l}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:51: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \mskip 
+\;->\mskip 
+           \thickmuskip 
+l.51 	\begin{tabular}{l@{\;
+                           =\;}l@{\quad=\;}l}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:51: Extra }, or forgotten $.
+l.51 	\begin{tabular}{l@{\;=\;}
+                               l@{\quad=\;}l}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:51: Extra }, or forgotten $.
+l.51 	\begin{tabular}{l@{\;=\;}l@{\quad=\;}l}
+                                             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:52: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \oplus 
+l.52 		$a \oplus
+                 b$ & $( a \land  \lnot b) \lor ( \lnot a \land b)$ & $a \ov...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:52: Misplaced alignment tab character &.
+l.52 		$a \oplus b$ &
+                      $( a \land  \lnot b) \lor ( \lnot a \land b)$ & $a \ov...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:52: Misplaced alignment tab character &.
+l.52 ...\land  \lnot b) \lor ( \lnot a \land b)$ &
+                                                   $a \overline{b} + \overli...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ & $ (a \lor b) \land ( \lnot a \lor \lnot b) $ & $ (a+b)(\overline a\ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:57: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.57 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:59: Undefined control sequence.
+l.59 	\subsection
+                 {Frequenzberechnung}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:60: Undefined control sequence.
+l.60 		\begin
+             {align*}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:61: Undefined control sequence.
+l.61 			\text
+             {Zykluszeit:} \quad & t_z = t_s+t_p+t_l \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:61: Misplaced alignment tab character &.
+l.61 			\text{Zykluszeit:} \quad &
+                                   t_z = t_s+t_p+t_l \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:61: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.61 			\text{Zykluszeit:} \quad & t_
+                                     z = t_s+t_p+t_l \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Runaway argument?
+ \text {Max. Frequenz:} \quad & f_{max} = \frac {1}{t_z} = \frac {1}{\ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:67: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.67 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:67: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.67 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:69: Undefined control sequence.
+l.69 	\subsection
+                 {Rechenregeln}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:70: Undefined control sequence.
+l.70 		\renewcommand
+                    {\arraystretch}{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:70: Undefined control sequence.
+l.70 		\renewcommand{\arraystretch
+                                  }{1.5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:71: Undefined control sequence.
+l.71 		\begin
+             {tabular}{l r @{  } l}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no § in font cmr10!
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:72: Misplaced alignment tab character &.
+l.72 		Kommutativit√§t      	&
+                                 $x \land y$           	& $\equiv$  $y \land...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:72: Misplaced alignment tab character &.
+l.72 ...ivit√§t      	&   $x \land y$           	&
+                                                   $\equiv$  $y \land y$	\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ &$x \lor y$ & $\equiv $ $y \lor x$ \\\hline Assoziativit√§t & $x \land \ETC.
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:95: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.95 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:96: Undefined control sequence.
+l.96 	\subsection
+                 {Bindung der Operatoren}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:97: Undefined control sequence.
+l.97 		\[
+          \text{ st√§rker }\qquad \lnot \quad \land \quad \lor \quad \righta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:97: Undefined control sequence.
+l.97 		\[ \text
+               { st√§rker }\qquad \lnot \quad \land \quad \lor \quad \righta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no § in font cmr10!
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:97: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \lnot 
+l.97 		\[ \text{ st√§rker }\qquad \lnot
+                                        \quad \land \quad \lor \quad \righta...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:97: Undefined control sequence.
+l.97 ... \oplus \quad \leftrightarrow \qquad \text
+                                                  { schw√§cher } \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:97: Undefined control sequence.
+l.97 ...ftrightarrow \qquad \text{ schw√§cher } \]
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Documents/summaries/digi tec/komb.tex:98: Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   \par 
+l.98 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no § in font cmr10!
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 51 ({)
+### simple group (level 1) entered at line 51 ({)
+### bottom level</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "/Users/jakubkotal/Documents/summaries/digi tec/.texpadtmp/komb.pdf" (1 page, 47600 bytes).
+PDF statistics:
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
