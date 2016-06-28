@@ -143,6 +143,8 @@ Falls die Grenzwerte $0 \neq \infty$ verschieden sind, kann man umformen: $\frac
 	\textbf{Grundsatz:}\quad\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g(x)}
 \end{equation*}
 
+Zwei Polizisten zu benutzen mit sin, cos, tan oder $-1^n$... sonst induktion:$a_{n+1}\geq a_{n} \Rightarrow a_{n+2} \geq a_{n+1}$ oder direct. Mit eine recursive folge, um Grenzwert zu finden, setzen $a_n$ mit a und a finden. Oder direct mit $a_{n+1} - a_n \geq 0$.
+
 \section{Reihen}
 
 \subsection{Konvergenzkriterien}
@@ -244,6 +246,77 @@ Es seien $a_n$, $b_n > 0$ mit $a_n \geq b_n\ \forall n$ ab einem gewissen $n_0$.
 	\item $\sum_n (-1)^n a_n$ gegeben
 	\item \textbf{konvergent}, falls $\sum_n |a_n|$ konvergent
 \end{enumerate}
+\subsection{Geometrische Reihe}
+\begin{equation}
+	S_N = \sum^n_k a*r^k
+\end{equation}
+\begin{equation}
+	S_N=\frac{a-a*r^{n+1}}{1-r}
+\end{equation}
+falls $0<|r|<1$ dann
+\begin{equation}
+	\sum^\infty_0a*r^k=\frac{a}{1-r}
+\end{equation}
+
+\subsection{Potenzreihen}
+Potenzreihen haben der Form $\sum^\infty_0 a_nx^n$.
+\paragraph{Der konvergenz radius}
+\begin{equation}
+	\rho=lim_{n\rightarrow \infty}|\frac{a_n}{a_{n+1}}|
+\end{equation}
+\begin{equation}
+	\rho=\frac{1}{lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
+\end{equation}
+wenn $|x|<\rho$ dann konvergiert die Reihe. In diesem gebiet darf man die Reihe ableiten und Integrieren.
+\subsubsection{Tips}
+\begin{equation}
+	cos(x)= \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!}
+\end{equation}
+\begin{equation}
+	sin(x)= \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!}
+\end{equation}
+\begin{equation}
+	e^x=\sum^\infty_0\frac{x^n}{n!}
+\end{equation}
+
+\section{Stetigkeit}
+Kriterien fur stetigkeit:
+\begin{enumerate}
+	\item f ist auf $\Omega$ definiert
+	\item $lim_{x\rightarrow a}$f(x)=f(a) und existiert (ist nicht gleich $\infty$ und gleich von beide seite von a).
+\end{enumerate}
+\paragraph{Weierstrass-kriterium}
+fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$ sodass fur alle $|x-a|<\delta$ gilt:
+\begin{equation}
+	|f(x) -f(a)|<\epsilon
+\end{equation}
+\subsection{Gleichmassigstetigkeit}
+fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$ sodass fur alle $|x-y|<\delta$ gilt:
+\begin{equation}
+	|f(x)-f(y)| < \epsilon
+\end{equation}
+$\delta$ hangt nur von $\epsilon$ ab nicht wie weierstrass-kriterium. Falls f ist stetig und kompakt, dann ist er gleichmassig stetig.
+
+\subsection{Lipschitz-stetigkeit}
+Muss ein $L\epsilon \mathbb{R}$ sodass:
+\begin{equation}
+	|f(x)-f(y)|\leq L|f(x)-f(y)|, \forall x,y \epsilon \Omega
+\end{equation}
+Eine funktion ist lipschitz stetig wenn sein erste ableitung ist auf $\Omega$ beschrankt.
+
+\subsection{Punktweise Konvergenz}
+$f_n(x)$ konvergiert Punktweise falls:
+\begin{equation}
+	\forall x\epsilon \Omega, lim_{n\rightarrow\infty}f_n(x) = f(x)
+\end{equation}
+
+\subsection{Gleichmassig konvergenz}
+$f_n(x)$ konvergiert gleichmassig falls:
+\begin{equation}
+	lim_{n\rightarrow\infty}, sup|f_n(x) - f(x)| = 0
+\end{equation}
+Beide diese Funktionen mussen stetig sein.
+Diese bedigung ist starker als Punktweise konvergenz.
 
 \section{Differenzialrechnung}
 
@@ -276,6 +349,15 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 \begin{equation*}
 	R^a_m(x) = \frac{f^{(m+1)}(\xi)}{(m+1)!}(x+a)^{m+1},\ \text{wobei}\ f(x) = P^a_m(x) + R^a_m(x)
 \end{equation*}
+
+\subsection{Hauptsatz von calculus}
+\begin{equation}
+	f(x)=\int^{m(x)}_lg(t)dt
+\end{equation}
+\begin{equation}
+	f'(x)=g(m(x))*\frac{d}{dx}m(x)
+\end{equation}
+wo m(x) hat der Form $ax^b$ und $l\epsilon \mathbb{R}$
 
 \section{Integration}
 
@@ -436,7 +518,12 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 	\textbf{L{\"o}sung}\quad & y(x) = Ae^{-\frac{x}{2}} + Bx \cdot e^{-\frac{x}{2}} -\frac{12}{25}\cos(x) + \frac{16}{25}\sin(x)
 \end{split}
 \end{equation*}
-
+\subsection{Komplexe zahlen}
+Falls der charakteristische Polynom ist komplex und hat der form $a + i\sqrt{b}$, dann hat die homogene Losung die form:
+\begin{equation}
+	y(x)=e^{ax}(c_1cos(\sqrt{b}x) + C_2sin(\sqrt{b}x))
+\end{equation}
+Wo a ist die komplexe losung von charakteristische polynom.
 \section{Wegintegral}
 
 \subsection{Standard Methode}
