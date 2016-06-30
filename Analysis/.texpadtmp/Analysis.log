@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  15 JUN 2016 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  30 JUN 2016 11:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -170,7 +170,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 \c@ContinuedFloat=\count105
 Package caption Info: float package is loaded.
-) (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.aux)
+) (/Users/jakubkotal/Documents/summaries/Analysis/.texpadtmp/Analysis.aux)
 \openout1 = `Analysis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -296,53 +296,53 @@ $[]$ $[]$
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/polarform.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\OT1/cmr/bx/n/10.95 Limes des all-ge-meinen
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 156--156
+Underfull \hbox (badness 1895) in paragraph at lines 158--158
 []|\OT1/cmr/bx/n/10.95 Majoranten- und Mi-no-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 158--158
+Underfull \hbox (badness 1275) in paragraph at lines 160--160
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie Quo-
  []
 
 [2]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 171.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 173.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 171.
- [3] [4] [5] [6] [7] [8]
-Overfull \hbox (22.81699pt too wide) in paragraph at lines 529--529
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 173.
+ [3] [4] [5] [6] [7] [8] [9] [10] [11]
+Overfull \hbox (22.81699pt too wide) in paragraph at lines 684--684
 [] 
  []
 
-[9] (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.aux) ) 
+[12] [13] (/Users/jakubkotal/Documents/summaries/Analysis/.texpadtmp/Analysis.aux) ) 
 Here is how much of TeX's memory you used:
  4348 strings out of 493089
- 65242 string characters out of 6134843
- 143513 words of memory out of 5000000
+ 65200 string characters out of 6134842
+ 142513 words of memory out of 5000000
  7767 multiletter control sequences out of 15000+600000
  12665 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,25n,38p,322b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.pdf (9 pages, 246056 bytes).
+Output written on /Users/jakubkotal/Documents/summaries/Analysis/.texpadtmp/Analysis.pdf (13 pages, 262409 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

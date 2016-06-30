@@ -133,7 +133,8 @@ Find a variable such that the sentence is wrong.
 	P(A) & := \{S\ |\ S \subseteq A\} \\
 	A \cap (B \cup C) & = (A \cap B) \cup (A \cap C) \\
 	A \times B & = \{(a, b)\ |\ a \in A \land b \in B\} \\
-	\mathcal{P}(\{a,b,c\}) & = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\}
+	\mathcal{P}(\{a,b,c\}) & = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\} ( heisst die teilmenge) \\
+	 Ordered\_sets:= (a,b):=\{\{a\},\{a,b\}\}
 \end{split}
 \end{equation*}
 
@@ -180,9 +181,13 @@ Find a variable such that the sentence is wrong.
 	\item[$a\ (\rho\cap\sigma)\ b$:] $a\ \rho\ b$ and $a\ \sigma\ b$
 	\item[The empty set $\emptyset$:] symmetric and transitive
 \end{description}
+\subsubsection{Transitive closure}
+\begin{equation}
+	p^\star = \cup^\infty_{n=1}p^n
+\end{equation}
 
 \subsubsection{Equivalence Relation}
-\textbf{Example:} $\equiv_m$ on $\mathbb{Z}$\\ 
+\textbf{Example:} = \\ 
 A relation that is reflexive, symmetric, and transitive.\\
 
 The set of elements in $A$ that equivalent to $a \in A$ according to the equivalence relation $\theta$ is called the \textbf{equivalence class} of a.
@@ -191,6 +196,7 @@ The set of elements in $A$ that equivalent to $a \in A$ according to the equival
 \end{equation*}
 
 The set $A/\theta$ of equivalence classes of $\theta$ on $A$ is a \textbf{partition}. \\
+If you are looking for a equivalence relation give the matrix with the above properties.
 
 \emph{Hint:}\\
 $a\ \theta\ b \Rightarrow [a] = [b]$\\
@@ -199,6 +205,7 @@ $a\ \cancel{\theta}\ b \Rightarrow [a] \cap [b] = \emptyset$
 \subsection{Partial Order}
 \textbf{Example:} $\leq$ and $\geq$ on $\mathbb{Z}, \mathbb{Q}$ or $\mathbb{R}$, $=$ on $\mathbb{N}$\\ 
 A relation that is reflexive, antisymmetric, and transitive. \\
+If every two elements in a poset are comparable than the Set is \textbf{totally ordered}.\\
 
 Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 
@@ -218,10 +225,11 @@ Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 \subsection{Function}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
-	\item[injective:] no collisions
+	\item[injective:] no collisions. $\forall h_1, h_2 \epsilon A$ $h_1 \neq h_2 \Rightarrow f(h_1)\neq f(h_2)$.
 	\item[surjective:] every value in the codomain is taken on for some argument
 	\item[bijective:] one-to-one mapping (injective and surjective)
 \end{description}
+\paragraph{ bereinigter pranexform} is when you write a formula with first all the quantifiers and then the formula.
 
 \section{Combinatorics}
 
@@ -233,7 +241,7 @@ Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 \textbf{ordered}   & $n^k$                         							 	  & $\frac{n!}{(n-k)!}$    \\\cline{2-3}
 				   & A passcode of length $n$ with $k$ different digits           & How many ways can $k$ places be awarded to $n$ people                       \\\hline
 \textbf{unordered} & $\bigl(\begin{smallmatrix}n+k-1\\k \end{smallmatrix} \bigr)$ & $\bigl(\begin{smallmatrix}n\\k \end{smallmatrix} \bigr) = \frac{n!}{k!(n-k)!}$ \\\cline{2-3}
-				   & Choose $k$ scoops of ice cream from $n$ different flavours   & Select $k$ from $n$ objects                             \\\hline
+				   & Choose at most $k$ scoops of ice cream from $n$ different flavours   & Select $k$ from $n$ objects                             \\\hline
 \end{tabular}
 \end{table}
 
@@ -252,13 +260,20 @@ Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 The set $\{0,1\}^* := \{0,1, 00, 01, ...\}$ of \textbf{finite binary sequences} is countable. \\
 The set $\{0,1\}^\infty$ is uncountable (Cantor's diagonalization argument). \\
 The set \textbf{$A^n$ of $n$-tuples} over A is countable. \\
-The \textbf{union of a countable list} of countable sets is countable (can be considered as  tuples).
+The \textbf{union of a countable list} of countable sets is countable (can be considered as  tuples).\\
+$\mathbb{N}$, $\mathbb{Z}$ und $\mathbb{Q}$ are countable $\mathbb{P}(\mathbb{Z})$ ist uberabzahlbar.
 
 \subsection{Inclusion/Exclusion Principle}
 
 \begin{equation*}
 	|A \cup B \cup C| = |A| + |B| + |C| - |A\cap B| - |A\cap C| - |B\cap C| + |A\cap B\cap C|
 \end{equation*}
+
+\subsection{Double counting principal}
+We want to count the subset of A$\times$B(which is a relation). We can a$\epsilon$A the number $m_a$ of b$\epsilon$B such that (a,b)$\epsilon$S. Or the same for B(equal to the sum of ones in the matrix representation).
+
+\subsection{Pigeon hole principal}
+If a set of n objects is partitioned into k $<$ n sets, then at least one of these sets contains at least $\frac{n}{k}$ objects
 
 \subsection{Binomial Theorem}
 
@@ -271,7 +286,8 @@ The \textbf{union of a countable list} of countable sets is countable (can be co
 \subsection{Special Graphs}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
-	\item[complete graph $K_n$] $n$ vertices, $\frac{n(n-1)}{2}$ edges, $(n-1)$-regular (any two vertex pair is directly connected)
+	\item[complete graph $K_n$] $n$ vertices, $\frac{n(n-1)}{2}$ edges, $(n)$-regular (every vertex has the same degree n)
+.	\item[k regular graph] Each vertex has k neighbours.
 	\item[compete bipartite graph $K_{m,n}$] $m+n$ vertices, $mn$ edges, with two vertex subsets $|V_b| = m$ and $|V_w| = n$
 	\item[tree:] undirected, connected graph with no cycles and $n-1$ edges.
 	\item[hypercube $Q_d$:] \emph{$d$-regular} with $2^d$ vertices and $2^{d-1}d$ edges
@@ -307,12 +323,19 @@ Rules to prove \textbf{non-planarity}
 
 \subsection{Isomorphism}
 
-Two graphs are \textbf{isomorphic} if there exists a bijection $\pi: V \mapsto V'$ such that 
+Two graphs are \textbf{isomorphic} (denoted $\cong$) if there exists a bijection $\pi: V \mapsto V'$ such that 
 \begin{equation*}
 	\{u,v\} \in E \Leftrightarrow \{\pi(u), \pi(v)\} \in E'
 \end{equation*}
 
-\emph{Hint:} Look for cycles with vertices that have a distinct number of degrees. If the graph in question doesn't contain that specific cycle, it can't be isomorph.
+\emph{Hint:} Look for cycles with vertices that have a distinct number of degrees. If the graph in question doesn't contain that specific cycle, it can't be isomorph. 
+\begin{enumerate}
+	\item $|E|+|E^{-}| = 2|E|$ ist gleich der Maximalen Anzahl kanten in Graph.
+	\item $\frac{|v|(|v|-1)}{2}$ ist gleich der Maximalen Anzahl kanten in Graph.
+\end{enumerate}
+
+\subsection{Trees}
+A tree is an undirected connected graph with no cycles. A forest is an undirected graph with no cycles. A leaf is a vertex with degree one. A tree has n-1 edges.
 
 \section{Number Theory}
 
@@ -460,7 +483,7 @@ The \textbf{neutral} and \textbf{inverse element} can have a left and right vers
 			       &										   & $a(b+c) = ab +ac$ and $(b+c)a = ba + ca$ for all $a,b,c \in R$ & \\ \hline
 \textbf{Integral \filbreak Domain}	&									   & cummutative 						 				& $\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ \\ \cline{3-3}
 			       &										   & no zerodividers \filbreak $ab = 0 \Rightarrow a = 0 \lor b = 0$& \\ \hline
-\textbf{Field}	   &$GF(p) \equiv \mathbb{Z}_p$& $\langle F - \{0\}; \cdot, ^{-1}, 1\rangle$ is a commutative ring 						 				& $\mathbb{Q}, \mathbb{R}, \mathbb{C}$ \\ \cline{3-3}
+\textbf{Field}	   &$GF(p) \equiv \mathbb{Z}_p$& $\langle F - \{0\}; \cdot, ^{-1}, 1\rangle$ is a commutative ring 						 				& $\mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{Z}_p$ \\ \cline{3-3}
 			       &										   & every nonzero element is a unit (has an inverse) 	& \\ \hline
 \end{tabular}
 \end{table}
@@ -515,7 +538,7 @@ The smallest subgroup of a group $G$ containing the element $g \in G$ is the \te
 \end{equation*}
 where the resulting group is called \textbf{cyclic}.\\
 
-\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order i.e. $|H|$ divides $|G|$.
+\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order i.e. $|H|$ divides $|G|$. A subgroup of size two contains e and an element a, a has to be it's own invers: aa=e. A subgroup with a prime order is kommutative.
 
 \subsubsection{Cyclic Group}
 
@@ -545,6 +568,14 @@ The \textbf{Euler function} is defined as follows:
 where $p$ and $q$ are prime.
 
 \emph{Hint:} If $p$ is a prime, then $\mathbb{Z}_p^* = \{1,...,p-1\} = \mathbb{Z}_p - \{0\}$
+\paragraph{Fermat, euler}
+\begin{equation}
+	a^{\varphi(m)}\equiv_m 1
+\end{equation}
+for every prime p and every a not divisible by p
+\begin{equation}
+	a^{p-1}\equiv_p 1
+\end{equation}
 
 \subsection{Polynomials over Fields}
 
@@ -553,6 +584,7 @@ $R[x]$ denotes a \textbf{polynomial ring}, a set of polynomials over $R$.
 A polynomial is called \textbf{monic}, if its first coefficient is 1. \\
 The polynomial $a(x) \in F[x]$ is called \textbf{irreducible} if it is divisible only by constants and by constant multiples of $a(x)$.
 Moreover, $\alpha \in F$ is a \textbf{root} $\Leftrightarrow$ $(x-\alpha)$ divides $a(x)$. \\
+
 
 \emph{Hint:} Every polynomial of degree $2$ except $x^2 + x + 1$ is reducible. Every irreducible polynomial of degree $\geq 2$  has no roots.
 
@@ -576,7 +608,8 @@ Moreover, $\alpha \in F$ is a \textbf{root} $\Leftrightarrow$ $(x-\alpha)$ divid
 	\text{then}\qquad & a(x) = 2\frac{(x-4)(x-5)}{(3-4)(3-5)}+6\frac{(x-3)(x-5)}{(4-3)(4-5)}+7\frac{(x-3)(x-4)}{(5-3)(5-4)} 
 \end{split}
 \end{equation*}
-
+\subsubsection{Finite fields}
+ There exists a finite field with q elements if and only if q is a power of a prime. The prime is called the charakteristik of the field. Moreover, any two finite fields of the same size q are isomorphic.
 \subsection{Error-Correcting Codes}
 
 A \textbf{(k,n)-error-correcting code $\mathcal{C}$} over the alphabet $\mathcal{A}$ with $|\mathcal{A}| = q$ is a subset of cardinality $q^k$ of $\mathcal{A}^n$ i.e. one element is of length $n$, with $q^k$ different elements. \\
