@@ -1,0 +1,131 @@
+%% (C) 2009 Stefan Heule
+%% 
+%% Licence: Creative Commons Attribution-Share Alike 3.0 Unported
+%% http://creativecommons.org/licenses/by-sa/3.0/
+%% 
+%% Einen Teil der Inhalte wurde (angepasst) von der Zusammenfassung von
+%% Thorben Bochenek, Licia Huber, Pascal Spörri, Patrick Tremp, Mathieu Jean-Daniel
+%% übernommen.
+%% 
+
+\documentclass[portrait,a4paper,titlepage]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{german}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage{amssymb, amsfonts}
+\usepackage{amsmath}
+\usepackage[e]{esvect}
+
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\usepackage{xcolor}
+
+\usepackage{listings}
+\lstset{
+	basicstyle=\ttfamily\mdseries,
+	identifierstyle=,
+% 	stringstyle=\color{green},
+	numbers=none,
+	inputencoding=utf8x,
+	keywordstyle=[1]\bfseries\color{blue},
+	keywordstyle=[2]\bfseries\color{teal},
+	keywordstyle=[3]\bfseries\color{red},
+	keywordstyle=[4]\bfseries\color{yellow},
+%	numberstyle=\tiny,
+%	stepnumber=10,
+	breaklines=true,
+	frame=none,
+	showstringspaces=false,
+	tabsize=4,
+	commentstyle=\color{gray},	
+	captionpos=b,
+	float=htbp,
+}
+
+\usepackage{geometry}
+\geometry{a4paper, left=10mm, right=10mm, top=20mm, bottom=20mm} 
+
+\usepackage{multicol}  
+\columnsep24pt
+\columnseprule0.1pt
+
+% uply greek letters :)
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+
+% aufzählungszeichen
+%\renewcommand{\labelitemi}{-}
+\renewcommand{\theenumi}{\roman{enumi}}
+% d in integralen, etc. (z.b. integral f(x) *d*x)
+\newcommand{\rmd}{\mathrm{d}}
+% fette mathematische symbole
+\newcommand{\bs}{\boldsymbol}
+% mathcal
+\newcommand{\mc}{\mathcal}
+% norm
+\newcommand{\norm}[1]{| \!\:\! | #1 | \!\:\! |}
+
+% formeln innerhalb von text -> normale formelndarstellung
+\newcommand{\ds}{\displaystyle}
+
+% pfeil
+\newcommand{\arr}{\rightarrow}
+
+% integral mit grenzen oben und unten
+\newcommand{\intl}{\int\limits}
+
+% zahlenmengen
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+
+% todo
+\newcommand{\todo}[1]{$\ggg$ \textbf{TODO} [#1]}
+
+% shorter then \begin{comment}..\end{comment}
+\newcommand{\nop}[1]{}
+
+% hyperref / svn
+\usepackage[colorlinks=false,pdfborder = {0 0 0 0}]{hyperref}
+\usepackage{svn-multi}
+\svnid{$Id: main.tex 26 2009-08-09 18:56:51Z stheule $}
+
+% paragraphe nummerieren und titel auf eigener zeile
+\setcounter{secnumdepth}{4}
+
+
+\begin{document}
+
+\author{Stefan Heule}
+\title{Digitaltechnik Zusammenfassung 2009
+\thanks{Licence: Creative Commons Attribution-Share Alike 3.0 Unported (\url{http://creativecommons.org/licenses/by-sa/3.0/})}
+{\\ \small Revision \svnrev}
+}
+\date{\today}
+\maketitle
+
+
+
+% alle Kapitel werden aus einzelnen Dateien eingebunden
+\input{komb.tex}
+\input{minim.tex}
+\input{asm.tex}
+\input{verilog.tex}
+\input{cpu.tex}
+\input{y86code.tex}
+\input{memory.tex}
+\input{bin-numbers.tex}
+\input{arith.tex}
+
+
+% die seite füllen
+\clearpage
+
+
+\end{document}
+
+

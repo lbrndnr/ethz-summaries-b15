@@ -53,7 +53,10 @@ Removing details specifics and capturing the essence of the information.\\ In pr
 \subsubsection{Uses of routines}There are two different uses for Routines:\paragraph{bottom-up:} Encapsulating a computation for reuse.\paragraph{Top-down:} Calling a routine before having written it. Allows to write the bigger code at the beginning and go to the little details later.
 \subsubsection{Kinds of routines}
 Their are two kinds of routines:\paragraph{Procedure:} doesn't return a result.\paragraph{Function:} returns a result(f(arg: type):result type).\\
-\back\includegraphics[scale = 0.5]{feature}
+\begin{center}
+	\back\includegraphics[width = 18cm]{feature}
+\end{center}
+
 \subsubsection{Attributes}
 Each class has an attribute field where there is every object of this class in the program.
 \subsubsection{The uniform access principal}
@@ -242,23 +245,43 @@ A binary tree is recursive because every subtree is also a subtree.
 A container is something that can hold other objects. All containers can \hl{insert an item}, \hl{access an item} and \hl{remove an item.} Some containers have key or indexes to find the items more efficiently. Every container data structure is more efficient at some kind of operation.
 \subsubsection{Arrays}
 Each item has an identifier index.\\
-\back\includegraphics[scale = 1]{array}
+\begin{center}
+	
+\end{center}
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/array}
+\end{center}
 \subsubsection{Lists}
-A list is a container storing items, identified by an integer index, where items can be inserted or removed at any position. There are two type of lists: \hl{array based} and linked. Array based are similar to array but if you remove a value in the middle then all the elements after it have to be moved 1 space forward, the same if you insert in the middle.\\
-\back\includegraphics{list}\\
-Linked lists have a reference to the next item in the linked list. The reference of the last item is void.\\
-\back\includegraphics{linked}
+A list is a container storing items, identified by an integer index, where items can be inserted or removed at any position. There are two type of lists: \hl{array based} and linked. Array based are similar to array but if you remove a value in the middle then all the elements after it have to be moved 1 space forward, the same if you insert in the middle.
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/list}
+\end{center}
+
+Linked lists have a reference to the next item in the linked list. The reference of the last item is void.
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/linked}
+\end{center}
+
 \subsection{Stacks}
-In a stack you can only access or remove the item on the top of the stack: \hl{LIFO.}\\
-\back\includegraphics{stack}
+In a stack you can only access or remove the item on the top of the stack: \hl{LIFO.}
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/stack}
+\end{center}
+
 \subsubsection{Queues}
-Like stacks but you can only access or remove the bottom of the queue: \hl{FIFO\\}. There are also two types of queues: array based(ring buffer) and linked list.\\In the array based you use a ring buffer, and the position of the items loop over the array, the tail and front are somewhere in the array but don't have to be at the top or end. The linked list version is like a normal linked list but you have an extra cursor that points to the tail of the list.\\
-\back\includegraphics{queue}
+Like stacks but you can only access or remove the bottom of the queue: \hl{FIFO\\}. There are also two types of queues: array based(ring buffer) and linked list.\\In the array based you use a ring buffer, and the position of the items loop over the array, the tail and front are somewhere in the array but don't have to be at the top or end. The linked list version is like a normal linked list but you have an extra cursor that points to the tail of the list.
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/queue}
+\end{center}
+
 \subsection{Tables}
 Like arrays but the indexing is not done with integers but with other stuff like strings.
 \subsubsection{Hash tables}
-Map all possible keys into an integer interval 1..n and then store the items in an array. Problem with this is that it causes collisions. Solutions: open hashing(if there is a collision you create a linked list in this position in the array). Another solution is closed hashing where if a position is already occupied you try another position for example position + 1.\\
-\back\includegraphics{table}
+Map all possible keys into an integer interval 1..n and then store the items in an array. Problem with this is that it causes collisions. Solutions: open hashing(if there is a collision you create a linked list in this position in the array). Another solution is closed hashing where if a position is already occupied you try another position for example position + 1.
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/table}
+\end{center}
+
 \section{Multiple inheritance}
 \subsection{basics}
 A class that inherits from multiple other classes.\\\hl{You can compare the value of two objects with object1 ~ object2, if you write object1 = object2 the answer is if there reference is the same.}\\Example of multiple inheritance:\\class arrayed\_list [G] inherit\\\tab list[G]\\\tab array[G]. There are two ways to get this result. The first one that we have seen, we consider that an arrayed\_list \hl{is} an array and in the second we consider that an array\_list \hl{has} an array:\\class arrayed\_list [G] inherit\\\tab list[G]\\feature\\\tab rep: ARRAY[G]\\the attribute rep represents a field in the list that is an array.
@@ -285,11 +308,17 @@ We will extend our control structures(decides what part of the program runs when
 \subsubsection{Event driven programming}
 The user drives the program with different event options he can trigger(mouse keyboard etc...). Vs program driven control.
 \subsubsection{Model-view controller}
-\back\includegraphics{model}
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/model}
+\end{center}
+
 \subsection{The observer pattern}
 A design pattern is an architectural scheme, a certain organisation of classes and features, that provides applications with standardised solution to a common problem.\\
 \subsubsection{Publisher subscriber, observer pattern}
-\back\includegraphics{pub}\\
+\begin{center}
+	\includegraphics[width = 15cm]{Eprog/pub}
+\end{center}
+
 The subscriber gets attached to the publisher an when the publisher publishes something new the subscriber is updated. Each publisher has a list of all the subscribers it has. A subscriber can subscribe itself to a publisher.\\Each subscriber has \hl{one} update operation and most of the time they are only subscribed to one publisher. Arguments(location of mouse etc...) can be passed to the update procedure.
 \subsection{Beyond the observer pattern}
 Since the publisher subscriber pattern is not reusable we will work on a new better one.
