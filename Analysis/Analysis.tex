@@ -246,16 +246,19 @@ Es seien $a_n$, $b_n > 0$ mit $a_n \geq b_n\ \forall n$ ab einem gewissen $n_0$.
 	\item $\sum_n (-1)^n a_n$ gegeben
 	\item \textbf{konvergent}, falls $\sum_n |a_n|$ konvergent
 \end{enumerate}
+
 \subsection{Geometrische Reihe}
+
+Reihe der Form $\sum^\infty_{k = 0} a \cdot r^k$ mit der \textbf{Partialsumme}:
+
 \begin{equation*}
-	S_N = \sum^n_k a*r^k
+	S_N=\frac{a-ar^{N+1}}{1-r}
 \end{equation*}
+
+\textbf{Konvergent}, falls $0<|r|<1$ mit Grenzwert:
+
 \begin{equation*}
-	S_N=\frac{a-a*r^{n+1}}{1-r}
-\end{equation*}
-falls $0<|r|<1$ dann
-\begin{equation*}
-	\sum^\infty_0a*r^k=\frac{a}{1-r}
+	\sum^\infty_{k=0}ar^k=\frac{a}{1-r}
 \end{equation*}
 
 \subsection{Potenzreihe}
@@ -271,13 +274,11 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 
 \subsubsection{Tipps}
 \begin{equation*}
-	cos(x)= \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!}
-\end{equation*}
-\begin{equation*}
-	sin(x)= \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!}
-\end{equation*}
-\begin{equation*}
-	e^x=\sum^\infty_0\frac{x^n}{n!}
+\begin{split}
+	\cos(x) & = \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!} \\
+	\sin(x) & = \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
+	e^x & = \sum^\infty_0\frac{x^n}{n!}
+\end{split}
 \end{equation*}
 
 \section{Stetigkeit}
@@ -588,23 +589,24 @@ Für ein Vektorfeld $\vec{v}$ mit Komponenten $v_1,v_2,v_3$:
 	\end{pmatrix}
 \end{equation*}
 
-\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ.
+\subsection{Divergenz}
+\begin{equation*}
+	\text{div}(v)= \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + ... 
+\end{equation*}
 
 \subsection{Integrabilitatsbedigungen}
 \begin{equation*}
 	\frac{\vartheta v_i}{\vartheta x_j}=\frac{\vartheta v_j}{\vartheta x_i},\forall i \neq j
 \end{equation*}
-Falls diese ist erfullt dann ist der Feld ein Potenzialfeld und konservativ.
+Falls diese ist erfüllt dann ist der Feld ein Potenzialfeld und konservativ.
 
 \subsection{Potenzialfeld}
 Ein potenzialfled ist konservativ. Der potenzial $\Phi$ eines Potenzialfeld:
 \begin{equation*}
 	\bigtriangledown \Phi \doteq v
 \end{equation*}
-\subsection{Divergenz}
-\begin{equation*}
-	div(v)= \frac{\vartheta v_1}{\vartheta x} + \frac{\vartheta v_2}{\vartheta y} + ... 
-\end{equation*}
+
+\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ.
 
 \section{Wegintegral}
 
@@ -627,7 +629,7 @@ Ein potenzialfled ist konservativ. Der potenzial $\Phi$ eines Potenzialfeld:
 
 \subsection{In Potenzialfeldern}
 
-\paragraph{Anforderung:} Das Vektorfeld $\vec{v}$ ist \textbf{konservativ}(=potenzialfeld, der weg ist egal). Es existiert ein Potenzial.
+\paragraph{Anforderung:} Das Vektorfeld $\vec{v}$ ist \textbf{konservativ}(= Potenzialfeld, der Weg ist egal). Es existiert ein Potenzial.
 
 \begin{equation*}
 	\textbf{Grundsatz:}\quad\int_\gamma \vec{v} \cdot d\vec{s} = \Phi(\text{Ende}) - \Phi(\text{Anfang})
