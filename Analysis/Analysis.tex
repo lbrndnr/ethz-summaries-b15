@@ -282,43 +282,46 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 \end{equation*}
 
 \section{Stetigkeit}
-Kriterien fur stetigkeit:
-\begin{enumerate}
-	\item f ist auf $\Omega$ definiert
-	\item $lim_{x\rightarrow a}$f(x)=f(a) und existiert (ist nicht gleich $\infty$ und gleich von beide seite von a).
-\end{enumerate}
-\paragraph{Weierstrass-kriterium}
-fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$ sodass fur alle $|x-a|<\delta$ gilt:
+
+\subsection{Stetigkeitskriterien}
+
+\subsubsection*{Weierstrass-Kriterium}
+Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass für alle $|x-a|<\delta$ gilt:
 \begin{equation*}
 	|f(x) -f(a)|<\epsilon
 \end{equation*}
-\subsection{Gleichmassigstetigkeit}
-fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$ sodass fur alle $|x-y|<\delta$ gilt:
+
+\subsubsection*{Gleichmässige Stetigkeit}
+Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass für alle $|x-y|<\delta$ gilt:
 \begin{equation*}
 	|f(x)-f(y)| < \epsilon
 \end{equation*}
-$\delta$ hangt nur von $\epsilon$ ab nicht wie weierstrass-kriterium. Falls f ist stetig und kompakt, dann ist er gleichmassig stetig.
+\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichmässig stetig.
 
-\subsection{Lipschitz-stetigkeit}
-Muss ein $L\epsilon \mathbb{R}$ sodass:
+\subsubsection*{Lipschitz-Stetigkeit}
+Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
 \begin{equation*}
-	|f(x)-f(y)|\leq L|f(x)-f(y)|, \forall x,y \epsilon \Omega
-\end{equation*}
-Eine funktion ist lipschitz stetig wenn sein erste ableitung ist auf $\Omega$ beschrankt.
-
-\subsection{Punktweise Konvergenz}
-$f_n(x)$ konvergiert Punktweise falls:
-\begin{equation*}
-	\forall x\epsilon \Omega, lim_{n\rightarrow\infty}f_n(x) = f(x)
+	|f(x)-f(y)|\leq L|f(x)-f(y)| \quad \forall x,y \in \Omega
 \end{equation*}
 
-\subsection{Gleichmassig konvergenz}
-$f_n(x)$ konvergiert gleichmassig falls:
+\emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschränkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichmässige Stetigkeit.
+
+\subsubsection*{Punktweise Konvergenz}
+$f_n(x)$ konvergiert punktweise falls:
 \begin{equation*}
-	lim_{n\rightarrow\infty}, sup|f_n(x) - f(x)| = 0
+	\forall x\in \Omega \quad \lim_{n\rightarrow\infty}f_n(x) = f(x)
 \end{equation*}
-Beide diese Funktionen mussen stetig sein.
-Diese bedigung ist starker als Punktweise konvergenz.
+
+\subsubsection*{Gleichmässig Konvergenz}
+
+\paragraph{Grundsatz:} Falls eine Folge stetiger Funktionen $f_n$ gleichmässig gegen $f$ konvergiert, ist $f$ stetig.\\
+
+$f_n(x)$ konvergiert gleichmässig falls:
+\begin{equation*}
+	\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)| = 0
+\end{equation*}
+
+\emph{Bemerkung:} Gleichmässige Konvergenz impliziert punktweise Konvergenz.
 
 \section{Differenzialrechnung}
 
