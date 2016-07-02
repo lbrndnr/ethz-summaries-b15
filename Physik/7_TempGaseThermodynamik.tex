@@ -22,33 +22,123 @@
 \begin{multicols*}{3}
 
 \section{Temperatur, Gase,    Thermodynamik}
+\subsection{Atome}
+Der massenzahl: A = Z + N wo Z ist die anzahl protonen und electronen, N ist die Anzahl Neutronen.
 \subsection{Temperatur / Gasthermometer}
-
-%WORK POINT
-
-
-%-------------------------------------------------------
-
+\paragraph{Druck von ein Gas}
+\begin{equation}
+	p=\frac{F}{A}
+\end{equation}
+F ist die Kraft und A die Flache.\\
+pascal:$NM^{-2}$, 1 atm = $1,0125 * 10^5$ Pa, 1 bar = $10^5$Pa
 \subsection{Absolute Temperatur / Kelvin-Skala}
 
 \subsection{Ideale Gase}
-
+\begin{equation}
+	pV=NkT
+\end{equation}
+wo k die boltzman konstante, N die Anzahl der gasmolekule, T die temperatur(K), V die Volume($m^3$) und p die Druck(Pa).
 \subsection{W{\"a}rmeenergie und W{\"a}rmekapazit{\"a}t}
+Warmekapazitat C:
+\begin{equation}
+	C=\frac{\Delta Q}{\Delta T}
+\end{equation}
+Wo Q ist die energie benotigt um den korper temperatur um T tauschen. Mann kann auch die warmkapazitat pro masse oder pro mol definieren. Wenn $\Delta T$ nicht zu gross ist, ist C eine konstante.
+\paragraph{Warmkapazitat einer idealen einatomiges Gasses bei konstanten Volume V}
+\begin{equation}
+	C_V=\frac{3}{2}Nk
+\end{equation}
+\paragraph{Warmkapazitat einer idealen einatomiges Gasses bei konstanten Druck p}
+\begin{equation}
+	C_p=\frac{5}{2}Nk = C_V+Nk
+\end{equation}
+Die warmkapazitat von meisten korper ist nur abhangig von Anzahl Molen:
+\begin{equation}
+	c\approx 25\frac{J}{mol*K}
+\end{equation}
+
 
 \subsection{Latente W{\"a}rme}
+Energie gebraucht fur ein Phasenubergang
+\begin{equation}
+	Q=mL
+\end{equation}
+Wo L eine konstante specifik zu jede Substanz ist.
 
 \subsection{W{\"a}rmestrahlung}
+Jede korper emittiert und absorbiert strahlung. Wenn er warmer als sein Umgebung ist dann emittiert er mehr als er absorbiert und vis versa, bis thermische gleichgewicht.
+\paragraph{Die Austrahlung}
+\begin{equation}
+	S(T)=\epsilon\sigma T^4
+\end{equation}
+Wobei $\sigma$ eine konstante ist und die unitat von S(T)=$\frac{J}{sm^2}$ und $0\geq\epsilon \leq 1$ 1 bei idealen Fall.
 
 \subsection{Erster Haupsatz - Thermodynamik}
+In einer geschlosennes System wird nach ein Zeit ein termischer Gleichgewicht erreicht.
+\paragraph{Die innere Energie U}
+Ist die gesamte Energie in eine System. U hangt nur von anfang und endzustand. $U = U_e-U_a$.
+\paragraph{Innere Energie des idealen Gasses}
+\begin{equation}
+	U=\frac{3}{2}NkT=\frac{3}{2}pV
+\end{equation}
+\begin{equation}
+	dU=dQ+dW
+\end{equation}
 
 \subsection{Mechanische Arbeit eines expandierenden Gases}
+Die energie ist von Gas geleistet
+\begin{equation}
+	dW=-Fdx=-(pA)dx=-pdV
+\end{equation}
+\begin{equation}
+	W=-\int^V_eV_adV=-p(V_e-V_a)
+\end{equation}
+bei konstanten Druck
+\subsubsection{Isotherme expansion}
+Temperatur des gasses bleibt konstant und energie kommt von aussen.
+\begin{equation}
+	Q=\int dQ=-\int dW=-W
+\end{equation}
+\subsubsection{Adiabatische Ausdehnung}
+Keine warme wird dem Gas ausgetauscht $\Rightarrow dQ=0$, Temperatur des Gases wa ̈hrend der adiabatischen Expansion abnimmt. Bei der adiabatischen Expansion wird die im Gas gespeicherte W ̈armeenergie in mechanische Arbeit umgewandelt.
 
 \subsection{Thermische Prozesse des idealen Gases}
 
 \subsection{W{\"a}rmemaschine}
+Warme ist in energie umgewandelt
+\begin{equation}
+	Q_{isotherm}=-W_{isotherm}=nRTln(\frac{V_2}{V_1})
+\end{equation}
+$V_1$ anfangs volum.
+\paragraph{Wirkungsgrad}
+Der Wirkungsgrad einer W ̈armemaschine ist definiert als Verh ̈altnis der geleisteten Arbeit zur zugefu ̈hrten W ̈arme:
+\begin{equation}
+	\epsilon=\frac{|W|}{|Q_W|}=\frac{|Q_W|-|Q_K|}{|Q_W|}=1-\frac{Q_W}{Q_K}
+\end{equation}
+\paragraph{Leistungszahl}
+In  ̈ahnlicher Weise ist die Leistungszahl einer W ̈armepumpe definiert als das Verh ̈altnis der W ̈arme, die dem kalten Reservoir entnommen wurde $(QK > 0)$, und der zugefu ̈hrten mechanischen Arbeit $(W > 0)$:
+\begin{equation}
+	c_L=\frac{Q_K}{W}
+\end{equation}
 
 \subsection{Zweiter Hauptsatz - Thermodynamik}
 
 
 \end{multicols*}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
