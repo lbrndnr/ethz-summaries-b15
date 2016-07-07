@@ -246,77 +246,82 @@ Es seien $a_n$, $b_n > 0$ mit $a_n \geq b_n\ \forall n$ ab einem gewissen $n_0$.
 	\item $\sum_n (-1)^n a_n$ gegeben
 	\item \textbf{konvergent}, falls $\sum_n |a_n|$ konvergent
 \end{enumerate}
-\subsection{Geometrische Reihe}
-\begin{equation}
-	S_N = \sum^n_k a*r^k
-\end{equation}
-\begin{equation}
-	S_N=\frac{a-a*r^{n+1}}{1-r}
-\end{equation}
-falls $0<|r|<1$ dann
-\begin{equation}
-	\sum^\infty_0a*r^k=\frac{a}{1-r}
-\end{equation}
 
-\subsection{Potenzreihen}
-Potenzreihen haben der Form $\sum^\infty_0 a_nx^n$.
-\paragraph{Der konvergenz radius}
-\begin{equation}
-	\rho=lim_{n\rightarrow \infty}|\frac{a_n}{a_{n+1}}|
-\end{equation}
-\begin{equation}
-	\rho=\frac{1}{lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
-\end{equation}
-wenn $|x|<\rho$ dann konvergiert die Reihe. In diesem gebiet darf man die Reihe ableiten und Integrieren.
-\subsubsection{Tips}
-\begin{equation}
-	cos(x)= \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!}
-\end{equation}
-\begin{equation}
-	sin(x)= \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!}
-\end{equation}
-\begin{equation}
-	e^x=\sum^\infty_0\frac{x^n}{n!}
-\end{equation}
+\subsection{Geometrische Reihe}
+
+Reihe der Form $\sum^\infty_{k = 0} a \cdot r^k$ mit der \textbf{Partialsumme}:
+
+\begin{equation*}
+	S_N=\frac{a-ar^{N+1}}{1-r}
+\end{equation*}
+
+\textbf{Konvergent}, falls $0<|r|<1$ mit Grenzwert:
+
+\begin{equation*}
+	\sum^\infty_{k=0}ar^k=\frac{a}{1-r}
+\end{equation*}
+
+\subsection{Potenzreihe}
+
+Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In diesem Gebiet darf man die Reihe ableiten und integrieren.
+
+\begin{equation*}
+	\rho= \lim_{n\rightarrow \infty}|\frac{a_n}{a_{n+1}}|
+\end{equation*}
+\begin{equation*}
+	\rho=\frac{1}{\lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
+\end{equation*}
+
+\subsubsection{Tipps}
+\begin{equation*}
+\begin{split}
+	\cos(x) & = \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!} \\
+	\sin(x) & = \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
+	e^x & = \sum^\infty_0\frac{x^n}{n!}
+\end{split}
+\end{equation*}
 
 \section{Stetigkeit}
-Kriterien fur stetigkeit:
-\begin{enumerate}
-	\item f ist auf $\Omega$ definiert
-	\item $lim_{x\rightarrow a}$f(x)=f(a) und existiert (ist nicht gleich $\infty$ und gleich von beide seite von a).
-\end{enumerate}
-\paragraph{Weierstrass-kriterium}
-fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$ sodass fur alle $|x-a|<\delta$ gilt:
-\begin{equation}
+
+\subsection{Stetigkeitskriterien}
+
+\subsubsection*{Weierstrass-Kriterium}
+Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass für alle $|x-a|<\delta$ gilt:
+\begin{equation*}
 	|f(x) -f(a)|<\epsilon
-\end{equation}
-\subsection{Gleichmassigstetigkeit}
-fur alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$ sodass fur alle $|x-y|<\delta$ gilt:
-\begin{equation}
+\end{equation*}
+
+\subsubsection*{Gleichmässige Stetigkeit}
+Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass für alle $|x-y|<\delta$ gilt:
+\begin{equation*}
 	|f(x)-f(y)| < \epsilon
-\end{equation}
-$\delta$ hangt nur von $\epsilon$ ab nicht wie weierstrass-kriterium. Falls f ist stetig und kompakt, dann ist er gleichmassig stetig.
+\end{equation*}
+\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichmässig stetig.
 
-\subsection{Lipschitz-stetigkeit}
-Muss ein $L\epsilon \mathbb{R}$ sodass:
-\begin{equation}
-	|f(x)-f(y)|\leq L|f(x)-f(y)|, \forall x,y \epsilon \Omega
-\end{equation}
-Eine funktion ist lipschitz stetig wenn sein erste ableitung ist auf $\Omega$ beschrankt.
+\subsubsection*{Lipschitz-Stetigkeit}
+Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
+\begin{equation*}
+	|f(x)-f(y)|\leq L|f(x)-f(y)| \quad \forall x,y \in \Omega
+\end{equation*}
 
-\subsection{Punktweise Konvergenz}
-$f_n(x)$ konvergiert Punktweise falls:
-\begin{equation}
-	\forall x\epsilon \Omega, lim_{n\rightarrow\infty}f_n(x) = f(x)
-\end{equation}
+\emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschränkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichmässige Stetigkeit.
 
-\subsection{Gleichmassig konvergenz}
-$f_n(x)$ konvergiert gleichmassig falls:
-\begin{equation}
-	lim_{n\rightarrow\infty}, sup|f_n(x) - f(x)| = 0
-\end{equation}
-Beide diese Funktionen mussen stetig sein.
-Diese bedigung ist starker als Punktweise konvergenz.
+\subsubsection*{Punktweise Konvergenz}
+$f_n(x)$ konvergiert punktweise falls:
+\begin{equation*}
+	\forall x\in \Omega \quad \lim_{n\rightarrow\infty}f_n(x) = f(x)
+\end{equation*}
+
+\subsubsection*{Gleichmässig Konvergenz}
+
+\paragraph{Grundsatz:} Falls eine Folge stetiger Funktionen $f_n$ gleichmässig gegen $f$ konvergiert, ist $f$ stetig.\\
+
+$f_n(x)$ konvergiert gleichmässig falls:
+\begin{equation*}
+	\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)| = 0
+\end{equation*}
+
+\emph{Bemerkung:} Gleichmässige Konvergenz impliziert punktweise Konvergenz.
 
 \section{Differenzialrechnung}
 
@@ -351,12 +356,12 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 \end{equation*}
 
 \subsection{Hauptsatz von calculus}
-\begin{equation}
+\begin{equation*}
 	f(x)=\int^{m(x)}_lg(t)dt
-\end{equation}
-\begin{equation}
+\end{equation*}
+\begin{equation*}
 	f'(x)=g(m(x))*\frac{d}{dx}m(x)
-\end{equation}
+\end{equation*}
 wo m(x) hat der Form $ax^b$ und $l\epsilon \mathbb{R}$
 
 \section{Integration}
@@ -394,6 +399,15 @@ $\cos(x)$ & $\sin(x) + C$ \\ \hline
 	\int\tan x\ dx & = \int\frac{\sin x}{\cos x}\ dx = -\log|\cos(x)| \\
 	\int \frac{1}{x - \alpha} & = \log(x-\alpha) \\
 \end{split}
+\end{equation*}
+\begin{equation*}
+	\int\frac{1}{1+x^2}=arctan(x)
+\end{equation*}
+\begin{equation*}
+	\int sinh(x)=cosh(x) + C
+\end{equation*}
+\begin{equation*}
+	\int cosh(c)=sinh(s) + C
 \end{equation*}
 
 \section{Differentialgleichungen}
@@ -520,10 +534,83 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 \end{equation*}
 \subsection{Komplexe zahlen}
 Falls der charakteristische Polynom ist komplex und hat der form $a + i\sqrt{b}$, dann hat die homogene Losung die form:
-\begin{equation}
+\begin{equation*}
 	y(x)=e^{ax}(c_1cos(\sqrt{b}x) + C_2sin(\sqrt{b}x))
-\end{equation}
+\end{equation*}
+
 Wo a ist die komplexe losung von charakteristische polynom.
+
+\section{Vektorfelder}
+
+\subsection{Operatoren}
+
+\subsubsection{Differenzial}
+
+\begin{equation*}
+	df = \begin{pmatrix}
+		\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_n} \\
+		... & ... & ... \\
+		\frac{\partial f_m}{\partial x_1} & ... & \frac{\partial f_m}{\partial x_n}
+	\end{pmatrix}
+\end{equation*}
+
+\subsubsection{Gradient}
+
+\begin{equation*}
+	\text{grad}(f)=\nabla f=
+	\begin{pmatrix}
+		\frac{\partial f}{\partial x_1}\\
+		...\\
+		\frac{\partial f}{\partial x_n}\\
+	\end{pmatrix}
+\end{equation*}
+
+Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine Länge ist gleich der maximalen Änderung von $f$.
+
+\subsubsection{Hessematrix}
+
+\begin{equation*}
+	\text{Hess}(f)=
+	\begin{pmatrix}
+		\frac{\partial^2 f}{\partial^2x_1^2} & ... & \frac{\partial^2 f}{\partial x_1 \partial x_n}\\
+		...&...&...\\
+		\frac{\partial^2 f}{\partial x_n \partial x_1} & ... & \frac{\partial^2 f}{\partial x_n^2}
+	\end{pmatrix}
+\end{equation*}
+Falls a hat in x0 nur positive eigenwerte dann ist es eine maximalstelle, falls sie hat nur negative eingewerte dann ist es eine minimalstelle, falls sie hat beide dann ist es ein sattelpunkt.
+
+\subsubsection{Rotation}
+
+Für ein Vektorfeld $\vec{v}$ mit Komponenten $v_1,v_2,v_3$:
+
+\begin{equation*}
+	\text{rot}(\vec{v})=\nabla\times \vec{v} =
+	\begin{pmatrix}
+		\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z}\\
+		\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x}\\
+		\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}
+	\end{pmatrix}
+\end{equation*}
+
+\subsection{Divergenz}
+\begin{equation*}
+	\text{div}(v)= \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + ... 
+\end{equation*}
+
+\subsection{Integrabilitatsbedigungen}
+\begin{equation*}
+	\frac{\vartheta v_i}{\vartheta x_j}=\frac{\vartheta v_j}{\vartheta x_i},\forall i \neq j
+\end{equation*}
+Falls diese ist erfüllt dann ist der Feld ein Potenzialfeld und konservativ.
+
+\subsection{Potenzialfeld}
+Ein potenzialfled ist konservativ. Der potenzial $\Phi$ eines Potenzialfeld:
+\begin{equation*}
+	\bigtriangledown \Phi \doteq v
+\end{equation*}
+
+\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ.
+
 \section{Wegintegral}
 
 \subsection{Standard Methode}
@@ -545,7 +632,7 @@ Wo a ist die komplexe losung von charakteristische polynom.
 
 \subsection{In Potenzialfeldern}
 
-\paragraph{Anforderung:} Das Vektorfeld $\vec{v}$ ist \textbf{konservativ}. Es existiert ein Potenzial.
+\paragraph{Anforderung:} Das Vektorfeld $\vec{v}$ ist \textbf{konservativ}(= Potenzialfeld, der Weg ist egal). Es existiert ein Potenzial.
 
 \begin{equation*}
 	\textbf{Grundsatz:}\quad\int_\gamma \vec{v} \cdot d\vec{s} = \Phi(\text{Ende}) - \Phi(\text{Anfang})
@@ -579,6 +666,25 @@ Wo a ist die komplexe losung von charakteristische polynom.
 	\text{in Formel einsetzen:}\quad & \int_\gamma \vec{v} \cdot d\vec{s} = \int_E -1\ dxdy = -\mu(E) = -\pi
 \end{split}
 \end{equation*}
+
+\subsection{Tips}
+parametrisierung eines kreises: x=r*cos(t) y= r*sin(t) dxdy= rdrdt
+dxdy=$|rs\times rt|$
+
+\section{Flussintegrale oberflacheintegrale}
+\subsection{1 methode}
+\begin{enumerate}
+	\item Die flache parametrisieren nach u und v: $\Phi_1(u,v),\Phi_2(u,v),\Phi_3(u,v)$.
+	\item berechnen $\Phi_u = \frac{\vartheta \Phi}{\vartheta u}$ und $\Phi_v = \frac{\vartheta \Phi}{\vartheta v}$. Und krossprodukt berechnen $\Phi_u \times \Phi_v$
+	\item benutzen die Formel:\begin{equation*}
+		\int_S v*ndo=\pm\int^b_a\int_c^d v(\Phi(u,v))*(\Phi_u\times \Phi_v) dudv
+	\end{equation*}
+\end{enumerate}
+\subsection{Gauss}
+\begin{equation*}
+	\int_{\vartheta V}v*ndo= \int_V div(v)d\mu
+\end{equation*}
+
 
 \section{Fl{\"a}chenintegral}
 
@@ -617,8 +723,81 @@ Wo a ist die komplexe losung von charakteristische polynom.
 
 \section{Kurvendiskussion}
 
-\subsection{Extrema/Minima}
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
+	\item[kritischer Punkt:] $p_0 \in \Omega$ f{\"u}r welchen $\text{rank}(df(p_0)) < \min\{m,n\}$ gilt
+	\item[Kandidaten für Extrema:] $p_0 \in \Omega$ für welchen $df(p_0) = 0$ gilt
+\end{description}
 
-\paragraph{Kritischer Punkt:} $p_0 \in \Omega$ f{\"u}r welchen $df(p_0)$ nicht den maximalen Rang besitzt, also falls $Rang(df(p_0)) < \min{n, m}$.
+\subsection{Extremwertaufgaben ohne Nebenbedingungen}
+
+\begin{enumerate}[noitemsep]
+	\item Kandidaten für Extrema finden $df(x)=0$
+	\item Bestimmung:
+	\begin{enumerate}[noitemsep]
+		\item $\text{Hess}(f)(p_0)$ positiv definit $\Rightarrow$ lokales Minimum
+		\item $\text{Hess}(f)(p_0)$ negativ definit $\Rightarrow$ lokales Maximum
+		\item $\text{Hess}(f)(p_0)$ indefinit $\Rightarrow$ Sattelpunkt
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Extremwertaufgaben mit Nebenbedingungen}
+
+\begin{equation*}
+\begin{split}
+	\text{gegeben:} \quad & f = xyz\ \text{mit Nebenbedinung}\ x^2 + y^2 + z^2 = 1 \\
+	\textbf{Lagrange-Bedingung:} \quad & L = f - \lambda g = xyz - \lambda(x^2 + y^2 + z^2 - 1) \\
+	\text{kritische Punkte von $L$:} \quad & dL = 0 \\
+	& \frac{\partial L}{\partial x} = 0 \Rightarrow \lambda = \frac{yz}{2x} \\
+	& \frac{\partial L}{\partial y} = 0 \Rightarrow \lambda = \frac{xz}{2y} \\
+	& \frac{\partial L}{\partial z} = 0 \Rightarrow \lambda = \frac{xy}{2z} \\
+	\text{Lambdas gleichsetzen:} \quad & x^2 = y^2 = z^2 \land g \Rightarrow 3x^2 = 1 \Rightarrow x = \pm \frac{1}{\sqrt{3}} \\
+	\textbf{Kandidaten:} \quad & \begin{pmatrix}
+		\pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}
+	\end{pmatrix} \\
+	\text{in $f$ einsetzen:} \quad & f\begin{pmatrix}
+		\pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}
+	\end{pmatrix} = \pm \frac{1}{3\sqrt{3}}
+\end{split}
+\end{equation*}
+
+\paragraph{Vorgehen um alle Kandidaten zu finden:}
+\begin{enumerate}[noitemsep]
+	\item Lagrange-Bedinung anwenden (müssen alle Nebenbedingung erfüllen)
+	\item Kandidaten der Nebenbedingung \\
+	falls $g$ differenzierbar: 
+	\begin{enumerate}[noitemsep]
+		\item nicht-reguläre Punkte finden mit $dg = 0$
+		\item gefundene Punkte mit Nebenbedingung überprüfen
+	\end{enumerate}
+	falls $g$ nicht differenzierbar:
+	\begin{enumerate}[noitemsep]
+		\item nicht-reguläre Punkte der Teilstücke des Randes
+		\item Eckpunkte des Gebietes überprüfen
+	\end{enumerate}
+\end{enumerate}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
