@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  1 JUL 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  2 JUL 2016 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -268,11 +268,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -281,50 +281,64 @@ Missing character: There is no ¤ in font cmbx12!
  <images/polarform.png, id=1, 516.42938pt x 512.41437pt>
 File: images/polarform.png Graphic file (type png)
  <use images/polarform.png>
-Package pdftex.def Info: images/polarform.png used on input line 70.
+Package pdftex.def Info: images/polarform.png used on input line 86.
 (pdftex.def)             Requested size: 225.48764pt x 223.73506pt.
 
-Overfull \hbox (1.71744pt too wide) in paragraph at lines 85--85
+Overfull \hbox (1.71744pt too wide) in paragraph at lines 101--101
 [] 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 68--87
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 84--103
 $[]$ $[]$ 
  []
 
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/polarform.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./images/polarform.png>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+Missing character: There is no Ã in font cmbx10!
+Missing character: There is no ¤ in font cmbx10!
+Missing character: There is no Ã in font cmbx10!
+Missing character: There is no ¤ in font cmbx10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []|\OT1/cmr/bx/n/10.95 Limes des all-ge-meinen
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 158--158
+Underfull \hbox (badness 1895) in paragraph at lines 203--203
 []|\OT1/cmr/bx/n/10.95 Majoranten- und Mi-no-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 160--160
+Underfull \hbox (badness 1275) in paragraph at lines 205--205
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie Quo-
  []
 
-[2]
+[3]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 173.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 173.
- [3] [4]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+ [4] [5]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -346,7 +360,7 @@ Missing character: There is no ¤ in font cmbx10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
@@ -354,7 +368,7 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-[5] [6] [7] [8] [9]
+[6] [7] [8] [9] [10]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -363,8 +377,8 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [10] [11]
-Overfull \hbox (22.81699pt too wide) in paragraph at lines 722--722
+ [11] [12] [13]
+Overfull \hbox (22.81699pt too wide) in paragraph at lines 778--778
 [] 
  []
 
@@ -374,7 +388,6 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
-[12]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -389,24 +402,25 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
+[14]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [13] (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.aux) ) 
+ [15] (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.aux) ) 
 Here is how much of TeX's memory you used:
  4348 strings out of 493089
  65242 string characters out of 6134843
- 142513 words of memory out of 5000000
+ 143513 words of memory out of 5000000
  7767 multiletter control sequences out of 15000+600000
  12665 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,25n,38p,322b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,25n,38p,322b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.pdf (13 pages, 265254 bytes).
+Output written on /Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Analysis.pdf (15 pages, 270943 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
