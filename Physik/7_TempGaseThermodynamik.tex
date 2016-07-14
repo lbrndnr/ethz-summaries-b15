@@ -56,6 +56,10 @@ Die warmkapazitat von meisten korper ist nur abhangig von Anzahl Molen:
 \begin{equation}
 	c\approx 25\frac{J}{mol*K}
 \end{equation}
+\subsubsection{Mischtemperatur}
+\begin{equation}
+	C_1(T_{ende}-T_0)=C_2(T_{1}-T_{ende})
+\end{equation}
 
 
 \subsection{Latente W{\"a}rme}
@@ -91,7 +95,7 @@ Die energie ist von Gas geleistet
 	dW=-Fdx=-(pA)dx=-pdV
 \end{equation}
 \begin{equation}
-	W=-\int^V_eV_adV=-p(V_e-V_a)
+	W=-\int^{V_e}_{V_a}pdV=-p(V_e-V_a)
 \end{equation}
 bei konstanten Druck
 \subsubsection{Isotherme expansion}
@@ -100,7 +104,14 @@ Temperatur des gasses bleibt konstant und energie kommt von aussen.
 	Q=\int dQ=-\int dW=-W
 \end{equation}
 \subsubsection{Adiabatische Ausdehnung}
-Keine warme wird dem Gas ausgetauscht $\Rightarrow dQ=0$, Temperatur des Gases wa ̈hrend der adiabatischen Expansion abnimmt. Bei der adiabatischen Expansion wird die im Gas gespeicherte W ̈armeenergie in mechanische Arbeit umgewandelt.
+Keine warme wird dem Gas ausgetauscht $\Rightarrow dQ=0$, Temperatur des Gases wahrend der adiabatischen Expansion abnimmt. Bei der adiabatischen Expansion wird die im Gas gespeicherte Warmeenergie in mechanische Arbeit umgewandelt.
+\begin{equation}
+	pV^\gamma=konst
+\end{equation}
+\begin{equation}
+	TV^{\gamma -1 }=konst
+\end{equation}
+$\gamma=\frac{5}{3}$
 
 \subsection{Thermische Prozesse des idealen Gases}
 
@@ -109,7 +120,7 @@ Warme ist in energie umgewandelt
 \begin{equation}
 	Q_{isotherm}=-W_{isotherm}=nRTln(\frac{V_2}{V_1})
 \end{equation}
-$V_1$ anfangs volum.
+$V_1$ anfangs volum, n ist Anzahl Atomen.
 \paragraph{Wirkungsgrad}
 Der Wirkungsgrad einer W ̈armemaschine ist definiert als Verh ̈altnis der geleisteten Arbeit zur zugefu ̈hrten W ̈arme:
 \begin{equation}
