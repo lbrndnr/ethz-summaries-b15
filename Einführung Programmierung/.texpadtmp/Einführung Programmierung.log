@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  16 JUN 2016 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  15 JUL 2016 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -58,7 +58,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen105
 \SOUL@uldp=\dimen106
 \SOUL@ulht=\dimen107
-) (/Users/Laurin/Documents/ETH/B2016/Summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.aux)
+) (/Users/jakubkotal/Documents/summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.aux)
 \openout1 = `"Einführung Programmierung.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -138,232 +138,277 @@ Overfull \hbox (6.49693pt too wide) in paragraph at lines 46--48
 \OT1/cmr/m/n/10.95 Every fea-ture call, will al-ways be called on a ob-ject (your[]object.your[]feature).
  []
 
-[2] <feature.png, id=12, 1074.0125pt x 620.3175pt>
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+[3] <feature.png, id=15, 1074.0125pt x 620.3175pt>
 File: feature.png Graphic file (type png)
  <use feature.png>
-Package pdftex.def Info: feature.png used on input line 56.
-(pdftex.def)             Requested size: 537.00493pt x 310.15799pt.
+Package pdftex.def Info: feature.png used on input line 57.
+(pdftex.def)             Requested size: 512.1496pt x 295.79918pt.
 
-Overfull \hbox (91.64667pt too wide) in paragraph at lines 55--57
-| [] 
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 57--58
+ | [] 
  []
 
-[3] [4 <./feature.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[4 <./feature.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--164
+Underfull \hbox (badness 10000) in paragraph at lines 163--167
 
  []
 
 [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 [19]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 222.
+(Font)              <10.95> on input line 225.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 222.
+(Font)              <8> on input line 225.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 222.
+(Font)              <6> on input line 225.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-[20] [21] <array.png, id=76, 440.64626pt x 269.005pt>
-File: array.png Graphic file (type png)
- <use array.png>
-Package pdftex.def Info: array.png used on input line 245.
-(pdftex.def)             Requested size: 440.64517pt x 269.00433pt.
- [22] <list.png, id=80, 441.65pt x 300.12125pt>
-File: list.png Graphic file (type png)
- <use list.png>
-Package pdftex.def Info: list.png used on input line 248.
-(pdftex.def)             Requested size: 441.64891pt x 300.12051pt.
- <linked.png, id=81, 438.63875pt x 291.0875pt>
-File: linked.png Graphic file (type png)
- <use linked.png>
-Package pdftex.def Info: linked.png used on input line 250.
-(pdftex.def)             Requested size: 438.63766pt x 291.08678pt.
- [23 <./array.png>] [24 <./list.png>] <stack.png, id=90, 434.62375pt x 153.57375pt>
-File: stack.png Graphic file (type png)
- <use stack.png>
-Package pdftex.def Info: stack.png used on input line 253.
-(pdftex.def)             Requested size: 434.62268pt x 153.57336pt.
- <queue.png, id=91, 437.635pt x 147.55125pt>
-File: queue.png Graphic file (type png)
- <use queue.png>
-Package pdftex.def Info: queue.png used on input line 256.
-(pdftex.def)             Requested size: 437.63393pt x 147.55087pt.
- [25 <./linked.png> <./stack.png>] <table.png, id=98, 436.63126pt x 302.12875pt>
-File: table.png Graphic file (type png)
- <use table.png>
-Package pdftex.def Info: table.png used on input line 261.
-(pdftex.def)             Requested size: 436.63019pt x 302.128pt.
- [26 <./queue.png>] [27 <./table.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+ []
+
+<Eprog/array.png, id=76, 440.64626pt x 269.005pt>
+File: Eprog/array.png Graphic file (type png)
+ <use Eprog/array.png>
+Package pdftex.def Info: Eprog/array.png used on input line 252.
+(pdftex.def)             Requested size: 426.79134pt x 260.5569pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 252--253
+ [] 
+ []
+
+[22] <Eprog/list.png, id=80, 441.65pt x 300.12125pt>
+File: Eprog/list.png Graphic file (type png)
+ <use Eprog/list.png>
+Package pdftex.def Info: Eprog/list.png used on input line 257.
+(pdftex.def)             Requested size: 426.79134pt x 290.0365pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 257--258
+ [] 
+ []
+
+[23 <./Eprog/array.png>] <Eprog/linked.png, id=85, 438.63875pt x 291.0875pt>
+File: Eprog/linked.png Graphic file (type png)
+ <use Eprog/linked.png>
+Package pdftex.def Info: Eprog/linked.png used on input line 262.
+(pdftex.def)             Requested size: 426.79134pt x 283.22952pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 262--263
+ [] 
+ []
+
+[24 <./Eprog/list.png>] <Eprog/stack.png, id=90, 434.62375pt x 153.57375pt>
+File: Eprog/stack.png Graphic file (type png)
+ <use Eprog/stack.png>
+Package pdftex.def Info: Eprog/stack.png used on input line 268.
+(pdftex.def)             Requested size: 426.79134pt x 150.81525pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 268--269
+ [] 
+ []
+
+[25 <./Eprog/linked.png> <./Eprog/stack.png>] <Eprog/queue.png, id=97, 437.635pt x 147.55125pt>
+File: Eprog/queue.png Graphic file (type png)
+ <use Eprog/queue.png>
+Package pdftex.def Info: Eprog/queue.png used on input line 274.
+(pdftex.def)             Requested size: 426.79134pt x 143.89676pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 274--275
+ [] 
+ []
+
+<Eprog/table.png, id=98, 436.63126pt x 302.12875pt>
+File: Eprog/table.png Graphic file (type png)
+ <use Eprog/table.png>
+Package pdftex.def Info: Eprog/table.png used on input line 282.
+(pdftex.def)             Requested size: 426.79134pt x 295.31886pt.
+
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 282--283
+ [] 
+ []
+
+[26 <./Eprog/queue.png>] [27 <./Eprog/table.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 [28] [29]
-Overfull \hbox (2.7192pt too wide) in paragraph at lines 286--287
+Overfull \hbox (2.7192pt too wide) in paragraph at lines 309--310
 \OT1/cmr/m/n/10.95 The user drives the pro-gram with dif-fer-ent event op-tions he can trig-ger(mouse
  []
 
-<model.png, id=113, 436.63126pt x 179.67125pt>
-File: model.png Graphic file (type png)
- <use model.png>
-Package pdftex.def Info: model.png used on input line 288.
-(pdftex.def)             Requested size: 436.63019pt x 179.67079pt.
+<Eprog/model.png, id=113, 436.63126pt x 179.67125pt>
+File: Eprog/model.png Graphic file (type png)
+ <use Eprog/model.png>
+Package pdftex.def Info: Eprog/model.png used on input line 312.
+(pdftex.def)             Requested size: 426.79134pt x 175.6215pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 312--313
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[30 <./model.png>] <pub.png, id=118, 563.10374pt x 336.25626pt>
-File: pub.png Graphic file (type png)
- <use pub.png>
-Package pdftex.def Info: pub.png used on input line 292.
-(pdftex.def)             Requested size: 563.10237pt x 336.25543pt.
+[30 <./Eprog/model.png>] <Eprog/pub.png, id=118, 563.10374pt x 336.25626pt>
+File: Eprog/pub.png Graphic file (type png)
+ <use Eprog/pub.png>
+Package pdftex.def Info: Eprog/pub.png used on input line 319.
+(pdftex.def)             Requested size: 426.79134pt x 254.8596pt.
 
-Overfull \hbox (117.74411pt too wide) in paragraph at lines 292--294
-| [] 
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 319--320
+ [] 
  []
 
-[31 <./pub.png>] [32] [33] (/Users/Laurin/Documents/ETH/B2016/Summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.aux) ) 
+[31 <./Eprog/pub.png>] [32] [33] [34] (/Users/jakubkotal/Documents/summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.aux) ) 
 Here is how much of TeX's memory you used:
- 1702 strings out of 493089
- 24847 string characters out of 6134843
+ 1703 strings out of 493089
+ 25003 string characters out of 6134842
  92775 words of memory out of 5000000
  5187 multiletter control sequences out of 15000+600000
  8210 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,23p,1117b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,4n,23p,1117b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/Users/Laurin/Documents/ETH/B2016/Summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.pdf" (33 pages, 2592136 bytes).
+Output written on "/Users/jakubkotal/Documents/summaries/Einführung Programmierung/.texpadtmp/Einführung Programmierung.pdf" (34 pages, 2593369 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

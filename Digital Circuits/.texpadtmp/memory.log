@@ -1,0 +1,80 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2016.5.11)  13 JUL 2016 10:40
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex"
+(/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:1: Undefined control sequence.
+l.1 \newpage
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:2: Undefined control sequence.
+l.2 \section
+            {Memory}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Runaway argument?
+ Computer memories are the combination of a small fast cheap memory a\ETC.
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:31: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.31 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:33: Undefined control sequence.
+l.33 	\begin
+            {multicols}{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:34: Undefined control sequence.
+l.34 		\subsection
+                  {Kaskadierung von RAM-Chips}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:35: Undefined control sequence.
+l.35 			\begin
+              {center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/memory.tex:36: Undefined control sequence.
+l.36 				\includegraphics
+                         [width = 7cm]{images/mem/mem1.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on "/Users/jakubkotal/Dropbox/eth/summaries/Digital Circuits/.texpadtmp/memory.pdf" (1 page, 17895 bytes).
+PDF statistics:
+ 12 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
