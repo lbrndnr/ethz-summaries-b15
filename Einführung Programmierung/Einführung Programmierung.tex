@@ -341,5 +341,55 @@ u has all closed arguments(predefined) and we can call it with u.call   . Z has 
 p: PROCEDURE[C, TUPLE]\\
 q: PROCEDURE[TUPLE[X,Y,Z], RES]\\
 p has no open arguments, q has 3 open arguments and returns a result of type RES. C is type of target can be omitted $\Rightarrow$ TYPE ANY.
+\section{Tips for multiple choice}
+\subsection{objects and classes}
+\begin{enumerate}
+	\item unlimited objects can't be created
+	\item creation procedures can be made accesible to a limited number of classes
+	\item not any function can be a creation procedure
+\end{enumerate}
+\subsection{control structure and recursion}
+\begin{enumerate}
+	\item a loop that decreases and never goes below a value always terminates
+	\item a loop invariant may be violated during loop initialisation\
+	\item the invariant has to hold right after the from clause
+\end{enumerate}
+\subsection{contracts}
+\begin{enumerate}
+	\item in a creation procedure the class invariant doesn't have to hold at the beginning and the end of the procedure body
+	\item invariant are added to those of it's ancestors
+	\item preconditions have to be weaker
+	\item postconditions have to be stronger
+\end{enumerate}
+\section{tips to check if compiles}
+\begin{enumerate}
+	\item cannot make an object of a defered class
+	\item If you change the type of an object, the new object has to be it's ancestor and the changed type won't have it's functions or it's attributes.
+\end{enumerate}
+\subsection{data struc}
+\begin{enumerate}
+	\item count!
+\end{enumerate}
+
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

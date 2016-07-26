@@ -1,0 +1,279 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage[labelformat=empty]{caption}
+
+\geometry{
+	a4paper,
+ 	left=20mm,
+ 	top=20mm,
+}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section{O-Notation}
+
+\begin{equation*}
+	O(c) < O(\log \log n) < O(\log n) < O((\log n)^c) <  O(\sqrt[c]{n}) < O(n \log n) = O(\log n!) < O(n^c) < O(c^n) < O(n!)
+\end{equation*}
+
+mit $c > 1$ als positive Konstante.
+
+\emph{Tipps:}
+\begin{itemize}[noitemsep]
+	\item $\binom{n}{c} \in \Theta(n^c)$
+	\item $n^c$ ist polynomial
+\end{itemize}
+
+\section{Hashing}
+
+Eine Hashingfunktion sollte
+
+\begin{itemize}[noitemsep]
+	\item möglichst schnell zu berechnen sein
+	\item Datensätze möglichst gleichmäßig auf den Speicherbereich verteilen
+	\item Häufungen (cluster) fast gleicher Schlüssel aufbrechen
+\end{itemize}
+
+\subsection{Sondierung}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[primary clustering:] lang belegte Teilstücke haben also eine grössere Tendenz zu wachsen (linear)
+	\item[secondary clustering:] Synonyme durchlaufen die selbe Sondierungsfolge (linear und quadratisch)
+\end{description}
+
+\subsubsection{Linear}
+
+\begin{equation*}
+	h(k), h(k)-1, h(k)-2, ..., 0, m-1, ..., h(k)+1
+\end{equation*}
+
+\subsubsection{Quadratisch}
+
+\begin{equation*}
+	h(k), h(k)+1, h(k)-1, h(k)+4, h(k)-4, h(k)+9, h(k)-9
+\end{equation*}
+
+\subsubsection{Double Hashing}
+
+\begin{equation*}
+	h(k), h(k)-h'(k), h(k)-2h'(k), ..., h(k)-(m-1)h'(k)
+\end{equation*}
+
+Genau so effizient wie uniformes Sondieren.
+
+\section{Datenstrukturen}
+
+\subsection{Union-Find Struktur}
+
+\paragraph{Vereinigung nach Grösse/Höhe:} Man macht die Wurzel des Baumes mit kleinerer Größe (bzw. geringerer Höhe) zum direkten weiteren Sohn des Baumes mit der größeren Größe (bzw. Höhe). \\
+Die Grösse/Höhe eines Teilbaums wird in der Wurzel gespeichert.
+
+\paragraph{Pfadverkürzung:} Bei der Find-Operation werden die durchlaufenen Knoten direkt an die Wurzel gehängt. Die Operation wird doppelt so teuer.
+
+\subsection{Suchbäume}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
+	\item[preorder:] Hauptreihenfolge \\
+					 Wurzel, linker Teilbaum, rechter Teilbaum	\\
+					 Rekonstruktion: In selber Reihenfolge in leeren Suchbaum einfügen
+	\item[postorder:] Nebenreihenfolge \\
+					  linker Teilbaum, rechter Teilbaum, Wurzel \\
+					  Rekonstruktion: In umgekehrter Reihenfolge in leeren Suchbaum einfügen
+	\item[inorder:] symmetrische Reihenfolge \\
+					linker Teilbaum, Wurzel, rechter Teilbaum
+\end{description}
+
+\subsubsection{AVL-Baum}
+
+Für jeden Knoten p des Baumes gilt, dass sich die Höhe des linken Teilbaumes von der Höhe des rechten Teilbaumes von p höchstens um 1 unterscheidet. \\
+
+Das Einfügen eines neuen Elements führt höchstens zu einer Rotation.
+
+\subsubsection{Splay-Baum}
+
+Suchbaum, der die Move-to-Root Operation unterstützt. Ein Knoten wird zur Wurzel hochgeschoben, in dem Rotationen wie beim AVL-Baum durchgeführt werden.
+
+\subsubsection{B-Baum}
+
+Für ein B-Baum der Ordnung $m$ gilt:
+
+\begin{itemize}[noitemsep]
+	\item Alle Blätter haben die gleiche Tiefe
+	\item Jeder Knoten mit Ausnahme der Wurzel und der Blätter hat wenigstens $\lceil \frac{m}{2} \rceil$ Söhne
+	\item Die Wurzel hat wenigstens 2 Söhne
+	\item Jeder Knoten hat höchstens $m$ Söhne
+	\item Jeder Knoten mit $i$ Söhnen hat $i-1$ Schlüssel
+	\item Knoten dürfen höchstens $m-1$ Schlüssel speichern
+\end{itemize}
+
+\subsubsection{Segment-Baum}
+
+\paragraph{Aufspiessanfrage:} Es werden alle Intervalle ausgegeben, die auf dem Suchpfad zum Elementarsegment gehören
+
+\subsubsection{Heap}
+
+\paragraph{Versickern:} Max/Min mit letztem Element austauschen, Blatt entfernen, Wurzel so lang mit Max der Kinder austauschen, bis es grösser als diese ist (oder Blatt)
+
+\section{Sortieralgorithmen}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Name}                            & \textbf{Best Case} & \textbf{Average Case} & \textbf{Wort Case} & \textbf{in-situ} & \textbf{stabil} \\ \hline
+Selectionsort                            & $O(n^2)$           & $O(n^2)$              & $O(n^2)$           & ja                & nein            \\ \hline
+Bubblesort / Insertionsort & $O(n)$             & $O(n^2)$              & $O(n^2)$           & ja                & ja              \\ \hline
+Heapsort                                 & $O(n \log n)$      & $O(n \log n)$         & $O(n^2)$           & ja                & nein            \\ \hline
+Mergesort                                & $O(n \log n)$      & $O(n \log n)$         & $O(n \log n)$      & $O(n)$            & ja              \\ \hline
+Quicksort                                & $O(n \log n)$      & $O(n \log n)$         & $O(n^2)$           & $O(\log n)$       & nein     
+	\\ \hline      
+\end{tabular}
+\end{table}
+
+\subsection{Selectionsort}
+
+\begin{enumerate}[noitemsep]
+	\item Suche Minimum der letzten $n$ Elemente
+	\item Tausche Minimum mit dem ersten Element
+	\item Fahre fort mit den $n-1$ letzten Elementen
+\end{enumerate}
+
+\subsection{Insertionsort}
+
+\begin{enumerate}[noitemsep]
+	\item Nächstes Element betrachten
+	\item Position für betrachtetes Element in sortierter Teilfolge (prefix) finden und einfügen
+\end{enumerate}
+
+\subsection{Quicksort}
+
+\begin{enumerate}[noitemsep]
+	\item Pivot auswählen
+	\item Teilfolgen erstellen, von links und rechts in die Mitte iterieren, Elemente mit einander austauschen falls nötig
+	\item Pivot mit mittlerem Element tauschen
+\end{enumerate}
+
+\subsection{Mergesort}
+
+\begin{enumerate}[noitemsep]
+	\item Array halbieren
+	\item Mergesort rekursiv auf beide Teilfolgen aufrufen
+	\item Sortierte Teilfolgen verschmelzen	
+\end{enumerate}
+
+\section{Graphenalgorithmen}
+
+\subsection{Tiefen- und Breitensuche}
+
+\paragraph{Laufzeit:} $O(|E|+|V|)$
+
+\subsection{Matching}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[Zuordnung] Teilmenge an Kanten, sodass keine zwei Kanten denselben Endknoten haben
+	\item[Grösse] Anzahl Kanten in der Zuordnung, also $|Z|$
+\end{description}
+
+\subsection{Minimaler Spannbaum}
+
+\subsubsection{Kruskal}
+
+\paragraph{Laufzeit:} $O(|E|\log|V|)$
+
+Die billigste Kante wird betrachtet, verbindet sie zwei Teilmengen von Knoten, so wird sie hinzugefügt (Union-Find-Struktur)
+
+\subsubsection{Dijkstra}
+
+\paragraph{Laufzeit:} $O(|E|+|V|\log|V|)$
+
+Tiefensuche, es wird immer die billigste Kante ausgewählt
+
+\subsection{Topologische Sortierung}
+
+\begin{center}
+	Für $G$ gibt es eine topologische Sortierung $\Leftrightarrow$ $G$ ist zyklenfrei
+\end{center}
+
+\paragraph{Laufzeit:} $O(|E|+|V|)$
+
+\begin{enumerate}[noitemsep]
+	\item Wähle ein Knoten aus
+	\item Besuch die Kinder, passe deren Ordnung an
+	\item Wähle nächsten nicht besuchten Knoten
+\end{enumerate}
+
+\subsection{Kürzeste Wege}
+
+\subsubsection{One-to-One (Dijkstra)}
+
+\paragraph{Bemerkung:} Es sind nur positive Kanten erlaubt. Für die Priority Queue kann eine Fibonacci-Heap gebraucht werden.
+
+\paragraph{Laufzeit:} $|E| + |V| \log|V|$
+
+\begin{enumerate}[noitemsep]
+	\item Wähle Anfangsknoten aus
+	\item Wähle nächsten Knoten aus, der minimale Distanz zu Anfangsknoten hat
+	\item Passe neue Distanz aller Randknoten an
+	\item Wähle nächsten Knoten
+\end{enumerate}
+
+\subsubsection{One-to-All (Bellman/Ford)}
+
+\paragraph{Bermerkung:} Funktioniert auch bei Digraphen mit negativen Pfaden.
+
+\paragraph{Laufzeit:} $O(|E|\cdot|V|)$ \\
+
+Funktioniert ähnlich wie nach Dijkstra. Knoten werden jedoch nicht endgültig gewählt, sondern mehrmals besucht. Beendet ist der Algorithmus, wenn sich kein Knoten mehr updaten lässt.
+
+\subsubsection{All-to-All}
+
+\paragraph{Laufzeit:} $O(|V|\cdot (|E| + |V|\log|V|))$
+
+\begin{enumerate}[noitemsep]
+	\item Transformiere allgemeinen Graphen (mit möglichen negativen Kanten) zu Distanzgraphen
+	\item Wende Bellman/Ford auf Graphen an
+\end{enumerate}
+
+\subsection{Flussnetzwerke}
+
+\subsection{Ford/Fulkerson}
+
+\paragraph{Laufzeit:} $O(|E|f)$, mit dem minimalen Schnitt $f$ 
+
+\subsection{Edmonds/Karp}
+
+Angepasster Ford/Fulkerson Algorithmus.
+
+\paragraph{Laufzeit:} $O(|V|\cdot|E|^2)$
+
+\begin{enumerate}[noitemsep]
+	\item Suche kürzeste Weg von Quelle zur Senke
+	\item Benutze diesen Pfad mit maximal möglicher Kapazität
+	\item Wiederhole so lang, bis es keinen Pfad mer zur Senke gibt
+\end{enumerate}
+
+\subsection{Dinic}
+
+Ähnlich wie Edmonds/Karp
+
+\paragraph{Laufzeit:} $O(|V|^2\cdot|E|)$
+
+\section{Geometrische Algorithmen}
+
+\subsection{Scanline}
+
+\begin{description}
+	\item[Sichtbarkeit:] AVL-Tree
+\end{description}
+
+\end{document}

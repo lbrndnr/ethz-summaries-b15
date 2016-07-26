@@ -1,0 +1,246 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage[labelformat=empty]{caption}
+
+\geometry{
+	a4paper,
+ 	left=20mm,
+ 	top=20mm,
+}
+ 
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\section{Binary/Hexadecimal Numbers}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[Binary:] 256 128 64 32 16 8 4 2 1
+	\item[Hexadecimal:] 4096 256 16 1
+\end{description}
+
+\emph{Hint:} 
+\begin{equation*}
+\begin{split}
+	2AF3_{16} = & (2_{16} \cdot 16^3)  + (A_{16} \cdot 16^2) + (F_{16} \cdot 16^1) +  (3_{16} \cdot 16^0) \\
+	= & (2 \cdot 4096)  + (10 \cdot 256) + (15 \cdot 16) + (3 \cdot 1) \\
+	= & 10995
+\end{split}
+\end{equation*}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[unsigned:] span of $[0,\ 2^{N}-1]$
+	\item[Sign/Magnitude:] Most significant bit represents the sign (0 indicates positive). Does not work with ordinary binary addition, 0 has multiple representations. Span of $[-2^{N-1}+1,\ 2^{N-1}-1]$
+	\item[Two's Complement:] Most significant bit has weight of $2^{N-1}$. To reverse the sign, invert all bits of the number and then add 1. Span of $[-2^{N-1},\ 2^{N-1}-1]$
+\end{description}
+
+\section{Binary Equations}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[Minterm:]	product involving all of the inputs to the function (e.g. $AB\overline{C}$)
+	\item[Maxterm:] sum  involving  all  of  the  inputs to the  function (e.g. $A + \overline{B} + \overline{C}$)
+	\item[Sum-of-Products:] Take all rows of a truth table that are TRUE, multiply their variables and add them up
+	\item[Product-of-Sums:] Take all rows of a truth table that are FALSE, add the complements of their variables and multiply them with each other
+\end{description}
+
+\section{Combinational Logic Design}
+
+\textbf{Rule of thumb:} The outputs depend strictly only on the input.
+
+\begin{itemize}[noitemsep]
+	\item Every circuit element is itself combinational
+	\item Every node of the circuit is either designated as an input to the circuit or connects to exactly one output terminal of a circuit element
+	\item The circuit contains no cyclic paths: every path through the circuit visits each circuit node at most once
+\end{itemize}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[Contention:] Unknown/illegal value (X). When a node is driven to both, HIGH and LOW. Error, should be avoided. Doesn't have to be in the forbidden zone though.
+	\item[Floating Value:] Floating, high impedance (Z). When a node is driven neither to HIGH nor LOW. Not necessarily an error.
+\end{description}
+
+\subsection{K-Maps}
+
+\begin{itemize}[noitemsep]
+	\item Use the fewest circles necessary to cover all 1's
+	\item All the squares in each circle must contain 1's
+	\item Each circle must span a rectangular block that is a power of 2 (i.e., 1, 2, or 4) squares in each direction
+	\item Each circle should be as large as possible
+	\item A circle may wrap around the edges of the K-map
+	\item A 1 in a K-map may be circled multiple times if doing so allows fewer circles to be used
+	\item Don't Cares can be circled if they help cover the 1’s with fewer or larger circles, however they don't have to be circled
+\end{itemize}
+
+To get the result:
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[sum of products:] circle the 1's, multiply the variables that don't change for that circle
+	\item[product of sums:] 	circle the 0's, add the complements of the variables that don't change for that circle
+\end{description}
+
+
+The transition across the boundary of two prime implicants in a K-map indicates a possible \textbf{glitch} (flickering between outputs before it settles to the final one).
+
+\subsection{Delays}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5.5cm, noitemsep]
+	\item[Propagation delay $t_{pd}$:] Maximum time from when an input changes until the output or outputs reach their final value
+	\item[Contamination delay $t_{cd}$:] Minimum time from when an input changes until any output starts to change its value
+\end{description}
+
+\section{Sequential Logic Design}
+
+Depends on current input and prior inputs (has memory, hence state).
+
+\subsection{Memory}
+
+\textbf{Multistable elements} with $N$ stable states carry $\log_2(N)$ bits of information.
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[SR-Latch:] Two cross-coupled NOR gates with two inputs: S (sets output to 1) and R (resets output to 0). Odd, as one can assert S and R simultaneously.
+	\item[D-Latch:] Clock input which makes the latch \textbf{transparent} (data from D flows to Q) on 1. Is CLK unasserted, the latch is \textbf{opaque} (remembers the previous D input).
+	\item[D Flip-Flop:] Two back-to-back D latches with complementary clocks. Copies D to Q only on the rising edge of CLK and remembers its state at all other times.
+	\item[Register:] $N$-bit register is a bank of $N$ flip-flops with a common CLK input
+	\item[Enabled Flip-Flop:] additional EN input, ignores the clock if EN is not asserted
+	\item[Resettable Flip-Flop:] additional RESET input, resets the output to 0 if asserted
+\end{description}
+
+\subsection{Finite State Machines}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[Moore Machines:] output depends only on the current state
+	\item[Mealy Machines:] output depends on both, current state and input
+\end{description}
+
+\subsubsection{State Encoding}
+
+Goal is to determine the encoding that produces the circuit with the fewest logic gates or the shortest propagation delay.
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
+	\item[One-hot:] one bit per state, simple, few gates	
+\end{description}
+
+\section{Arithmetic}
+
+\subsection{Number Systems}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[fixed-point:] implied decimal point, columns behind that point represent $2^{-1},\ 2^{-2}$ and so on	
+	\item[floating-point:] analogous to scientific notation, decimal point floats to the position right after the most significant digit. The mantissa only stores the fraction bits, as the leading bit is always 1 (implicit leading one). To represent negative exponents, biased exponents are used (e.g. the exponent $7$ is represented as $7+127 = 134 = 10000110_2$). 32  bits  are used to represent 1 sign bit, 8 exponent bits, 23 mantissa bits and uses a bias of 127.
+\end{description}
+
+\section{Memory}
+
+\subsection{RAM}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
+	\item[DRAM:] Dynamic RAM, cheap, each bit of data in a separate capacitor, needs to be refreshed every few milliseconds, used for main memory (RAM)
+	\item[SRAM:] Static RAM, more expensive, faster, does not need to be refreshed, used for cache of CPU
+\end{description}
+
+\subsection{Locality}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[Temporal Locality:] keep recently accessed data in higher levels of memory hierarchy
+	\item[Spatial Locality:] when accessing data, bring nearby data into higher levels of memory hierarchy too
+\end{description}
+
+\subsection{Performance}
+
+\begin{equation*}
+	AMAT = t_{cache} + MR_{cache}(t_{MM} + MR_{MM}(t_{VM}))
+\end{equation*}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
+	\item[AMAT:] Average memory access time
+	\item[MR:] Miss rate (\# misses/ \# memory accesses)
+	\item[MM:] Main memory
+	\item[VM:] Virtual memory
+\end{description}
+
+\section{Cache}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=7cm, noitemsep]
+	\item[Capacity (C):] number of data bytes a cache stores
+	\item[Block size (b):] bytes of data brought into cache at once
+	\item[Degree of Associativity (N):] number of blocks in a set
+	\item[Number of sets (S):] each memory address maps to exactly one cache set
+\end{description}
+
+\paragraph{Categories}
+
+Can be categorized by number of blocks in a set:
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=5cm, noitemsep]
+	\item[direct mapped:] 1 block per set (addresses with one word difference (32 bit) map to the same set)
+	\item[n-way set associative:] N blocks per set
+	\item[fully associative:] all blocks in a single set	
+\end{description}
+
+\emph{Hint:} Bigger caches reduce capacity misses, greater associativity reduces conflict misses.  \newline Bigger block size reduces compulsory misses but increases conflict misses.
+
+\paragraph{Misses}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[Compulsory:] first time data is accessed
+	\item[Capacity:] cache too small to hold all data of interest
+	\item[Conflict:] data of interest maps to same location in cache
+\end{description}
+
+\section{MIPS}
+
+\subsection{Jumping}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[to a register:] \textbf{jr \$ra}, use this to jump to the calling subroutine
+	\item[unconditionally:] \textbf{j [label]}
+	\item[to a subroutine:] \textbf{jal [label]} with \textbf{\$a0 - \$a3} argument values and \textbf{\$v0} as a return value
+\end{description}
+
+The \textbf{callee} (called method) must preserve the registers \textbf{\$s0 - \$s7}. Likewise, the \textbf{caller} must save the registers \textbf{\$t0 - \$t9}, as they may be overwritten.
+
+\subsection{Loading}
+
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+	\item[address:] \textbf{addi \$t0, \$0, 0x400} to set the register to the address 0x0000 0400
+	\item[load:] \textbf{lw \$t4, 4(\$a0)} with 4 as an integer offset \\
+	\textbf{lw \$t4, 0xff80(\$a0)} to address \textbf{0xFFFF FF80} (sign extension)
+	\item[byte addressing:] \textbf{sll \$t2, \$t1 2} multiplies by 4 (as words are 32 bits) 
+\end{description}
+
+\subsection{Stack}
+
+To store 3 registers on the stack on retrieve them again:\\
+
+\textbf{addi \$sp, \$sp, -12} \\
+\textbf{sw \$s0, 8(\$sp)} \\
+\textbf{sw \$t0, 4(\$sp)} \\
+\textbf{sw \$t1, 0(\$sp)} \\
+
+call subroutines and stuff that potentially overwrite the registers\\
+
+\textbf{lw \$t1, 0(\$sp)} \\
+\textbf{lw \$t0, 4(\$sp)} \\
+\textbf{lw \$s0, 8(\$sp)} \\
+\textbf{addi \$sp, \$sp, 12} \\
+
+\subsection{Loading 32 bit Immediates}
+
+To load the address \textbf{0x0123abcd} into \textbf{\$t0}: \\
+\textbf{lui  \$t0, 0x0123} \\
+\textbf{ori  \$t0, \$t0, 0xabcd}
+
+\section{Verilog}
+
+\begin{itemize}
+	\item \textbf{Order of the pins in an instantiation} of a module incorrect (connect by name would be better)
+	\item Pins on the left side of an assignment in an \textbf{always block} not declared as \textbf{reg}
+	\item \textbf{Case/If} statement not in the always block
+\end{itemize}
+	
+\end{document}
