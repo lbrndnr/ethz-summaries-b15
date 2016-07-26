@@ -69,7 +69,7 @@
 	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
 \end{description}
 
-\subsection{Identitäten}
+\subsection{Identit{\"a}ten}
 
 \begin{equation*}
 \begin{split}
@@ -152,7 +152,7 @@
 	\textbf{Grundsatz:}\quad\lim_{x\to a}f(x)^{g(x)} = \lim_{x\to a}e^{g(x) \cdot \log(f(x))}
 \end{equation*}
 
-\emph{Tipp:} Danach den Limes des Exponenten berechnen. Oft ist Bernoulli-de l'H{\^o}pital dazu nützlich.
+\emph{Tipp:} Danach den Limes des Exponenten berechnen. Oft ist Bernoulli-de l'H{\^o}pital dazu n{\"u}tzlich.
 
 \subsection{Satz von Bernoulli-de l'H{\^o}pital}
 
@@ -186,8 +186,8 @@ $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x)
 \subsection{Beweis}
 
 \begin{enumerate}
-	\item Zeige mittels \textbf{Induktion}, dass die Folge \textbf{beschränkt} ist und monoton \textbf{steigt/fällt}. Benutze dazu z.B. folgende Aussagen: $a_n \leq a_{n+1}$ oder $a_{n+1}-a_n \geq 0$.
-	\item Schätze den Grenzwert durch die ersten paar Terme ab
+	\item Zeige mittels \textbf{Induktion}, dass die Folge \textbf{beschr{\"a}nkt} ist und monoton \textbf{steigt/f{\"a}llt}. Benutze dazu z.B. folgende Aussagen: $a_n \leq a_{n+1}$ oder $a_{n+1}-a_n \geq 0$.
+	\item Sch{\"a}tze den Grenzwert durch die ersten paar Terme ab
 	\item Beweise den Grenzwert (z.B. mit $a_n \geq a$)
 \end{enumerate}
 
@@ -211,7 +211,7 @@ $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x)
 \end{table}
 \subsubsection*{Limes des allgemeinen Glieds}
 
-\paragraph{Bemerkung:} Mit dieser Methode lässt sich nur die Divergenz beweisen, nicht jedoch die Konvergenz.
+\paragraph{Bemerkung:} Mit dieser Methode l{\"a}sst sich nur die Divergenz beweisen, nicht jedoch die Konvergenz.
 
 \begin{enumerate}
 	\item $\sum_n a_n$ gegeben
@@ -336,17 +336,17 @@ mann muss noch prufen ob es in bereich konvergiert oder im aussen von bereich ko
 \subsection{Stetigkeitskriterien}
 
 \subsubsection*{Weierstrass-Kriterium}
-Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass für alle $|x-a|<\delta$ gilt:
+F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass f{\"u}r alle $|x-a|<\delta$ gilt:
 \begin{equation*}
 	|f(x) -f(a)|<\epsilon
 \end{equation*}
 
-\subsubsection*{Gleichmässige Stetigkeit}
-Für alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass für alle $|x-y|<\delta$ gilt:
+\subsubsection*{Gleichm{\"a}ssige Stetigkeit}
+F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass f{\"u}r alle $|x-y|<\delta$ gilt:
 \begin{equation*}
 	|f(x)-f(y)| < \epsilon
 \end{equation*}
-\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichmässig stetig.
+\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichm{\"a}ssig stetig.
 
 \subsubsection*{Lipschitz-Stetigkeit}
 Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
@@ -354,7 +354,7 @@ Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
 	|f(x)-f(y)|\leq L|f(x)-f(y)| \quad \forall x,y \in \Omega
 \end{equation*}
 
-\emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschränkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichmässige Stetigkeit.
+\emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschr{\"a}nkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichm{\"a}ssige Stetigkeit.
 
 \subsubsection*{Punktweise Konvergenz}
 $f_n(x)$ konvergiert punktweise falls:
@@ -362,16 +362,16 @@ $f_n(x)$ konvergiert punktweise falls:
 	\forall x\in \Omega \quad \lim_{n\rightarrow\infty}f_n(x) = f(x)
 \end{equation*}
 
-\subsubsection*{Gleichmässige Konvergenz}
+\subsubsection*{Gleichm{\"a}ssige Konvergenz}
 
-\paragraph{Grundsatz:} Falls eine Folge stetiger Funktionen $f_n$ gleichmässig gegen $f$ konvergiert, ist $f$ stetig.\\
+\paragraph{Grundsatz:} Falls eine Folge stetiger Funktionen $f_n$ gleichm{\"a}ssig gegen $f$ konvergiert, ist $f$ stetig.\\
 
-$f_n(x)$ konvergiert gleichmässig falls:
+$f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 \begin{equation*}
 	\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)| = 0
 \end{equation*}
 
-\emph{Bemerkung:} Gleichmässige Konvergenz impliziert punktweise Konvergenz.
+\emph{Bemerkung:} Gleichm{\"a}ssige Konvergenz impliziert punktweise Konvergenz.
 
 \section{Differenzialrechnung}
 
@@ -561,7 +561,7 @@ $\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \
 	x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
 \end{equation*}
 
-Ein komplexes Nullstellenpaar der Form $\alpha \pm \beta i$ liefert folgende homogene Lösung:
+Ein komplexes Nullstellenpaar der Form $\alpha \pm \beta i$ liefert folgende homogene L{\"o}sung:
 \begin{equation*}
 	y(x)=e^{\alpha x}(C_1\cos(\beta x) + C_2\sin(\beta x))
 \end{equation*}
@@ -584,7 +584,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 \end{tabular}
 \end{table}
 
-\emph{Bemerkung:} Kommt der gewählte Ansatz schon in der homogenen Lösung vor, so multipliziert man den Ansatz einfach mit $x$.
+\emph{Bemerkung:} Kommt der gew{\"a}hlte Ansatz schon in der homogenen L{\"o}sung vor, so multipliziert man den Ansatz einfach mit $x$.
 
 \begin{equation*}
 \begin{split}
@@ -624,7 +624,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 	\end{pmatrix}
 \end{equation*}
 
-Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine Länge ist gleich der maximalen Änderung von $f$.
+Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L{\"a}nge ist gleich der maximalen {\"a}nderung von $f$.
 
 \emph{Bemerkung:} $f:\Omega \subset \mathbb{R}^n \mapsto \mathbb{R}$
 
@@ -667,7 +667,7 @@ Ein Potenzialfeld ist konservativ. Das Potenzial $\Phi$ eines Potenzialfeldes is
 	\nabla \Phi = \vec{v}
 \end{equation*}
 
-Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{Integrabilitätsbedinungen}:
+F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \textbf{Integrabilit{\"a}tsbedinungen}:
 
 \begin{equation*}
 	\frac{\partial v_i}{\partial x_j}=\frac{\partial v_j}{\partial x_i},\forall i \neq j
@@ -783,7 +783,7 @@ Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{
 \end{split}
 \end{equation*}
 
-\emph{Bemerkung:} Soll nur die Fläche ausgerechnet werden, so wähle $F(x,y) = 1$. Werden Polarkoordinaten benutzt, so wähle $F(r, \phi) = r$.
+\emph{Bemerkung:} Soll nur die Fl{\"a}che ausgerechnet werden, so w{\"a}hle $F(x,y) = 1$. Werden Polarkoordinaten benutzt, so w{\"a}hle $F(r, \phi) = r$.
 
 \subsection{Satz von Green}
 
@@ -802,7 +802,7 @@ Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{
 \end{split}
 \end{equation*}
 
-\section{Oberflächenintegral}
+\section{Oberfl{\"a}chenintegral}
 
 \begin{minipage}[c]{0.5\textwidth}
 \centering
@@ -815,7 +815,7 @@ Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{
 	\text{gegeben:}\quad & \vec{F}(x,y,z) = \begin{pmatrix}
 		\frac{x^2}{2} \\ -xy \\ x^2 + 3z^2 - 3
 	\end{pmatrix} \\
-	\text{gesucht:}\quad & \text{Fluss durch die Mantelfläche des Kegels} \\
+	\text{gesucht:}\quad & \text{Fluss durch die Mantelfl{\"a}che des Kegels} \\
 	& \text{(von Innen nach Aussen)} \\
 	\textbf{Vorgehen:}\quad & \text{Fluss durch den ganzen Kegel} \\
 	& \text{mit \textbf{Satz von Gauss} berechnen} \\
@@ -853,7 +853,7 @@ Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{
 \begin{equation*}
 	\textbf{Grundsatz:}\quad\int_{\partial V} \vec{v}\cdot\vec{n}\ do = \int_V \text{div}(\vec{v})\ d\mu
 \end{equation*}
-wobei $\vec{n}$ die nach aussen gerichtete Normale längs $\partial V$ bezeichnet.
+wobei $\vec{n}$ die nach aussen gerichtete Normale l{\"a}ngs $\partial V$ bezeichnet.
 
 \begin{equation*}
 \begin{split}
@@ -868,13 +868,13 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale längs $\partial V$ bezeichne
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
 	\item[kritischer Punkt:] $p_0 \in \Omega$ f{\"u}r welchen $\text{rank}(df(p_0)) < \min\{m,n\}$ gilt
-	\item[Kandidaten für Extrema:] $p_0 \in \Omega$ für welchen $df(p_0) = 0$ gilt
+	\item[Kandidaten f{\"u}r Extrema:] $p_0 \in \Omega$ f{\"u}r welchen $df(p_0) = 0$ gilt
 \end{description}
 
 \subsection{Extremwertaufgaben ohne Nebenbedingungen}
 
 \begin{enumerate}[noitemsep]
-	\item Kandidaten für Extrema finden $df(x)=0$
+	\item Kandidaten f{\"u}r Extrema finden $df(x)=0$
 	\item Bestimmung:
 	\begin{enumerate}[noitemsep]
 		\item $\text{Hess}(f)(p_0)$ positiv definit $\Rightarrow$ lokales Minimum
@@ -883,7 +883,7 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale längs $\partial V$ bezeichne
 	\end{enumerate}
 \end{enumerate}
 
-\emph{Bemerkung:} Falls alle Eigenwerte von $A$ grösser als $0$ sind, dann ist $A$ \textbf{positiv definit}. Hat $A$ sowohl positive als auch negative Eigenwerte, so ist sie \textbf{indefinit}.
+\emph{Bemerkung:} Falls alle Eigenwerte von $A$ gr{\"o}sser als $0$ sind, dann ist $A$ \textbf{positiv definit}. Hat $A$ sowohl positive als auch negative Eigenwerte, so ist sie \textbf{indefinit}.
 
 \subsection{Extremwertaufgaben mit Nebenbedingungen}
 
@@ -907,17 +907,17 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale längs $\partial V$ bezeichne
 
 \paragraph{Vorgehen um alle Kandidaten zu finden:}
 \begin{enumerate}[noitemsep]
-	\item Lagrange-Bedinung anwenden (müssen alle Nebenbedingung erfüllen)
+	\item Lagrange-Bedinung anwenden (m{\"u}ssen alle Nebenbedingung erf{\"u}llen)
 	\item Kandidaten der Nebenbedingung \\
 	falls $g$ differenzierbar: 
 	\begin{enumerate}[noitemsep]
-		\item nicht-reguläre Punkte finden mit $dg = 0$
-		\item gefundene Punkte mit Nebenbedingung überprüfen
+		\item nicht-regul{\"a}re Punkte finden mit $dg = 0$
+		\item gefundene Punkte mit Nebenbedingung {\"u}berpr{\"u}fen
 	\end{enumerate}
 	falls $g$ nicht differenzierbar:
 	\begin{enumerate}[noitemsep]
-		\item nicht-reguläre Punkte der Teilstücke des Randes
-		\item Eckpunkte des Gebietes überprüfen
+		\item nicht-regul{\"a}re Punkte der Teilst{\"u}cke des Randes
+		\item Eckpunkte des Gebietes {\"u}berpr{\"u}fen
 	\end{enumerate}
 \end{enumerate}
 
