@@ -9,6 +9,7 @@
 \usepackage{cancel}
 \usepackage{graphicx}
 \usepackage[labelformat=empty]{caption}
+\usepackage{booktabs}
 
 \geometry{
 	a4paper,
@@ -24,12 +25,13 @@
 
 \subsection{Trigonometrie}
 
-\begin{equation*}
-\begin{split}
-	\sin(0) = 0,\ \sin(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \sin(\frac{\pi}{2}) & = 1,\ \sin(\pi) = 0,\ \sin(\frac{3\pi}{4}) = \frac{\sqrt{2}}{2}\\
-	\cos(0) = 1,\ \cos(\frac{\pi}{4}) = \frac{\sqrt{2}}{2},\ \cos(\frac{\pi}{2}) & = 0,\ \cos(\pi) = -1,\ \cos(\frac{3\pi}{4}) = -\frac{\sqrt{2}}{2}\\
-\end{split}
-\end{equation*}
+\begin{center}
+	\includegraphics[width=\linewidth,keepaspectratio=true]{images/trigonometry}
+\end{center}
+
+\begin{center}
+	\includegraphics[width=300pt]{images/trigonometry_table}
+\end{center}
 
 \begin{equation*}
 \begin{split}
@@ -91,7 +93,7 @@
 \begin{split}
 	z & = x + iy = r(\cos(\varphi) + i\sin(\varphi)) = re^{i\varphi} \\
 	r & = |z| = \sqrt{x^2 + y^2} \\
-	\varphi & = \arctan(\frac{y}{x}) =  \\
+	\varphi & = \arctan(\frac{y}{x}) \quad \text{(je nach Quadrant)}  \\
 	x & = r\cos(\varphi) \\
 	y & = r\sin(\varphi) \\
 	zw & = (re^{i\varphi})\cdot(se^{i\psi}) = rse^{i(\varphi + \psi)} \\
@@ -162,10 +164,9 @@
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|c|c|c|}
 \hline
 \textbf{Term} & \textbf{Anforderung} & \textbf{Umformung} \\ \hline
-$\frac{f(x)}{g(x)}$              & "$\frac{0}{\infty}$"  &  $\frac{f(x)}{\frac{1}{g(x)}}$                  \\ \hline
 $f(x)g(x)$              & "$0\cdot\infty$"                     & $\frac{g(x)}{\frac{1}{f(x)}}$          \\ \hline 
 $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x) - h(x)g(x)}{g(x)i(x)}$ \\ \hline      
 \end{tabular}
@@ -369,22 +370,6 @@ $f_n(x)$ konvergiert gleichmässig falls:
 
 \emph{Bemerkung:} Gleichmässige Konvergenz impliziert punktweise Konvergenz.
 
-\section{Ableitungen}
-
-\subsection{Elementare Ableitungen}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|}
-\hline
-$\sin(x)$ & $\cos(x)$ \\ \hline
-$\cos(x)$ & $-\sin(x)$ \\ \hline
-$\tan(x)$ & $\frac{2}{\cos(2x)+1}$ \\ \hline
-$\log(\alpha + x)$ & $\frac{1}{\alpha + x}$ \\ \hline
-$e^{\alpha x}$ & $\alpha e^{\alpha x}$ \\ \hline
-\end{tabular}
-\end{table}
-
 \section{Differenzialrechnung}
 
 Eine stetige Funktion ist differenzierbar, falls der Grenzwert $f'(x_0)$ existiert:
@@ -417,14 +402,14 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 	R^a_m(x) = \frac{f^{(m+1)}(\xi)}{(m+1)!}(x+a)^{m+1},\ \text{wobei}\ f(x) = P^a_m(x) + R^a_m(x)
 \end{equation*}
 
-\subsection{Hauptsatz von calculus}
+\subsection{Hauptsatz von Calculus}
 \begin{equation*}
 	f(x)=\int^{m(x)}_lg(t)dt
 \end{equation*}
 \begin{equation*}
-	f'(x)=g(m(x))*\frac{d}{dx}m(x)
+	f'(x)=g(m(x))\cdot\frac{d}{dx}m(x)
 \end{equation*}
-wo m(x) hat der Form $ax^b$ und $l\epsilon \mathbb{R}$
+wobei $m(x)$ der Form $ax^b$ ist mit $l\in \mathbb{R}$
 
 \section{Integration}
 
@@ -432,14 +417,24 @@ wo m(x) hat der Form $ax^b$ und $l\epsilon \mathbb{R}$
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|l|l|}
+\begin{tabular}{|c|c|c|}
 \hline
-$f(x)$ & $F(x)$ \\ \hline
-$x^\alpha$ & $\frac{x^{\alpha+1}}{\alpha+1} + C$ \\ \hline
-$\frac{1}{x}$ & $\log (x) + C$ \\ \hline
-$\frac{1}{x^2}$ & $\frac{1}{x} + C$ \\ \hline
-$\sin(x)$ & $-\cos(x) + C$ \\ \hline
-$\cos(x)$ & $\sin(x) + C$ \\ \hline
+$f'(x)$ & $f(x)$ & $F(x)$ \\ \specialrule{.1em}{0em}{0em} 
+$0$ & $c$ & $cx$ \\ \hline
+$r\cdot x^{r-1}$ & $x^r$ & $\frac{x^{r+1}}{r+1}$ \\ \hline
+$-\frac{1}{x^2} = -x^{-2}$ & $\frac{1}{x} = x^{-1}$ & $\ln|x|$ \\ \hline
+$\frac{1}{2\sqrt{x}} = \frac{1}{2}x^{-\frac{1}{2}}$ & $\sqrt{x} = x^{\frac{1}{2}}$ & $\frac{2}{3}x^\frac{3}{2}$ \\ \hline
+$\cos(x)$ & $\sin(x)$ & $-\cos(x)$ \\ \hline
+$-\sin(x)$ & $\cos(x)$ & $\sin(x)$ \\ \hline
+$1 + \tan^2(x) = \frac{1}{\cos^2(x)}$ & $\tan(x)$ & $-\ln|\cos(x)|$ \\ \hline
+$e^x$ & $e^x$ & $e^x$ \\ \hline
+$c\cdot e^{cx}$ & $e^{cx}$ & $\frac{1}{c}\cdot e^{cx}$ \\ \hline
+$\ln(c)\cdot c^x$ & $c^x$ & $\frac{c^x}{\ln(c)}$ \\ \hline
+$\frac{1}{x}$ & $\ln|x|$ & $x(\ln|x| - 1)$ \\ \hline
+$\frac{1}{\ln(a) \cdot x}$ & $\log_a|x|$ & $\frac{x}{\ln(a)}(\ln|x| -1)$ \\ \hline
+$\frac{1}{\sqrt{1-x^2}}$ & $\arcsin(x)$ & $x\cdot\arcsin(x) + \sqrt{1-x^2}$ \\ \hline
+$-\frac{1}{\sqrt{1-x^2}}$ & $\arccos(x)$ & $x\cdot\arccos(x) - \sqrt{1-x^2}$ \\ \hline
+$\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \\ \hline
 \end{tabular}
 \end{table}
 
@@ -459,10 +454,10 @@ $\cos(x)$ & $\sin(x) + C$ \\ \hline
 \begin{equation*}
 \begin{split}
 	\int\tan x\ dx & = \int\frac{\sin x}{\cos x}\ dx = -\log|\cos(x)| \\
-	\int \frac{1}{x - \alpha} & = \log(x-\alpha) \\
-	\int\frac{\frac{1}{\alpha}}{1+(\frac{x}{\alpha})^2} & = \arctan(x) \\
-	\int \sinh(x) & = \cosh(x) + C \\
-	\int \sinh(x) & = \cosh(x) + C
+	\int \frac{1}{x - \alpha}\ dx & = \log(x-\alpha) \\
+	\int\frac{\frac{1}{\alpha}}{1+(\frac{x}{\alpha})^2}\ dx & = \arctan(x) \\
+	\int \sin^2(x)\ dx & = \frac{1}{2}(x - \sin(x)\cos(x)) + C \\
+	\int \cos^2(x)\ dx & = \frac{1}{2}(x + \sin(x)\cos(x)) + C \\
 \end{split}
 \end{equation*}
 
@@ -554,7 +549,18 @@ $\cos(x)$ & $\sin(x) + C$ \\ \hline
 \end{split}
 \end{equation*}
 
-\emph{Bemerkung:} Zu einer $m$-fachen Nullstelle $\lambda$ geh{\"o}ren die $m$ linear unabh{\"a}ngigen L{\"o}sungen $e^{\lambda x}$, $x\cdot e^{\lambda x}$, ... , $x^{m-1}\cdot e^{\lambda x}$. Zur $m$-fachen Nullstelle $\lambda = 0$ geh{\"o}ren die L{\"o}sungen $1$, $x$, ... , $x^{m-1}$.
+\emph{Bemerkung:} Zu einer $m$-fachen Nullstelle $\lambda$ geh{\"o}ren die $m$ linear unabh{\"a}ngigen L{\"o}sungen $e^{\lambda x}$, $x\cdot e^{\lambda x}$, ... , $x^{m-1}\cdot e^{\lambda x}$. Zur $m$-fachen Nullstelle $\lambda = 0$ geh{\"o}ren die L{\"o}sungen $1$, $x$, ... , $x^{m-1}$. \\
+\\ 
+\emph{Komplexe Nullstellen:} \\
+
+\begin{equation*}
+	x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\end{equation*}
+
+Ein komplexes Nullstellenpaar der Form $\alpha \pm \beta i$ liefert folgende homogene Lösung:
+\begin{equation*}
+	y(x)=e^{\alpha x}(C_1\cos(\beta x) + C_2\sin(\beta x))
+\end{equation*}
 
 \subsubsection{Direkter Ansatz}
 
@@ -574,6 +580,8 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 \end{tabular}
 \end{table}
 
+\emph{Bemerkung:} Kommt der gewählte Ansatz schon in der homogenen Lösung vor, so multipliziert man den Ansatz einfach mit $x$.
+
 \begin{equation*}
 \begin{split}
 	& y'' - y' + \frac{1}{4}y = \cos(x) \\
@@ -588,19 +596,10 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 	\textbf{L{\"o}sung}\quad & y(x) = Ae^{-\frac{x}{2}} + Bx \cdot e^{-\frac{x}{2}} -\frac{12}{25}\cos(x) + \frac{16}{25}\sin(x)
 \end{split}
 \end{equation*}
-\subsection{Komplexe zahlen}
-Falls der charakteristische Polynom ist komplex und hat der form $a + i\sqrt{b}$, dann hat die homogene Losung die form:
-\begin{equation*}
-	y(x)=e^{ax}(c_1cos(\sqrt{b}x) + C_2sin(\sqrt{b}x))
-\end{equation*}
-
-Wo a ist die komplexe losung von charakteristische polynom.
 
 \section{Vektorfelder}
 
-\subsection{Operatoren}
-
-\subsubsection{Differenzial}
+\subsection{Differenzial}
 
 \begin{equation*}
 	df = \begin{pmatrix}
@@ -610,7 +609,7 @@ Wo a ist die komplexe losung von charakteristische polynom.
 	\end{pmatrix}
 \end{equation*}
 
-\subsubsection{Gradient}
+\subsection{Gradient}
 
 \begin{equation*}
 	\text{grad}(f)=\nabla f=
@@ -623,7 +622,9 @@ Wo a ist die komplexe losung von charakteristische polynom.
 
 Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine Länge ist gleich der maximalen Änderung von $f$.
 
-\subsubsection{Hessematrix}
+\emph{Bemerkung:} $f:\Omega \subset \mathbb{R}^n \mapsto \mathbb{R}$
+
+\subsection{Hessematrix}
 
 \begin{equation*}
 	\text{Hess}(f)=
@@ -633,43 +634,44 @@ Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L
 		\frac{\partial^2 f}{\partial x_n \partial x_1} & ... & \frac{\partial^2 f}{\partial x_n^2}
 	\end{pmatrix}
 \end{equation*}
+
 Falls a hat in x0 nur positive eigenwerte dann ist es eine maximalstelle, falls sie hat nur negative eingewerte dann ist es eine minimalstelle, falls sie hat beide dann ist es ein sattelpunkt.
 
-\subsubsection{Rotation}
-
-Für ein Vektorfeld $\vec{v}$ mit Komponenten $v_1,v_2,v_3$:
+\subsection{Rotation}
 
 \begin{equation*}
-	\text{rot}(\vec{v})=\nabla\times \vec{v} =
+	\text{In}\ \mathbb{R}^3:\ \text{rot}(\vec{v})=\nabla\times \vec{v} =
 	\begin{pmatrix}
 		\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z}\\
 		\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x}\\
 		\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}
-	\end{pmatrix}
+	\end{pmatrix},\ \text{in}\ \mathbb{R}^2:\ \text{rot}(\vec{v}) = \frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}
 \end{equation*}
+
+\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ (Potenzialfeld).
 
 \subsection{Divergenz}
 \begin{equation*}
 	\text{div}(v)= \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + ... 
 \end{equation*}
 
-\subsection{Integrabilitatsbedigungen}
-\begin{equation*}
-	\frac{\vartheta v_i}{\vartheta x_j}=\frac{\vartheta v_j}{\vartheta x_i},\forall i \neq j
-\end{equation*}
-Falls diese ist erfüllt dann ist der Feld ein Potenzialfeld und konservativ.
-
 \subsection{Potenzialfeld}
-Ein potenzialfled ist konservativ. Der potenzial $\Phi$ eines Potenzialfeld:
+
+Ein Potenzialfeld ist konservativ. Das Potenzial $\Phi$ eines Potenzialfeldes ist gleich:
+
 \begin{equation*}
-	\bigtriangledown \Phi \doteq v
+	\nabla \Phi = \vec{v}
 \end{equation*}
 
-\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ.
+Für ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erfüllt die \textbf{Integrabilitätsbedinungen}:
+
+\begin{equation*}
+	\frac{\partial v_i}{\partial x_j}=\frac{\partial v_j}{\partial x_i},\forall i \neq j
+\end{equation*}
 
 \section{Wegintegral}
 
-\subsection{Standard Methode}
+\subsection{Standardmethode}
 
 \begin{equation*}
 	\textbf{Grundsatz:}\quad \int_\gamma \vec{v}\cdot d\vec{s} := \int_a^b \vec{v}(\vec{\gamma}(t)) \cdot \dot\vec{\gamma}(t)\ dt
@@ -723,26 +725,41 @@ Ein potenzialfled ist konservativ. Der potenzial $\Phi$ eines Potenzialfeld:
 \end{split}
 \end{equation*}
 
-\subsection{Tips}
-parametrisierung eines kreises: x=r*cos(t) y= r*sin(t) dxdy= rdrdt
-dxdy=$|rs\times rt|$
+\section{Fl{\"a}chenintegral}
 
-\section{Flussintegrale oberflacheintegrale}
-\subsection{1 methode}
-\begin{enumerate}
-	\item Die flache parametrisieren nach u und v: $\Phi_1(u,v),\Phi_2(u,v),\Phi_3(u,v)$.
-	\item berechnen $\Phi_u = \frac{\vartheta \Phi}{\vartheta u}$ und $\Phi_v = \frac{\vartheta \Phi}{\vartheta v}$. Und krossprodukt berechnen $\Phi_u \times \Phi_v$
-	\item benutzen die Formel:\begin{equation*}
-		\int_S v*ndo=\pm\int^b_a\int_c^d v(\Phi(u,v))*(\Phi_u\times \Phi_v) dudv
-	\end{equation*}
-\end{enumerate}
-\subsection{Gauss}
+\subsection{Koordinatentransformationen}
+
+\subsubsection{Polarkoordinaten ($\mathbb{R}^2$)}
+
 \begin{equation*}
-	\int_{\vartheta V}v*ndo= \int_V div(v)d\mu
+	\textbf{Variablen:}\quad \begin{matrix}
+		x = r\cos(\phi) \\ y = r\sin(\phi)
+	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdy = r\ drd\phi
 \end{equation*}
 
+\subsubsection{Elliptische Koordinaten ($\mathbb{R}^2$)}
 
-\section{Fl{\"a}chenintegral}
+\begin{equation*}
+	\textbf{Variablen:}\quad \begin{matrix}
+		x = ra\cos(\phi) \\ y = rb\sin(\phi)
+	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdy = abr\ drd\phi
+\end{equation*}
+
+\subsubsection{Zylinderkoordinaten ($\mathbb{R}^3$)}
+
+\begin{equation*}
+	\textbf{Variablen:}\quad \begin{matrix}
+		x = r\cos(\phi) \\ y = r\sin(\phi) \\ z = z
+	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdydz = r\ drd\phi dz
+\end{equation*}
+
+\subsubsection{Kugelkoordinaten ($\mathbb{R}^3$)}
+
+\begin{equation*}
+	\textbf{Variablen:}\quad \begin{matrix}
+		x = r\sin(\theta)\cos(\phi) \\ y = r\sin(\theta)\sin(\phi) \\ z = r\cos(\theta)
+	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdydz = r^2\ dr\ \sin(\theta)\ d\theta d\phi
+\end{equation*}
 
 \subsection{Normalbereich}
 
@@ -762,7 +779,11 @@ dxdy=$|rs\times rt|$
 \end{split}
 \end{equation*}
 
+\emph{Bemerkung:} Soll nur die Fläche ausgerechnet werden, so wähle $F(x,y) = 1$. Werden Polarkoordinaten benutzt, so wähle $F(r, \phi) = r$.
+
 \subsection{Satz von Green}
+
+\paragraph{Anforderung:} Der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn)
 
 \begin{equation*}
 	\textbf{Grundsatz:}\quad \mu(C) = \int_{\gamma = \partial C} \vec{v} \cdot d\vec{s}\text{, falls}\ rot(\vec{v}) = 1
@@ -770,12 +791,74 @@ dxdy=$|rs\times rt|$
 
 \begin{equation*}
 \begin{split}
-	& \text{Fl{\"a}cheninhalt der Ellipse $E$, berandet durch} x = a\cos(\theta),\ y = b\sin(\theta) \\
+	& \text{Fl{\"a}cheninhalt der Ellipse $E$, berandet durch}\ x = a\cos(\theta),\ y = b\sin(\theta) \\
 	\text{Rand parametrisieren:}\quad & \gamma: [0, 2\pi] \mapsto \mathbb{R}^2,\ \theta \mapsto \binom{a\cos(\theta)}{b\sin(\theta)} \\
 	\text{Vektorfeld ausw{\"a}hlen:}\quad & \vec{v}_1 = \binom{0}{x}\ \text{oder}\ \vec{v}_2 = \binom{-y}{0} \\
-	\textbf{Wegintegral ausrechnen}\quad & \mu(E) = \pi ab
+	\textbf{Wegintegral ausrechnen:}\quad & \mu(E) = \pi ab
 \end{split}
 \end{equation*}
+
+\section{Oberflächenintegral}
+
+\begin{minipage}[c]{0.5\textwidth}
+\centering
+\includegraphics[width=\linewidth,keepaspectratio=true]{images/fluss}
+\end{minipage}
+%
+\begin{minipage}[c]{0.5\textwidth}
+\begin{equation*}
+\begin{split}
+	\text{gegeben:}\quad & \vec{F}(x,y,z) = \begin{pmatrix}
+		\frac{x^2}{2} \\ -xy \\ x^2 + 3z^2 - 3
+	\end{pmatrix} \\
+	\text{gesucht:}\quad & \text{Fluss durch die Mantelfläche des Kegels} \\
+	& \text{(von Innen nach Aussen)} \\
+	\textbf{Vorgehen:}\quad & \text{Fluss durch den ganzen Kegel} \\
+	& \text{mit \textbf{Satz von Gauss} berechnen} \\
+	& \text{Fluss durch Deckel} \\
+	& \text{mit \textbf{Standardmethode} berechnen}
+\end{split}
+\end{equation*}
+\end{minipage}
+
+\subsection{Standardmethode}
+
+\begin{equation*}
+	\textbf{Grundsatz:}\quad\int_{\partial V} \vec{v}\cdot\vec{n}\ do
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	\text{Normalvektor:}\quad & \vec{n} = \begin{pmatrix}
+		0 \\ 0 \\ 1
+	\end{pmatrix} \\
+	\text{Vektorfeld anpassen:}\quad & z = 1 \Rightarrow \vec{F} = \begin{pmatrix}
+		\frac{x^2}{2} \\ -xy \\ x^2
+	\end{pmatrix} \\
+	\textbf{Grundsatz anwenden:}\quad & \iint_D \begin{pmatrix}
+		0 \\ 0 \\ 1
+	\end{pmatrix}\begin{pmatrix}
+		\frac{x^2}{2} \\ -xy \\ x^2
+	\end{pmatrix} dxdy = \iint_D x^2\ dxdy \\
+	\textbf{Koordinatentransformation:}\quad & \int_0^{2\pi} \int_0^1 r^3\cos(\phi)\ drd\phi = \frac{\pi}{4}
+\end{split}
+\end{equation*}
+
+\subsection{Satz von Gauss}
+
+\begin{equation*}
+	\textbf{Grundsatz:}\quad\int_{\partial V} \vec{v}\cdot\vec{n}\ do = \int_V \text{div}(\vec{v})\ d\mu
+\end{equation*}
+wobei $\vec{n}$ die nach aussen gerichtete Normale längs $\partial V$ bezeichnet.
+
+\begin{equation*}
+\begin{split}
+	\text{Divergenz berechnen:}\quad & \text{div}(\vec{F}) = 6z \\
+	\textbf{Grundsatz anwenden:}\quad & \int_{-1}^1 dz \int_0^{2\pi} d\phi \int_0^{\frac{z+1}{2}} 6zr\ dr = 2\pi
+\end{split}
+\end{equation*}
+
+\emph{Bemerkung:} In diesem Beispiel wurden zylindrische Koordinaten benutzt.
 
 \section{Kurvendiskussion}
 
@@ -795,6 +878,8 @@ dxdy=$|rs\times rt|$
 		\item $\text{Hess}(f)(p_0)$ indefinit $\Rightarrow$ Sattelpunkt
 	\end{enumerate}
 \end{enumerate}
+
+\emph{Bemerkung:} Falls alle Eigenwerte von $A$ grösser als $0$ sind, dann ist $A$ \textbf{positiv definit}. Hat $A$ sowohl positive als auch negative Eigenwerte, so ist sie \textbf{indefinit}.
 
 \subsection{Extremwertaufgaben mit Nebenbedingungen}
 
