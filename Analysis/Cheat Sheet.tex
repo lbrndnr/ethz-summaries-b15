@@ -318,13 +318,16 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 \begin{equation*}
 	\rho=\frac{1}{\lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
 \end{equation*}
+mann muss noch prufen ob es in bereich konvergiert oder im aussen von bereich konvergiert, dazu eine formel benutzen.
 
 \subsubsection{Tipps}
 \begin{equation*}
 \begin{split}
 	\cos(x) & = \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!} \\
 	\sin(x) & = \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
-	e^x & = \sum^\infty_0\frac{x^n}{n!}
+	e^x & = \sum^\infty_0\frac{x^n}{n!} \\
+	lim_{n\rightarrow\infty}(1+\frac{1}{n})^n=e^a \\
+	\sum_{k=1}^n 2k-1=n^2
 \end{split}
 \end{equation*}
 
@@ -458,6 +461,7 @@ $\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \
 	\int\frac{\frac{1}{\alpha}}{1+(\frac{x}{\alpha})^2}\ dx & = \arctan(x) \\
 	\int \sin^2(x)\ dx & = \frac{1}{2}(x - \sin(x)\cos(x)) + C \\
 	\int \cos^2(x)\ dx & = \frac{1}{2}(x + \sin(x)\cos(x)) + C \\
+	\int \sqrt{x^2+1}\ dx & = \sinh(x) + C
 \end{split}
 \end{equation*}
 
