@@ -132,11 +132,12 @@ Find a variable such that the sentence is wrong.
 	A = B & \Leftrightarrow A \subseteq B \land B \subseteq A \\
 	P(A) & := \{S\ |\ S \subseteq A\} \\
 	A \cap (B \cup C) & = (A \cap B) \cup (A \cap C) \\
-	A \times B & = \{(a, b)\ |\ a \in A \land b \in B\} \\
-	\mathcal{P}(\{a,b,c\}) & = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\} ( heisst die teilmenge) \\
+	A \times B & = \{(a, b)\ |\ a \in A \land b \in B\} ,|A\times B| = |A|*|B|\\ 
+	\mathcal{P}(\{a,b,c\}) & = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\} (teilmenge) |\mathcal{P}|=2^{|A|}\\
 	 Ordered\_sets:= (a,b):=\{\{a\},\{a,b\}\}
 \end{split}
 \end{equation*}
+A teilmenge of a set is the set itself, every element of the set and the null element.
 
 \section{Relations}
 
@@ -202,7 +203,7 @@ If you are looking for a equivalence relation give the matrix with the above pro
 $a\ \theta\ b \Rightarrow [a] = [b]$\\
 $a\ \cancel{\theta}\ b \Rightarrow [a] \cap [b] = \emptyset$
 
-\subsection{Partial Order}
+\subsection{Partial Order = ordnungsrelation}
 \textbf{Example:} $\leq$ and $\geq$ on $\mathbb{Z}, \mathbb{Q}$ or $\mathbb{R}$, $=$ on $\mathbb{N}$\\ 
 A relation that is reflexive, antisymmetric, and transitive. \\
 If every two elements in a poset are comparable than the Set is \textbf{totally ordered}.\\
@@ -261,7 +262,7 @@ The set $\{0,1\}^* := \{0,1, 00, 01, ...\}$ of \textbf{finite binary sequences} 
 The set $\{0,1\}^\infty$ is uncountable (Cantor's diagonalization argument). \\
 The set \textbf{$A^n$ of $n$-tuples} over A is countable. \\
 The \textbf{union of a countable list} of countable sets is countable (can be considered as  tuples).\\
-$\mathbb{N}$, $\mathbb{Z}$ und $\mathbb{Q}$ are countable $\mathbb{P}(\mathbb{Z})$ ist uberabzahlbar.
+$\mathbb{N}$, $\mathbb{Z}$ und $\mathbb{Q}$ are countable $\mathbb{P}(\mathbb{Z})$ ist uberabzahlbar(=not countable).
 
 \subsection{Inclusion/Exclusion Principle}
 
@@ -424,7 +425,7 @@ The \textbf{congruence equation} has a solution $x \in \mathbb{Z}_m$ if and only
 	ax \equiv_m 1
 \end{equation*}
 
-The $x$ satisfying the equation is called the \textbf{multiplicative inverse of a modulo m} ($x \equiv_m a^{-1}$ or $x \equiv_m \frac{1}{a}$).
+The $x$ satisfying the equation is called the \textbf{multiplicative inverse of a modulo m (a Einheit of the Ring)} ($x \equiv_m a^{-1}$ or $x \equiv_m \frac{1}{a}$). 
 
 \subsection{Diffie-Hellmann Key-Agreement Protocol}
 
@@ -481,14 +482,14 @@ The \textbf{neutral} and \textbf{inverse element} can have a left and right vers
 \textbf{Ring}      & $\langle R; +, -, 0, \cdot, 1\rangle$	   & $\langle R; +, -, 0\rangle$ is a commutative group & $\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ (commutative) \\ \cline{3-3}
 			       &										   & $\langle R; \cdot, 1\rangle$ is a monoid 			& \\ \cline{3-3}
 			       &										   & $a(b+c) = ab +ac$ and $(b+c)a = ba + ca$ for all $a,b,c \in R$ & \\ \hline
-\textbf{Integral \filbreak Domain}	&									   & cummutative 						 				& $\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ \\ \cline{3-3}
+\textbf{Integral \filbreak Domain (korper)}	&									   & cummutative 						 				& $\mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ \\ \cline{3-3}
 			       &										   & no zerodividers \filbreak $ab = 0 \Rightarrow a = 0 \lor b = 0$& \\ \hline
 \textbf{Field}	   &$GF(p) \equiv \mathbb{Z}_p$& $\langle F - \{0\}; \cdot, ^{-1}, 1\rangle$ is a commutative ring 						 				& $\mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{Z}_p$ \\ \cline{3-3}
 			       &										   & every nonzero element is a unit (has an inverse) 	& \\ \hline
 \end{tabular}
 \end{table}
 
-\emph{Hint:} In order to prove a specific algebra, prove its axioms and that the set is closed in correspondence to its operations.
+\emph{Hint:} In order to prove a specific algebra, prove its axioms and that the set is closed in correspondence to its operations, a ring $R^*$ means the ring that only contains units.
 
 \subsection{Groups}
 
@@ -538,7 +539,7 @@ The smallest subgroup of a group $G$ containing the element $g \in G$ is the \te
 \end{equation*}
 where the resulting group is called \textbf{cyclic}.\\
 
-\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order i.e. $|H|$ divides $|G|$. A subgroup of size two contains e and an element a, a has to be it's own invers: aa=e. A subgroup with a prime order is kommutative.
+\emph{Hint:} The order of a subgroup of a finite group divides its enclosing group's order i.e. $|H|$ divides $|G|$. A subgroup of size two contains e and an element a, a has to be it's own invers: aa=e. A subgroup with a prime order is cyclic and therefore isomorph to $\mathbb{Z}_n,\bigoplus$ and because of $\bigoplus$ is also kommutativ.
 
 \subsubsection{Cyclic Group}
 
