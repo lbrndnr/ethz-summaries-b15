@@ -69,6 +69,15 @@
 	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
 \end{description}
 
+\subsubsection{Vorgehen zur Bestimmung von Maximum/Minimum}
+
+\begin{enumerate}[noitemsep]
+	\item Zeigen, dass $f(x)$ stetig ist
+	\item Zeigen, dass Definitionsmenge kompakt ist
+	\item Nach \textbf{Satz von Weierstrass} wird Maximum/Minimum angenommen
+	\item Maximum/Minimum bestimmen
+\end{enumerate}
+
 \subsection{Identit{\"a}ten}
 
 \begin{equation*}
@@ -172,6 +181,20 @@ $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x)
 \end{tabular}
 \end{table}
 
+\subsection{Wichtige Grenzwerte}
+
+\begin{equation*}
+\begin{split}
+	\lim\limits_{n \to \infty} \left( 1+\frac{x}{n} \right)^n = e^x \qquad & \qquad \lim\limits_{n \to \infty} \left( 1+\frac{1}{n} \right)^n = e \\
+	\lim\limits_{x \to 0} \frac{a^x-1}{x} = \ln a \qquad & \qquad \lim\limits_{x \to 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln a} \\
+	\lim\limits_{x \to 0} \frac{1-\cos(x)}{x} = 0 \quad \qquad & \qquad \lim\limits_{x \to 0} \frac{1-\cos(x)}{x^2} = \frac{1}{2} \\
+	\lim\limits_{x \to 0} \frac{\tan(x)}{x} = 1 \qquad & \qquad \lim\limits_{x \to 0} \frac{\sin(x)}{x} = 1 \\
+	\lim\limits_{n \to \infty} \frac{n!}{n^n} = 0 \qquad & \qquad \lim\limits_{n \to 0} \frac{e^n -1 }{n} = 1 \\
+	\lim\limits_{n \to \infty} \sqrt[n]{n!} = \infty \qquad & \qquad \lim\limits_{n \to \infty} \sqrt[n]{n} = 1 \\
+	\lim\limits_{n \to \infty} \ln(n) = \infty \qquad & \qquad \lim\limits_{x \to 0} \frac{\log_a(1+x)}{x} = \frac{1}{\ln a} \\
+\end{split}
+\end{equation*}
+
 \section{Folgen}
 
 \subsection{Definition}
@@ -185,13 +208,15 @@ $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x)
 
 \subsection{Beweis}
 
-\begin{enumerate}
+Entweder \textbf{Grenzwert berechnen}, oder:
+
+\begin{enumerate}[noitemsep]
 	\item Zeige mittels \textbf{Induktion}, dass die Folge \textbf{beschr{\"a}nkt} ist und monoton \textbf{steigt/f{\"a}llt}. Benutze dazu z.B. folgende Aussagen: $a_n \leq a_{n+1}$ oder $a_{n+1}-a_n \geq 0$.
 	\item Sch{\"a}tze den Grenzwert durch die ersten paar Terme ab
 	\item Beweise den Grenzwert (z.B. mit $a_n \geq a$)
 \end{enumerate}
 
-\section{Reihen}
+\section{Reihen $\sum^\infty$}
 
 \subsection{Konvergenzkriterien}
 
@@ -318,17 +343,23 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 \begin{equation*}
 	\rho=\frac{1}{\lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
 \end{equation*}
-mann muss noch prufen ob es in bereich konvergiert oder im aussen von bereich konvergiert, dazu eine formel benutzen.
+
+\paragraph{Konvergenzverhalten am Rand:} Es muss noch überprüft werden, ob die Reihe für genau $\rho$ konvergiert. Dazu muss $\rho$ in die Formel eingesetzt werden.
 
 \subsubsection{Tipps}
 \begin{equation*}
 \begin{split}
-	\cos(x) & = \sum^\infty_0\frac{(-1)^nx^{2n}}{(2n)!} \\
-	\sin(x) & = \sum^\infty_0\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
-	e^x & = \sum^\infty_0\frac{x^n}{n!} \\
-	lim_{n\rightarrow\infty}(1+\frac{1}{n})^n=e^a \\
-	\sum_{k=1}^n 2k-1=n^2
+	\cos(x) & = \sum^\infty_{n =0}\frac{(-1)^nx^{2n}}{(2n)!} \\
+	\sin(x) & = \sum^\infty_{n =0}\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
+	e^x & = \sum^\infty_{n =0}\frac{x^n}{n!} \\
+	n^2 & = \sum_{k=1}^n 2k-1
 \end{split}
+\end{equation*}
+
+\subsubsection{Potenzreihenentwicklung}
+
+\begin{equation*}
+	\textbf{Grundsatz:} \quad f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} \cdot x^n
 \end{equation*}
 
 \section{Stetigkeit}
@@ -438,6 +469,9 @@ $\frac{1}{\ln(a) \cdot x}$ & $\log_a|x|$ & $\frac{x}{\ln(a)}(\ln|x| -1)$ \\ \hli
 $\frac{1}{\sqrt{1-x^2}}$ & $\arcsin(x)$ & $x\cdot\arcsin(x) + \sqrt{1-x^2}$ \\ \hline
 $-\frac{1}{\sqrt{1-x^2}}$ & $\arccos(x)$ & $x\cdot\arccos(x) - \sqrt{1-x^2}$ \\ \hline
 $\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \\ \hline
+$\cosh(x)$ & $\sinh(x) = \frac{e^x - e^{-x}}{2}$ & $\cosh(x)$ \\ \hline
+$\sinh(x)$ & $\cosh(x) = \frac{e^x + e^{-x}}{2}$ & $\sinh(x)$ \\ \hline
+$\frac{1}{\cosh^2(x)}$ & $\tanh(x)$ & $\log(\cosh(x))$ \\ \hline
 \end{tabular}
 \end{table}
 
@@ -463,6 +497,20 @@ $\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \
 	\int \cos^2(x)\ dx & = \frac{1}{2}(x + \sin(x)\cos(x)) + C \\
 	\int \sqrt{x^2+1}\ dx & = \sinh(x) + C
 \end{split}
+\end{equation*}
+
+\subsection{Uneigentliche Integrale}
+
+\begin{equation*}
+\begin{split}
+	\int_0^\infty f(x)\ dx = \lim_{R \to \infty} \int_0^R f(x)\ dx \\
+	\int_{-\infty}^\infty f(x)\ dx = \lim_{R \to -\infty} \int_R^k f(x)\ dx + \lim_{R \to \infty} \int_k^R f(x)\ dx
+\end{split}
+\end{equation*}
+
+Gibt es eine Unstetigkeitstelle $c$ in dem Integrationsgebiet, so geht man wie folgt vor:
+\begin{equation*}
+	\int_a^b f(x)\ dx = \lim_{\varepsilon \to 0} \int_a^{c-\varepsilon} f(x)\ dx + \lim_{\varepsilon \to 0} \int_{c+\varepsilon}^b f(x)\ dx
 \end{equation*}
 
 \section{Differentialgleichungen}
@@ -554,7 +602,7 @@ $\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \
 \end{equation*}
 
 \emph{Bemerkung:} Zu einer $m$-fachen Nullstelle $\lambda$ geh{\"o}ren die $m$ linear unabh{\"a}ngigen L{\"o}sungen $e^{\lambda x}$, $x\cdot e^{\lambda x}$, ... , $x^{m-1}\cdot e^{\lambda x}$. Zur $m$-fachen Nullstelle $\lambda = 0$ geh{\"o}ren die L{\"o}sungen $1$, $x$, ... , $x^{m-1}$. \\
-\\ 
+ 
 \emph{Komplexe Nullstellen:} \\
 
 \begin{equation*}
@@ -729,6 +777,37 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 \end{split}
 \end{equation*}
 
+\subsection{Satz von Stokes}
+
+\paragraph{Anforderung:} Einfacher in $\mathbb{R}^3$, der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn)
+
+\begin{equation*}
+	\textbf{Grundsatz:}\quad\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C \text{rot}(\vec{v}) \cdot \vec{n}\ do
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+	& \vec{v} = \begin{pmatrix}
+		y(z^2-x^2) \\ x(y^2 - z^2) \\ z(x^2 + y^2)
+	\end{pmatrix},\ \text{Rand der oberen H{\"a}lfte der Einheitssph{\"a}re mit Radius $1$ um $(0,0, 0)$} \\
+	\text{Rotation berechnen:}\quad & rot(\vec{v}) = \begin{pmatrix}
+		2z(x+y) \\ 2z(y-x) \\ x^2 + y^2 - 2z^2
+	\end{pmatrix} \\
+	\textbf{Einheitssph{\"a}re parametrisieren:}\quad & \Phi(\theta, \phi) = \begin{pmatrix}
+		\sin(\theta)\cos(\phi) \\ \sin(\theta)\sin(\phi) \\ \cos(\theta)
+	\end{pmatrix} \\
+	\text{Normalvektor berechnen:}\quad & \Phi_\theta = \begin{pmatrix}
+		\cos(\theta)\cos(\phi) \\ \cos(\theta)\sin(\phi) \\ -\sin(\theta)
+	\end{pmatrix},\ \Phi_\phi = \begin{pmatrix}
+		-\sin(\theta)\sin(\phi) \\ \sin(\theta)\cos(\phi) \\ 0
+	\end{pmatrix} \\
+	& \Phi_\theta \times \Phi_\phi = \begin{pmatrix}
+		\sin^2(\theta)\cos(\phi) \\ \sin^2(\theta)\sin(\phi) \\ \sin(\theta)\cos(\theta) \\
+	\end{pmatrix} \\
+	\textbf{Grundsatz anwenden:} \quad & \int_H \text{rot}(\vec{v}) \cdot \vec{n}\ do = \frac{\pi}{2}
+\end{split}
+\end{equation*}
+
 \section{Fl{\"a}chenintegral}
 
 \subsection{Koordinatentransformationen}
@@ -864,7 +943,27 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale l{\"a}ngs $\partial V$ bezeic
 
 \emph{Bemerkung:} In diesem Beispiel wurden zylindrische Koordinaten benutzt.
 
+\subsection{Satz von Stokes}
+
+\paragraph{Anforderung:} Einfacher in $\mathbb{R}^3$, der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn)
+
+\begin{equation*}
+	\textbf{Grundsatz:}\quad\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C \text{rot}(\vec{v}) \cdot \vec{n}\ do
+\end{equation*}
+
 \section{Kurvendiskussion}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Extremalstelle & $f'(x) =  0 \land f''(x) \neq 0$ \\ \hline
+Minimalstelle & $f'(x) = 0 \land f''(x) > 0$ \\ \hline
+Maximalstelle & $f'(x) = 0 \land f''(x) < 0$ \\ \hline
+Wendepunkt & $f''(x) = 0 \land f'''(x) \neq 0$ \\ \hline
+Sattelpunkt & $f'(x) = 0 \land f''(x) = 0 \land f'''(x) \neq 0$ \\ \hline
+\end{tabular}
+\end{table}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
 	\item[kritischer Punkt:] $p_0 \in \Omega$ f{\"u}r welchen $\text{rank}(df(p_0)) < \min\{m,n\}$ gilt
@@ -922,27 +1021,3 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale l{\"a}ngs $\partial V$ bezeic
 \end{enumerate}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
