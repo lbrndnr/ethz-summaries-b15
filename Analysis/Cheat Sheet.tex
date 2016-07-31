@@ -763,7 +763,7 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 
 \subsection{Satz von Green}
 
-\paragraph{Anforderung:} Der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn)
+\paragraph{Anforderung:} Der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn) immer der vektorfeld (-y,0) oder (0,x).
 
 \begin{equation*}
 	\textbf{Grundsatz:}\quad\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C (\frac{\partial v_2}{\partial x}-\frac{\partial v_1}{\partial y})\ dxdy
@@ -777,6 +777,9 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 	\text{in Formel einsetzen:}\quad & \int_\gamma \vec{v} \cdot d\vec{s} = \int_E -1\ dxdy = -\mu(E) = -\pi
 \end{split}
 \end{equation*}
+\begin{equation}
+	\int\int_{\Omega}rotvdxdy=\int_{\gamma_1}v(\gamma_1(t))*\gamma_1'dt+\int_{\gamma_2}v(\gamma_2(t))*\gamma_2'dt+...
+\end{equation}
 
 \subsection{Satz von Stokes}
 
@@ -1020,5 +1023,31 @@ Sattelpunkt & $f'(x) = 0 \land f''(x) = 0 \land f'''(x) \neq 0$ \\ \hline
 		\item Eckpunkte des Gebietes {\"u}berpr{\"u}fen
 	\end{enumerate}
 \end{enumerate}
+andere moglichkeit falls nebebidingungen sind einfach:
+\begin{enumerate}
+	\item kandidaten im inneren suchen
+	\item die function $\frac{d}{dy}$f(eckpunt1,y)=0 losen und sehen ob punckt in bereich ist.
+	\item das gleiche machen fur eckpunkt2 in y und dann fur beide eckepunkte fur x.
+	\item weitere kandidaten sind die eckepunkte.
+\end{enumerate}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
