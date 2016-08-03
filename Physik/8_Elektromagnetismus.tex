@@ -30,29 +30,37 @@
 Die \textbf{Coulombsche (elektrostatische) Kraft}, die eine Punktladung $Q$ (Quelle) auf eine Ladung $q$ (Testladung) aus{\"u}bt, ist gleich:
 
 \begin{equation*}
-	F = \frac{1}{4\pi\varepsilon_0}\frac{qQ}{r^2} \quad [N]
+	F = \frac{1}{4\pi\varepsilon_0}\frac{qQ}{r^2} \quad [F] = N
 \end{equation*}
 
 wobei $\varepsilon_0$ die elektrische Feldkonstante und $r$ der Ortsvektor der Ladung $q$ ist. Der Ursprung des Koordinatensystems ist der Mittelpunkt der Ladung $Q$. \\
 
 \subsection{Elektrisches Feld}
 
-Das \textbf{elektrische Feld} ist definiert als:
+Das \textbf{elektrische Feld} ist nach Gauss definiert als:
 \begin{equation*}
-	E(r) \equiv \frac{F(r)}{q} = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2}
+	E(r) \equiv \frac{F(r)}{q} = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2} = \frac{V(r)}{r} \quad[E(r)] = \frac{V}{m}
 \end{equation*}
+
+Handelt es sich beim Kondensator um ein \textbf{Zylinder}, so gilt:
+\begin{equation*}
+	E(r)=\frac {\lambda }{2\pi \varepsilon_0 r} \quad [\lambda] = \frac{C}{m}
+\end{equation*}
+wobei $\lambda$ die Ladungsdichte pro Meter ist.
 
 Das zweite Teilchen der Ladung $q$ und Masse $m$ sp{\"u}rt die Kraft des Feldes:
 \begin{equation*}
 	F(r) = qE(r)
 \end{equation*}
 
-F{\"u}r eine positive Ladung $q$ zeit die Kraft in die Richtung des Feldes. \\
+F{\"u}r eine positive Ladung $q$ zeigt die Kraft in die Richtung des Feldes. \\
 
 Es erf{\"a}hrt eine \textbf{Beschleunigung}:
 \begin{equation*}
 	a = \frac{q}{m}E
 \end{equation*}
+
+\includegraphics[width=240pt]{images/mf/capacitor_formulas}
 
 \subsubsection{Elektrische Feldlinien}
 
@@ -103,7 +111,7 @@ Das \textbf{elektrische Potential} $V$ ist ein Skalarfeld und entspricht der pot
 
 Die \textbf{elektrische Spannung} ist gleich dem Potentialunterschied zwischen zwei Punkten:
 \begin{equation*}
-	U_{1,2} = V(r_1)-V(r_2) = \int_{r_1}^{r_2}E\ dr \quad [U] = V
+	U_{1,2} = V(r_1)-V(r_2) = \int_{r_1}^{r_2}E\cdot dr \quad [U] = V
 \end{equation*}
 
 \subsection{Elektrische Ladung in elektrischen und magnetischen Feldern}
@@ -142,7 +150,7 @@ wobei $v_D$ der Driftgeschwindigkeit und $n$ der Dichte der beweglichen Elektron
 \paragraph{Driftgeschwindigkeit:} \mbox{} \\
 
 Gegeben:
-\begin{description}[labelindent=16pt,style=multiline,leftmargin=4cm, noitemsep]
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=4.2cm, noitemsep]
 	\item[Kupferdraht:] ein Elektron pro Atom, $8.93 \frac{g}{cm^3}$, $63.5 \frac{g}{mol}$
 	\item[Querschnittsfl{\"a}che:] $1mm^2$
 	\item[Stromst{\"a}rke:] $1 A$
@@ -187,7 +195,7 @@ F{\"u}r ein differentielles Element des Stroms ist sie gleich:
 \end{center}
 
 \begin{equation*}
-	F = LI \times B
+	F \approx \frac{LI_1I_2}{r} \quad \text{vektoriell:}\quad F = LI \times B
 \end{equation*}
 
 Fliessen die zwei Str{\"o}me in die gleiche Richtung, so ziehen sich die Leiter an.
@@ -210,7 +218,7 @@ Die \textbf{gespeicherte Energie} (bzw. geleistete Arbeit zum Laden) ist gleich:
 
 \subsection{Ladungs- und Stromdichte}
 
-\subsection{Ladungsdichte}
+\subsubsection{Ladungsdichte}
 
 Die \textbf{Raumladungsdichte} ist ein Skalarfeld und ist gleich:
 
@@ -225,9 +233,9 @@ Die \textbf{Stromdichte} bezeichnet Stromst{\"a}rke pro Fl{\"a}che und ist gleic
 	j = \frac{I}{A}
 \end{equation*}
 
-\textbf{Vektoriel} ist sie gleich:
+\textbf{Vektoriell} ist sie gleich:
 \begin{equation*}
-	I = \iint_A j(r)\ dA
+	I = \iint_A j(r)\cdot dA
 \end{equation*}
 
 \subsubsection{Kontinuit{\"a}tsgleichung}
@@ -243,13 +251,13 @@ Sie besagt, dass wenn sich die elektrische Ladung in einem Punkt $r$ {\"a}ndert,
 Der elektrische Fluss durch eine Fl{\"a}che $A$ wird definiert als der Fluss des elektrischen Feldes durch die Fl{\"a}che:
 
 \begin{equation*}
-	\Phi_E = \iint_A E\ dA
+	\Phi_E = \iint_A E\cdot dA
 \end{equation*}
 
 \subsection{Magnetischer Fluss}
 
 \begin{equation*}
-	\Phi_B = \iint_A B\ dA
+	\Phi_B = \iint_A B\cdot dA
 \end{equation*}
 
 Die Diverenz des magnetischen Feldes muss in jedem Punkt des Raumes gleich null sein:
@@ -265,7 +273,7 @@ Die Diverenz des magnetischen Feldes muss in jedem Punkt des Raumes gleich null 
 
 Das Linienintegral des elektrischen Feldes {\"u}ber die geschlossene Schleife ist gleich der Induktionsspannung $U_{ind}$:
 \begin{equation*}
-	U_{ind} = \oint E\ dr = - \frac{d}{dt} \iint_A B\ dA = -\frac{d\Phi_B}{dt}
+	U_{ind} = \oint E\cdot dr = - \frac{d}{dt} \iint_A B\cdot dA = -\frac{d\Phi_B}{dt}
 \end{equation*}
 
 

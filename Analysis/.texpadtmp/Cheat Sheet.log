@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  26 JUL 2016 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  3 AUG 2016 08:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -304,102 +304,113 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 36.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 47--73
+[]$[]$ $[]$ 
+ []
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/trigonometry.png> <./images/trigonometry_table.png>] <images/polarform.png, id=15, 516.42938pt x 512.41437pt>
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/trigonometry.png> <./images/trigonometry_table.png>] <images/polarform.png, id=19, 516.42938pt x 512.41437pt>
 File: images/polarform.png Graphic file (type png)
  <use images/polarform.png>
-Package pdftex.def Info: images/polarform.png used on input line 97.
+Package pdftex.def Info: images/polarform.png used on input line 110.
 (pdftex.def)             Requested size: 225.48764pt x 223.73506pt.
 
-Overfull \hbox (1.71744pt too wide) in paragraph at lines 112--112
+Overfull \hbox (4.38815pt too wide) in paragraph at lines 125--125
 [] 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 95--114
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 108--127
 $[]$ $[]$ 
  []
 
-[2] [3 <./images/polarform.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+[2 <./images/polarform.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 []|\OT1/cmr/bx/n/10.95 Limes des all-ge-meinen
  []
 
 
-Underfull \hbox (badness 1895) in paragraph at lines 229--229
+Underfull \hbox (badness 1895) in paragraph at lines 250--250
 []|\OT1/cmr/bx/n/10.95 Majoranten- und Mi-no-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 231--231
+Underfull \hbox (badness 1275) in paragraph at lines 252--252
 []|\OT1/cmr/m/n/10.95 gleiche Fol-gerung wie Quo-
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 245.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+[4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 266.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
- [5] [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 266.
+ [5]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
+[7]
+Overfull \hbox (3.97691pt too wide) in paragraph at lines 437--437
+[] 
+ []
+
 [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 604--605
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 [12] [13] [14]
-Overfull \hbox (162.81894pt too wide) in paragraph at lines 809--809
+Overfull \hbox (162.81894pt too wide) in paragraph at lines 851--851
 [] 
  []
 
 [15]
-Overfull \hbox (29.96487pt too wide) in paragraph at lines 882--882
+Overfull \hbox (29.96487pt too wide) in paragraph at lines 924--924
 [] 
  []
 
 <images/fluss.png, id=72, 417.56pt x 428.60126pt>
 File: images/fluss.png Graphic file (type png)
  <use images/fluss.png>
-Package pdftex.def Info: images/fluss.png used on input line 888.
+Package pdftex.def Info: images/fluss.png used on input line 930.
 (pdftex.def)             Requested size: 225.48764pt x 231.4543pt.
 
-Overfull \hbox (31.88281pt too wide) in paragraph at lines 904--904
+Overfull \hbox (31.88281pt too wide) in paragraph at lines 946--946
 [] 
  []
 
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 886--906
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 928--948
 $[]$ $[]$ 
  []
 
-[16 <./images/fluss.png>] [17] [18] (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Cheat Sheet.aux) ) 
+[16] [17 <./images/fluss.png>] [18] [19] (/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Cheat Sheet.aux) ) 
 Here is how much of TeX's memory you used:
  4432 strings out of 493089
  66578 string characters out of 6134843
@@ -407,12 +418,12 @@ Here is how much of TeX's memory you used:
  7844 multiletter control sequences out of 15000+600000
  14966 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,25n,38p,330b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,25n,38p,330b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Cheat Sheet.pdf" (18 pages, 417986 bytes).
+Output written on "/Users/Laurin/Documents/ETH/B2016/Summaries/Analysis/.texpadtmp/Cheat Sheet.pdf" (19 pages, 421902 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

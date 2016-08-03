@@ -44,6 +44,7 @@
 \end{split}
 \end{equation*}
 
+\begin{minipage}[c]{0.5\textwidth}
 \subsection{Potenzgesetze}
 
 \begin{equation*}
@@ -57,6 +58,18 @@
 	a^{\frac{b}{n}} & = \sqrt[n]	{a^b} \\
 \end{split}
 \end{equation*}
+\end{minipage}
+%
+\begin{minipage}[c]{0.5\textwidth}
+\subsection{Logarithmus}
+
+\begin{equation*}
+\begin{split}
+	\log(0) & = \text{undef.} \\
+	\log(1) & = 0 \\
+\end{split}
+\end{equation*}
+\end{minipage}
 
 \section{Mengen}
 
@@ -102,7 +115,7 @@
 \begin{split}
 	z & = x + iy = r(\cos(\varphi) + i\sin(\varphi)) = re^{i\varphi} \\
 	r & = |z| = \sqrt{x^2 + y^2} \\
-	\varphi & = \arctan(\frac{y}{x}) \quad \text{(je nach Quadrant)}  \\
+	\arg(z) & = \varphi  = \arctan(\frac{y}{x}) \quad \text{(je nach Quadrant)}  \\
 	x & = r\cos(\varphi) \\
 	y & = r\sin(\varphi) \\
 	zw & = (re^{i\varphi})\cdot(se^{i\psi}) = rse^{i(\varphi + \psi)} \\
@@ -162,6 +175,14 @@
 \end{equation*}
 
 \emph{Tipp:} Danach den Limes des Exponenten berechnen. Oft ist Bernoulli-de l'H{\^o}pital dazu n{\"u}tzlich.
+
+\subsection{Substitution}
+
+\begin{equation*}
+\begin{split}
+	\lim_{x\to \infty} x^2(1 - \cos(\frac{1}{x})) \Rightarrow u = \frac{1}{x} \Rightarrow \lim_{x\to 0} \frac{1 - \cos(u)}{u^2}
+\end{split}
+\end{equation*}
 
 \subsection{Satz von Bernoulli-de l'H{\^o}pital}
 
@@ -364,22 +385,7 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 
 \section{Stetigkeit}
 
-\subsection{Stetigkeitskriterien}
-
-\subsubsection*{Weierstrass-Kriterium}
-F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass f{\"u}r alle $|x-a|<\delta$ gilt:
-\begin{equation*}
-	|f(x) -f(a)|<\epsilon
-\end{equation*}
-
-\subsubsection*{Gleichm{\"a}ssige Stetigkeit}
-F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass f{\"u}r alle $|x-y|<\delta$ gilt:
-\begin{equation*}
-	|f(x)-f(y)| < \epsilon
-\end{equation*}
-\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichm{\"a}ssig stetig.
-
-\subsubsection*{Lipschitz-Stetigkeit}
+\subsection{Lipschitz-Stetigkeit}
 Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
 \begin{equation*}
 	|f(x)-f(y)|\leq L|f(x)-f(y)| \quad \forall x,y \in \Omega
@@ -387,13 +393,26 @@ Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
 
 \emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschr{\"a}nkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichm{\"a}ssige Stetigkeit.
 
-\subsubsection*{Punktweise Konvergenz}
+\subsection{Weierstrass-Kriterium}
+F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon, a) >0$, sodass f{\"u}r alle $|x-a|<\delta$ gilt:
+\begin{equation*}
+	|f(x) -f(a)|<\epsilon
+\end{equation*}
+
+\subsection{Gleichm{\"a}ssige Stetigkeit}
+F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass f{\"u}r alle $|x-y|<\delta$ gilt:
+\begin{equation*}
+	|f(x)-f(y)| < \epsilon
+\end{equation*}
+\emph{Bemerkung:} Ist $f$ \textbf{stetig und kompakt}, dann ist sie auch gleichm{\"a}ssig stetig.
+
+\subsection{Punktweise Konvergenz}
 $f_n(x)$ konvergiert punktweise falls:
 \begin{equation*}
 	\forall x\in \Omega \quad \lim_{n\rightarrow\infty}f_n(x) = f(x)
 \end{equation*}
 
-\subsubsection*{Gleichm{\"a}ssige Konvergenz}
+\subsection{Gleichm{\"a}ssige Konvergenz}
 
 \paragraph{Grundsatz:} Falls eine Folge stetiger Funktionen $f_n$ gleichm{\"a}ssig gegen $f$ konvergiert, ist $f$ stetig.\\
 
@@ -403,6 +422,19 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 \end{equation*}
 
 \emph{Bemerkung:} Gleichm{\"a}ssige Konvergenz impliziert punktweise Konvergenz.
+
+\begin{equation*}
+\begin{split}
+	\text{gegeben:} \quad & f_n:[0,1] \mapsto \mathbb{R},\ f_n(x) = (1 - x^2)x^n \\
+	\textbf{punktweisen Limes berechnen:} \quad & \lim_{n \to \infty} (1 - x^2)x^n = 0 \equiv f(x) \\
+	& \Rightarrow\ \text{konvergiert gegen 0} \\
+	\text{Supremum berechnen:} \quad & \sup_{x \in [0,1]} |f_n(x) -f(x)| = \sup_{x \in [0,1]} |f_n(x)| = \sup_{x \in [0,1]}f_n(x) \\
+	\text{Maximum finden:} \quad & \frac{d}{dx} f_n(x) nx^{n-1}(1-x^2)-2xx^n = x^{n-1}(n - (n+2)x^2) = 0 \\
+	& \Rightarrow x_1 = 0,\ x_2 = \sqrt{\frac{n}{n+2}} \Rightarrow x_2\ \text{ist Maximum} \\
+	\textbf{Limes berechnen:} \quad & \lim_{n \to \infty} \sup_{x \in [0,1]} |f_n(x) - f(x)| = \lim_{n \to \infty} f_n(x_1) = 0 \\
+	\textbf{Folgerung:} \quad & \text{$f_n$ konvergiert auf $[0,1]$ glm. gegen $f$}
+\end{split}
+\end{equation*}
 
 \section{Differenzialrechnung}
 
@@ -454,6 +486,7 @@ wobei $m(x)$ der Form $ax^b$ ist mit $l\in \mathbb{R}$
 \begin{tabular}{|c|c|c|}
 \hline
 $f'(x)$ & $f(x)$ & $F(x)$ \\ \specialrule{.1em}{0em}{0em} 
+$\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$ & $\frac{f(x)}{g(x)}$ &  \\ \hline
 $0$ & $c$ & $cx$ \\ \hline
 $r\cdot x^{r-1}$ & $x^r$ & $\frac{x^{r+1}}{r+1}$ \\ \hline
 $-\frac{1}{x^2} = -x^{-2}$ & $\frac{1}{x} = x^{-1}$ & $\ln|x|$ \\ \hline
@@ -651,7 +684,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 
 \section{Vektorfelder}
 
-\subsection{Differenzial}
+\subsection{Differenzial (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}^m$)}
 
 \begin{equation*}
 	df = \begin{pmatrix}
@@ -661,7 +694,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 	\end{pmatrix}
 \end{equation*}
 
-\subsection{Gradient}
+\subsection{Gradient (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}$)}
 
 \begin{equation*}
 	\text{grad}(f)=\nabla f=
@@ -674,9 +707,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 
 Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L{\"a}nge ist gleich der maximalen {\"a}nderung von $f$.
 
-\emph{Bemerkung:} $f:\Omega \subset \mathbb{R}^n \mapsto \mathbb{R}$
-
-\subsection{Hessematrix}
+\subsection{Hessematrix (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}$)}
 
 \begin{equation*}
 	\text{Hess}(f)=
@@ -687,9 +718,7 @@ Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L
 	\end{pmatrix}
 \end{equation*}
 
-Falls a hat in x0 nur positive eigenwerte dann ist es eine maximalstelle, falls sie hat nur negative eingewerte dann ist es eine minimalstelle, falls sie hat beide dann ist es ein sattelpunkt.
-
-\subsection{Rotation}
+\subsection{Rotation (f{\"u}r f: $\mathbb{R}^3 \mapsto \mathbb{R}^3$ oder f: $\mathbb{R}^2 \mapsto \mathbb{R}^2$)}
 
 \begin{equation*}
 	\text{In}\ \mathbb{R}^3:\ \text{rot}(\vec{v})=\nabla\times \vec{v} =
@@ -702,7 +731,7 @@ Falls a hat in x0 nur positive eigenwerte dann ist es eine maximalstelle, falls 
 
 \emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ (Potenzialfeld).
 
-\subsection{Divergenz}
+\subsection{Divergenz (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}^n$)}
 \begin{equation*}
 	\text{div}(v)= \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + ... 
 \end{equation*}
@@ -719,6 +748,19 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 
 \begin{equation*}
 	\frac{\partial v_i}{\partial x_j}=\frac{\partial v_j}{\partial x_i},\forall i \neq j
+\end{equation*}
+
+\subsubsection*{Berechnung eines Potenzials}
+
+\begin{equation*}
+\begin{split}
+	\text{gegeben:} \quad & \vec{v} = \begin{pmatrix}
+		e^{xy}(1+xy) \\ e^{xy}x^2
+	\end{pmatrix} \\
+	\textbf{Nach y integrieren:} \quad & \frac{\partial\Phi}{\partial y} = e^{xy}x^2 \Rightarrow \Phi = \int e^{xy}x^2\ dy = xe^{xy} + C(x) \\
+	\textbf{Nach x ableiten:} \quad & \frac{\partial\Phi}{\partial x} = e^{xy} + xye^{xy} + C' \stackrel{!}{=} e^{xy} + xye^{xy} \Rightarrow C' = 0 \Rightarrow C = \text{konst.} \\
+	\textbf{Potenzial:} \quad & \Phi = xe^{xy} + \text{konst.}
+\end{split}
 \end{equation*}
 
 \section{Wegintegral}
