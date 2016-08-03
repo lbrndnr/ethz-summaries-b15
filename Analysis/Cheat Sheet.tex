@@ -80,6 +80,8 @@
 	\item[Supremum:] kleinste obere Schranke $\sup A$
 	\item[Infimum:] gr{\"o}sste untere Schranke $\inf A$
 	\item[Maximum/Minimum:] $\sup A \in A$, $\inf A \in A$
+	\item[kompakt:] abgeschlossen und beschr{\"a}nkt
+	\item[abgeschlossen:] z.B. $[0,1]$
 \end{description}
 
 \subsubsection{Vorgehen zur Bestimmung von Maximum/Minimum}
@@ -365,7 +367,7 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 	\rho=\frac{1}{\lim_{n\rightarrow \infty}\sqrt[n]{|a_n|}}
 \end{equation*}
 
-\paragraph{Konvergenzverhalten am Rand:} Es muss noch überprüft werden, ob die Reihe für genau $\rho$ konvergiert. Dazu muss $\rho$ in die Formel eingesetzt werden.
+\paragraph{Konvergenzverhalten am Rand:} Es muss noch {\"u}berpr{\"u}ft werden, ob die Reihe f{\"u}r genau $\rho$ konvergiert. Dazu muss $\rho$ in die Formel eingesetzt werden.
 
 \subsubsection{Tipps}
 \begin{equation*}
@@ -374,7 +376,7 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 	\sin(x) & = \sum^\infty_{n =0}\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
 	e^x & = \sum^\infty_{n =0}\frac{x^n}{n!} \\
 	n^2 & = \sum_{k=1}^n 2k-1\\
-	harmonische: \sum_{n=1}^{\infty}\frac{1}{n}=\infty
+	\text{harmonische:} \quad \sum_{n=1}^{\infty}\frac{1}{n} & = \infty
 \end{split}
 \end{equation*}
 
@@ -433,7 +435,7 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	\text{Supremum berechnen:} \quad & \sup_{x \in [0,1]} |f_n(x) -f(x)| = \sup_{x \in [0,1]} |f_n(x)| = \sup_{x \in [0,1]}f_n(x) \\
 	\text{Maximum finden:} \quad & \frac{d}{dx} f_n(x) nx^{n-1}(1-x^2)-2xx^n = x^{n-1}(n - (n+2)x^2) = 0 \\
 	& \Rightarrow x_1 = 0,\ x_2 = \sqrt{\frac{n}{n+2}} \Rightarrow x_2\ \text{ist Maximum} \\
-	\textbf{Limes berechnen:} \quad & \lim_{n \to \infty} \sup_{x \in [0,1]} |f_n(x) - f(x)| = \lim_{n \to \infty} f_n(x_1) = 0 \\
+	\textbf{Limes berechnen:} \quad & \lim_{n \to \infty} \sup_{x \in [0,1]} |f_n(x) - f(x)| = \lim_{n \to \infty} f_n(x_2) = 0 \\
 	\textbf{Folgerung:} \quad & \text{$f_n$ konvergiert auf $[0,1]$ glm. gegen $f$}
 \end{split}
 \end{equation*}
@@ -593,21 +595,25 @@ Gibt es eine Unstetigkeitstelle $c$ in dem Integrationsgebiet, so geht man wie f
 \subsubsection{Variation der Konstanten}
 
 \begin{equation*}
-	\textbf{Grundsatz:}\quad y(x) = y_\text{homo}(x) + y_p(x)
+	\textbf{Grundsatz:}\quad y(x) = y_h(x) + y_p(x)
 \end{equation*}
 
 \begin{equation*}
 \begin{split}
-	& y' - y = 1,\ y(0) = 0 \\
-	\text{homogener Ansatz}\quad & y' = y \\
-	\textbf{konstante L{\"o}sungen}\quad & y(x) \equiv 0 \\
-	\text{Trennung}\quad & \frac{dy}{y} = dx \Rightarrow \int\frac{dy}{y} = \int dx \Rightarrow \log|y| = x \\
-	\textbf{homogene L{\"o}sung}\quad & y_\text{homo}(x) = Ae^x,\ A = e^C \in \mathbb{R} \\
-	\text{partikul{\"a}rer Ansatz}\quad & y_p(x) = A(x)e^x \\
-	\text{einsetzen}\quad & A'e^x + Ae^x - Ae^x = 1 \Rightarrow A' = e^{-x} \Rightarrow A(x) = \int e^{-x}\ dx = -e^{-x} \\
-	\textbf{partikul{\"a}re L{\"o}sung}\quad & y_p(x) = -1 \\
-	\textbf{L{\"o}sung}\quad & y(x) = Ae^x - 1\ \text{mit Anfangsbedingung}\ A = 1 \\
-	& \Rightarrow y(x) = e^x - 1
+	& y'(x+1) + y = x^3,\ y(0) = \sqrt{5} \\
+	\text{Trennung}\quad & \frac{y'}{y} = \frac{-1}{x+1} \\
+	\textbf{konstante L{\"o}sungen}\quad & y(x) \equiv 0\ \text{erf{\"u}llt jedoch $y(0) \equiv \sqrt{5}$ nicht} \\
+	\text{integrieren}\quad & \int \frac{dy}{y} = - \int \frac{dx}{x+1} \\
+	& \Rightarrow \ln|y| = -\ln|x+1| + C \\
+	\textbf{Homogene L{\"o}sung} \quad & y_h(x) = \frac{C}{x+1},\ \text{mit}\ C= \pm e^C \in \mathbb{R}\backslash{0} \\
+	\text{partikul{\"a}rer Ansatz}\quad & y_p(x) = \frac{C(x)}{x+1} \\
+	\text{einsetzen} \quad & (\frac{C'(x)}{x+1} - \frac{C(x)}{(x+1)^2})(x+1) + \frac{C(x)}{x+1} = x^3 \\
+	& C'(x) = x^3 \\
+	& C(x) = \frac{x^4}{4} \\
+	\textbf{partkul{\"a}re L{\"o}sung} \quad & y_p(x) = \frac{x^4}{4(x+1)} \\
+	\text{allgemeine L{\"o}sung}\quad & y(x) = y_h(x) + y_p(x) = \frac{C}{x+1} + \frac{x^4}{4(x+1)} \\
+	\text{Anfangsbedingung benutzen} \quad & y(0) = \sqrt{5} \Rightarrow C = \sqrt{5} \\
+	\textbf{L{\"o}sung} \quad & y(x) = \frac{\sqrt{5}}{x+1} + \frac{x^4}{4(x+1)}
 \end{split}
 \end{equation*}
 
@@ -707,7 +713,7 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 	\end{pmatrix}
 \end{equation*}
 
-Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L{\"a}nge ist gleich der maximalen {\"a}nderung von $f$.
+Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L{\"a}nge ist gleich der maximalen {\"A}nderung von $f$.
 
 \subsection{Hessematrix (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}$)}
 
@@ -885,11 +891,22 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 
 \subsubsection{Kugelkoordinaten ($\mathbb{R}^3$)}
 
+\begin{minipage}[c]{0.3\textwidth}
+\centering
+\includegraphics[width=\textwidth]{images/kugelkoordinaten}
+\end{minipage}
+%
+\begin{minipage}[c]{0.7\textwidth}
 \begin{equation*}
-	\textbf{Variablen:}\quad \begin{matrix}
-		x = r\sin(\theta)\cos(\phi) \\ y = r\sin(\theta)\sin(\phi) \\ z = r\cos(\theta)
-	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdydz = r^2\ dr\ \sin(\theta)\ d\theta d\phi
+\begin{split}
+	\textbf{Variablen:}\quad & \begin{matrix}
+		x = r\sin(\theta)\cos(\varphi) \\ y = r\sin(\theta)\sin(\varphi) \\ z = r\cos(\theta)
+	\end{matrix} \\
+	\textbf{Volumenelement:} \quad & dxdydz = r^2\ dr\ \sin(\theta)\ d\theta d\varphi
+\end{split}
 \end{equation*}
+\end{minipage}
+
 
 \subsection{Normalbereich}
 
@@ -970,7 +987,7 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 	\end{pmatrix}\begin{pmatrix}
 		\frac{x^2}{2} \\ -xy \\ x^2
 	\end{pmatrix} dxdy = \iint_D x^2\ dxdy \\
-	\textbf{Koordinatentransformation:}\quad & \int_0^{2\pi} \int_0^1 r^3\cos(\phi)\ drd\phi = \frac{\pi}{4}
+	\textbf{Koordinatentransformation:}\quad & \int_0^{2\pi} \int_0^1 r^3\cos^2(\phi)\ drd\phi = \frac{\pi}{4}
 \end{split}
 \end{equation*}
 
