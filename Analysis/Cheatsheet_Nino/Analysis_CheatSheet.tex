@@ -20,9 +20,29 @@
  bottom=8mm
  }
 \setcounter{section}{0}
+
 \setlength\columnseprule{0.5pt}
 \setlength{\parindent}{0pt}
 \graphicspath{ {images/} }
+
+% zahlenmengen
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+
+% shorter then \begin{comment}..\end{comment}
+\newcommand{\nop}[1]{}
+
+% pfeil
+\newcommand{\arr}{\rightarrow}
+
+% integral mit grenzen oben und unten
+\newcommand{\intl}{\int\limits}
+
+% norm
+\newcommand{\norm}[1]{| \!\:\! | #1 | \!\:\! |}
+
 
 \begin{document}
 \begin{multicols*}{3}
@@ -42,7 +62,7 @@
 				 $inf M \in M \Rightarrow min M = inf M$ \\
 				 $sup M \in M \Rightarrow max M = sup M$
 \end{itemize}
-Stetige Funktion auf einem kompakten Bereich nimmt stets ihr Min. und Max. an (Satz von Weierstrass )
+$\Rightarrow$ Stetige Funktion auf einem kompakten Bereich nimmt stets ihr Min. und Max. an (Satz von Weierstrass )
 
 % ---
 \subsubsection*{Identit{\"a}ten / Tricks}
@@ -98,7 +118,7 @@ Sei f : X $\rightarrow$ Y eine Abbildung
  									&  $r = |z| =\sqrt{x^2+y^2}$ \\
  									& \\
  arg $\phi$ = arg(z) & $\left\{ \begin{array}{ll} + \arccos \tfrac{x}{|z|} & \text{falls } y \geq 0 \\ - \arccos \tfrac{x}{|z|} & \text{falls } y < 0 \\ \text{undef} & \text{falls } x = y = 0 \end{array} \right.$ \\
- 									& \\
+ 									&  \vspace{5mm}\\
  				
 (Tipps) 					& $i = e^{i \frac{\pi}{2}} $\quad $-i = e^{-i \frac{\pi}{2}} = e^{i 									\frac{3\pi}{2}}$ \\
  									&  $1 = -e^{i \pi} = e^{0}$ \quad $-1 = e^{i \pi} = i^2$ \\
@@ -187,6 +207,8 @@ Jede beschr{\"a}nkte Folge $a_n$ - d.h eine f{\"u}r die gilt $\exists M \; \fora
   							\lim_{n \to \infty} a_n = \sup_{n \in \mathbb{N}} a_n \quad \text{bzw.} \quad  \lim_{n \to \infty} a_n = \inf_{n \in\mathbb{N}} a_n
 					\end{equation*}
 
+\vspace{15mm}
+\quad
 
 \columnbreak
 
@@ -451,7 +473,7 @@ Sei $\lim\limits_{n \to \infty}  a_n=a$ und $\lim\limits_{n \to \infty} b_n=b$, 
 	\end{equation*}
 	
 	%--- Cauchy Kriterium
-	\underline{Cauchy-Kriterium}  == ANPASSEN\\
+	\underline{Cauchy-Kriterium} \\
 	\vspace{-1mm}\\
 	$\left| \sum_{k=l}^n a_k \right| \to 0 \qquad (n \geq l, \, l \to \infty)$
 	\vspace{0mm}\\
@@ -628,21 +650,13 @@ F{\"u}r alle $\epsilon > 0$ gibt es ein $\delta(\epsilon) >0$, sodass f{\"u}r al
 Falls eine Funktion eine Unstetigkeitsstelle $x_0$ enth{\"a}lt, kann die Funktion stetig erg{\"a}nzt werden, falls linker Grenzwert = rechter Grenzwert. \\
 	$\Rightarrow$ Fkt. ist dann mit $\lim\limits_{x \to x_0} f(x)$ an der Stelle $x_0$ stetig erg{\"a}nzbar (Beachtung der Notation).
 	
-\subsubsection*{Bsp: Stetigkeit zeigen}
-	- Normaler Beweis \\
-	- Glm. Stetigkeit. \\
-	- Stetig ergaenzbar \\
-	- evtl. Lipschitz stetig \\
-	
 
-
-
-
-
-
-	\vspace{2mm}
-  		\noindent\textcolor{gray}{\rule{9cm}{0.2pt}}
-	\vspace{-8mm}\\
+\subsubsection*{Zwischenwertsatz}
+	Seien $-\infty < a < b < \infty$, $f:[a,b] \to \mathbb{R}$ stetig mit $f(a) \leq f(b)$. Dann gibt es zu jedem $y \in [f(a), f(b)]$ ein $x \in [a,b]$ mit $f(x) = y$.
+		
+\subsubsection*{Streng monoton wachsende Funktionen}
+		Sei $f: [a,b] \to \mathbb{R}$ streng monoton wachsend und stetig mit $c = f(a)$ und $d = f(b)$. Dann ist die Funktion $f:[a,b] \to [c,d]$ bijektiv
+		und die Umkehrabbildung stetig.
 
 \subsubsection*{Punktweise Konvergenz}
 $f_n(x)$ konvergiert punktweise falls:
@@ -661,13 +675,43 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 
 \emph{Bemerkung:} Gleichm{\"a}ssige Konvergenz impliziert punktweise Konvergenz.
 
+\vspace{2mm}
+\underline{Rezpet f{\"u}r gleichm{\"a}ssige Konvergenz} 
+\begin{enumerate}[label=(\roman*)]
+	\item Punktweiser Limes berechnen
+				\[
+						\lim_{n\rightarrow\infty}f_n(x) = f(x) \text{\quad = Grenzfunktion}
+				\]
+	\item Supremum bestimmen \\
+				(Ableitung von $f_n(x)$  oder Absch{\"a}tzung benutzen)
+				\[
+						\sup|f_n(x) - f(x)|
+				\]
+	\item Limes $n \to \infty$ bestimmen (vgl. Kriterium glm. Konvergenz)
+				\[
+						\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)|
+				\]
+				Limes = 0 $\rightarrow$ Glm. konvergent mit Grenzfunktion f(x)
+	\item Indirekte Methode \\
+				\begin{itemize}
+					\item $f(x)$ unstetig  auf $\Omega \Rightarrow$ keine glm. Konvergenz	
+					\item $f(x)$ stetig, $f_n(x) \leq f_{n+1}(x) \forall x \in \Omega $ und $\Omega$ kompakt $\Rightarrow$ Glm. Konvergenz
+				\end{itemize}
 
-\subsubsection*{Zwischenwertsatz}
-	Seien $-\infty < a < b < \infty$, $f:[a,b] \to \mathbb{R}$ stetig mit $f(a) \leq f(b)$. Dann gibt es zu jedem $y \in [f(a), f(b)]$ ein $x \in [a,b]$ mit $f(x) = y$.
-		
-\subsubsection*{Streng monoton wachsende Funktionen}
-		Sei $f: [a,b] \to \mathbb{R}$ streng monoton wachsend und stetig mit $c = f(a)$ und $d = f(b)$. Dann ist die Funktion $f:[a,b] \to [c,d]$ bijektiv
-		und die Umkehrabbildung stetig.
+\end{enumerate}
+
+
+\subsubsection*{Beispiele}
+
+	\underline{Stetigkeit}
+	\vspace{133mm}
+	
+	\underline{Gleichm{\"a}ssige Konvergenz} \vspace{2mm}\\
+		\includegraphics[width=275pt]{images/glm_konvergenz1}
+		\includegraphics[width=275pt]{images/glm_konvergenz2}
+
+
+
 
 
 %---------------------------------------------------------
@@ -773,8 +817,8 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 					
 					\[ r_mf(x;a) = f(x) - T_mf(x;a)\]   
 					\[ = f^{(m+1)}(\xi) \frac{(x-a)^{m+1}}{(m+1)!} \text{f{\"u}r ein }\xi \in ]a,x[\] 
+					\[ \leq \underset{a < \xi < x} { \sup} \; \; \big | f^{(m+1)}(\xi) \big | \; \;	\frac{(x-a)^{m+1}}{(m+1)!}  \]
 
-				!! eventuell mit Beispiel ergaenzen
 				
 		%Elementare Ableitungen
 		\subsubsection*{Ableitungstabelle ($\rightarrow$ Komplett im Appendix)}
@@ -922,17 +966,42 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	\columnbreak
 	% --------------------
 	% Substitution
-	\subsubsection*{Substitution}
-	Einige Differentialgleichungen sind nicht nicht direkt separierbar $\Rightarrow$ Substitution 
-	
-	
-	
-	+ System linearer DGL 
-	
-	
-	
-	
-	
+	\subsubsection*{Systeme linearer DGL}
+%	Um ein System von $n$ homogenen DGL's erster Ordnung der Form $\dot x (t) = A \cdot x(t)$ mit $ x(0) = x_0$ zu lösen, kann die Transformationsmethode
+%		verwendet werden. Ist die Matrix $A$ diagonalisierbar mit $A = V \Lambda V^{-1}$ gilt
+%		\[ x(t) = V e^{t \Lambda} c \qquad \text{ mit } Vc = x_0 \]
+%		
+%		wobei $\Lambda$ die Diagonalmatrix mit den Eigenwerten und $V$ die Matrix mit den Eigenvektoren ist. \vspace{2mm}\\
+%		
+%		Eine lineare, homogene DGL der Ordnung $n$ von der Form
+%		\[ y^{(n)}(t) - \beta_n x^{(n-1)}(t) - \ldots - \beta_2 \dot x (t) - \beta_1(t) = 0 \]
+%		\[ \text{mit} \quad y(0)= \alpha_1, \dot y(0) = \alpha_2, \ldots, x^{(n-1)}(0)=\alpha_n \]
+%		l{\"a}sst sich in ein Sytem von $n$ Gleichungen 1. Ordnung transformieren: \\
+%		
+%		{\scriptsize $ \dot x (t) = \begin{pmatrix} 
+%			0 & 1 & 0 & \dots & 0 \\
+%			0 & 0 & 1 & & 0 \\
+%			\vdots & \vdots &  & \ddots & \vdots \\
+%			0 & 0 & \dots & 0 & 1 \\
+%			\beta_1 & \beta_2 & \dots & \beta_{n-1} & \beta_n
+%		\end{pmatrix} x(t), \quad \vspace{3mm} \\ \text{ mit }
+%		x(0) = \begin{pmatrix} 
+%			\alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_n
+%		\end{pmatrix} \quad \vline \quad \text{Substitution:} $
+%		\begin{tabular}{l}
+%			$ x_1(t) = y(t)$ \\
+%			$ x_2(t) = \dot y(t)$ \\
+%			$ \qquad \;\;\, \vdots $ \\
+%			$ x_n(t) = y^{(n-1)}(t)$
+%		\end{tabular} }
+%	
+%	
+%		\vspace{3mm}
+%  		\noindent\textcolor{gray}{\rule{9cm}{0.2pt}}
+%		\vspace{1mm}\\
+%		
+%		\underline{Eigenvektor-Bestimmung:}
+%	
 	
 	\vfill\eject
 	
@@ -1089,7 +1158,7 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	\underline {Komplexes Nullstellenpaar:} \vspace{1mm} \\
 		$\lambda = k \pm hi \rightarrow $ Fundamentalystem: $e^{(k+ih)}$, $e^{(k-ih)}$ \vspace{1mm} \\
 	$y_{Homo} = Ae^{(k+ih)} + Be^{(k-ih)}$ \vspace{1mm} \\
-	$\Rightarrow$  $y_{Homo} = e^{Re(\lambda)x}(\tilde{A}$ $sin(Im(\lambda)) + \tilde{B}$ $cos(Im(\lambda)) )$ \vspace{2mm} \\
+	$\Rightarrow$  $y_{Homo} = e^{Re(\lambda)x}(\tilde{A}$ $sin(Im(\lambda)x) + \tilde{B}$ $cos(Im(\lambda)x) )$ \vspace{2mm} \\
 	
 	\underline{Bsp:} $\lambda = 2 \pm 3i$ \\
 	$\Rightarrow y_{Homo} = e^{2x}(\tilde{A}$ $sin(3x) + \tilde{B}$ $cos(3x) )$
@@ -1178,7 +1247,7 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 		
 		\underline{Bsp: (mehrfache Anw.)} \vspace{1mm} \\
 		$\int x^2e^x dx = x^2e^x - \int 2x \cdot e^x  dx$ \quad  \\
-		$x^2e^x - 2 \int x \cdot e^x dx = x^2e^x - 2xe^x + 2\int e^x dx$\\
+		$= x^2e^x - 2 \int x \cdot e^x dx = x^2e^x - 2xe^x + 2\int e^x dx$\\
 		$=x^2e^x - 2xe^x + 2e^x + c $
 	
 			
@@ -1316,16 +1385,11 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 		$ = \lim\limits_{\epsilon \to 0} -1 + \frac{1}{\epsilon} = \infty \text{  (Uneig. Integ. existiert nicht)}$
 		\item $ \int_{0}^{\infty} \frac{e^{-1/x}}{x^2}  dx \quad \rightarrow$ Unstetig in 0 und unbeschr{\"a}nkt in $\infty$ \vspace{1mm}\\
 			$\longrightarrow$ Beide Grenzen uneigentlich (Berechnung in 2 Teilen) \vspace{1mm}\\
-				\includegraphics[width=230pt]{images/beispiel_uneigInteg}  \\
+				\includegraphics[width=220pt]{images/beispiel_uneigInteg}  \\
 			$\Rightarrow$ Unteigentliche Integral konvergent mit $e^{-1} + 1 - e^{-1} = 1	$
 	\end{enumerate}
 		
-	\columnbreak
-		% ---
-	% Integraltabelle
-	\subsubsection*{Integraltabelle ($\rightarrow$ Komplette im Appendix)}
-
-
+	
 
 
 %----------------------------------------------------------
@@ -1478,7 +1542,7 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 				= \begin{pmatrix} ye^{xy} & xe^{xy} & 0 \\ y^2 + yz & 2xy + xz & xy \end{pmatrix}
 		\]
 		
-		\underline{- Umkehrsatz} \vspace{1mm}\\
+		\underline{- Umkehrsatz} \vspace{3mm}\\
 		Ist $det(df(x_0)) \not = 0$, so ist f lokal umkehrbar. 
 		
 		\[
@@ -1488,10 +1552,28 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	
 	% ------------
 	% Taylor mit mehreren Variablen
-	\subsubsection*{Taylorentwicklung mit mehreren Variabeln}
-	- Formel mit mehreren Variablen \\
-	- Beispiel für 3te Ordnung
+	\subsubsection*{Taylorentwicklung mit mehreren Variabeln} 
+	\begin{tabular}{ll}
+		$f(x,y) =  $ & $f(x_0,y_0) + \frac{\partial f}{\partial x} \Delta x + \frac{\partial f}{\partial y} \Delta y$ \\
+			& $ + \frac{1}{2!} \bigg{(}
+						 \frac{\partial^2 f}{\partial x^2} (\Delta x)^2	
+						 + 2\frac{\partial^2 f}{\partial x \partial y} \Delta x \Delta y 
+						 + \frac{\partial^2 f}{\partial y^2} (\Delta y)^2	
+									\bigg{)} $ \\
+			& $ + \frac{1}{3!} \bigg{(}
+						 \frac{\partial^3 f}{\partial x^3} (\Delta x)^3
+						 + 3\frac{\partial^3 f}{\partial x^2 \partial y} (\Delta x)^2 \Delta y$ \\
+			&			\qquad  $+ 3\frac{\partial^3 f}{\partial x \partial y^2} \Delta x (\Delta y)^2 
+						 + \frac{\partial^3 f}{\partial y^3} (\Delta y)^3
+						\bigg{)} $ \\
+			& 			$+ \cdots$			
+	
+	\end{tabular}
+
+	wobei  $\Delta x = x - x_0, \;\Delta y = y - y_0$ und alle Ableitungen an der Stelle $(x_0, y_0)$ auszuwerten sind.
 	 
+	 \vspace{10mm}
+	 \quad
 	
 	\pagebreak
 	% ------------
@@ -1634,7 +1716,7 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 			- Fkt. L partiell ableiten nach $x_1$, ..., $x_n$ \\
 			- Gleichungssystem l{\"o}sen \\
 			-- $\lambda$'s gleichsetzen und NB verwenden (evtl. Fallunterscheid.) \\
-			-- Gleichungen in einander einsetzen \\
+			-- Gleichungen in einander einsetzen (mit x, y oder z)\\
 			$\Rightarrow$ Keine L{\"o}sungen vergessen!!
 
 	
@@ -1691,49 +1773,69 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	
 	
 	\subsubsection*{Implizite Funktionen}
-		Ziel: Aufl{\"o}sung des Gleichungsystems $f(x,y) = 0$ nach x oder y \\
+		\underline{Ziel:} Aufl{\"o}sung des GL-Systems $f(x,y) = 0$ nach x oder y \\
 		
-		Der Satz ueber implizite Funktionen gibt Aussagen darueber, ob und unter welchen Bedingungen eine solche lokale Aufloesung existiert oder nicht
+		Der Satz {\"u}ber implizite Funktionen gibt Aussagen dar{\"u}ber, ob und unter welchen Bedingungen eine solche lokale Aufloesung existiert oder nicht.
 		
-		
-		Untermatrix M des Differentials Invertierbar (det $\not = 0$)  $\Rightarrow $ so ist $f(x,y)$ nach x oder y (je nach Untermatrix M) aufl{\"o}sbar (Zeichnung und Beispiel ergaenzen) \\
-		
-		
-		
-		Beispiel: Kann man $f(x,y) = 0$ in der N{\"a}he von $(x,y)=(1,1)$ nach y aufl{\"o}sen? \\
-		$\Rightarrow $ Es ist implizt m{\"o}glich, ohne $f$ explizit zu kennen \\
+		Falls die Untermatrix M des Differentials Invertierbar ($det(M) \not = 0$)  $\Rightarrow $ so ist $f(x,y)$ nach x oder y (je nach Untermatrix M) aufl{\"o}sbar  \\
+		$\Rightarrow$ Wenn wir nach x,z aufl{\"o}sen wollen betrachten wir die Ableitungen nach x und z (Spalten) in der Jaccobi-Matrix.
 		
 		
+		\vspace{4mm}
+		\underline{Implizite Funktion:}	\quad $f(x,\phi(x))=0$ \quad mit $y=\phi(x)$
 		
-		Falls wir nach x,y aufloesen wollen, muessen wir die partiellen Ableitungen nach x und y betrachten
+		Falls die Untermatrix M invertierbar ist, folgt mit dem Satz {\"u}ber implizite Funktionen die Existenz von der Umgebung $U \subset \R$ von $x_0=... $(gegeben) und einer Funktion $\phi$, so dass $f(x, \phi(x))=0$ f{\"u}r alle $x \in U$.
 		
-		Ableitung Bestimmbar (Formel)
-		\[
-				\phi ' = -(M)^{-1} \cdot (Rest der Matrix)
-		\]
+		
+			\subparagraph{Bemerkung} Die Funktion $h$ l{\"a}sst sich im allgemeinen nicht explizit angeben. Es gilt jedoch
+	\[ \partial h(x) = - \big( M \big)^{-1} \cdot (\text{Rest der Matrix}) \]
+	Bsp: nach y aufgel{\"o}st:
+	\[ \partial h(x) = - \big( \partial_y f(x,h(x))\big)^{-1} \partial_x f(x,h(x)) \]	
 
-		Beispiel mit Aufloesung nach x und z (Seite 134)
+		\vspace{50mm}
+		\quad
+		
+		
+		\columnbreak
+		\underline{Beispiele - Implizite Funktionen} \vspace{1mm} \\
+				\includegraphics[width=260pt]{images/ImpliziteFunktionen01} \\
+				\quad \\
+				\includegraphics[width=260pt]{images/ImpliziteFunktionen00}
+				
+			- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  \\
+				
+				\includegraphics[width=260pt]{images/ImpliziteFunktionen1} \\
+				\quad \\
+				\includegraphics[width=260pt]{images/ImpliziteFunktionen2}
+		
+		\vspace{10mm}
+		\quad
+		
+		
+		
+		\columnbreak
+		\subsubsection*{Existenz von L{\"o}sungen - Satz von Picard-Lindel{\"o}f}
 
+		Ist $g(x,y)$ stetig auf $\Omega $ und erf{\"u}llt $g(x,y)$ die Lipschitz-Bedingung, dann existiert ein Intervall $[x_0 - h, x_0+h]$, in dem eine eindeutige L{\"o}sung $y=\phi(x)$ des Anfangswertproblems $y' = g(x,y)$ mit $y(x_0) = y_0$ existiert.
+		
+		\underline{Iterationsverfahren:}\vspace{1mm}  \\
+		Ersten drei Picard-Iteration zu $v'(t) = g-cv(t)^2$ mit $v(0)=0$ \\
+		Dabei sind $c=g=1$: \vspace{3mm} \\
+		\includegraphics[width=270pt]{images/picarditeration1}
+		\includegraphics[width=270pt]{images/picarditeration2}
+		
+		
+			\underline{Beispiel: Anwendbarkeit Picard-Lindel{\"o}f} \vspace{1mm} \\
+			Richtungsfeld von $u'(t) = \frac{u(t)}{t}$ mit $t\not = 0$   zeichnen und Anwendbarkeit {\"u}berpr{\"u}fen: \\
+			\includegraphics[width=270pt]{images/picardlindeloef1}
 			
-		Beispiele: \\
-		$f(x,y) = 2x^2 - 4xy + y^2 -3x + 4y = 0$ \\
-		Nach $y$ aufloesen \qquad $y = \phi(x)$ mit $\phi(1)=1$ \\
-		\\
-		$f(x,\phi(x))=0$
-		
-		
-		BESSER FORMULIEREN (KLARER) +
-		LOESUNGSSATZ dazuschreiben (Es existiert eine Umgebung mit blabla)
+			\vspace{15mm} 
+			\quad
 
 
 %----------------------------------------------------------
 \pagebreak
 \subsection*{Integration im $\mathbb{R}^n$}
-
-	Uebersicht der Verfahren \\
-	- Linien-Integrale (Wegintegrale, Potentialfelder, Green)
-	+ Umwandlung in Polarkoordinaten \\
-
 	
 
 	% --
@@ -1758,21 +1860,39 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 					\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x} \\
 					\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y} 
 				\end{pmatrix}
+				\quad
 		\]
-		\underline{Divergenz:}
+		\underline{Divergenz:} 
 		
 		\[
 				div(\vec{v}) = \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + \frac{\partial v_3}{\partial z}
 		\]
+		\vspace{2mm}
 		
 	
 
-	Konservative Vektorfelder \\
+	\underline{Konservative Vektorfelder / Potentialfeld:}  \vspace{1mm}\\
+	Es gilt:
+	\[
+			rot(\vec{v}) = 0
+	\]
+	 $\rightarrow$ Wegintegral h{\"a}ngt dann nur vom Anfang und Ende ab \vspace{2mm}\\
 	
-	-- Potential ermitteln
+	\underline{Potential ermitteln} \vspace{1mm}\\
+	- Partielle Ableitungen der Reihe nach integrieren \\
+	$\rightarrow$ Fehlende Funktion durch bsp. $g(y,z)$ ausdr{\"u}cken \\
+	$\rightarrow$ Konstante c nicht vergessen bei $f$ \vspace{2mm}\\
+	
+	Bsp:	\quad $v(x,y) = \begin{pmatrix} e^y \\ z + xe^y \\y\end{pmatrix}$ \\
+	
+	$\frac{\partial f}{\partial x} =e^y \rightarrow f = xe^y + g(y,z)$ \vspace{1mm}\\
+	$\frac{\partial f}{\partial y} = xe^y + \frac{\partial g}{\partial y}= z + xe^y  \quad\rightarrow  \frac{\partial g}{\partial y} = z \quad\rightarrow  g = yz + h(z)$ \vspace{1mm}\\
+	$\frac{\partial f}{\partial z}  = y + \frac{\partial h}{\partial z} = y  $ \hspace{1mm} \qquad \qquad $\rightarrow $ h nicht notwendig \vspace{2mm}\\
+	
+	$\Rightarrow f(x,y,z) = xe^y + yz + c$ \quad wobei $c \in \mathbb{R} $
 
 	\columnbreak
-	% ----------------------------
+	% -----------------------------------------------------------------------------------
 	% Linien-Integrale
 	\subsection*{Linien-Integrale}
 	
@@ -1795,7 +1915,6 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 						\[
 							\int_{\gamma} \vec{v} \cdot d\vec{s} = \int_{a}^{b} \langle\vec{v}(\vec{\gamma}(t)) \cdot \dot{\vec{\gamma}}(t)\rangle dt 
 						\]
-			
 			- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 			\item 	Falls ein Potential mit $V = \nabla f$ existiert:\\
 						\[
@@ -1804,27 +1923,93 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 		
 		\end{enumerate}
 
-
-		\vspace{2mm} 
 		
 		% --
 		% Satz von Green 
-		\subsubsection*{- Satz von Green (Linienintegrale)}
-		siehe Aufgabe 13.3 (Aufpassen auf Richtung)
+		\subsubsection*{- Satz von Green (zweidimensionale Wegintegrale)}
+		\underline{Anforderung:} Der Rand $\partial C$ muss im mathematisch positiven Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn) \vspace{2mm}\\
+		\[
+				\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_{C} \left(\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y} \right) dxdy
+		\]
+		\[
+			\text{wobei: }\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y} = rot(\vec{v})
+		\]
+		\vspace{-2mm}\\
 		
-		
-		\subsubsection*{- Wichtige Parametrisierungen:}
-		Siehe ZF VT \\
-		- Parabel
-		- Einheitskreis
-		- Viertelkreis
-		- Ellipse
-		- ...
-		+ Tipps für gerade Strecke (Muster)
-		
-		
+		$\Rightarrow$ Vorzeichen "$-$" setzen bei falscher Richtung \\
+			
+		\underline{Tipp bei Verwendung von Green:} \vspace{1mm}\\
+			Bei der Anwendung von Green ist es von Vorteil, das Gebiet als Normalbereich zu schreiben, falls es nicht gerade klar angegeben ist, damit es beispielsweise mit Fubini integriert werden kann.		
+			
+		\subsubsection*{Tipp:}
+		- Immer testen ob $rot(\vec{v})=0$ \\
+		$\rightarrow$ Falls ja: Satz von Green mit $\int_{C} rot(\vec{v}) dxdy = 0$ 
 		\columnbreak
-		% -------------------------------------
+		 
+		
+		% ---
+		% Beispiel - Linienintegral
+		\subsubsection*{- Beispiele - Linienintegrale:}
+		
+		\underline{Beispiel 1:}  \vspace{1mm}\\
+		\includegraphics[width=270pt]{images/linienintegrale_bsp}
+		
+		
+		\underline{Beispiel 2:} \vspace{1mm}\\
+		\includegraphics[width=240pt]{images/linienintegrale_bsp1}
+		\includegraphics[width=240pt]{images/linienintegrale_bsp2}
+		
+		
+%		Berechne $\int_\gamma \vec{v} \cdot d\vec{s}$ mit $\vec{v} = (x+y, y)$ und $\gamma = $ Kreis mit Radius 1 um (0,0). \vspace{2mm}\\
+%		
+%		\underline{- Normale Methode:} \vspace{1mm} \\
+%		\begin{enumerate}[label=(\roman*)]
+%				\item Parametrisierung
+%							\[
+%									\gamma_1 : [0,2\pi] \rightarrow \mathbb{R}^2, t \rightarrow \begin{pmatrix} cos(t) \\ sin(t)\end{pmatrix}
+%							\]
+%				\item $\dot{\gamma}(t)$ berechnen
+%							\[
+%									\dot{\gamma}(t) = \begin{pmatrix} -sin(t) \\ cos(t)\end{pmatrix}
+%							\]
+%				\item Formel benutze und ausrechnen
+%							\[
+%									\int_{\gamma} \vec{v} \cdot d\vec{s} = \int_{0}^{2\pi} \langle 
+%									\begin{pmatrix} sin(t) + cos(t) \\ sin(t)\end{pmatrix}
+% 										\cdot
+% 										\begin{pmatrix} -sin(t) \\ cos(t)\end{pmatrix}
+%									\rangle dt 
+%							\]	
+%							\[
+%											= - \int_{0}^{2\pi} sin^2(t) dt = -\pi
+%							\]
+%		\end{enumerate}
+%
+%		
+%		
+%		
+%		\underline{- Mit Satz von Green} \vspace{1mm} \\
+%		\begin{enumerate}[label=(\roman*)]
+%				\item Rotation berchnen
+%							\[
+%									rot(\vec{v}) = \frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y} = 0 - 1 = -1
+%							\]
+%				\item Formel anwenden\\
+%						 $\rightarrow$ Das Gebiet kann in diesem Fall folgendermassen geschrieben werden:
+%						 	\[
+%						 			E = \{ (x,y) \in \mathbb{R}^2 | x^2 + y^2 \leq 1\} = \text{Einheitsdisk}
+%						 	\]
+%						 	Daher gilt:
+%						 	\[
+%						 		\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s}  =\int_{E} rot(\vec{v}) dxdy = \int_{E} -1 dxdy
+%						 	\]
+%						 	\[
+%						 			= -\mu(E) = - \pi
+%						 	\]
+%		\end{enumerate}
+				
+		\columnbreak
+		% -----------------------------------------------------------------------------------
 		% Flächenintegrale
 		\subsection*{Fl{\"a}chen-Integrale}
 		
@@ -1869,25 +2054,103 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 		
 		% --
 		% Fubini  
-		\subsubsection*{- Satz von Fubini / Iterierte Integrale (Quadern):}		
+		\subsubsection*{- Satz von Fubini / Iterierte Integrale (Quader):}		
 		\[
 				\int_{[a,b]\times[c,d]} f(x,y) d\mu(x,y) = \int_{a}^{b} \int_{c}^{d} f(x,y) dy  dx
 		\]
 		
-		$\Rightarrow $ Auf Grenzen aufpassen (Aufabe 12.2)
+		
+		\vspace{5mm}
+		\quad
+		
+		\columnbreak
+		
+		\subsubsection*{Umgang mit anderen Koordinatensystemen:}
+		Gewisse Aufgaben sind eifacher zu l{\"o}sen mit alternativen Koordinatensystemen: \\
 		
 		
-		\vspace{-2mm}
-  		\noindent\textcolor{gray}{\rule{9cm}{0.1pt}}
-		\vspace{-2mm}\\
+		\underline{Polar-Koordinaten $\left(\mathbb{R}^2\right)$} \vspace{1mm}\\
+		\[
+			x = r\cos(\phi) \quad  y = r\sin(\phi) \quad dxdy = r\ drd\phi
+		\]
+		\begin{center}
+					\includegraphics[width=80pt]{images/polarkoord}	
+		\end{center}
+
+
 		
-		% -------------------------------------
+		
+		\underline{Kugel-Koordinaten $\left(\mathbb{R}^3\right)$} \vspace{1mm}\\
+		\[
+			x = r\sin(\theta)\cos(\phi) \quad y = r\sin(\theta)\sin(\phi) \quad z = r\cos(\theta)
+		\]
+		\[
+			dxdydz = r^2\ dr\ \sin(\theta)\ d\theta d\phi
+		\]
+		\begin{center}
+					\includegraphics[width=80pt]{images/kugelkoord}	
+		\end{center}
+		
+		\underline{Zylinder-Koordinaten $\left(\mathbb{R}^3\right)$} \vspace{1mm}\\
+		\[
+			x = r\cos(\phi) \quad y = r\sin(\phi) \quad z = z
+		\]
+		\[
+			dxdydz = r\ drd\phi dz
+		\]
+		\begin{center}
+					\includegraphics[width=80pt]{images/zylinderkoord}	
+		\end{center}
+		
+		\underline{Elliptische Koordinaten $\left(\mathbb{R}^2\right)$} \vspace{1mm}\\
+		\[
+			x = ra\cos(\phi) \quad  y = rb\sin(\phi)
+		\]
+		\[
+			dxdy = abr\ drd\phi
+		\]
+		
+			
+		\columnbreak
+		\subsubsection*{Beispiele- Fl{\"a}chen-Integrale}
+		
+		
+		\underline{- Beispiel mit Normalbereich:} \vspace{1mm} \\
+
+		\includegraphics[width=280pt]{images/normalbereiche1} 
+
+%		Integrieren sie $f(x,y) = y$ {\"u}ber folgendem Gebiet:
+%
+%		\includegraphics[width=170pt]{images/Flaechenintegral3} \\
+%		\includegraphics[width=260pt]{images/Flaechenintegral4}
+%		
+		
+		\vspace{3mm}
+
+		
+		\underline{- Beispiel mit Polarkoordinaten:} \vspace{2mm} \\
+		Integration von $f(x,y) = |x| \sqrt{x^2 + y^2}$ {\"u}ber folgendem schraffierten Gebiet: \\
+				\includegraphics[width=120pt]{images/Flaechenintegral1} \\
+				
+				F{\"u}r die Funktion $f(x,y)$ gelten folgenden Eigenschaften: $f(x,y) = f(-x,y) = f(x,-y)= f(-x,-y)$\\
+				 $\rightarrow$ Daher kann das Gebiet in 4 Teile unterteilt werden.  \vspace{-2mm}\\
+				 
+				 Mit den Polarkoordinaten folgt:\\
+				  $x=r\cos(\phi), y=r\sin(\phi), dxdy=r dr d\phi$\\
+ 				
+				\vspace{-3mm}
+				\includegraphics[width=260pt]{images/Flaechenintegral2}
+				
+						\pagebreak
+		% -----------------------------------------------------------------------------------
 		% Flussintegrale
-		\subsection*{Fluss(Oberfl{\"a}che)-Integrale}
+		\subsection*{Fluss(Oberfl{\"a}chen)-Integrale}
+		
+		Fluss := "Fl{\"u}ssigkeitsvolumen, welches pro Zeiteinheit in Richtung $\vec{n}$ durch das Fl{\"a}chenst{\"u}ck S hindurchfliesst."
 		
 		% --
 		% Normale Flussintegrale
-		\subsubsection*{- Normale Flussintegrale (EVTL LOESCHEN)}
+		\subsubsection*{- Normale Flussintegrale}
 
 		\begin{enumerate}
 			\item Fl{\"a}che S parametrisieren, d.h. finde:
@@ -1899,82 +2162,538 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 						\]
 			\item Berechne $\Phi_u = \frac{\partial \Phi}{\partial u}$ und $\Phi_v = \frac{\partial \Phi}{\partial v}$
 			\item Kreuzprodukt $\Phi_u \times \Phi_v$ berechnen
-			\item Formel benutze:
+			\item Formel benutzen und Vorzeichen w{\"a}hlen:
 						\[
-								\int_{S} \vec{v} \cdot \vec{n}do = \pm \int_{a}^{b} \int_{c}^{d} \langle\vec{v}(\Phi(u,v)) \cdot (\Phi_u \times \Phi_v)\rangle dudv
+								\int_{S} \langle \vec{v} \cdot \vec{n} \rangle do = \pm \int_{a}^{b} \int_{c}^{d} \langle\vec{v}(\Phi(u,v)) \cdot (\Phi_u \times \Phi_v)\rangle dudv
 						\]
 		\end{enumerate}
-
+		
+		\vspace{3mm} 
+		$\longrightarrow$ Oberfl{\"a}che in Teile aufteilen und einzeln betrachten
+		\vspace{4mm}
+		
+		\underline{Normalenvektoren bestimmen} \vspace{1mm} \\
+		Normalenvektor entweder nach Rezept berechnen oder geometrische Analyse (siehe Beispiel)		
+		
+%		Rezept + Bsp's \\
+%		-- Auf Richtung aufpassen (nach innen oder aussen)
+		
+			
 
 
 		% --
 		% Normale Flussintegrale
 		\subsubsection*{- Satz von Gauss}
 		\[
-				\int_{\partial V} \vec{v} \cdot \vec{n}do = \int_{V} div(\vec{v}) d\mu
+				\int_{\partial V} \langle \vec{v} \cdot \vec{n} \rangle do = \int_{V} div(\vec{v}) d\mu
 		\]
 		wobei:
 		\[
 				div(\vec{v}) = \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + \frac{\partial v_3}{\partial z}
 		\]
 		
-		Beispiel mit Kugelkoordinaten und normales
-		Beispiel mit Fluss durch Mantel, Wegnahme von Deckel und Boden
-
-	
-		\vspace{-2mm}
-  		\noindent\textcolor{gray}{\rule{9cm}{0.1pt}}
-		\vspace{-2mm}\\	
+		\vspace{4mm}
+		$\Rightarrow$ H{\"a}ufig n{\"u}tzt auch hier eine Koordinationtransformation in einen Zylinder oder eine Kugel
 		
-	\subsubsection*{Transformationssatz}
-	\subsubsection*{Substitutionsregel}
+		\vspace{5mm} 
+		
+		
+		
+		\subsubsection*{Tipps}
+		- Falls der Strom durch den Mantel verlangt ist:\\
+		(1) $\rightarrow$ Strom kompletter K{\"o}rper (Gauss) \\
+		(2) $\rightarrow$ Strom Deckel/Boden berechnen (normale Methode) \\
+		(3) $\Rightarrow$ $Fluss_{Final} = Fluss_{Mantel} - Fluss_{Boden/Deckel}$
+		
+		\vspace{6mm}
+		
+		\columnbreak
+		
+		
+		\subsubsection*{Beispiele Flussintegrale}
+		\underline{Beispiel mit Fluss durch Kegelmantelfl{\"a}che} \vspace{2mm}\\
+		
+		Berechnung des Oberfl{\"a}chenintegrals $\int \int_{M} \vec{F} \cdot d\vec{M}$, wobei \vspace{2mm}\\ 
+			$\vec{F} = 
+			\begin{pmatrix}
+			\frac{x^2}{2} \\ -xy \\ x^2 + 3z^2 -3 
+			\end{pmatrix} $ und M die Mantelfl{\"a}che d. Kegels	
+				
+		\vspace{-4mm}		
+		\begin{center}
+				\includegraphics[width=110pt]{images/kegelaufgabe1}
+		\end{center}
+		
+		\begin{enumerate}[label=(\roman*)]
+				\item Divergenz berechnen von $\vec{F}$ \\
+				\[
+						div(\vec{F}) = x - x + 6z = 6z
+				\]
+				
+				\item Fluss durch ganzen Kegel berechnen (Gauss) \\
+						\includegraphics[width=200pt]{images/kegelaufgabe2}
+
+				\item Fluss durch Deckel (normale Methode) mit $\vec{n} = (0, 0, 1)$
+						\[
+								\int \int_{D} \langle \vec{F} \cdot \vec{n} \rangle d\vec{D} =  \int \int_{D}  x^2 dx dy \qquad \text{da z=1}
+						\]
+						\[
+								\text{Koord.Transformation:} \quad  = \int_{0}^{2\pi} \int_{0}^{1} r^2 * cos(\phi)^2 * r * dr d\phi
+						\]
+						\[
+								\bigg\lbrack \frac{r^4}{4}\bigg\rbrack_{0}^{1} * \frac{1}{2} \bigg\lbrack\phi + \cos(\phi) * \sin(\phi)) \bigg\rbrack_{0}^{2\pi} = \frac{\pi}{4}
+						\]
+
+				\item $Fluss_{Mantel}$ = $Fluss_{Komplett} - Fluss_{Deckel}$ \\
+				\includegraphics[width=230pt]{images/kegelaufgabe4}
 
 
+		\end{enumerate}
+ 	
+ 		\columnbreak
+ 		
+ 		\underline{Beispiel - Gauss} \vspace{4mm}\\
+ 		\includegraphics[width=280pt]{images/gauss}
+		
+
+		\subsubsection*{Tipps zur Berechnung}
+		
+		\begin{itemize}
+				\item Falls Fl{\"a}che / Vol. bekannt $\Rightarrow do(D)$ / $dV(V)$ nutzen
+				\item Bei bekanntem K{\"o}rper besser $do(D)$, $dV(V) $	verwenden, anstatt Integral zu berechnen (wobei diese das Fl{\"a}chen- bzw. Volumenelement bezeichnen)
+		\end{itemize}
+
+		\vspace{15mm}
+		\quad
+		
+
+
+
+		\columnbreak
 		% --
 		% Stokes 
-		\subsubsection*{- Satz von Stokes}
-		Erlaubt es Flussintegrale mithilfe von Wegintegralen zu berechnen.
+		\subsection*{Satz von Stokes}
+		Erlaubt es Flussintegrale mithilfe von Wegintegralen zu berechnen (und umgekehrt).
+		\[
+			\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C \langle rot(\vec{v}) \cdot \vec{n} \rangle do
+		\]
+		Kurve $\gamma$ (Rand $\partial C$) muss im Gegenuhrzeigersinn verlaufen.
+		\[
+				rot(\vec{v}) = \nabla \times \vec{v} = 
+				\begin{pmatrix} 
+					\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z} \\
+					\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x} \\
+					\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y} 
+				\end{pmatrix}
+		\]
+		
+	\vspace{-2mm}
+  	\noindent\textcolor{gray}{\rule{9cm}{0.1pt}}
+	\vspace{-2mm}\\
+		
+		\underline{Flussintegrale mit Stokes} \vspace{1mm} \\
+		
+				nicht behandelt im Unterricht!
+				
+				\vspace{5mm}
+		
+		
+		\underline{Wegintegrale in $\mathbb{R}^3$ mit Stokes} \vspace{1mm} \\
+				\vspace{-10mm} 	
+		\begin{enumerate}[label=(\roman*), itemsep=2pt, parsep=2pt]
+			\item Rotation von $\vec{v}$ berechnen
+			\item Normalvektor (normiert) bestimmen
+			\item Skalarprodukt $\langle rot(\vec{v}) \cdot \vec{n} \rangle$ berechnen
+			\item Berechnung von  $\int_D \langle rot(\vec{v}) \cdot \vec{n} \rangle \; do$ 
+		\end{enumerate}
+		
+		\vspace{5mm} 		
+		$\Rightarrow$ Falls Fl{\"a}che bekannt:\vspace{3mm} \\
+		$\int_D \langle rot(\vec{v}) \cdot \vec{n} \rangle \; do = \langle rot(\vec{v}) \cdot \vec{n} \rangle \cdot do(D)$ \vspace{2mm} \\
+		wobei $do(D)$ die bekannte Fl{\"a}che ist.
+		
+		\vspace{5mm}
+		
+		Alternativ kann es auch {\"u}ber eine Parametrisierung gel{\"o}st werden! (siehe Beispiel)
+
+		\vspace{10mm}
+		\quad
+		
+
+		\columnbreak
+		\subsubsection*{Beispiele - Stokes} 
+			\underline{Wegintegral berechnen mit Stokes - Bsp.} \vspace{2mm}\\
+			\includegraphics[width=260pt]{images/stokes}
+			\includegraphics[width=170pt]{images/stokes2}
+	
 		
 	
 	
-	Oft vorkommende Integrale
-	Wichtige Koordinatentransformationen 13.3 (Seite 218)
 	
 
-1-Formen
+		% ---
+		% Oft vorkommende Integrale
+		\subsubsection*{Oft vorkommende Integrale}
+
+		\begin{doublespace}
+			\begin{tabular}{lll}
+			$\int_{0}^{2\pi} \cos^4(t) dt =\int_{0}^{2\pi} \sin^4(t) dt = \frac{3\pi}{4}$	 \\
+			$\int_{0}^{2\pi} \cos^2(t) dt =\int_{0}^{2\pi} \sin^2(t) dt =\pi$  \\
+			$\int_{0}^{2\pi} \sin(t) \cdot \cos(t) dt =\int_{0}^{2\pi} \cos(t) dt =\int_{0}^{2\pi} \sin(t) dt = 0$ \\
+			$\int_{0}^{2\pi} \sin(t) \cdot \cos^2(t) dt = \int_{0}^{2\pi} \cos(t) \cdot \sin^2(t) dt =0$ \\
+			$\int_{0}^{2\pi} \cos^3(t) dt = \int_{0}^{2\pi} \sin^3(t) dt =0$ \\
+			\end{tabular}
+		\end{doublespace}
+		
+		\vspace{145mm}
+		
+		\pagebreak
+
+\end{multicols*}
 
 
-
-
-
-
-
-
-
-
+\columnsep29pt
+\columnseprule0.1pt
+\begin{multicols*}{2}
 
 %----------------------------------------------------------
+\subsection*{Appendix}
+
+
+\subsubsection*{\underline{Allgemeines}}
+
+\underline{Mitternachtsformel} \vspace{2mm} \\
+	$ a x + b x + c = 0 \qquad \implies \qquad x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$
+
+\vspace{3mm}
+\underline{Kreuzprodukt} \vspace{3mm} \\
+	$ \vec{a} \times \vec{b} = \begin{pmatrix} a_1 \\ 	a_2 \\ a_3\end{pmatrix} \times \begin{pmatrix} b_1 \\ 	b_2 \\ b_3\end{pmatrix} = 
+	\begin{pmatrix} a_2b_3 - a_3b_2 \\ 	a_3b_1 - a_1b_3 \\ a_1b_2 - a_2b_1\end{pmatrix}$
+
+\vspace{3mm}
+	\underline{Nützliche Ungleichungen}
+	\vspace{-2mm}
+	\begin{align*}
+		\text{Dreiecksungleichung:} & \quad \forall x,y \in \C : |x+y| \leq |x| + |y| \\
+		\text{Youngsche Ungleichung:} & \quad \forall x,y \in \R, \; \epsilon > 0 : 2 | x y | \leq \epsilon x^2 + \tfrac{1}{\epsilon} y^2 \\
+		\text{Cauchy-Schwarzsche Ungleichung:} & \quad \forall x,y \in \R^n: |x \cdot y| \leq ||x|| \; ||y|| \\
+		\text{Bernoullische Ungleichung:} & \quad (1 + x)^n \geq 1 + nx \qquad \text{f{\"u}r reelles }  x \geq -1, n \in \N_0
+	\end{align*}
+
+	\vspace{3mm}
+  	\noindent\textcolor{gray}{\rule{14cm}{0.1pt}}
+	\vspace{-4mm}
+	
+\begin{multicols*}{3}
+\underline{Potenzgesetze}\vspace{2mm}\\
+\begin{doublespace} 		
+		$a^0  = 1$ \\
+		$a^1  = a$ \\
+		$a^m \cdot a^n  = a^{m+n}$ \\
+		$(a^n)^m  = a^{nm}$ \\
+		$\frac{a^n}{a^m}  = a^{n-m}$ \\
+		$a^{-n}  = \frac{1}{a^n}$ \\
+		$a^{\frac{b}{n}}  = \sqrt[n]	{a^b}$ \\
+\end{doublespace}
+
+\columnbreak
+
+\underline{Wurzel-Reglen}\vspace{2mm}\\
+\begin{doublespace}
+	$\sqrt[n]{a} = a^\frac{1}{n}$ \\
+	$\sqrt[n]{ab} = \sqrt[n]{a} \sqrt[n]{b}$ \\
+	$\sqrt[m]{\sqrt[n]{a}} = \sqrt[nm]{a}$ \\
+	$\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}$ \\	
+\end{doublespace}
+
+
+\columnbreak
+\underline{Log-Reglen} \vspace{2mm}\\
+\begin{doublespace}
+	$y = \log_a x \Leftrightarrow x = a^y$         \\
+	$\log_a 1 = 0$ \\
+	$\log_a a^x = x$ \\
+	$a^{\log_a x} = x $ \\
+	$\log_a x \cdot y = \log_a x + \log_a y$ \\
+	$\log_a \frac{x}{y} = \log_a x - \log_a y$ \\
+	$\log_a \frac{1}{x} = - \log_a x$ \\
+	$\log_a x^r = r \log_a x$ \\
+	$\log_a x = \frac{\log_b x}{\log_b a}$ \\
+	$\log_a x = \frac{\ln x}{\ln a}$ \\
+\end{doublespace}
+
+
+\end{multicols*}
+
+\columnbreak
+\subsubsection*{\underline{Trigonometrie}}
+\begin{doublespace}
+	\begin{tabular}{r | c c c c c c c}
+		Winkel     &0°   &30°                    &45°                   &60°                   &90°              &180°   &270°               \\\hline 
+		rad        &$0$  &$\frac{\pi}{6}$        &$\frac{\pi}{4}$       &$\frac{\pi}{3}$       &$\frac{\pi}{2}$  &$\pi$  &$\frac{3\pi}{2}$  \\\hline
+		Sinus      &$0$  &$\frac{1}{2}$          &$\frac{\sqrt{2}}{2}$  &$\frac{\sqrt{3}}{2}$  &$1$              &$0$    &$-1$              \\
+		Cosinus    &$1$  &$\frac{\sqrt{3}}{2}$   &$\frac{\sqrt{2}}{2}$  &$\frac{1}{2}$         &$0$              &$-1$   &$0$               \\
+		Tangens    &$0$  &$\frac{\sqrt{3}}{3}$   &$1$                   &$\sqrt{3}$            &-                &$0$    &-                 \\
+	\end{tabular}
+\end{doublespace}
+
+
+\vspace{2mm}
+\underline{- Trigonometrische Identit{\"a}ten:} \vspace{2mm} \\
+\vspace{-7mm}	
+\begin{multicols}{2}
+	\renewcommand\arraystretch{1.3}
+	\hspace{-15pt}
+	\begin{tabular}{l l}
+		$cos^2(x) + sin^2(x) $ & $= 1$ \\
+		$ \sin(-\alpha) $  &  $ = -\sin(\alpha) $ \\
+		$ \cos(-\alpha) $  &  $ = \cos(\alpha) $ \\
+		$ \tan(-\alpha) $  &  $ = -\tan(\alpha) $ \\
+		$ \sin(\alpha \pm \beta) $  &  $ = \scriptstyle \sin(\alpha)\cos(\beta) \pm \sin(\beta)\cos(\alpha) $ \\
+		$ \cos(\alpha \pm \beta) $  &  $ = \scriptstyle \cos(\alpha)\cos(\beta) \mp \sin(\alpha)\sin(\beta) $ \\
+		$ \tan(\alpha \pm \beta) $  &  $ = \frac{\tan(\alpha) \pm \tan(\beta)}{1 \mp \tan(\alpha)\tan(\beta)} $ \\
+		$ \sin(2\alpha) $  &  $ = 2 \sin(\alpha)\cos(\alpha) $ \\
+		$ \cos(2\alpha) $  &  $ = \cos^2(\alpha) - \sin^2(\alpha) $ \\
+		$ \tan(2\alpha) $  &  $ = \frac{2 \tan(\alpha)}{1-\tan^2(\alpha)} $ \\
+		$ \sin(3\alpha) $  &  $ = 3\sin(\alpha)-4 \sin^3(\alpha) $ \\
+		$ \cos(3\alpha) $  &  $ = 4\cos^3(\alpha) - 3 \cos(\alpha) $ \\
+		$ \tan(3\alpha) $  &  $ = \frac{3 \tan(\alpha) - \tan^3(\alpha)}{1-3\tan^2(\alpha)} $ \\
+		
+		$ \sin(\arccos(\alpha)) $  &  $ =  \sqrt{1-\alpha^2} \; \scriptstyle = \, \cos(\arcsin(\alpha)) $ \\
+		\\
+		$ \cosh(x) $ &$= \frac{e^x+e^{-x}}{2} = -i \sin(ix) $ \\
+		$ \tanh(x) $ & $= \frac{\sinh(x)}{\cosh(x)} = -i\tan(ix) $ \\
+
+	\end{tabular}
+	
+	\columnbreak
+	\hspace{-18pt}
+	\begin{tabular}{l l}
+		$ \cosh^2(x) - \sinh^2(x) $ & $= 1 $ \\
+		$ \sin^2(\frac{\alpha}{2}) $  &  $ = \frac{1-\cos(\alpha)}{2} $ \\
+		$ \cos^2(\frac{\alpha}{2}) $  &  $ = \frac{1+\cos(\alpha)}{2} $ \\
+		$ \tan^2(\frac{\alpha}{2}) $  &  $ = \frac{1-\cos(\alpha)}{1+\cos(\alpha)} $ \\
+		$ \sin(\alpha) \pm \sin(\beta) $  &  $ = 2 \sin(\frac{\alpha \pm \beta}{2}) \cos(\frac{\alpha \mp \beta}{2}) $ \\
+		$ \cos(\alpha) + \cos(\beta) $  &  $ = 2 \cos(\frac{\alpha + \beta}{2}) \cos(\frac{\alpha - \beta}{2}) $ \\
+		$ \cos(\alpha) - \cos(\beta) $  &  $ = - 2 \sin(\frac{\alpha + \beta}{2}) \sin(\frac{\alpha - \beta}{2}) $ \\
+		$ \sin(\alpha)\sin(\beta) $  &  $ = \scriptstyle \frac{1}{2} \left( \cos(\alpha - \beta) - \cos(\alpha + \beta) \right) $ \\
+		$ \cos(\alpha)\cos(\beta) $  &  $ = \scriptstyle \frac{1}{2} \left( \cos(\alpha - \beta) + \cos(\alpha + \beta) \right) $ \\
+		$ \sin(\alpha)\cos(\beta) $  &  $ = \scriptstyle \frac{1}{2} \left( \sin(\alpha - \beta) + \sin(\alpha + \beta) \right) $ \\
+		$ {e^{i\phi}}^2 = 1 $  & $ = \sin^2(\phi)+\cos^2(\phi) $ \\
+		$ \sin(\phi) $  &  $ = \frac{e^{i \phi}-e^{-i\phi}}{2} $ \\
+		$ \cos(\phi) $  &  $ = \frac{e^{i \phi}+e^{-i\phi}}{2i} $ \\
+		$ e^{i\phi} $  &  $ = \cos(\phi)+i \sin(\phi) $ \\
+		\\
+		$ \sinh(x)$ & $= \frac{e^x-e^{-x}}{2} = cos(ix) $ \\
+		$ e^{\pm x} $ & $= \cosh(x) \pm \sinh(x) $
+	
+	\end{tabular}
+	\end{multicols}
+	
+	\begin{center}
+	\includegraphics[width=120mm]{images/graphs.png}
+	\end{center}
+
+
 \pagebreak
-\subsection*{Wichtige Verfahren / Grundlagen / Einsortieren}
-\subsubsection*{Partialbruchzerlegung (PBZ)}
-- Nenner in Linear-Faktoren zerlegen (Faktorisieren $\rightarrow$ nicht 2 identische Faktoren (siehe 2. Beispiel) \\
+\subsubsection*{\underline{Integral-Tabelle} \quad (Integrationskonstante C nicht vergessen)}
+\vspace{-1mm}
+\begin{multicols}{2}
+	\renewcommand\arraystretch{1.5}
+	\begin{tabular}{l|l}
+		$f(x)$ & $F(x)$ \\ \hline
+
+		$ x^n $   &   $ \frac{1}{n+1} x^{n+1} $ \\
+		$ (ax+b)^n $  &  $ \frac{1}{a\cdot(n+1)} (ax+b)^{n+1} $ \\
+		$ \sqrt x $  &  $ \frac{2}{3} x^{ \frac{3}{2} } $ \\
+		$ \sqrt[n] x $  &  $ \frac{n}{n+1} x^{ \frac{1}{n}+1 } $ \\
+		$ \frac{1}{ax+b} $  &  $ \frac{1}{a} \ln |ax+b| $ \\
+		$ \frac{ax+b}{cx+d} $  &  $ \frac{ax}{c}-\frac{ad-bc}{c^2} \ln |cx+d| $ \\
+		$  $  &  $  $ \\
+		$ \frac{1}{x^2-a^2} $  &  $ \frac{1}{2a} \ln { \big| \frac{x-a}{x+a} \big| } $ \\
+		$ \sqrt{a^2+x^2} $  &  $ \frac{x}{2} f(x) + \frac{a^2}{2} \ln ( x+f(x) ) $ \\
+		$ \sqrt{a^2-x^2} $  &  $ \frac{x}{2} \sqrt{a^2-x^2} - \frac{a^2}{2} \arcsin \frac{x}{|a|}  $ \\
+		$ \sqrt{x^2-a^2} $  &  $ \frac{x}{2} f(x) - \frac{a^2}{2} \ln {( x+f(x) )} $ \\
+		$ \frac{1}{\sqrt{x^2+a^2}} $  &  $ \ln( x+\sqrt{x^2+a^2} ) $ \\
+		$ \frac{1}{\sqrt{x^2-a^2}} $  &  $ \ln( x+\sqrt{x^2-a^2} ) $ \\
+		$ \frac{1}{\sqrt{a^2-x^2}} $  &  $ \arcsin( \frac{x}{|a|} ) $ \\
+		$ \frac{1}{\sqrt{1-x^2}} $  &  $ \arcsin( x ) $ \\
+		$ \frac{-1}{\sqrt{1-x^2}} $  &  $ \arccos(x) $ \\
+		$ \frac{1}{x^2+a^2} $  &  $ \frac{1}{a} \arctan(\frac{x}{a}) $ \\
+		$ \frac{-1}{1+x^2} $  &  $ \operatorname{arccot}(x) $ \\
+		$ \frac{1}{\sqrt{x^2+1}} $  &  $ \operatorname{arsinh} (x) $ \\
+		$ \frac{-1}{\sqrt{x^2-1}} $  &  $ \operatorname{arcosh} (x) $ \\
+		$ \frac{1}{1-x^2} $  &  $ \operatorname{artanh} (x) $ \\
+		$  $  &  $  $ \\
+		$ \sin(ax+b) $  &  $-\frac{1}{a}\cos(ax+b)  $ \\
+		$ \cos(ax+b) $  &  $ \frac{1}{a}\sin(ax+b) $ \\
+		$ \tan(x) $  &  $ -\ln|\cos(x)| $ \\
+		$ \cot(x) $  &  $ \ln |\sin(x)| $ \\
+	\end{tabular}
+	
+	\columnbreak
+	\hspace{-20pt}
+	\begin{tabular}{l|l}
+		$f(x)$ & $F(x)$ \\ \hline
+		
+		$ \frac{1}{\sin(x)} $  &  $ \ln \left|\tan(\frac{x}{2})\right| $ \\
+		$ \frac{1}{\cos(x)} $  &  $ \ln \left|\tan(\frac{x}{2}+\frac{\pi}{4})\right| $ \\
+		$ \sin^2(x) $  &  $ \frac{1}{2} (x-\sin(x)\cos(x)) $ \\
+		$ \cos^2(x) $  &  $ \frac{1}{2} (x+\sin(x)\cos(x)) $ \\
+		$ \tan^2(x) $  &  $ \tan(x)-x $ \\
+		$ \cot^2(x) $  &  $ -\cot(x)-x $ \\
+		$ \arcsin(x) $  &  $ x \arcsin(x) + \sqrt{1-x^2} $ \\
+		$ \arccos(x) $  &  $ x \arccos(x) - \sqrt{1-x^2} $ \\
+		$ \arctan(x) $  &  $ x \arctan(x) - \frac{1}{2} \ln (1+x^2) $ \\
+		$ \sinh(x) $  &  $ \cosh(x)\quad \text{ und umgekehrt} $ \\
+		$ \tanh(x) $  &  $ \ln(\cosh(x)) $ \\
+		$\frac{1}{cosh(x)}$ 	& $arctan(sinh(x))$ \\
+		$ \frac{f'(x)}{f(x)} $   &   $ \ln {| f(x) |} $ \\
+		$ \ln |x| $  &  $ x \cdot (\ln |x| - 1) $ \\
+		$ \frac{1}{x}(\ln x)^n $  &  $ \frac{1}{n+1} (\ln x)^{n+1} \quad \scriptstyle  n \neq -1 $ \\
+		$ \frac{1}{x}\ln x^n $  &  $ \frac{1}{2n} (\ln x^n)^{2} \quad \scriptstyle  n \neq 0 $ \\
+		$ \frac{1}{x \ln x} $  &  $ \ln |\ln x| \quad \scriptstyle x>0,x\neq 1 $ \\
+		$ a^{bx} $  &  $ \frac{1}{b \ln a} a^{bx} $ \\
+		$ e^{cx} $ &  $\frac{1}{c} e^{cx}$ \\
+		$ x\cdot e^{cx} $  &  $ \frac{cx-1}{c^2} \cdot e^{cx} $ \\
+		$ x^n \ln x $  &  $ \frac{x^{n+1}}{n+1} \left( \ln x - \frac{1}{n+1} \right) \quad \scriptstyle  n \neq -1 $ \\
+		\nop{$ e^{ax} p(x) $  &  $ e^{ac} (  a^{-1} p(x) - a^{-2} p'(x)+ $ \\
+		$  $  &  $ \ldots+(-1)^na^{-n-1}p^{(n)}(x) ) $ \\
+		$  $  &  $ p\text{: Polynom }n\text{-ten Grades} $ \\}
+		$ \scriptstyle e^{cx} \sin (ax+b)  $  &  $ \frac{e^{cx} \left( c \sin (ax+b)-a \cos(ax+b) \right)}{a^2+c^2}  $ \\
+		$ \scriptstyle e^{cx} \cos (ax+b)  $  &  $ \frac{e^{cx} \left( c \cos (ax+b)+a \sin(ax+b) \right)}{a^2+c^2}  $ \\
+		$ \sin^n(x) $  &  $ \scriptstyle s_n=-\frac{1}{n} \sin^{n-1}x \cos x+\frac{n-1}{n} s_{n-2} $ \\
+		$  $  &  $ \scriptstyle s_0 = x\quad s_1 = - \cos(x) $ \\
+		$ \cos^n(x) $  &  $ \scriptstyle c_n=\frac{1}{n} \sin x \cos^{n-1} x + \frac{n-1}{n} c_n $ \\
+		$  $  &  $ \scriptstyle c_0 = x\quad c_1 = \sin(x) $ \\
+
+		
+	\end{tabular}
+	\end{multicols}
+	
+	\vspace{1mm}
+	\quad 
+	
+
+\columnbreak
+\subsubsection*{\underline{Ableitungs-Tabelle}}
+		\begin{onehalfspace}
+			\begin{tabular}{ l | l l }
+					$ f(x)$	\hspace{15mm}	& 	\hspace{1mm} &  $f'(x)$ 
+					\\ \hline  % -------------------------------------------------
+					$c$													&&    	$0$																									\\
+					$x^n$												&&		$nx^{n-1}$																						\\
+					$\frac{1}{x^n}$									&&		$-n \frac{1}{x^{n+1}}$																		\\
+					$\sqrt[n] x = x^{\frac{1}{n}}$			&&		$\frac{1}{n \sqrt[n]{n^{n-1}}} = \dfrac{x^{\frac{1}{n}-1}}{n} = 
+																							\frac{1}{n {x}^{\frac{n-1}{n}}} $ 														\\
+					$\sqrt {x}$										&&		$\frac{1}{2} x^{-\frac{1}{2}} =  \frac{1}{2 \sqrt{x}}$ 							\\
+					$e^{\alpha x + \beta}$						&&		$\alpha e^{\alpha x + \beta}$ 															\\
+					$e^{x^\alpha}$									&&		$\alpha x^{\alpha -1}  e^{x^\alpha}$ 												\\
+					$\alpha^x$										&&		$\alpha^x ln(\alpha)$ 																		\\
+					$ a^{cx} $  										&& 	    $ a^{cx} \cdot c \ln a $ 																	\\
+					$x^x$												&&		$x^x (ln(x) + 1)$ 																				\\
+					$x^{x^\alpha}$									&&		$x^{x^a}\left(ax^{a-1}\ln\left(x\right)+x^{a-1}\right) 	$					\\
+																			&&		$= x^{x^a+a-1}\left(a\ln\left(x\right)+1\right)$ 							\\
+																																																\\
+					$ln(\alpha x + \beta)$						&&		$\frac{\alpha}{\alpha x + \beta}$ 													\\	
+					$log_a(x)$										&& 		$\frac{1}{ln(a)\cdot x}$																		\\
+																																																\\
+					$sin(\alpha x + \beta)$					&&		$\alpha cos(\alpha x + \beta)$ 														\\
+					$sin^2(x)$										&&		$2 \cdot cos(x) \cdot sin(x)$															\\
+					$cos(\alpha x + \beta)$					&&		$-\alpha sin(\alpha x + \beta)$ 														\\
+					$cos^2(x)$ 										&& 		$-2 \cdot cos(x) \cdot sin(x)$															\\
+					$tan(x)$											&&		$1 + tan^2(x) = \frac{1}{cos^2(x)}$ 													\\
+					$arcsin(x)$										&&		$\frac{1}{\sqrt{1-x^2}}$																	\\
+					$arccos(x)$										&&		$-\frac{1}{\sqrt{1-x^2}}$																	\\
+					$arctan(x)$										&&		$\frac{1}{1+x^2}$																			\\
+					$sinh(x) = \frac{e^x - e^{-x}}{2}$		&&		$cosh(x)$ 																						\\
+					$cosh(x) = \frac{e^x + e^{-x}}{2}$	&&		$sinh(x)$ 																							\\
+					$tanh(x)$											&&		$\frac{1}{cosh^2(x)}$ 																		\\
+																																																\\
+					$ \frac{1}{f(x)} $  								&&		 $ \frac{-f'(x)}{(f(x))^2} $ 																	\\
+					$ x^x $  											&&  		$ x^x \cdot (1+\ln x) \quad \scriptstyle x > 0 $								\\
+					$ (x^x)^x $ 										&&  		$ (x^x)^x(x+2x\ln(x)) \quad \scriptstyle x > 0 $ 							\\
+					$ x^{(x^x)} $  									&&  		$ x^{(x^x)}(x^{x-1}+\ln x \cdot x^x (1+\ln x))) $ 
+
+					
+
+			
+			\end{tabular}
+		\end{onehalfspace}
+		
+		\vspace{5mm}
+		\quad
+
+\columnbreak
+\subsubsection*{Geometrie}
+
+\underline{Bekannte K{\"o}rper und Formen} \vspace{1mm}\\
+
+
+\begin{doublespace}
+	\begin{tabular}{l|l|l}
+							&   \textbf{Fl{\"a}che} 	& \textbf{Oberfl{\"a}che} \\ \hline
+ - Parallelogramm	& 	$A = b \cdot h$\\
+ - Dreieck				&  $A = \frac{1}{2} b \cdot h$\\
+ - Trapez					&  $A = \frac{1}{2} (a+b) \cdot h$ \\
+ - Kreis					& 	$A = r^2 \cdot \pi$ & $U = 2r \cdot \pi$ (Umfang)\\
+ - Kugel					&  $A = 4\pi \cdot r^2 $& $V=\frac{4}{3}\cdot \pi \cdot r^3$\\
+ - Zylinder				&  & $V = \pi \cdot r^2 \cdot h$\\
+ - Kegel					&  & $V = \frac{1}{3} \cdot \pi \cdot r^2 \cdot h$\\
+ - Pyramide				&  & $V = \frac{1}{3}  \cdot G \cdot h$\\
+ - Ellipsoid				&  & $V = \frac{4}{3} \cdot \pi \cdot abc$\\							
+\end{tabular}
+\end{doublespace}
+
+\vspace{100mm}
+\quad
+
+
+\columnbreak
+\subsubsection*{Tricks / Verfahren}
+
+\underline{Partialbruchzerlegung (PBZ)} \vspace{2mm}\\
+- Nenner in Linear-Faktoren zerlegen (Faktorisieren $\rightarrow$ nicht 2 identische Faktoren \\
 - Gleichung aufstellen mit $\frac{A}{...}$ + $\frac{B}{...}$ + ... \\
 - Gleichnahmig machen \\
 - Koeffizientenverglich mittels Matrix (Gauss anwenden) \\
 
-Zum Ansatz werden jeweils abhängig von der Art der Nullstellen folgende Summanden hinzugefügt:
+Zum Ansatz werden jeweils abh{\"a}ngig von der Art der Nullstellen folgende Summanden hinzugef{\"u}gt:
 			\begin{enumerate}
 				\item einfache Nullstelle $x_i: \quad \frac{a_{i1}}{x-x_i}$
 				\item $j$-fache Nullstelle $x_i: \quad \frac{a_{i1}}{x-x_i} + \cdots + \frac{a_{ij}}{(x-x_i)^j} $
 				\item
 				komplexe Nullstellenpaare: $ \frac{b_ix + c_i}{x^2+p_ix+q_i}$ mit $x^2+p_ix+q_i = (x-z_i)(x- \overline{z_i})$
-				wobei das Nennerpolynom die beiden Nullstellen $z_i, \overline{z_i}$ hat.
+				wobei \vspace{1mm} \\ das Nennerpolynom die beiden Nullstellen $z_i, \overline{z_i}$ hat.
 			\end{enumerate}
 
+	\vspace{3mm}
+  	\noindent\textcolor{gray}{\rule{14cm}{0.1pt}}
+	\vspace{-4mm}
 
-
-Beispiel 1 und Beispiel 2 
-
+\subsubsection*{Normen}
+		Eine Norm auf $\R^d$ ist eine Abbilung $\norm \cdot: \R^d \to \R$
+		\begin{enumerate}
+			\item $\norm x \geq 0, \quad \norm x = 0 \iff x = 0$
+			\item $\norm{\alpha x} = | \alpha | \; \norm x$
+			\item $\norm{ x+y } \leq \norm x + \norm y$
+		\end{enumerate}
+		
+		\underline{$p$-Norm} \vspace{1mm}\\
+		F{\"u}r $1 \leq p \leq \infty$ ist die $p$-Norm definiert als
+		\[ \norm{x}_p = \sqrt[p]{\sum_{i = 1}^d |x_i| ^p} \qquad\qquad \norm{x}_\infty = \max_{1 \leq i \leq d} |x_i| \]
+		
+		\underline{$C^m$-Norm} \vspace{1mm}\\
+		Sei $ \Omega$ beschr{\"a}nkt und sei $f: \Omega \to \R^n$ auf $ \overline{\Omega}$ stetig erg{\"a}nzbar und $m$ mal diffbar. Dann gilt
+		\begin{align*}
+			\norm{f}_{C_m(\overline{\Omega})} :&= \sup_{x \in \Omega} |f(x)| + \sup_{x \in \Omega} |f'(x)| + \ldots + \sup_{x \in \Omega} |f^{(m)}(x)| < \infty \\
+			& = \norm{f}_{C^0} + \norm{f'}_{C^0} + \ldots + \norm{f^{(m)}}_{C^0}
+		\end{align*}
+		
+		\underline{{\"A}quivalenz von Normen} \vspace{1mm}\\
+		Zwei Normen $\norm{\cdot}^{(1)}$ und $\norm{\cdot}^{(2)}$ sind {\"a}quivalent, falls ein $C > 0$ existiert, so dass
+		\[ \frac{1}{C} \norm{\cdot}^{(1)} \leq \norm{\cdot}^{(2)} \leq C \norm{\cdot}^{(1)} \qquad \forall x \in \R^d \]
+		Je zwei Normen $\norm{\cdot}^{(1)}$ und $\norm{\cdot}^{(2)}$ auf $\R^d$ sind {\"a}quivalent.
 
 
 
