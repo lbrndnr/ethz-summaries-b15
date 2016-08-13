@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  25 JUL 2016 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  7 AUG 2016 09:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,10 +6,10 @@ entering extended mode
 **Analysis_CheatSheet.tex
 (./Analysis_CheatSheet.tex
 LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 21 languages loaded.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,21 +23,21 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
-)) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -77,33 +77,33 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count99
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/caption/caption3.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen114
@@ -115,15 +115,15 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@hangindent=\dimen120
 )
 \c@ContinuedFloat=\count100
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count101
@@ -138,7 +138,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen127
 \Gm@layoutvoffset=\dimen128
 \Gm@dimlist=\toks20
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/multicol.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \c@tracingmulticols=\count104
 \mult@box=\box28
@@ -186,9 +186,9 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \mult@nat@firstbox=\box52
 \colbreak@box=\box53
 \mc@col@check@num=\count112
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -201,9 +201,9 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks21
 \enit@inbox=\box54
 \enitdp@description=\count113
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/color.cfg
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -216,14 +216,14 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count114
 \float@exts=\toks22
 \float@box=\box55
 \@float@everytoks=\toks23
 \@floatcapt=\box56
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 
@@ -238,22 +238,22 @@ Package geometry Warning: Over-specification in `v'-direction.
 LaTeX Warning: Unused global option(s):
     [6pt].
 
-(/Users/Nino/Dropbox/Lieblingsnuss/ETH/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.aux)
+(/Users/jakubkotal/Documents/summaries/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.aux)
 \openout1 = `Analysis_CheatSheet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
- (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
 \scratchdimen=\dimen139
@@ -266,9 +266,9 @@ LaTeX Font Info:    ... okay on input line 27.
 \MPnumerator=\count119
 \makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks25
-) (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -276,17 +276,17 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-)) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
- (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -296,7 +296,7 @@ Package etexcmds Info: Could not find \expanded.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -337,399 +337,716 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
- (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (0.66217pt too wide) in paragraph at lines 49--65
+Overfull \hbox (0.66217pt too wide) in paragraph at lines 69--85
 []
  []
 
 
-Overfull \hbox (0.86151pt too wide) in paragraph at lines 115--131
+Overfull \hbox (0.86151pt too wide) in paragraph at lines 135--151
 [] 
  []
 
 
-Overfull \hbox (10.44128pt too wide) in paragraph at lines 148--161
+Overfull \hbox (10.44128pt too wide) in paragraph at lines 168--181
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-<images/cauchy_folge.png, id=1, 2007.5pt x 1119.18124pt>
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <images/cauchy_folge.png, id=18, 2007.5pt x 1119.18124pt>
 File: images/cauchy_folge.png Graphic file (type png)
  <use images/cauchy_folge.png>
-Package pdftex.def Info: images/cauchy_folge.png used on input line 203.
+Package pdftex.def Info: images/cauchy_folge.png used on input line 225.
 (pdftex.def)             Requested size: 150.0pt x 83.61049pt.
- [1
 
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
+Underfull \hbox (badness 10000) in paragraph at lines 256--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 288--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
 
-Overfull \hbox (2.31595pt too wide) in paragraph at lines 288--302
+Overfull \hbox (2.31595pt too wide) in paragraph at lines 310--324
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--306
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
 
  []
 
 [2 <./images/cauchy_folge.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--458
+Underfull \hbox (badness 10000) in paragraph at lines 476--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--484
+Underfull \hbox (badness 10000) in paragraph at lines 502--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--506
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
 
-Overfull \hbox (20.07655pt too wide) in paragraph at lines 523--532
+Overfull \hbox (20.07655pt too wide) in paragraph at lines 545--554
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--532
+Underfull \hbox (badness 10000) in paragraph at lines 545--554
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--536
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--552
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 632--636
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--646
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
+Underfull \hbox (badness 10000) in paragraph at lines 695--697
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 682--684
+<images/glm_konvergenz1.png, id=29, 529.98pt x 109.40875pt>
+File: images/glm_konvergenz1.png Graphic file (type png)
+ <use images/glm_konvergenz1.png>
+Package pdftex.def Info: images/glm_konvergenz1.png used on input line 710.
+(pdftex.def)             Requested size: 275.0pt x 56.771pt.
+ <images/glm_konvergenz2.png, id=30, 525.965pt x 119.44624pt>
+File: images/glm_konvergenz2.png Graphic file (type png)
+ <use images/glm_konvergenz2.png>
+Package pdftex.def Info: images/glm_konvergenz2.png used on input line 711.
+(pdftex.def)             Requested size: 275.0pt x 62.45503pt.
+
+Overfull \hbox (9.46863pt too wide) in paragraph at lines 709--712
+[]
+ []
+
+
+Overfull \hbox (9.46863pt too wide) in paragraph at lines 709--712
+[] 
+ []
+
+[4] [5 <./images/glm_konvergenz1.png> <./images/glm_konvergenz2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 726--728
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 833--835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
-
- []
-
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 946--947
+Underfull \hbox (badness 10000) in paragraph at lines 877--879
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--970
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 993--994
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1048--1051
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1065
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1073
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1076
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1083
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1089--1093
+Underfull \hbox (badness 10000) in paragraph at lines 898--899
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1126
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1039
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1063
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
+Underfull \hbox (badness 10000) in paragraph at lines 1103--1104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1230
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1120
 
  []
 
 
-Overfull \hbox (4.01118pt too wide) in paragraph at lines 1232--1257
-[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 1132--1134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1162
+
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1276
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1278--1280
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1288
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1313--1314
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1238
 
  []
 
-<images/beispiel_uneigInteg.png, id=47, 274.02374pt x 74.2775pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
+
+ []
+
+
+Overfull \hbox (4.01118pt too wide) in paragraph at lines 1301--1326
+[][] 
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1383
+
+ []
+
+<images/beispiel_uneigInteg.png, id=54, 274.02374pt x 74.2775pt>
 File: images/beispiel_uneigInteg.png Graphic file (type png)
  <use images/beispiel_uneigInteg.png>
-Package pdftex.def Info: images/beispiel_uneigInteg.png used on input line 1319.
-(pdftex.def)             Requested size: 230.0pt x 62.34506pt.
- [9 <./images/beispiel_uneigInteg.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1381
+Package pdftex.def Info: images/beispiel_uneigInteg.png used on input line 1388.
+(pdftex.def)             Requested size: 220.0pt x 59.63515pt.
+ [10 <./images/beispiel_uneigInteg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1444--1445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1463--1464
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1467
-
- []
-
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 1509--1510
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1516--1518
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1535--1537
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1616
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1628
-
- []
-
-Missing character: There is no Â in font cmr10!
-Missing character: There is no   in font cmr10!
-Missing character: There is no Â in font cmr10!
-Missing character: There is no   in font cmr10!
-
-Overfull \hbox (7.95502pt too wide) in paragraph at lines 1679--1690
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1695
+Underfull \hbox (badness 10000) in paragraph at lines 1530--1531
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1700
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1592
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1703--1705
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1718--1723
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 1733--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1617--1619
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1698
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1751--1752
+Underfull \hbox (badness 10000) in paragraph at lines 1709--1710
+
+ []
+
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no   in font cmr10!
+
+Overfull \hbox (7.95502pt too wide) in paragraph at lines 1761--1772
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1777
+
+ []
+
+[12] <images/ImpliziteFunktionen01.png, id=66, 407.5225pt x 62.2325pt>
+File: images/ImpliziteFunktionen01.png Graphic file (type png)
+ <use images/ImpliziteFunktionen01.png>
+Package pdftex.def Info: images/ImpliziteFunktionen01.png used on input line 1801.
+(pdftex.def)             Requested size: 260.0pt x 39.70616pt.
+ <images/ImpliziteFunktionen00.png, id=67, 401.5pt x 194.7275pt>
+File: images/ImpliziteFunktionen00.png Graphic file (type png)
+ <use images/ImpliziteFunktionen00.png>
+Package pdftex.def Info: images/ImpliziteFunktionen00.png used on input line 1803.
+(pdftex.def)             Requested size: 260.0pt x 126.10783pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1770--1771
+Underfull \hbox (badness 10000) in paragraph at lines 1805--1806
+
+ []
+
+<images/ImpliziteFunktionen1.png, id=68, 403.5075pt x 120.45pt>
+File: images/ImpliziteFunktionen1.png Graphic file (type png)
+ <use images/ImpliziteFunktionen1.png>
+Package pdftex.def Info: images/ImpliziteFunktionen1.png used on input line 1807.
+(pdftex.def)             Requested size: 260.0pt x 77.61153pt.
+ <images/ImpliziteFunktionen2.png, id=69, 398.48875pt x 281.05pt>
+File: images/ImpliziteFunktionen2.png Graphic file (type png)
+ <use images/ImpliziteFunktionen2.png>
+Package pdftex.def Info: images/ImpliziteFunktionen2.png used on input line 1809.
+(pdftex.def)             Requested size: 260.0pt x 183.38364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1807--1810
+
+ []
+
+<images/picarditeration1.png, id=70, 431.6125pt x 74.2775pt>
+File: images/picarditeration1.png Graphic file (type png)
+ <use images/picarditeration1.png>
+Package pdftex.def Info: images/picarditeration1.png used on input line 1824.
+(pdftex.def)             Requested size: 270.0pt x 46.46638pt.
+ <images/picarditeration2.png, id=71, 436.63126pt x 156.585pt>
+File: images/picarditeration2.png Graphic file (type png)
+ <use images/picarditeration2.png>
+Package pdftex.def Info: images/picarditeration2.png used on input line 1825.
+(pdftex.def)             Requested size: 270.0pt x 96.82841pt.
+
+Overfull \hbox (4.46863pt too wide) in paragraph at lines 1821--1826
+[]
+ []
+
+
+Overfull \hbox (4.46863pt too wide) in paragraph at lines 1821--1826
+[] 
+ []
+
+<images/picardlindeloef1.png, id=72, 413.545pt x 276.03125pt>
+File: images/picardlindeloef1.png Graphic file (type png)
+ <use images/picardlindeloef1.png>
+Package pdftex.def Info: images/picardlindeloef1.png used on input line 1830.
+(pdftex.def)             Requested size: 270.0pt x 180.22264pt.
+
+Overfull \hbox (4.46863pt too wide) in paragraph at lines 1828--1831
+[] 
+ []
+
+[13 <./images/ImpliziteFunktionen01.png> <./images/ImpliziteFunktionen00.png> <./images/ImpliziteFunktionen1.png> <./images/ImpliziteFunktionen2.png> <./images/picarditeration1.png> <./images/picarditeration2.png> <./images/picardlindeloef1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1851--1852
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1789--1790
+Underfull \hbox (badness 10000) in paragraph at lines 1853--1854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1794--1795
+Underfull \hbox (badness 10000) in paragraph at lines 1878--1880
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1800--1801
+Underfull \hbox (badness 10000) in paragraph at lines 1881--1885
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1886--1887
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1888--1891
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1909--1910
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1920
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1930--1931
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1938
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1939--1940
+
+ []
+
+<images/linienintegrale_bsp.png, id=84, 687.56876pt x 528.97626pt>
+File: images/linienintegrale_bsp.png Graphic file (type png)
+ <use images/linienintegrale_bsp.png>
+Package pdftex.def Info: images/linienintegrale_bsp.png used on input line 1955.
+(pdftex.def)             Requested size: 270.0pt x 207.72049pt.
+
+Overfull \hbox (4.46863pt too wide) in paragraph at lines 1954--1956
+[] 
+ []
+
+<images/linienintegrale_bsp1.png, id=85, 596.2275pt x 397.485pt>
+File: images/linienintegrale_bsp1.png Graphic file (type png)
+ <use images/linienintegrale_bsp1.png>
+Package pdftex.def Info: images/linienintegrale_bsp1.png used on input line 1959.
+(pdftex.def)             Requested size: 240.0pt x 159.99799pt.
+ <images/linienintegrale_bsp2.png, id=86, 682.55pt x 300.12125pt>
+File: images/linienintegrale_bsp2.png Graphic file (type png)
+ <use images/linienintegrale_bsp2.png>
+Package pdftex.def Info: images/linienintegrale_bsp2.png used on input line 1960.
+(pdftex.def)             Requested size: 240.0pt x 105.52943pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1958--1961
+[]
+ []
+
+[14 <./images/linienintegrale_bsp.png> <./images/linienintegrale_bsp1.png> <./images/linienintegrale_bsp2.png>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2072--2073
+
+ []
+
+<images/polarkoord.png, id=93, 280.04625pt x 227.85126pt>
+File: images/polarkoord.png Graphic file (type png)
+ <use images/polarkoord.png>
+Package pdftex.def Info: images/polarkoord.png used on input line 2077.
+(pdftex.def)             Requested size: 80.0pt x 65.08777pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2084
+
+ []
+
+<images/kugelkoord.png, id=94, 324.21124pt x 301.125pt>
+File: images/kugelkoord.png Graphic file (type png)
+ <use images/kugelkoord.png>
+Package pdftex.def Info: images/kugelkoord.png used on input line 2091.
+(pdftex.def)             Requested size: 80.0pt x 74.30237pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
+
+ []
+
+<images/zylinderkoord.png, id=95, 407.5225pt x 364.36125pt>
+File: images/zylinderkoord.png Graphic file (type png)
+ <use images/zylinderkoord.png>
+Package pdftex.def Info: images/zylinderkoord.png used on input line 2102.
+(pdftex.def)             Requested size: 80.0pt x 71.5255pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2118--2119
+
+ []
+
+<images/normalbereiche1.png, id=96, 395.4775pt x 266.9975pt>
+File: images/normalbereiche1.png Graphic file (type png)
+ <use images/normalbereiche1.png>
+Package pdftex.def Info: images/normalbereiche1.png used on input line 2120.
+(pdftex.def)             Requested size: 280.0pt x 189.03583pt.
+
+Overfull \hbox (14.46863pt too wide) in paragraph at lines 2120--2121
+[][] 
+ []
+
+<images/Flaechenintegral1.png, id=97, 338.26375pt x 324.21124pt>
+File: images/Flaechenintegral1.png Graphic file (type png)
+ <use images/Flaechenintegral1.png>
+Package pdftex.def Info: images/Flaechenintegral1.png used on input line 2133.
+(pdftex.def)             Requested size: 120.0pt x 115.01416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2131--2134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2138--2140
+
+ []
+
+<images/Flaechenintegral2.png, id=98, 569.12625pt x 68.255pt>
+File: images/Flaechenintegral2.png Graphic file (type png)
+ <use images/Flaechenintegral2.png>
+Package pdftex.def Info: images/Flaechenintegral2.png used on input line 2142.
+(pdftex.def)             Requested size: 260.0pt x 31.18312pt.
+ [15 <./images/polarkoord.png> <./images/kugelkoord.png> <./images/zylinderkoord.png> <./images/normalbereiche1.png> <./images/Flaechenintegral1.png> <./images/Flaechenintegral2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2214--2215
+
+ []
+
+<images/kegelaufgabe1.png, id=108, 356.33125pt x 373.395pt>
+File: images/kegelaufgabe1.png Graphic file (type png)
+ <use images/kegelaufgabe1.png>
+Package pdftex.def Info: images/kegelaufgabe1.png used on input line 2224.
+(pdftex.def)             Requested size: 110.0pt x 115.26695pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2228--2229
+
+ []
+
+<images/kegelaufgabe2.png, id=109, 487.8225pt x 256.96pt>
+File: images/kegelaufgabe2.png Graphic file (type png)
+ <use images/kegelaufgabe2.png>
+Package pdftex.def Info: images/kegelaufgabe2.png used on input line 2234.
+(pdftex.def)             Requested size: 200.0pt x 105.35036pt.
+
+Overfull \hbox (2.75876pt too wide) detected at line 2242
+[]  \OT1/cmr/m/n/10 = [][] [][] \OML/cmm/m/it/10 r[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 drd^^^
+ []
+
+<images/kegelaufgabe4.png, id=110, 529.98pt x 69.25874pt>
+File: images/kegelaufgabe4.png Graphic file (type png)
+ <use images/kegelaufgabe4.png>
+Package pdftex.def Info: images/kegelaufgabe4.png used on input line 2248.
+(pdftex.def)             Requested size: 230.0pt x 30.05649pt.
+ <images/gauss.png, id=111, 421.575pt x 551.05875pt>
+File: images/gauss.png Graphic file (type png)
+ <use images/gauss.png>
+Package pdftex.def Info: images/gauss.png used on input line 2256.
+(pdftex.def)             Requested size: 280.0pt x 366.0038pt.
+
+Overfull \hbox (14.46863pt too wide) in paragraph at lines 2255--2257
+[] 
+ []
+
+[16 <./images/kegelaufgabe1.png> <./images/kegelaufgabe2.png> <./images/kegelaufgabe4.png> <./images/gauss.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2291--2293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2294--2295
+
+ []
+
+<images/stokes.png, id=119, 383.4325pt x 502.87875pt>
+File: images/stokes.png Graphic file (type png)
+ <use images/stokes.png>
+Package pdftex.def Info: images/stokes.png used on input line 2326.
+(pdftex.def)             Requested size: 260.0pt x 341.01688pt.
+ <images/stokes2.png, id=120, 359.3425pt x 343.2825pt>
+File: images/stokes2.png Graphic file (type png)
+ <use images/stokes2.png>
+Package pdftex.def Info: images/stokes2.png used on input line 2327.
+(pdftex.def)             Requested size: 170.0pt x 162.40611pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2325--2328
+[]
+ []
+
+[17 <./images/stokes.png> <./images/stokes2.png>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¼ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1881--1883
+Overfull \hbox (4.54152pt too wide) in paragraph at lines 2384--2386
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2388--2397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1926--1928
+Underfull \hbox (badness 10000) in paragraph at lines 2401--2407
 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1960--1964
+
+Underfull \hbox (badness 10000) in paragraph at lines 2411--2423
 
  []
 
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¤ in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¼ in font cmr10!
-[15] (/Users/Nino/Dropbox/Lieblingsnuss/ETH/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.aux) ) 
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no Â in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+Overfull \hbox (11.23906pt too wide) in paragraph at lines 2446--2468
+[]  [] 
+ []
+
+
+Overfull \hbox (14.9346pt too wide) in paragraph at lines 2470--2491
+[]  [] 
+ []
+
+<images/graphs.png, id=126, 1818.795pt x 664.4825pt>
+File: images/graphs.png Graphic file (type png)
+ <use images/graphs.png>
+Package pdftex.def Info: images/graphs.png used on input line 2494.
+(pdftex.def)             Requested size: 341.43306pt x 124.7321pt.
+ [18 <./images/graphs.png>]
+Overfull \hbox (1.06923pt too wide) in paragraph at lines 2503--2533
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2630--2631
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 2655--2660
+
+ []
+
+
+Overfull \hbox (4.54152pt too wide) in paragraph at lines 2671--2673
+[][][]
+ []
+
+[20] (/Users/jakubkotal/Documents/summaries/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.aux) ) 
 Here is how much of TeX's memory you used:
- 4894 strings out of 494501
- 72513 string characters out of 6167031
- 165556 words of memory out of 5000000
- 8100 multiletter control sequences out of 15000+600000
+ 5024 strings out of 493089
+ 75550 string characters out of 6134842
+ 192142 words of memory out of 5000000
+ 8409 multiletter control sequences out of 15000+600000
  12185 words of font info for 47 fonts, out of 8000000 for 9000
- 319 hyphenation exceptions out of 8191
- 38i,25n,38p,300b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on /Users/Nino/Dropbox/Lieblingsnuss/ETH/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.pdf (15 pages, 382720 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 38i,25n,38p,300b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on /Users/jakubkotal/Documents/summaries/Analysis/Cheatsheet_Nino/.texpadtmp/Analysis_CheatSheet.pdf (20 pages, 1685570 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 192 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
