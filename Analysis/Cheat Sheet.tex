@@ -396,7 +396,30 @@ $f_n(x)$ konvergiert gleichm{\"a}ssig falls:
 	\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)| = 0
 \end{equation*}
 
-\emph{Bemerkung:} Gleichm{\"a}ssige Konvergenz impliziert punktweise Konvergenz.
+\emph{Bemerkung:} Gleichm{\"a}ssige Konvergenz impliziert punktweise Konvergenz.\\
+\underline{Rezpet f{\"u}r gleichm{\"a}ssige Konvergenz} 
+\begin{enumerate}[label=(\roman*)]
+	\item Punktweiser Limes berechnen
+				\[
+						\lim_{n\rightarrow\infty}f_n(x) = f(x) \text{\quad = Grenzfunktion}
+				\]
+	\item Supremum bestimmen \\
+				(Ableitung von $f_n(x)$  oder Absch{\"a}tzung benutzen)
+				\[
+						\sup|f_n(x) - f(x)|
+				\]
+	\item Limes $n \to \infty$ bestimmen (vgl. Kriterium glm. Konvergenz)
+				\[
+						\lim_{n\rightarrow\infty} \sup|f_n(x) - f(x)|
+				\]
+				Limes = 0 $\rightarrow$ Glm. konvergent mit Grenzfunktion f(x)
+	\item Indirekte Methode \\
+				\begin{itemize}
+					\item $f(x)$ unstetig  auf $\Omega \Rightarrow$ keine glm. Konvergenz	
+					\item $f(x)$ stetig, $f_n(x) \leq f_{n+1}(x) \forall x \in \Omega $ und $\Omega$ kompakt $\Rightarrow$ Glm. Konvergenz
+				\end{itemize}
+
+\end{enumerate}
 
 \begin{equation*}
 \begin{split}
@@ -418,6 +441,9 @@ Eine stetige Funktion ist differenzierbar, falls der Grenzwert $f'(x_0)$ existie
 \begin{equation*}
 	f'(x_0) := \lim_{x\to x_0}\frac{f(x) - f(x_0)}{x-x_0}
 \end{equation*}
+\subsubsection*{Tangente}
+		Sei $f: \Omega \to \mathbb{R}$ an der Stelle $x_0 \in \Omega$ diffbar. Dann ist die Tangente im Punkt $x_0$
+		\[ t(x; x_0)=f(x_0)+f'(x_0)(x-x_0) \]
 
 \subsection{Umkehrsatz}
 
@@ -451,8 +477,104 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 \begin{equation*}
 	f'(x)=g(m(x))\cdot\frac{d}{dx}m(x)
 \end{equation*}
-wobei $m(x)$ der Form $ax^b$ ist mit $l\in \mathbb{R}$
+wobei $m(x)$ der Form $ax^b$ ist mit $l\in \mathbb{R}$\\\\
+\underline{Differenzial / Jaccobi-Matrix}
+		\begin{equation*}
+				df = 
+					\begin{pmatrix}
+						\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_n} \\
+						... & ... & ... \\
+						\frac{\partial f_m}{\partial x_1} & ... & \frac{\partial f_m}{\partial x_n}
+					\end{pmatrix}
+		\end{equation*}
+		$\rightarrow$ enth{\"a}lt die $n$ part. Ableit. aller m Komponenten von $f$\\
+\subsubsection*{Taylorentwicklung mit mehreren Variabeln} 
+	\begin{tabular}{ll}
+		$f(x,y) =  $ & $f(x_0,y_0) + \frac{\partial f}{\partial x} \Delta x + \frac{\partial f}{\partial y} \Delta y$ \\
+			& $ + \frac{1}{2!} \bigg{(}
+						 \frac{\partial^2 f}{\partial x^2} (\Delta x)^2	
+						 + 2\frac{\partial^2 f}{\partial x \partial y} \Delta x \Delta y 
+						 + \frac{\partial^2 f}{\partial y^2} (\Delta y)^2	
+									\bigg{)} $ \\
+			& $ + \frac{1}{3!} \bigg{(}
+						 \frac{\partial^3 f}{\partial x^3} (\Delta x)^3
+						 + 3\frac{\partial^3 f}{\partial x^2 \partial y} (\Delta x)^2 \Delta y$ \\
+			&			\qquad  $+ 3\frac{\partial^3 f}{\partial x \partial y^2} \Delta x (\Delta y)^2 
+						 + \frac{\partial^3 f}{\partial y^3} (\Delta y)^3
+						\bigg{)} $ \\
+			& 			$+ \cdots$			
+	
+	\end{tabular}
 
+<<<<<<< HEAD
+=======
+\section{Integration}
+
+\subsection{Elementare Integrale}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+$f'(x)$ & $f(x)$ & $F(x)$ \\ \specialrule{.1em}{0em}{0em} 
+$\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$ & $\frac{f(x)}{g(x)}$ &  \\ \hline
+$0$ & $c$ & $cx$ \\ \hline
+$r\cdot x^{r-1}$ & $x^r$ & $\frac{x^{r+1}}{r+1}$ \\ \hline
+$-\frac{1}{x^2} = -x^{-2}$ & $\frac{1}{x} = x^{-1}$ & $\ln|x|$ \\ \hline
+$\frac{1}{2\sqrt{x}} = \frac{1}{2}x^{-\frac{1}{2}}$ & $\sqrt{x} = x^{\frac{1}{2}}$ & $\frac{2}{3}x^\frac{3}{2}$ \\ \hline
+$\cos(x)$ & $\sin(x)$ & $-\cos(x)$ \\ \hline
+$-\sin(x)$ & $\cos(x)$ & $\sin(x)$ \\ \hline
+$1 + \tan^2(x) = \frac{1}{\cos^2(x)}$ & $\tan(x)$ & $-\ln|\cos(x)|$ \\ \hline
+$e^x$ & $e^x$ & $e^x$ \\ \hline
+$c\cdot e^{cx}$ & $e^{cx}$ & $\frac{1}{c}\cdot e^{cx}$ \\ \hline
+$\ln(c)\cdot c^x$ & $c^x$ & $\frac{c^x}{\ln(c)}$ \\ \hline
+$\frac{1}{x}$ & $\ln|x|$ & $x(\ln|x| - 1)$ \\ \hline
+$\frac{1}{\ln(a) \cdot x}$ & $\log_a|x|$ & $\frac{x}{\ln(a)}(\ln|x| -1)$ \\ \hline
+$\frac{1}{\sqrt{1-x^2}}$ & $\arcsin(x)$ & $x\cdot\arcsin(x) + \sqrt{1-x^2}$ \\ \hline
+$-\frac{1}{\sqrt{1-x^2}}$ & $\arccos(x)$ & $x\cdot\arccos(x) - \sqrt{1-x^2}$ \\ \hline
+$\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \\ \hline
+$\cosh(x)$ & $\sinh(x) = \frac{e^x - e^{-x}}{2}$ & $\cosh(x)$ \\ \hline
+$\sinh(x)$ & $\cosh(x) = \frac{e^x + e^{-x}}{2}$ & $\sinh(x)$ \\ \hline
+$\frac{1}{\cosh^2(x)}$ & $\tanh(x)$ & $\log(\cosh(x))$ \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Regeln}
+
+\begin{equation*}
+\begin{split}
+	\textbf{Direkter Integral}\quad & \int f(g(x))g'(x)\ dx = F(g(x)) \\
+	\textbf{Partielle Integration}\quad & \int f' \cdot g\ dx = f \cdot g - \int f \cdot g'\ dx \\
+	\textbf{mit Polynomen}\quad & \int\frac{p(x)}{q(x)}\ dx \Rightarrow\ \text{Partialbruchzerlegung} \\
+	\textbf{Substitution}\quad & \int_a^b f(\varphi(t))\varphi'(t)\ dt = \int_{\varphi(a)}^{\varphi(b)} f(x)\ dx\ \text{mit}\ x = \varphi(t)
+\end{split}
+\end{equation*}
+
+\subsection{Tipps}
+
+\begin{equation*}
+\begin{split}
+	\int\tan x\ dx & = \int\frac{\sin x}{\cos x}\ dx = -\log|\cos(x)| \\
+	\int \frac{1}{x - \alpha}\ dx & = \log(x-\alpha) \\
+	\int\frac{\frac{1}{\alpha}}{1+(\frac{x}{\alpha})^2}\ dx & = \arctan(x) \\
+	\int \sin^2(x)\ dx & = \frac{1}{2}(x - \sin(x)\cos(x)) + C \\
+	\int \cos^2(x)\ dx & = \frac{1}{2}(x + \sin(x)\cos(x)) + C \\
+	\int \sqrt{x^2+1}\ dx & = \sinh(x) + C
+\end{split}
+\end{equation*}
+\subsubsection*{Oft vorkommende Integrale}
+
+
+			\begin{tabular}{lll}
+			$\int_{0}^{2\pi} \cos^4(t) dt =\int_{0}^{2\pi} \sin^4(t) dt = \frac{3\pi}{4}$	 \\
+			$\int_{0}^{2\pi} \cos^2(t) dt =\int_{0}^{2\pi} \sin^2(t) dt =\pi$  \\
+			$\int_{0}^{2\pi} \sin(t) \cdot \cos(t) dt =\int_{0}^{2\pi} \cos(t) dt =\int_{0}^{2\pi} \sin(t) dt = 0$ \\
+			$\int_{0}^{2\pi} \sin(t) \cdot \cos^2(t) dt = \int_{0}^{2\pi} \cos(t) \cdot \sin^2(t) dt =0$ \\
+			$\int_{0}^{2\pi} \cos^3(t) dt = \int_{0}^{2\pi} \sin^3(t) dt =0$ \\
+			\end{tabular}
+
+
+>>>>>>> c7763d30c26da2213037bb6b31d50a23e66fa135
 \subsection{Uneigentliche Integrale}
 
 \begin{equation*}
