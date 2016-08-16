@@ -15,61 +15,12 @@
 	a4paper,
  	left=20mm,
  	top=20mm,
+ 	bottom=20mm,
 }
 
 \setlength{\parindent}{0pt}
 
 \begin{document}
-
-\section{Allgemein}
-
-\subsection{Trigonometrie}
-
-\begin{center}
-	\includegraphics[width=\linewidth,keepaspectratio=true]{images/trigonometry}
-\end{center}
-
-\begin{center}
-	\includegraphics[width=300pt]{images/trigonometry_table}
-\end{center}
-
-\begin{equation*}
-\begin{split}
-	\tan(x) & = \frac{\sin(x)}{\cos(x)} \\
-	\sin(2x) & = 2\sin(x)\cos(x) \\
-	\sin(\alpha + \beta) & = \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta) \\
-	\cos(\alpha + \beta) & = \cos(\alpha)\cos(\beta) + \sin(\alpha)\sin(\beta) \\
-	\cos^2(x) & = \frac{1 + \cos(2x)}{2} \\
-	\sin^2(x) + \cos^2(x) & = 1
-\end{split}
-\end{equation*}
-
-\begin{minipage}[c]{0.5\textwidth}
-\subsection{Potenzgesetze}
-
-\begin{equation*}
-\begin{split}
-	a^0 & = 1 \\
-	a^1 & = a \\
-	a^m \cdot a^n & = a^{m+n} \\
-	(a^n)^m & = a^{nm} \\
-	\frac{a^n}{a^m} & = a^{n-m} \\
-	a^{-n} & = \frac{1}{a^n} \\
-	a^{\frac{b}{n}} & = \sqrt[n]	{a^b} \\
-\end{split}
-\end{equation*}
-\end{minipage}
-%
-\begin{minipage}[c]{0.5\textwidth}
-\subsection{Logarithmus}
-
-\begin{equation*}
-\begin{split}
-	\log(0) & = \text{undef.} \\
-	\log(1) & = 0 \\
-\end{split}
-\end{equation*}
-\end{minipage}
 
 \section{Mengen}
 
@@ -105,8 +56,6 @@
 
 \section{Komplexe Zahlen}
 
-\subsection{Polarform}
-
 \begin{minipage}[c]{0.5\textwidth}
 \centering
 \includegraphics[width=\linewidth,keepaspectratio=true]{images/polarform}
@@ -127,19 +76,26 @@
 \end{equation*}
 \end{minipage}
 
-\subsection{Identit{\"a}ten}
-
+\begin{minipage}[c]{0.5\textwidth}
 \begin{equation*}
 \begin{split}
+	(a,b) \cdot (c, d) & = (ac-bd, ad+bc) \\
 	\overline{z} & = x - iy\\
 	z^{-1} & = \frac{\overline{z}}{|z|^2} \\
-	(a,b) \cdot (c, d) & = (ac-bd, ad+bc) \\
 	i & = \sqrt{-1}\\
+\end{split}
+\end{equation*}
+\end{minipage}
+%
+\begin{minipage}[c]{0.5\textwidth}
+\begin{equation*}
+\begin{split}
 	i^2 & = -1 \\
 	|z|^2 & = z\overline{z} \\
 	|zw|^2 & = (zw) \cdot \overline{(zw)} = |z|^2|w|^2
 \end{split}
 \end{equation*}
+\end{minipage}
 
 \section{Grenzwert}
 
@@ -231,13 +187,14 @@ $\frac{f(x)}{g(x)} - \frac{h(x)}{i(x)}$ & "$\infty - \infty$"  & $\frac{f(x)i(x)
 
 \subsection{Beweis}
 
-Entweder \textbf{Grenzwert berechnen}, oder:
-
 \begin{enumerate}[noitemsep]
 	\item Zeige mittels \textbf{Induktion}, dass die Folge \textbf{beschr{\"a}nkt} ist und monoton \textbf{steigt/f{\"a}llt}. Benutze dazu z.B. folgende Aussagen: $a_n \leq a_{n+1}$ oder $a_{n+1}-a_n \geq 0$.
-	\item Sch{\"a}tze den Grenzwert durch die ersten paar Terme ab
-	\item Beweise den Grenzwert (z.B. mit $a_n \geq a$)
+	\item \textbf{Grenzwert berechnen} mit $a := \lim_{n \to \infty} a_n$ oder durch die ersten paar Terme absch{\"a}tzen
+	\item Beweise den Grenzwert (z.B. mit $a_n \geq a$) um Beschr{\"a}nktheit zu beweisen
 \end{enumerate}
+
+\emph{Tipp:} Den Grenzwert in der rekursiven Formel mit $a_n$ und $a_{n+1}$ ersetzen. \\
+F{\"u}r die Formel $a_{n+1} = \frac{1}{2}a_n + \sqrt{a_n}$ muss zum Beispiel gelten: $a = \frac{1}{2}a + \sqrt{a}$ (hier $a = 4$)
 
 \section{Reihen $\sum^\infty$}
 
@@ -257,6 +214,9 @@ Entweder \textbf{Grenzwert berechnen}, oder:
 \textbf{Sandwich-Theorem}					 & $\sin$, $\cos$, $\tan$, $(-1)^n$ & \\ \hline
 \end{tabular}
 \end{table}
+
+\clearpage
+
 \subsubsection*{Limes des allgemeinen Glieds}
 
 \paragraph{Bemerkung:} Mit dieser Methode l{\"a}sst sich nur die Divergenz beweisen, nicht jedoch die Konvergenz.
@@ -369,16 +329,27 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 
 \paragraph{Konvergenzverhalten am Rand:} Es muss noch {\"u}berpr{\"u}ft werden, ob die Reihe f{\"u}r genau $\rho$ konvergiert. Dazu muss $\rho$ in die Formel eingesetzt werden.
 
-\subsubsection{Tipps}
+\subsubsection{Wichtige Reihen}
+
+\begin{minipage}[c]{0.5\textwidth}
 \begin{equation*}
 \begin{split}
 	\cos(x) & = \sum^\infty_{n =0}\frac{(-1)^nx^{2n}}{(2n)!} \\
 	\sin(x) & = \sum^\infty_{n =0}\frac{(-1)^nx^{2n+1}}{(2n+1)!} \\
 	e^x & = \sum^\infty_{n =0}\frac{x^n}{n!} \\
-	n^2 & = \sum_{k=1}^n 2k-1\\
-	\text{harmonische:} \quad \sum_{n=1}^{\infty}\frac{1}{n} & = \infty
 \end{split}
 \end{equation*}
+
+\end{minipage}
+%
+\begin{minipage}[c]{0.5\textwidth}
+\begin{equation*}
+\begin{split}
+	n^2 & = \sum_{k=1}^n 2k-1\\
+	\sum_{n=1}^{\infty}\frac{1}{n} & = \infty\quad\text{(harmonisch)}
+\end{split}
+\end{equation*}
+\end{minipage}
 
 \subsubsection{Potenzreihenentwicklung}
 
@@ -391,7 +362,7 @@ Reihe der Form $\sum^\infty_0 a_nx^n$. \textbf{Konvergent}, falls $|x|<\rho$. In
 \subsection{Lipschitz-Stetigkeit}
 Es existiert eine Konstante $L\in \mathbb{R}$, sodass:
 \begin{equation*}
-	|f(x)-f(y)|\leq L|f(x)-f(y)| \quad \forall x,y \in \Omega
+	|f(x)-f(y)|\leq L|x-y| \quad \forall x,y \in \Omega
 \end{equation*}
 
 \emph{Bemerkung:} Ist $f'$ \textbf{auf $\Omega$ beschr{\"a}nkt}, so ist $f$ Lipschitz-stetig. Lipschitz-Stetigkeit impliziert gleichm{\"a}ssige Stetigkeit.
@@ -451,7 +422,7 @@ Eine stetige Funktion ist differenzierbar, falls der Grenzwert $f'(x_0)$ existie
 \subsection{Umkehrsatz}
 
 \begin{equation*}
-	(f^{-1})'(y) = \frac{1}{f'(x)}
+	(f^{-1})'(y) = \frac{1}{f'(f^{-1}(y))}
 \end{equation*}
 
 \subsection{Mittelwertsatz}
@@ -472,7 +443,8 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 	R^a_m(x) = \frac{f^{(m+1)}(\xi)}{(m+1)!}(x+a)^{m+1},\ \text{wobei}\ f(x) = P^a_m(x) + R^a_m(x)
 \end{equation*}
 
-\subsection{Hauptsatz von Calculus}
+\subsection{Hauptsatz der Differential- und Integralrechnung}
+
 \begin{equation*}
 	f(x)=\int^{m(x)}_lg(t)dt
 \end{equation*}
@@ -480,61 +452,6 @@ mit dem Fehlerterm $R^a_m(x)$, wobei $\xi$ zwischen $a$ und $b$ liegt:
 	f'(x)=g(m(x))\cdot\frac{d}{dx}m(x)
 \end{equation*}
 wobei $m(x)$ der Form $ax^b$ ist mit $l\in \mathbb{R}$
-
-\section{Integration}
-
-\subsection{Elementare Integrale}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-$f'(x)$ & $f(x)$ & $F(x)$ \\ \specialrule{.1em}{0em}{0em} 
-$\frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$ & $\frac{f(x)}{g(x)}$ &  \\ \hline
-$0$ & $c$ & $cx$ \\ \hline
-$r\cdot x^{r-1}$ & $x^r$ & $\frac{x^{r+1}}{r+1}$ \\ \hline
-$-\frac{1}{x^2} = -x^{-2}$ & $\frac{1}{x} = x^{-1}$ & $\ln|x|$ \\ \hline
-$\frac{1}{2\sqrt{x}} = \frac{1}{2}x^{-\frac{1}{2}}$ & $\sqrt{x} = x^{\frac{1}{2}}$ & $\frac{2}{3}x^\frac{3}{2}$ \\ \hline
-$\cos(x)$ & $\sin(x)$ & $-\cos(x)$ \\ \hline
-$-\sin(x)$ & $\cos(x)$ & $\sin(x)$ \\ \hline
-$1 + \tan^2(x) = \frac{1}{\cos^2(x)}$ & $\tan(x)$ & $-\ln|\cos(x)|$ \\ \hline
-$e^x$ & $e^x$ & $e^x$ \\ \hline
-$c\cdot e^{cx}$ & $e^{cx}$ & $\frac{1}{c}\cdot e^{cx}$ \\ \hline
-$\ln(c)\cdot c^x$ & $c^x$ & $\frac{c^x}{\ln(c)}$ \\ \hline
-$\frac{1}{x}$ & $\ln|x|$ & $x(\ln|x| - 1)$ \\ \hline
-$\frac{1}{\ln(a) \cdot x}$ & $\log_a|x|$ & $\frac{x}{\ln(a)}(\ln|x| -1)$ \\ \hline
-$\frac{1}{\sqrt{1-x^2}}$ & $\arcsin(x)$ & $x\cdot\arcsin(x) + \sqrt{1-x^2}$ \\ \hline
-$-\frac{1}{\sqrt{1-x^2}}$ & $\arccos(x)$ & $x\cdot\arccos(x) - \sqrt{1-x^2}$ \\ \hline
-$\frac{1}{1+x^2}$ & $\arctan(x)$ & $x\cdot \arctan(x) - \frac{1}{2}\ln(1+x^2)$ \\ \hline
-$\cosh(x)$ & $\sinh(x) = \frac{e^x - e^{-x}}{2}$ & $\cosh(x)$ \\ \hline
-$\sinh(x)$ & $\cosh(x) = \frac{e^x + e^{-x}}{2}$ & $\sinh(x)$ \\ \hline
-$\frac{1}{\cosh^2(x)}$ & $\tanh(x)$ & $\log(\cosh(x))$ \\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{Regeln}
-
-\begin{equation*}
-\begin{split}
-	\textbf{Direkter Integral}\quad & \int f(g(x))g'(x)\ dx = F(g(x)) \\
-	\textbf{Partielle Integration}\quad & \int f' \cdot g\ dx = f \cdot g - \int f \cdot g'\ dx \\
-	\textbf{mit Polynomen}\quad & \int\frac{p(x)}{q(x)}\ dx \Rightarrow\ \text{Partialbruchzerlegung} \\
-	\textbf{Substitution}\quad & \int_a^b f(\varphi(t))\varphi'(t)\ dt = \int_{\varphi(a)}^{\varphi(b)} f(x)\ dx\ \text{mit}\ x = \varphi(t)
-\end{split}
-\end{equation*}
-
-\subsection{Tipps}
-
-\begin{equation*}
-\begin{split}
-	\int\tan x\ dx & = \int\frac{\sin x}{\cos x}\ dx = -\log|\cos(x)| \\
-	\int \frac{1}{x - \alpha}\ dx & = \log(x-\alpha) \\
-	\int\frac{\frac{1}{\alpha}}{1+(\frac{x}{\alpha})^2}\ dx & = \arctan(x) \\
-	\int \sin^2(x)\ dx & = \frac{1}{2}(x - \sin(x)\cos(x)) + C \\
-	\int \cos^2(x)\ dx & = \frac{1}{2}(x + \sin(x)\cos(x)) + C \\
-	\int \sqrt{x^2+1}\ dx & = \sinh(x) + C
-\end{split}
-\end{equation*}
 
 \subsection{Uneigentliche Integrale}
 
@@ -549,6 +466,15 @@ Gibt es eine Unstetigkeitstelle $c$ in dem Integrationsgebiet, so geht man wie f
 \begin{equation*}
 	\int_a^b f(x)\ dx = \lim_{\varepsilon \to 0} \int_a^{c-\varepsilon} f(x)\ dx + \lim_{\varepsilon \to 0} \int_{c+\varepsilon}^b f(x)\ dx
 \end{equation*}
+
+\subsection{Beweis bijektiver Funktionen}
+
+Zu beweisen sind folgende Eigenschaften:
+\begin{description}[labelindent=16pt,style=multiline,leftmargin=3cm, noitemsep]
+	\item[injektiv:] Zeig, dass $f$ \textbf{strickt monoton w{\"a}chst oder f{\"a}llt} und\textbf{stetig} ist
+	\item[surjektiv:] Zeig, dass alle Werte im Bildbereich angenommen werden (vl. mit Zwischenwertsatz)
+\end{description}
+Daraus folgt dann, dass $f$ bijektiv ist.
 
 \section{Differentialgleichungen}
 
@@ -592,6 +518,8 @@ Gibt es eine Unstetigkeitstelle $c$ in dem Integrationsgebiet, so geht man wie f
 \end{split}
 \end{equation*}
 
+\clearpage
+
 \subsubsection{Variation der Konstanten}
 
 \begin{equation*}
@@ -626,6 +554,8 @@ Gibt es eine Unstetigkeitstelle $c$ in dem Integrationsgebiet, so geht man wie f
 %\end{split}
 %\end{equation*}
 
+\clearpage
+
 \subsubsection{Euler-Ansatz}
 
 \begin{equation*}
@@ -655,6 +585,8 @@ Ein komplexes Nullstellenpaar der Form $\alpha \pm \beta i$ liefert folgende hom
 	y(x)=e^{\alpha x}(C_1\cos(\beta x) + C_2\sin(\beta x))
 \end{equation*}
 
+\clearpage
+
 \subsubsection{Direkter Ansatz}
 
 \begin{equation*}
@@ -678,96 +610,15 @@ $c\sin(kx)$ oder $c\cos(kx)$ & $A\sin(kx) + B\cos(kx)$ & $A$, $B$ \\ \hline
 \begin{equation*}
 \begin{split}
 	& y'' - y' + \frac{1}{4}y = \cos(x) \\
-	\text{homogener}\quad & y'' + y' + \frac{1}{4}y = 0 \\
+	\text{homogener Ansatz}\quad & y'' + y' + \frac{1}{4}y = 0 \\
 	\text{Euler-Ansatz anwenden}\quad & \lambda^2 + \lambda + \frac{1}{4} = (\lambda + \frac{1}{2})^2 = 0 \\
 	\textbf{homogene L{\"o}sung}\quad &\Rightarrow y_\text{homo}(x) = Ae^{-\frac{x}{2}} + Bx \cdot e^{-\frac{x}{2}} \\
-	\text{Ansatz w{\"a}hlen}\quad & y_p(x) = a\cos(x) + b\sin(x) \\
+	\text{partikul{\"a}rer Ansatz w{\"a}hlen}\quad & y_p(x) = a\cos(x) + b\sin(x) \\
 							  & \Rightarrow y_p'(x) = -a\sin(x) + b\cos(x),\  y_p''(x) = -a\cos(x) -b \sin(x) \\
 	\text{Einsetzen}\quad & (-a + b + \frac{a}{4})\cos(x) + (-b -a + \frac{1}{4}b)\sin(x) = \cos(x) \\
 	\text{Koeffizientenvergleich}\quad & -\frac{3}{4}a + b = 1,\ -a-\frac{3}{4}b = 0 \\
 	\textbf{partikul{\"a}re L{\"o}sung}\quad & y_p(x) = -\frac{12}{25}\cos(x) + \frac{16}{25}\sin(x) \\
 	\textbf{L{\"o}sung}\quad & y(x) = Ae^{-\frac{x}{2}} + Bx \cdot e^{-\frac{x}{2}} -\frac{12}{25}\cos(x) + \frac{16}{25}\sin(x)
-\end{split}
-\end{equation*}
-
-\section{Vektorfelder}
-
-\subsection{Differenzial (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}^m$)}
-
-\begin{equation*}
-	df = \begin{pmatrix}
-		\frac{\partial f_1}{\partial x_1} & ... & \frac{\partial f_1}{\partial x_n} \\
-		... & ... & ... \\
-		\frac{\partial f_m}{\partial x_1} & ... & \frac{\partial f_m}{\partial x_n}
-	\end{pmatrix}
-\end{equation*}
-
-\subsection{Gradient (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}$)}
-
-\begin{equation*}
-	\text{grad}(f)=\nabla f=
-	\begin{pmatrix}
-		\frac{\partial f}{\partial x_1}\\
-		...\\
-		\frac{\partial f}{\partial x_n}\\
-	\end{pmatrix}
-\end{equation*}
-
-Der Gradient zeigt in die Richtung der maximalen Zuwachsrate von $f$ und seine L{\"a}nge ist gleich der maximalen {\"A}nderung von $f$.
-
-\subsection{Hessematrix (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}$)}
-
-\begin{equation*}
-	\text{Hess}(f)=
-	\begin{pmatrix}
-		\frac{\partial^2 f}{\partial^2x_1^2} & ... & \frac{\partial^2 f}{\partial x_1 \partial x_n}\\
-		...&...&...\\
-		\frac{\partial^2 f}{\partial x_n \partial x_1} & ... & \frac{\partial^2 f}{\partial x_n^2}
-	\end{pmatrix}
-\end{equation*}
-
-\subsection{Rotation (f{\"u}r f: $\mathbb{R}^3 \mapsto \mathbb{R}^3$ oder f: $\mathbb{R}^2 \mapsto \mathbb{R}^2$)}
-
-\begin{equation*}
-	\text{In}\ \mathbb{R}^3:\ \text{rot}(\vec{v})=\nabla\times \vec{v} =
-	\begin{pmatrix}
-		\frac{\partial v_3}{\partial y} - \frac{\partial v_2}{\partial z}\\
-		\frac{\partial v_1}{\partial z} - \frac{\partial v_3}{\partial x}\\
-		\frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}
-	\end{pmatrix},\ \text{in}\ \mathbb{R}^2:\ \text{rot}(\vec{v}) = \frac{\partial v_2}{\partial x} - \frac{\partial v_1}{\partial y}
-\end{equation*}
-
-\emph{Bemerkung:} Falls $\text{rot}(\vec{v})=0$, dann ist $\vec{v}$ konservativ (Potenzialfeld).
-
-\subsection{Divergenz (f{\"u}r f: $\mathbb{R}^n \mapsto \mathbb{R}^n$)}
-\begin{equation*}
-	\text{div}(v)= \frac{\partial v_1}{\partial x} + \frac{\partial v_2}{\partial y} + ... 
-\end{equation*}
-
-\subsection{Potenzialfeld}
-
-Ein Potenzialfeld ist konservativ. Das Potenzial $\Phi$ eines Potenzialfeldes ist gleich:
-
-\begin{equation*}
-	\nabla \Phi = \vec{v}
-\end{equation*}
-
-F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \textbf{Integrabilit{\"a}tsbedinungen}:
-
-\begin{equation*}
-	\frac{\partial v_i}{\partial x_j}=\frac{\partial v_j}{\partial x_i},\forall i \neq j
-\end{equation*}
-
-\subsubsection*{Berechnung eines Potenzials}
-
-\begin{equation*}
-\begin{split}
-	\text{gegeben:} \quad & \vec{v} = \begin{pmatrix}
-		e^{xy}(1+xy) \\ e^{xy}x^2
-	\end{pmatrix} \\
-	\textbf{Nach y integrieren:} \quad & \frac{\partial\Phi}{\partial y} = e^{xy}x^2 \Rightarrow \Phi = \int e^{xy}x^2\ dy = xe^{xy} + C(x) \\
-	\textbf{Nach x ableiten:} \quad & \frac{\partial\Phi}{\partial x} = e^{xy} + xye^{xy} + C' \stackrel{!}{=} e^{xy} + xye^{xy} \Rightarrow C' = 0 \Rightarrow C = \text{konst.} \\
-	\textbf{Potenzial:} \quad & \Phi = xe^{xy} + \text{konst.}
 \end{split}
 \end{equation*}
 
@@ -789,6 +640,8 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 	\textbf{L{\"o}sung}\quad & 2\pi - 0 + \pi = 3\pi
 \end{split}
 \end{equation*}
+
+\clearpage
 
 \subsection{In Potenzialfeldern}
 
@@ -812,11 +665,13 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 
 \subsection{Satz von Green}
 
-\paragraph{Anforderung:} Der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn) immer der vektorfeld (-y,0) oder (0,x).
-
+\paragraph{Anforderung:} Der Rand muss im positiven mathematischen Sinn umlaufen werden (d.h. im Gegenuhrzeigersinn).
 \begin{equation*}
 	\textbf{Grundsatz:}\quad\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C (\frac{\partial v_2}{\partial x}-\frac{\partial v_1}{\partial y})\ dxdy
 \end{equation*}
+
+\emph{Bemerkung:} Falls das Vektorfeld nicht gegeben ist, k{\"o}nnen folgende ausgew{\"a}hlt werden: \\ 
+$\vec{v}_1 = \binom{0}{x}$ oder $\vec{v}_2 = \binom{-y}{0}$ \\
 
 \begin{equation*}
 \begin{split}
@@ -826,9 +681,8 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 	\text{in Formel einsetzen:}\quad & \int_\gamma \vec{v} \cdot d\vec{s} = \int_E -1\ dxdy = -\mu(E) = -\pi
 \end{split}
 \end{equation*}
-\begin{equation}
-	\int\int_{\Omega}rotvdxdy=\int_{\gamma_1}v(\gamma_1(t))*\gamma_1'dt+\int_{\gamma_2}v(\gamma_2(t))*\gamma_2'dt+...
-\end{equation}
+
+\clearpage
 
 \subsection{Satz von Stokes}
 
@@ -863,51 +717,6 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 
 \section{Fl{\"a}chenintegral}
 
-\subsection{Koordinatentransformationen}
-
-\subsubsection{Polarkoordinaten ($\mathbb{R}^2$)}
-
-\begin{equation*}
-	\textbf{Variablen:}\quad \begin{matrix}
-		x = r\cos(\phi) \\ y = r\sin(\phi)
-	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdy = r\ drd\phi
-\end{equation*}
-
-\subsubsection{Elliptische Koordinaten ($\mathbb{R}^2$)}
-
-\begin{equation*}
-	\textbf{Variablen:}\quad \begin{matrix}
-		x = ra\cos(\phi) \\ y = rb\sin(\phi)
-	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdy = abr\ drd\phi
-\end{equation*}
-
-\subsubsection{Zylinderkoordinaten ($\mathbb{R}^3$)}
-
-\begin{equation*}
-	\textbf{Variablen:}\quad \begin{matrix}
-		x = r\cos(\phi) \\ y = r\sin(\phi) \\ z = z
-	\end{matrix} \quad \textbf{Volumenelement:}\quad dxdydz = r\ drd\phi dz
-\end{equation*}
-
-\subsubsection{Kugelkoordinaten ($\mathbb{R}^3$)}
-
-\begin{minipage}[c]{0.3\textwidth}
-\centering
-\includegraphics[width=\textwidth]{images/kugelkoordinaten}
-\end{minipage}
-%
-\begin{minipage}[c]{0.7\textwidth}
-\begin{equation*}
-\begin{split}
-	\textbf{Variablen:}\quad & \begin{matrix}
-		x = r\sin(\theta)\cos(\varphi) \\ y = r\sin(\theta)\sin(\varphi) \\ z = r\cos(\theta)
-	\end{matrix} \\
-	\textbf{Volumenelement:} \quad & dxdydz = r^2\ dr\ \sin(\theta)\ d\theta d\varphi
-\end{split}
-\end{equation*}
-\end{minipage}
-
-
 \subsection{Normalbereich}
 
 \begin{equation*}
@@ -927,6 +736,8 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 \end{equation*}
 
 \emph{Bemerkung:} Soll nur die Fl{\"a}che ausgerechnet werden, so w{\"a}hle $F(x,y) = 1$. Werden Polarkoordinaten benutzt, so w{\"a}hle $F(r, \phi) = r$.
+
+\clearpage
 
 \subsection{Satz von Green}
 
@@ -967,6 +778,8 @@ F{\"u}r ein Potenzialfeld gilt $\text{rot}(\vec{v})=0$ und es erf{\"u}llt die \t
 \end{split}
 \end{equation*}
 \end{minipage}
+
+\clearpage
 
 \subsection{Standardmethode}
 
@@ -1015,6 +828,8 @@ wobei $\vec{n}$ die nach aussen gerichtete Normale l{\"a}ngs $\partial V$ bezeic
 	\textbf{Grundsatz:}\quad\int_{\gamma = \partial C} \vec{v} \cdot d\vec{s} = \int_C \text{rot}(\vec{v}) \cdot \vec{n}\ do
 \end{equation*}
 
+\clearpage
+
 \section{Kurvendiskussion}
 
 \begin{table}[H]
@@ -1050,64 +865,28 @@ Sattelpunkt & $f'(x) = 0 \land f''(x) = 0 \land f'''(x) \neq 0$ \\ \hline
 
 \subsection{Extremwertaufgaben mit Nebenbedingungen}
 
-\begin{equation*}
-\begin{split}
-	\text{gegeben:} \quad & f = xyz\ \text{mit Nebenbedinung}\ x^2 + y^2 + z^2 = 1 \\
-	\textbf{Lagrange-Bedingung:} \quad & L = f - \lambda g = xyz - \lambda(x^2 + y^2 + z^2 - 1) \\
-	\text{kritische Punkte von $L$:} \quad & dL = 0 \\
-	& \frac{\partial L}{\partial x} = 0 \Rightarrow \lambda = \frac{yz}{2x} \\
-	& \frac{\partial L}{\partial y} = 0 \Rightarrow \lambda = \frac{xz}{2y} \\
-	& \frac{\partial L}{\partial z} = 0 \Rightarrow \lambda = \frac{xy}{2z} \\
-	\text{Lambdas gleichsetzen:} \quad & x^2 = y^2 = z^2 \land g \Rightarrow 3x^2 = 1 \Rightarrow x = \pm \frac{1}{\sqrt{3}} \\
-	\textbf{Kandidaten:} \quad & \begin{pmatrix}
-		\pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}
-	\end{pmatrix} \\
-	\text{in $f$ einsetzen:} \quad & f\begin{pmatrix}
-		\pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}, & \pm \frac{1}{\sqrt{3}}
-	\end{pmatrix} = \pm \frac{1}{3\sqrt{3}}
-\end{split}
-\end{equation*}
+\paragraph{Beweis}\mbox{}\\
 
-\paragraph{Vorgehen um alle Kandidaten zu finden:}
-\begin{enumerate}[noitemsep]
-	\item Lagrange-Bedinung anwenden (m{\"u}ssen alle Nebenbedingung erf{\"u}llen)
-	\item Kandidaten der Nebenbedingung \\
-	falls $g$ differenzierbar: 
-	\begin{enumerate}[noitemsep]
-		\item nicht-regul{\"a}re Punkte finden mit $dg = 0$
-		\item gefundene Punkte mit Nebenbedingung {\"u}berpr{\"u}fen
-	\end{enumerate}
-	falls $g$ nicht differenzierbar:
-	\begin{enumerate}[noitemsep]
-		\item nicht-regul{\"a}re Punkte der Teilst{\"u}cke des Randes
-		\item Eckpunkte des Gebietes {\"u}berpr{\"u}fen
-	\end{enumerate}
+Falls es sich um eine stetige Funktion auf einem kompakten Gebiet handelt, so nimmt $f$ gem{\"a}ss Weierstrass ein Supremum und Infimum an. Daraus folgt, dass $f$ auf dem Gebiet ein Maximum und Minimum besitzt.
+
+\paragraph{1. Kandidaten im Innern des Gebiets:}
+
+\begin{enumerate}[noitemsep, label=\roman*]
+	\item $df(x,y) = 0$ aufl{\"o}sen
+	\item {\"U}berpr{\"u}fen, ob gefundene Punkte wirklich im Gebiet sind
 \end{enumerate}
-andere moglichkeit falls nebebidingungen sind einfach:
-\begin{enumerate}
-	\item kandidaten im inneren suchen
-	\item die function $\frac{d}{dy}$f(eckpunt1,y)=0 losen und sehen ob punckt in bereich ist.
-	\item das gleiche machen fur eckpunkt2 in y und dann fur beide eckepunkte fur x.
-	\item weitere kandidaten sind die eckepunkte.
+
+\paragraph{2. Kandidaten auf den Randst{\"u}cken des Gebiets:}
+
+\begin{enumerate}[noitemsep, label=\roman*]
+	\item $df(x,y) - \lambda dg(x,y) - \mu dh(x,y) = 0$ aufl{\"o}sen
+	\item {\"U}berpr{\"u}fen, ob gefundene Punkte wirklich auf dem Rand sind
+	\item $dg(x,y) = 0$ aufl{\"o}sen und {\"u}berpr{\"u}fen, ob gefunden Punkte Nebenbedingung erf{\"u}llen
+	\item Eckpunkte des Randst{\"u}ckes {\"u}berpr{\"u}fen
 \end{enumerate}
+
+$\Rightarrow$ Benutze ein System hergeleitet von $df(x,y) - \lambda dg(x,y) - \mu dh(x,y) = 0$ und den verschiedenen Nebenbedingungen. \\ 
+
+\emph{Tipp:} Ist das Randst{\"u}ck nicht differenzierbar, muss man es in mehrere Teilstrecken aufteilen. \\
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

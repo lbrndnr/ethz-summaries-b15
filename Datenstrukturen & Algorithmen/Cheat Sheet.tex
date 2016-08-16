@@ -32,6 +32,7 @@ mit $c > 1$ als positive Konstante.
 \begin{itemize}[noitemsep]
 	\item $\binom{n}{c} \in \Theta(n^c)$
 	\item $n^c$ ist polynomial
+	\item $n! \approx n^n$
 \end{itemize}
 
 \section{Hashing}
@@ -253,6 +254,8 @@ Funktioniert ähnlich wie nach Dijkstra. Knoten werden jedoch nicht endgültig g
 \subsection{Edmonds/Karp}
 
 Angepasster Ford/Fulkerson Algorithmus.
+
+The algorithm is identical to the Ford–Fulkerson algorithm, except that the search order when finding the augmenting path is defined. The path found must be a shortest path that has available capacity. This can be found by a breadth-first search, as we let edges have unit length.
 
 \paragraph{Laufzeit:} $O(|V|\cdot|E|^2)$
 
