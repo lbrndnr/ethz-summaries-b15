@@ -134,7 +134,7 @@ Find a variable such that the sentence is wrong.
 	A \cap (B \cup C) & = (A \cap B) \cup (A \cap C) \\
 	A \times B & = \{(a, b)\ |\ a \in A \land b \in B\} ,|A\times B| = |A|*|B|\\ 
 	\mathcal{P}(\{a,b,c\}) & = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\} (teilmenge) |\mathcal{P}|=2^{|A|}\\
-	 Ordered\_sets:= (a,b):=\{\{a\},\{a,b\}\}
+	 Ordered\_sets & := (a,b):=\{\{a\},\{a,b\}\}
 \end{split}
 \end{equation*}
 A teilmenge of a set is the set itself, every element of the set and the null element.
@@ -203,7 +203,7 @@ If you are looking for a equivalence relation give the matrix with the above pro
 $a\ \theta\ b \Rightarrow [a] = [b]$\\
 $a\ \cancel{\theta}\ b \Rightarrow [a] \cap [b] = \emptyset$
 
-\subsection{Partial Order = ordnungsrelation}
+\subsection{Partial Order (Ordnungsrelation)}
 \textbf{Example:} $\leq$ and $\geq$ on $\mathbb{Z}, \mathbb{Q}$ or $\mathbb{R}$, $=$ on $\mathbb{N}$\\ 
 A relation that is reflexive, antisymmetric, and transitive. \\
 If every two elements in a poset are comparable than the Set is \textbf{totally ordered}.\\
@@ -301,7 +301,8 @@ If a set of n objects is partitioned into k $<$ n sets, then at least one of the
 	\item[walk:] sequence of vertices such that consecutive vertices are connected
 	\item[tour:] a walk with distinct edges
 	\item[circuit:] a tour that ends where it started
-	\item[Hamiltonian cycle:] a circuit that visits all vertices
+	\item[Euler cycle:] a circuit that visits every node exactly once
+	\item[Hamiltonian cycle:] a circuit that visits every vertex exactly once
 \end{description}
 
 \subsection{Planar Graphs}
@@ -651,7 +652,7 @@ The proof system $\Pi = (\mathcal{S}, \mathcal{P}, \tau, \phi)$ is
 \hline
                    			& \textbf{Description} 						   				& \textbf{Notation}	\\ \hline
 \textbf{Syntax} 			& alphabet of allowed symbols and which strings are valid	&  \\ \hline
-\textbf{Interpretation}  	& an assignment to all variable symbols						& $\mathcal{A}(A) = \{0, 1\}$ \\ \hline
+\textbf{Interpretation}  	& an assignment to all variable, predicate, function and constant symbols					& $\mathcal{A}(A) = \{0, 1\}$ \\ \hline
 \textbf{Semantics}		  	& a function $\sigma$ assigning to each forumla $F$ and each suitable interpretation $\mathcal{A}$ a truth value& $\sigma(F, \mathcal{A}) = \{0, 1\}$, \filbreak $\mathcal{A}(F)$ \\ \hline
 \textbf{Model}			  	& an interpretation $\mathcal{A}$ for which $F$ is true 	& $\mathcal{A} \models F$ \\ \hline
 
