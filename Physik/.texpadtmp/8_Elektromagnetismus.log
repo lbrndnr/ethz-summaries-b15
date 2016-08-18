@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  30 JUL 2016 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  17 AUG 2016 09:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -213,7 +213,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Warning: Unused global option(s):
     [7pt].
 
-(/Users/Laurin/Documents/ETH/B2016/Summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux)
+(/Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux)
 \openout1 = `8_Elektromagnetismus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -391,17 +391,17 @@ Underfull \hbox (badness 7433) in paragraph at lines 274--275
 []\OT1/cmr/m/n/10 Das Lin-ien-in-te-gral des elek-trischen Feldes ^^?uber die
  []
 
-[3 <./images/induktion.png>] (/Users/Laurin/Documents/ETH/B2016/Summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux) ) 
+[3 <./images/induktion.png>] (/Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux) ) 
 Here is how much of TeX's memory you used:
  4364 strings out of 493089
- 66064 string characters out of 6134843
+ 66022 string characters out of 6134842
  143587 words of memory out of 5000000
  7792 multiletter control sequences out of 15000+600000
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,38p,311b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/Laurin/Documents/ETH/B2016/Summaries/Physik/.texpadtmp/8_Elektromagnetismus.pdf (3 pages, 1088222 bytes).
+Output written on /Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.pdf (3 pages, 1088233 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
