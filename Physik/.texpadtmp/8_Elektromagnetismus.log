@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.11)  17 AUG 2016 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.9)  18 AUG 2016 12:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -213,7 +213,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Warning: Unused global option(s):
     [7pt].
 
-(/Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux)
+No file 8_Elektromagnetismus.aux.
 \openout1 = `8_Elektromagnetismus.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -228,7 +228,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
 \scratchdimen=\dimen139
@@ -312,96 +312,96 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 <images/mf/capacitor_formulas.png, id=1, 1704.3675pt x 1026.83624pt>
 File: images/mf/capacitor_formulas.png Graphic file (type png)
  <use images/mf/capacitor_formulas.png>
-Package pdftex.def Info: images/mf/capacitor_formulas.png used on input line 63.
+Package pdftex.def Info: images/mf/capacitor_formulas.png used on input line 70.
 (pdftex.def)             Requested size: 240.0pt x 144.5865pt.
  <images/mf/draht.png, id=3, 168.12813pt x 200.75pt>
 File: images/mf/draht.png Graphic file (type png)
  <use images/mf/draht.png>
-Package pdftex.def Info: images/mf/draht.png used on input line 85.
+Package pdftex.def Info: images/mf/draht.png used on input line 92.
 (pdftex.def)             Requested size: 80.0pt x 95.52264pt.
  <images/mf/ring.png, id=4, 188.20313pt x 201.25188pt>
 File: images/mf/ring.png Graphic file (type png)
  <use images/mf/ring.png>
-Package pdftex.def Info: images/mf/ring.png used on input line 86.
+Package pdftex.def Info: images/mf/ring.png used on input line 93.
 (pdftex.def)             Requested size: 80.0pt x 85.54779pt.
  <images/mf/solenoid.png, id=5, 211.79124pt x 140.525pt>
 File: images/mf/solenoid.png Graphic file (type png)
  <use images/mf/solenoid.png>
-Package pdftex.def Info: images/mf/solenoid.png used on input line 89.
+Package pdftex.def Info: images/mf/solenoid.png used on input line 96.
 (pdftex.def)             Requested size: 80.0pt x 53.08055pt.
  <images/mf/torus.png, id=6, 225.34187pt x 169.63374pt>
 File: images/mf/torus.png Graphic file (type png)
  <use images/mf/torus.png>
-Package pdftex.def Info: images/mf/torus.png used on input line 90.
+Package pdftex.def Info: images/mf/torus.png used on input line 97.
 (pdftex.def)             Requested size: 80.0pt x 60.22168pt.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/mf/capacitor_formulas.png> <./images/mf/draht.png> <./images/mf/ring.png> <./images/mf/solenoid.png> <./images/mf/torus.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-<images/parallele_leiter.png, id=26, 538.01pt x 485.815pt>
+<images/parallele_leiter.png, id=27, 538.01pt x 485.815pt>
 File: images/parallele_leiter.png Graphic file (type png)
  <use images/parallele_leiter.png>
-Package pdftex.def Info: images/parallele_leiter.png used on input line 194.
+Package pdftex.def Info: images/parallele_leiter.png used on input line 201.
 (pdftex.def)             Requested size: 150.0pt x 135.44905pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[2 <./images/parallele_leiter.png>] <images/induktion.png, id=33, 468.24937pt x 356.83313pt>
+<images/induktion.png, id=28, 468.24937pt x 356.83313pt>
 File: images/induktion.png Graphic file (type png)
  <use images/induktion.png>
-Package pdftex.def Info: images/induktion.png used on input line 271.
+Package pdftex.def Info: images/induktion.png used on input line 278.
 (pdftex.def)             Requested size: 150.0pt x 114.30872pt.
-
-Underfull \hbox (badness 7433) in paragraph at lines 274--275
+ [2 <./images/parallele_leiter.png>]
+Underfull \hbox (badness 7433) in paragraph at lines 281--282
 []\OT1/cmr/m/n/10 Das Lin-ien-in-te-gral des elek-trischen Feldes ^^?uber die
  []
 
-[3 <./images/induktion.png>] (/Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux) ) 
+[3 <./images/induktion.png>] (/Users/Laurin/Documents/ETH/B2016/Summaries/Physik/.texpadtmp/8_Elektromagnetismus.aux) ) 
 Here is how much of TeX's memory you used:
- 4364 strings out of 493089
- 66022 string characters out of 6134842
+ 4362 strings out of 493089
+ 65892 string characters out of 6134843
  143587 words of memory out of 5000000
  7792 multiletter control sequences out of 15000+600000
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,38p,311b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/jakubkotal/Documents/summaries/Physik/.texpadtmp/8_Elektromagnetismus.pdf (3 pages, 1088233 bytes).
+Output written on /Users/Laurin/Documents/ETH/B2016/Summaries/Physik/.texpadtmp/8_Elektromagnetismus.pdf (3 pages, 1088645 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
