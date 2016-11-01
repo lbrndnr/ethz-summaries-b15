@@ -95,7 +95,7 @@
 	\item[Precondition] If inherited, may only be weaker or equally strong
 	\item[Postcondition] If inherited, may only be stronger or equally strong
 	\item[Loop Invariant] Boolean expression to determine whether the loop achieves its purpose. Needs to be $TRUE$ after initialization of the loop and preserved by the loop body (so has to be true after the last step as well).
-	\item[Loop Variant] Integer expression to determine whether the loop will terminate. Has to be non-negative after initialization of the loop and decreased by at least one, while remaining non-negative, by any execution of the loop body.
+	\item[Loop Variant] Integer expression to determine whether the loop will terminate. Has to be non-negative after initialization of the loop and decreased by at least one, while remaining non-negative, by any execution of the loop body. May be broken during the execution of the loop body.
 \end{description}
 
 \section{Agents}

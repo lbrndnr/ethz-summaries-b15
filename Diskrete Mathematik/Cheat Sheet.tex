@@ -242,7 +242,7 @@ Special elements in a poset $(A, \preceq)$ with a subset $S \subseteq A$:
 \textbf{ordered}   & $n^k$                         							 	  & $\frac{n!}{(n-k)!}$    \\\cline{2-3}
 				   & A passcode of length $n$ with $k$ different digits           & How many ways can $k$ places be awarded to $n$ people                       \\\hline
 \textbf{unordered} & $\bigl(\begin{smallmatrix}n+k-1\\k \end{smallmatrix} \bigr)$ & $\bigl(\begin{smallmatrix}n\\k \end{smallmatrix} \bigr) = \frac{n!}{k!(n-k)!}$ \\\cline{2-3}
-				   & Choose at most $k$ scoops of ice cream from $n$ different flavours   & Select $k$ from $n$ objects                             \\\hline
+				   & Distribute $k$ bananas (identical) to $n$ monkeys (identical)   & Select $k$ from $n$ objects                             \\\hline
 \end{tabular}
 \end{table}
 
@@ -284,6 +284,8 @@ If a set of n objects is partitioned into k $<$ n sets, then at least one of the
 
 \section{Graph Theory}
 
+$\Sigma_{v \in V}deg(v) = 2|E|$
+
 \subsection{Special Graphs}
 
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=6cm, noitemsep]
@@ -310,7 +312,7 @@ If a set of n objects is partitioned into k $<$ n sets, then at least one of the
 For \emph{connected, planar} graphs, the following equations hold:
 \begin{description}[labelindent=16pt,style=multiline,leftmargin=4.5cm, noitemsep]
 	\item $r  = |E| - |V| + 2$ (number of regions)
-	\item $\Sigma_{v \in V}deg(v) = 2|E|$ (sum of the degrees of the regions)
+	\item $\Sigma_{r \in R}deg(r) = 2|E|$
 	\item if $|V| \geq 3 \Rightarrow |E| \leq 3|V| - 6$
 	\item if $|V| \geq 3$ and bipartite $\Rightarrow |E| \leq 2|V| - 4$
 	\item $K_n$ is planar if and only if $n \leq 4$i
@@ -363,7 +365,7 @@ For integers $a$ and $b$ (not both 0), an integer $d$ is called a $gcd(a,b)$ if 
 	\text{given}\qquad z & \equiv_{b_1} c_1 \\
 	z & \equiv_{b_2} c_2 \\
 	z & \equiv_{b_3} c_3 \\
-	\text{then}\qquad z & = B_1x_1c_1 + B_2x_2c_2 + B_3x_3c_3 \\
+	\text{then}\qquad z & = R_B(B_1x_1c_1 + B_2x_2c_2 + B_3x_3c_3) \\
 	\text{where}\qquad B_i & = \frac{B}{b_1}\ \text{with}\ B = b_1b_2b_3\ \text{and}\ B_ix_i \equiv_{b_i} 1 \\
 	\text{To find different $z$ to satisfy certain constraints}\qquad z' & = z \pm n \cdot B,\ n \in \mathbb{N}
 \end{split}
